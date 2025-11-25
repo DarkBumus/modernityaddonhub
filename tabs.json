@@ -1,7 +1,16 @@
 {
     "tabs": [
-        { "name": "Modernity", "visible": true },
-        { "name": "Programmer Art", "visible": true },
-        { "name": "DokuCraft", "visible": true }
+        {
+            "name": "Modernity",
+            "visible": true
+        },
+        {
+            "name": "Programmer Art",
+            "visible": true
+        },
+        {
+            "name": "DokuCraft",
+            "visible": true
+        }
     ]
 }
