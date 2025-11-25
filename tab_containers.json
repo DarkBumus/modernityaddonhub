@@ -14,12 +14,12 @@
         }
       }
     },
-    "Programmer Art": {
+    "Palettized Programmer Art": {
       "visible": true,
       "versions": {}
     },
     "DokuCraft": {
-      "visible": true,
+      "visible": false,
       "versions": {}
     }
   }
