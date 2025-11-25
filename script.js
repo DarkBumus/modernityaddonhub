@@ -1,78 +1,103 @@
 document.addEventListener("DOMContentLoaded", () => {
     const tabsContainer = document.getElementById("tabs");
-    const subtabsContainer = document.getElementById("subtabs");
+    const versionContainer = document.getElementById("subtabs");
+    const contentContainer = document.getElementById("content");
 
-    let subtabsData = {};
+    let data = {};
 
-    // Zuerst: Untertabs laden
-    fetch("versions_tabs.json")
-        .then(response => response.json())
-        .then(data => {
-            subtabsData = data;
+    fetch("tab_containers.json") // Name deiner JSON-Datei
+        .then(r => r.json())
+        .then(json => {
+            data = json;
+            renderMainTabs();
         })
-        .then(() => {
-            // Dann: Haupttabs laden
-            return fetch("packs_tabs.json");
-        })
-        .then(response => response.json())
-        .then(data => {
-            renderMainTabs(data.tabs);
-        })
-        .catch(err => console.error("Fehler:", err));
+        .catch(err => console.error("Fehler beim Laden der JSON:", err));
 
-function renderMainTabs(tabs) {
-    tabsContainer.innerHTML = "";
-    
-    tabs
-        .filter(t => t.visible)
-        .forEach((tab, index) => {
-            const tabEl = document.createElement("div");
-            tabEl.className = "tab";
-            tabEl.textContent = tab.name;
+    function renderMainTabs() {
+        tabsContainer.innerHTML = "";
 
-            // Ersten Tab automatisch aktiv machen
-            if (index === 0) {
-                tabEl.classList.add("active");
-                renderSubTabs(tab.name);
-            }
+        Object.keys(data.packs)
+            .filter(packName => data.packs[packName].visible)
+            .forEach((packName, i) => {
+                const tabEl = document.createElement("div");
+                tabEl.className = "tab";
+                tabEl.textContent = packName;
 
-            tabEl.addEventListener("click", () => {
-                // Nur Haupttabs aktivieren
-                tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                tabEl.classList.add("active");
+                if (i === 0) tabEl.classList.add("active");
 
-                renderSubTabs(tab.name);
+                tabEl.addEventListener("click", () => {
+                    tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                    tabEl.classList.add("active");
+                    renderVersionTabs(packName);
+                });
+
+                tabsContainer.appendChild(tabEl);
             });
 
-            tabsContainer.appendChild(tabEl);
-        });
-}
+        // Ersten Haupttab laden
+        const firstPack = Object.keys(data.packs).find(k => data.packs[k].visible);
+        renderVersionTabs(firstPack);
+    }
 
-function renderSubTabs(mainTabName) {
-    subtabsContainer.innerHTML = "";
+    function renderVersionTabs(packName) {
+        versionContainer.innerHTML = "";
+        contentContainer.innerHTML = "";
 
-    const subtabs = subtabsData[mainTabName];
-    if (!subtabs) return;
+        const pack = data.packs[packName];
+        const versions = data.defaults.versions;
 
-    subtabs
-        .filter(st => st.visible)
-        .forEach((st, index) => {
-            const stEl = document.createElement("div");
-            stEl.className = "tab";
-            stEl.textContent = st.name;
+        versions.forEach((versionName, i) => {
+            // Override prüfen
+            const versionOverride = pack.versions?.[versionName] || {};
+            const versionVisible = versionOverride.visible !== undefined ? versionOverride.visible : true;
+            if (!versionVisible) return;
 
-            // Optional: ersten Untertab aktiv machen
-            if (index === 0) stEl.classList.add("active");
+            const vTab = document.createElement("div");
+            vTab.className = "tab";
+            vTab.textContent = versionName;
+            if (i === 0) vTab.classList.add("active");
 
-            // Klick auf Untertab (falls du später Inhalte anzeigen willst)
-            stEl.addEventListener("click", () => {
-                subtabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                stEl.classList.add("active");
-
-                // Hier kannst du Inhalte pro Untertab rendern
+            vTab.addEventListener("click", () => {
+                versionContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                vTab.classList.add("active");
+                renderPanels(packName, versionName);
             });
 
-            subtabsContainer.appendChild(stEl);
+            versionContainer.appendChild(vTab);
         });
-}
+
+        // Ersten Versionstab laden
+        const firstVersion = versions.find(v => {
+            const vo = pack.versions?.[v] || {};
+            return vo.visible !== false;
+        });
+        renderPanels(packName, firstVersion);
+    }
+
+    function renderPanels(packName, versionName) {
+        contentContainer.innerHTML = "";
+
+        const pack = data.packs[packName];
+        const versionOverride = pack.versions?.[versionName] || {};
+
+        data.defaults.category_panels.forEach(panelName => {
+            const panelVisible = versionOverride.panels?.[panelName] !== undefined ? versionOverride.panels[panelName] : true;
+            if (!panelVisible) return;
+
+            const coll = document.createElement("button");
+            coll.className = "collapsible";
+            coll.textContent = panelName;
+
+            const panel = document.createElement("div");
+            panel.className = "content-panel";
+
+            coll.addEventListener("click", () => {
+                coll.classList.toggle("active");
+                panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+            });
+
+            contentContainer.appendChild(coll);
+            contentContainer.appendChild(panel);
+        });
+    }
 });
