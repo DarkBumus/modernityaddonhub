@@ -17,6 +17,8 @@
             padding: 20px;
             text-align: center;
         }
+
+        /* Haupt-Tabs */
         #tabs {
             display: flex;
             background: #222;
@@ -38,17 +40,56 @@
         .tab.active {
             background: #0088ff;
         }
+
+        /* Versions-Tabs */
         #subtabs {
-        display: flex;
-        background: #333;
-        padding: 8px;
-        justify-content: center;
-        gap: 8px;
+            display: flex;
+            background: #333;
+            padding: 8px;
+            justify-content: center;
+            gap: 8px;
         }
         #subtabs .tab {
-        background: #555;
-        padding: 6px 12px;
+            background: #555;
+            padding: 6px 12px;
         }
+        #subtabs .tab.active {
+            background: #0088ff;
+        }
+
+        /* Collapsible Panels */
+        #content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 10px 20px 10px;
+        }
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 5px;
+            transition: background 0.2s;
+        }
+        .collapsible.active {
+            background-color: #ccc;
+        }
+        .content-panel {
+            padding: 0 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+            border-radius: 0 0 5px 5px;
+            margin-bottom: 5px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -59,7 +100,7 @@
 <body>
 
 <header>
-    <h1>Modernity Addon Hub 26.11.2025 00:06</h1>
+    <h1>Modernity Addon Hub 26.11.2025 00:45</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -67,6 +108,9 @@
 
 <!-- Versions Tabs -->
 <div id="subtabs"></div>
+
+<!-- Collapsible Panels -->
+<div id="content"></div>
 
 <footer>
     © 2025 – Modernity Addon Hub
