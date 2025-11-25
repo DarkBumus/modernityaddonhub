@@ -17,50 +17,48 @@
             padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
+        #tabs {
+            display: flex;
+            background: #222;
             padding: 10px;
+            justify-content: center;
+            gap: 10px;
         }
-        .project {
-            background: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .project img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        .project-title {
-            font-size: 1.3em;
-            margin-bottom: 5px;
-        }
-        .download {
-            display: inline-block;
-            margin-top: 10px;
-            background: #0066cc;
+        .tab {
             color: white;
-            padding: 8px 12px;
-            border-radius: 5px;
+            padding: 8px 15px;
+            background: #444;
+            border-radius: 6px;
             text-decoration: none;
+            cursor: pointer;
         }
-        .download:hover {
-            background: #004f99;
+        .tab:hover {
+            background: #666;
+        }
+        .tab.active {
+            background: #0088ff;
         }
         footer {
             text-align: center;
             padding: 20px;
             color: #444;
         }
-      </style>
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Modernity Addon Hub 25.11.2025 23:20</h1>
-    </header>
 
-    <footer>
-        © 2025 – Modernity Addon Hub
-    </footer>
+<header>
+    <h1>Modernity Addon Hub 25.11.2025 23:28</h1>
+</header>
+
+<!-- Die Tab-Leiste -->
+<div id="tabs"></div>
+
+<footer>
+    © 2025 – Modernity Addon Hub
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
