@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("tabs.json")
+    fetch("packs_tabs.json")
         .then(response => response.json())
         .then(data => {
             const tabsContainer = document.getElementById("tabs");
