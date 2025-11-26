@@ -25,45 +25,49 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderMainTabs() {
     tabsContainer.innerHTML = "";
 
-    Object.keys(data.packs)
-        .filter(packName => {
+    // 1. Alle Pack-Namen filtern (AUTO-HIDE + visible-Flags berücksichtigen)
+    const filteredPacks = Object.keys(data.packs).filter(packName => {
 
-            const pack = data.packs[packName];
+        const pack = data.packs[packName];
 
-            // Wenn visible explizit false ist → immer verstecken
-            if (pack.visible === false) return false;
-
-            // Wenn visible true ist → NICHT automatisch verstecken
-            if (pack.visible === true) return true;
-
-            // Auto-hide wenn keine Downloads existieren
-            return packHasEntries(packName);
-
-        })
-        .forEach((packName, i) => {
-            const tabEl = document.createElement("div");
-            tabEl.className = "tab";
-            tabEl.textContent = packName;
-
-            if (i === 0) tabEl.classList.add("active");
-
-            tabEl.addEventListener("click", () => {
-                tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                tabEl.classList.add("active");
-                renderVersionTabs(packName);
-            });
-
-            tabsContainer.appendChild(tabEl);
-        });
-
-    const firstPack = Object.keys(data.packs).find(k => {
-        const pack = data.packs[k];
+        // Wenn visible explizit false ist → immer verstecken
         if (pack.visible === false) return false;
+
+        // Wenn visible true ist → immer anzeigen
         if (pack.visible === true) return true;
-        return packHasEntries(k);
+
+        // Sonst: Auto-hide, wenn keine Downloads existieren
+        return packHasEntries(packName);
     });
 
-    renderVersionTabs(firstPack);
+    // 2. Tabs für gefilterte Packs erzeugen
+    filteredPacks.forEach((packName, i) => {
+        const tabEl = document.createElement("div");
+        tabEl.className = "tab";
+        tabEl.textContent = packName;
+
+        if (i === 0) tabEl.classList.add("active");
+
+        tabEl.addEventListener("click", () => {
+            tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+            tabEl.classList.add("active");
+            renderVersionTabs(packName);
+        });
+
+        tabsContainer.appendChild(tabEl);
+    });
+
+    // 3. Schriftlich: ERSTER SICHTBARER Pack aus der gefilterten Liste
+    const firstPack = filteredPacks[0];
+
+    // 4. Wenn es einen gibt, Versionen rendern
+    if (firstPack) {
+        renderVersionTabs(firstPack);
+    } else {
+        // Wenn gar kein Pack sichtbar ist (unlikely), UI leeren
+        versionContainer.innerHTML = "";
+        contentContainer.innerHTML = "";
+    }
 }
 
     // -------------------------
