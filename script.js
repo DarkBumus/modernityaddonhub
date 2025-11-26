@@ -261,15 +261,7 @@ card.addEventListener("mouseenter", () => {
         previewInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % previews.length;
             img.src = defaults.preview_path + previews[currentIndex];
-        }, 5000);
-    }
-});
-
-// Interval stoppen, wenn Maus das Card verlässt
-card.addEventListener("mouseleave", () => {
-    if (previewInterval) {
-        clearInterval(previewInterval);
-        previewInterval = null;
+        }, 3000);
     }
 });
 
