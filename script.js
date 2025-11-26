@@ -219,16 +219,11 @@ card.addEventListener("mouseenter", () => {
     // Titel (zentriert)
     const titleEl = document.createElement("h3");
     titleEl.textContent = entry.name;
-    titleEl.style.textAlign = "center";
     previewContainer.appendChild(titleEl);
 
     // Beschreibung (linksbündig)
     const descEl = document.createElement("p");
     descEl.textContent = entry.description;
-    descEl.style.textAlign = "left";
-    descEl.style.marginTop = "10px";
-    descEl.style.flex = "initial"; 
-    descEl.style.overflowY = "visible";
     previewContainer.appendChild(descEl);
 
 // Tags unten (aus tags.json)
