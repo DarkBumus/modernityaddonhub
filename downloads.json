@@ -10,7 +10,8 @@
           "name": "Modernity Addon 1.7.10",
           "description": "Download this first and place your downloaded Addons inside of it.",
           "icon": "modernity/pack1.png",
-          "file": "modernity/1.7/templates/Modernity_Addon_1.7.10.zip"
+          "file": "modernity/1.7/templates/Modernity_Addon_1.7.10.zip",
+          "tags": ["Template"]
         }
       ],
       "Connected Textures": [
@@ -18,25 +19,29 @@
           "name": "Connected Glass",
           "description": "Connects the regular Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "modernity/connected_glass.png",
-          "file": "modernity/1.7/connected_textures/Connected_Glass.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Glass.zip",
+          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
         },
         {
           "name": "Connected Stained Glass",
           "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "modernity/connected_stained_glass.png",
-          "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip",
+          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
         },
         {
           "name": "Connected Tinted Glass",
           "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
           "icon": "modernity/connected_tinted_glass.png",
-          "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip",
+          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
         },
         {
           "name": "Connected Sugarcane",
           "description": "Connects the Sugarcane blocks so that they appear as as frazzled at the top, regardless of their height.",
           "icon": "modernity/connected_sugarcane.png",
-          "file": "modernity/1.7/connected_textures/Connected_Sugarcane.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Sugarcane.zip",
+          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Vertical Connection"]
         }
       ]
     }
