@@ -10,13 +10,13 @@
           "name": "Connected Glass",
           "description": "Connects the regular Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "connected_glass.png",
-          "file": "Connected_Glass.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Glass.zip"
         },
         {
           "name": "Connected Stained Glass",
           "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "connected_stained_glass.png",
-          "file": "Connected_Stained_Glass.zip"
+          "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip"
         }
       ]
     }
