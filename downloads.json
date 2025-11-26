@@ -23,7 +23,7 @@
           "icon": "modernity/connected_glass.png",
           "preview":["modernity/preview_connected_glass1.png", "modernity/preview_connected_glass2.png", "modernity/preview_connected_glass3.png", "modernity/preview_connected_glass4.png"],
           "file": "modernity/1.7/connected_textures/Connected_Glass.zip",
-          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },
         {
           "name": "Connected Stained Glass",
@@ -31,7 +31,7 @@
           "icon": "modernity/connected_stained_glass.png",
           "preview":["modernity/preview_connected_stained_glass1.png", "modernity/preview_connected_stained_glass2.png", "modernity/preview_connected_stained_glass3.png", "modernity/preview_connected_stained_glass4.png"],
           "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip",
-          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },
         {
           "name": "Connected Tinted Glass",
@@ -39,7 +39,7 @@
           "icon": "modernity/connected_tinted_glass.png",
           "preview":["modernity/preview_connected_tinted_glass1.png", "modernity/preview_connected_tinted_glass2.png", "modernity/preview_connected_tinted_glass3.png", "modernity/preview_connected_tinted_glass4.png"],
           "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip",
-          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },
         {
           "name": "Connected Sugarcane",
@@ -47,7 +47,7 @@
           "icon": "modernity/connected_sugarcane.png",
           "preview":["modernity/preview_connected_sugarcane1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Sugarcane.zip",
-          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Vertical Connection"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "verticalconnection"]
         },
         {
           "name": "Connected Bookshelves",
@@ -55,7 +55,7 @@
           "icon": "modernity/connected_bookshelves.png",
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Bookshelves.zip",
-          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Horizontal Connection"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "horizontalconnection"]
         }
       ]
     }
