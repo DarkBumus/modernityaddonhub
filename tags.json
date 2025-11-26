@@ -1,0 +1,26 @@
+{
+    "optifine": {
+        "emoji": "🔧",
+        "label": "OptiFine",
+        "description": "Dieses Pack benötigt OptiFine für bestimmte grafische Funktionen.",
+        "link": "https://optifine.net/downloads"
+    },
+    "32x": {
+        "emoji": "🖼️",
+        "label": "32×",
+        "description": "Das Pack verwendet Texturen in 32×32 Auflösung.",
+        "link": null
+    },
+    "pbr": {
+        "emoji": "✨",
+        "label": "PBR",
+        "description": "Unterstützt Physically Based Rendering für realistische Materialien.",
+        "link": null
+    },
+    "animated": {
+        "emoji": "🎞️",
+        "label": "Animiert",
+        "description": "Dieses Pack enthält Animationen oder bewegte Texturen.",
+        "link": null
+    }
+}
