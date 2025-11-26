@@ -208,34 +208,44 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(title);
             card.appendChild(dlBtn);
 
-            // Vorschau-Hover
-            card.addEventListener("mouseenter", () => {
-                previewContainer.innerHTML = "";
+// Vorschau-Hover
+card.addEventListener("mouseenter", () => {
+    previewContainer.innerHTML = "";
 
-                const img = document.createElement("img");
-                img.src = defaults.icon_path + entry.icon;
-                previewContainer.appendChild(img);
+    // Icon
+    const img = document.createElement("img");
+    img.src = defaults.icon_path + entry.icon;
+    previewContainer.appendChild(img);
 
-                const title = document.createElement("h3");
-                title.textContent = entry.name;
-                previewContainer.appendChild(title);
+    // Titel (zentriert)
+    const titleEl = document.createElement("h3");
+    titleEl.textContent = entry.name;
+    titleEl.style.textAlign = "center";
+    previewContainer.appendChild(titleEl);
 
-                const desc = document.createElement("p");
-                desc.textContent = entry.description;
-                previewContainer.appendChild(desc);
+    // Beschreibung (linksbündig)
+    const descEl = document.createElement("p");
+    descEl.textContent = entry.description;
+    descEl.style.textAlign = "left";
+    descEl.style.marginTop = "10px";
+    descEl.style.flex = "1"; // nimmt den restlichen Platz ein
+    descEl.style.overflowY = "auto";
+    previewContainer.appendChild(descEl);
 
-                if (entry.tags && entry.tags.length > 0) {
-                    const tagDiv = document.createElement("div");
-                    tagDiv.className = "pack-tags";
-                    entry.tags.filter(t => validTags[t]).forEach(tag => {
-                        const tagEl = document.createElement("span");
-                        tagEl.className = "pack-tag";
-                        tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
-                        tagDiv.appendChild(tagEl);
-                    });
-                    previewContainer.appendChild(tagDiv);
-                }
-            });
+    // Tags unten im Vorschaufenster
+    if (entry.tags && entry.tags.length > 0) {
+        const tagDiv = document.createElement("div");
+        tagDiv.className = "pack-tags";
+        tagDiv.style.marginTop = "auto"; // nach unten schieben
+        entry.tags.filter(t => validTags[t]).forEach(tag => {
+            const tagEl = document.createElement("span");
+            tagEl.className = "pack-tag";
+            tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
+            tagDiv.appendChild(tagEl);
+        });
+        previewContainer.appendChild(tagDiv);
+    }
+});
 
             panelElement.appendChild(card);
         });
