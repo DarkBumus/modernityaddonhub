@@ -102,7 +102,7 @@ header {
     align-items: center;
     gap: 15px;
 }
-.pack-icon { width: 48px; height: 48px; border-radius: 6px; }
+.pack-icon { width: 48px; height: 48px; border-radius: 0; }
 .pack-card h3 { margin: 0; font-size: 18px; }
 
 /* Download Button */
@@ -144,10 +144,12 @@ header {
     margin: 5px 0 10px 0;
 }
 
-#preview p {
-    text-align: left;
-    margin: 0 0 10px 0;
-    overflow-y: auto; /* scrollt nur, falls Text sehr lang ist */
+#preview .placeholder {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    opacity: 0.6;
 }
 
 /* Tags unten */
@@ -179,7 +181,7 @@ footer {
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 06:43 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 06:53 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -192,7 +194,7 @@ footer {
 <div id="main-container">
     <div id="content"></div>
     <div id="preview">
-        <p>Hover over a pack to preview</p>
+        <p class="placeholder">Hover over an Addon to preview</p>
     </div>
 </div>
 
