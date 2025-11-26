@@ -267,7 +267,7 @@ card.addEventListener("mouseenter", () => {
             setTimeout(() => {
                 img.src = defaults.preview_path + previews[currentIndex];
                 img.style.opacity = 1;
-            }, 300); // sollte zur CSS-Transition passen
+            }, 500); // sollte zur CSS-Transition passen
         }, 3000); // alle 5 Sekunden
     }
 });
