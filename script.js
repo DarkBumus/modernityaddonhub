@@ -76,24 +76,21 @@ function renderVersionTabs(packName) {
     const pack = data.packs[packName];
     const versions = data.defaults.versions;
 
-versions
-    .filter(versionName => {
+    // Filtere die Versions-Tabs basierend auf sichtbar/unsichtbar oder Auto-Hide
+    const visibleVersions = versions.filter(versionName => {
         const override = pack.versions?.[versionName];
 
-        // explizit versteckt?
-        if (override?.visible === false) return false;
+        if (override?.visible === false) return false; // explizit versteckt
+        if (override?.visible === true) return true;   // explizit sichtbar
+        return versionHasEntries(packName, versionName); // Auto-Hide
+    });
 
-        // explizit sichtbar?
-        if (override?.visible === true) return true;
-
-        // Sonst auto-hide anhand der Downloads:
-        return versionHasEntries(packName, versionName);
-    })
-    .forEach((versionName, i) => {
+    // Erzeuge die Tabs
+    visibleVersions.forEach((versionName, i) => {
         const vTab = document.createElement("div");
         vTab.className = "tab";
 
-        // Emoji aus defaults
+        // Emoji aus defaults.version_emojis
         const emoji = data.defaults.version_emojis?.[versionName] || "";
         vTab.textContent = (emoji ? emoji + " " : "") + versionName;
 
@@ -108,15 +105,15 @@ versions
         versionContainer.appendChild(vTab);
     });
 
-    const firstVersion = versions.find(v => {
-        const override = pack.versions?.[v];
-        if (override?.visible === false) return false;
-        if (override?.visible === true) return true;
-        return versionHasEntries(packName, v);
-    });
-
-    renderPanels(packName, firstVersion);
+    // Erstes sichtbares Version-Tab rendern
+    const firstVersion = visibleVersions[0];
+    if (firstVersion) {
+        renderPanels(packName, firstVersion);
+    } else {
+        contentContainer.innerHTML = ""; // Keine Version sichtbar
+    }
 }
+
     // -------------------------
     // PANELS (Collapsibles)
     // -------------------------
