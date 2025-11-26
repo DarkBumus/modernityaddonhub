@@ -24,9 +24,13 @@ header {
     text-align: center;
 }
 
-header img {
-    width: 40px;
+#top-left-icon {
+    position: absolute;   /* fixiert an einer bestimmten Stelle auf der Seite */
+    top: 20px;            /* Abstand vom oberen Rand (gleich Header-Padding) */
+    left: 20px;           /* Abstand vom linken Rand */
+    width: 40px;          /* gewünschte Größe */
     height: 40px;
+    z-index: 1000;        /* sicherstellen, dass es über anderen Elementen liegt */
 }
 
 /* Haupt-Tabs */
@@ -204,8 +208,8 @@ footer {
 <body>
 
 <header>
-    <img src="assets/icons/pack8.png" alt="Logo">
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 15:49 🚧</h1>
+    <img src="assets/icons/pack8.png" alt="Logo" id="top-left-icon">
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 15:53 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
