@@ -121,7 +121,6 @@ header {
 #preview {
     flex: 1.2;
     min-width: 380px;
-    height: 450px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -131,18 +130,32 @@ header {
     top: 20px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* height entfernt, damit es dynamisch wächst */
 }
-#preview img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
-#preview h3 { text-align: center; margin: 5px 0 10px 0; }
-#preview p { text-align: left; margin: 0 0 10px 0; flex: 1; overflow-y: auto; }
+
+#preview img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#preview h3 {
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+#preview p {
+    text-align: left;
+    margin: 0 0 10px 0;
+    overflow-y: auto; /* scrollt nur, falls Text sehr lang ist */
+}
 
 /* Tags unten */
 #preview .pack-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
-    margin-top: auto;
+    margin-top: auto; /* nach unten schieben */
 }
 #preview .pack-tag {
     background-color: #eee;
@@ -166,7 +179,7 @@ footer {
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:48 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:51 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
