@@ -66,7 +66,7 @@ function renderMainTabs() {
 }
 
     // -------------------------
-    // VERSIONEN
+    // VERSIONS
     // -------------------------
 
 function renderVersionTabs(packName) {
@@ -118,39 +118,44 @@ function renderVersionTabs(packName) {
     // PANELS (Collapsibles)
     // -------------------------
 
-    function renderPanels(packName, versionName) {
-        contentContainer.innerHTML = "";
+function renderPanels(packName, versionName) {
+    contentContainer.innerHTML = "";
 
-        const pack = data.packs[packName];
-        const versionOverride = pack.versions?.[versionName] || {};
+    const pack = data.packs[packName];
+    const versionOverride = pack.versions?.[versionName] || {};
 
-        data.defaults.category_panels.forEach(panelName => {
-            const panelVisible =
-                versionOverride.panels?.[panelName] !== undefined
-                    ? versionOverride.panels[panelName]
-                    : panelHasEntries(packName, versionName, panelName);
+    data.defaults.category_panels.forEach(panelName => {
+        const panelVisible =
+            versionOverride.panels?.[panelName] !== undefined
+                ? versionOverride.panels[panelName]
+                : panelHasEntries(packName, versionName, panelName);
 
-            if (!panelVisible) return;
+        if (!panelVisible) return;
 
-            const coll = document.createElement("button");
-            coll.className = "collapsible";
-            coll.textContent = panelName;
+        const coll = document.createElement("button");
+        coll.className = "collapsible";
+        coll.textContent = panelName;
 
-            const panel = document.createElement("div");
-            panel.className = "content-panel";
+        const panel = document.createElement("div");
+        panel.className = "content-panel";
 
-            // *** HIER fügen wir die Packs ein ***
-            insertDownloadEntries(panel, packName, versionName, panelName);
+        insertDownloadEntries(panel, packName, versionName, panelName);
 
-            coll.addEventListener("click", () => {
-                coll.classList.toggle("active");
-                panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
-            });
-
-            contentContainer.appendChild(coll);
-            contentContainer.appendChild(panel);
+        coll.addEventListener("click", () => {
+            coll.classList.toggle("active");
+            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
         });
-    }
+
+        // Auto-open aus defaults.auto_open_panels
+        if (data.defaults.auto_open_panels?.includes(panelName)) {
+            coll.classList.add("active");
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+
+        contentContainer.appendChild(coll);
+        contentContainer.appendChild(panel);
+    });
+}
 
     function packHasEntries(packName) {
     const pack = downloadData[packName];
@@ -174,7 +179,7 @@ function panelHasEntries(packName, versionName, panelName) {
 }
 
     // -------------------------
-    // PACK DOWNLOAD-EINTRÄGE
+    // PACK DOWNLOAD-ENTRIES
     // -------------------------
 
     function insertDownloadEntries(panelElement, packName, versionName, panelName) {
