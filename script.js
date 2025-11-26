@@ -184,46 +184,74 @@ function panelHasEntries(packName, versionName, panelName) {
     // PACK DOWNLOAD-ENTRIES
     // -------------------------
 
-    function insertDownloadEntries(panelElement, packName, versionName, panelName) {
+function insertDownloadEntries(panelElement, packName, versionName, panelName) {
+    const defaults = downloadData.defaults;
 
-        const defaults = downloadData.defaults;
+    // Valid Tags und ihre Emojis
+    const validTags = {
+        "OptiFine": "✨",
+        "Fabric": "🧵",
+        "Forge": "⚒️",
+        "Shaders": "💡",
+        "Performance": "⚡",
+        "Utility": "🛠️"
+        // Hier weitere Tags hinzufügen
+    };
 
-        const packGroup = downloadData[packName];
-        if (!packGroup) return;
+    const packGroup = downloadData[packName];
+    if (!packGroup) return;
 
-        const versionGroup = packGroup[versionName];
-        if (!versionGroup) return;
+    const versionGroup = packGroup[versionName];
+    if (!versionGroup) return;
 
-        const entries = versionGroup[panelName];
-        if (!entries || entries.length === 0) return;
+    const entries = versionGroup[panelName];
+    if (!entries || entries.length === 0) return;
 
-        entries.forEach(entry => {
+    entries.forEach(entry => {
+        const card = document.createElement("div");
+        card.className = "pack-card";
 
-            const card = document.createElement("div");
-            card.className = "pack-card";
+        const icon = document.createElement("img");
+        icon.className = "pack-icon";
+        icon.src = defaults.icon_path + entry.icon;
 
-            const icon = document.createElement("img");
-            icon.className = "pack-icon";
-            icon.src = defaults.icon_path + entry.icon;
+        const title = document.createElement("h3");
+        title.textContent = entry.name;
 
-            const title = document.createElement("h3");
-            title.textContent = entry.name;
+        const desc = document.createElement("p");
+        desc.textContent = entry.description;
 
-            const desc = document.createElement("p");
-            desc.textContent = entry.description;
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "download-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.href = defaults.download_path + entry.file;
+        dlBtn.download = entry.file.split("/").pop();
 
-            const dlBtn = document.createElement("a");
-            dlBtn.className = "download-btn";
-            dlBtn.textContent = "Download";
-            dlBtn.href = defaults.download_path + entry.file;
-            dlBtn.download = entry.file.split("/").pop();
+        card.appendChild(icon);
+        card.appendChild(title);
+        card.appendChild(desc);
+        card.appendChild(dlBtn);
 
-            card.appendChild(icon);
-            card.appendChild(title);
-            card.appendChild(desc);
-            card.appendChild(dlBtn);
+        // -------------------------
+        // Tags einfügen
+        // -------------------------
+        if (entry.tags && entry.tags.length > 0) {
+            const tagContainer = document.createElement("div");
+            tagContainer.className = "tag-container";
 
-            panelElement.appendChild(card);
-        });
-    }
+            entry.tags
+                .filter(tag => validTags.hasOwnProperty(tag))
+                .forEach(tag => {
+                    const tagEl = document.createElement("span");
+                    tagEl.className = "tag-pill";
+                    tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
+                    tagContainer.appendChild(tagEl);
+                });
+
+            card.appendChild(tagContainer);
+        }
+
+        panelElement.appendChild(card);
+    });
+}
 });
