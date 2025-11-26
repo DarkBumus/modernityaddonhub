@@ -227,8 +227,8 @@ card.addEventListener("mouseenter", () => {
     descEl.textContent = entry.description;
     descEl.style.textAlign = "left";
     descEl.style.marginTop = "10px";
-    descEl.style.flex = "1"; 
-    descEl.style.overflowY = "auto";
+    descEl.style.flex = "initial"; 
+    descEl.style.overflowY = "visible";
     previewContainer.appendChild(descEl);
 
 // Tags unten (aus tags.json)
