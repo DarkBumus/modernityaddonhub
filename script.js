@@ -227,36 +227,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // Vorschau-Hover
-            card.addEventListener("mouseenter", () => {
-                previewContainer.innerHTML = "";
+card.addEventListener("mouseenter", () => {
+    previewContainer.innerHTML = "";
 
-                const img = document.createElement("img");
-                img.src = defaults.icon_path + entry.icon;
-                img.style.width = "100%";
-                img.style.borderRadius = "8px";
-                previewContainer.appendChild(img);
+    const img = document.createElement("img");
+    img.src = defaults.icon_path + entry.icon;
+    previewContainer.appendChild(img);
 
-                const title = document.createElement("h3");
-                title.textContent = entry.name;
-                title.style.marginTop = "10px";
-                previewContainer.appendChild(title);
+    const title = document.createElement("h3");
+    title.textContent = entry.name;
+    previewContainer.appendChild(title);
 
-                const desc = document.createElement("p");
-                desc.textContent = entry.description;
-                previewContainer.appendChild(desc);
+    const desc = document.createElement("p");
+    desc.textContent = entry.description;
+    previewContainer.appendChild(desc);
 
-                if (entry.tags && entry.tags.length > 0) {
-                    const tagDiv = document.createElement("div");
-                    tagDiv.className = "pack-tags";
-                    entry.tags.filter(t => validTags[t]).forEach(tag => {
-                        const tagEl = document.createElement("span");
-                        tagEl.className = "pack-tag";
-                        tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
-                        tagDiv.appendChild(tagEl);
-                    });
-                    previewContainer.appendChild(tagDiv);
-                }
-            });
+    if (entry.tags && entry.tags.length > 0) {
+        const tagDiv = document.createElement("div");
+        tagDiv.className = "pack-tags";
+        entry.tags.filter(t => validTags[t]).forEach(tag => {
+            const tagEl = document.createElement("span");
+            tagEl.className = "pack-tag";
+            tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
+            tagDiv.appendChild(tagEl);
+        });
+        previewContainer.appendChild(tagDiv); // am Ende anhängen
+    }
+});
 
             panelElement.appendChild(card);
         });
