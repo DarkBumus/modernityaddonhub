@@ -13,7 +13,7 @@
           "icon": "modernity/pack1.png",
           "preview":["modernity/preview_template1.png"],
           "file": "modernity/1.7/templates/Modernity_Addon_1.7.10.zip",
-          "tags": ["Template"]
+          "tags": ["template"]
         }
       ],
       "Connected Textures": [
