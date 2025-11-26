@@ -52,8 +52,8 @@
         {
           "name": "Connected Bookshelves",
           "description": "Connects the Bookshelves so that they appear as one long shelf.",
-          "icon": "modernity/connected_bookshelf.png",
-          "preview":["modernity/preview_connected_bookshelf1.png"],
+          "icon": "modernity/connected_bookshelves.png",
+          "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Bookshelves.zip",
           "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Horizontal Connection"]
         }
