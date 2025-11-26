@@ -289,12 +289,6 @@ footer {
     margin-bottom: 20px;
 }
 
-#content ul,
-#content ol {
-    text-align: left;
-    margin: 0 auto 20px auto;
-}
-
 #content p {
     font-size: 1.1em;
     line-height: 1.6;
