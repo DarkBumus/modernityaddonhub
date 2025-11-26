@@ -25,18 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderMainTabs() {
     tabsContainer.innerHTML = "";
 
-    // 1. Alle Pack-Namen filtern (AUTO-HIDE + visible-Flags berücksichtigen)
+    // 1. Alle Packs filtern: nur visible:false erzwingt Verstecken
     const filteredPacks = Object.keys(data.packs).filter(packName => {
-
         const pack = data.packs[packName];
 
-        // Wenn visible explizit false ist → immer verstecken
+        // Wenn visible explizit false → immer verstecken
         if (pack.visible === false) return false;
 
-        // Wenn visible true ist → immer anzeigen
-        if (pack.visible === true) return true;
-
-        // Sonst: Auto-hide, wenn keine Downloads existieren
+        // Alle anderen Fälle (true oder nicht vorhanden)
+        // verwenden Auto-Hide: nur anzeigen, wenn Downloads existieren
         return packHasEntries(packName);
     });
 
@@ -57,14 +54,12 @@ function renderMainTabs() {
         tabsContainer.appendChild(tabEl);
     });
 
-    // 3. Schriftlich: ERSTER SICHTBARER Pack aus der gefilterten Liste
+    // 3. Erstes sichtbares Pack aus der gefilterten Liste
     const firstPack = filteredPacks[0];
 
-    // 4. Wenn es einen gibt, Versionen rendern
     if (firstPack) {
         renderVersionTabs(firstPack);
     } else {
-        // Wenn gar kein Pack sichtbar ist (unlikely), UI leeren
         versionContainer.innerHTML = "";
         contentContainer.innerHTML = "";
     }
