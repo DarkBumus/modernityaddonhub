@@ -25,19 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderMainTabs() {
     tabsContainer.innerHTML = "";
 
-    // 1. Alle Packs filtern: nur visible:false erzwingt Verstecken
     const filteredPacks = Object.keys(data.packs).filter(packName => {
         const pack = data.packs[packName];
 
-        // Wenn visible explizit false → immer verstecken
+        // Explizit unsichtbar → verstecken
         if (pack.visible === false) return false;
 
-        // Alle anderen Fälle (true oder nicht vorhanden)
-        // verwenden Auto-Hide: nur anzeigen, wenn Downloads existieren
+        // Explizit sichtbar → immer anzeigen
+        if (pack.visible === true) return true;
+
+        // Kein Flag → Auto-Hide nach Downloads
         return packHasEntries(packName);
     });
 
-    // 2. Tabs für gefilterte Packs erzeugen
+    // Tabs erzeugen
     filteredPacks.forEach((packName, i) => {
         const tabEl = document.createElement("div");
         tabEl.className = "tab";
@@ -54,9 +55,8 @@ function renderMainTabs() {
         tabsContainer.appendChild(tabEl);
     });
 
-    // 3. Erstes sichtbares Pack aus der gefilterten Liste
+    // Erstes sichtbares Pack rendern
     const firstPack = filteredPacks[0];
-
     if (firstPack) {
         renderVersionTabs(firstPack);
     } else {
