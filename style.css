@@ -219,12 +219,12 @@ header {
 
 #preview h3 {
     text-align: center;
-    margin: 5px 0 10px 0;
+    margin: 10px 0;
 }
 
 #preview p {
     text-align: left;
-    margin: 0 0 10px 0;
+    margin: 10px 0;
 }
 
 #preview .placeholder {
