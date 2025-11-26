@@ -17,6 +17,12 @@
           "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "connected_stained_glass.png",
           "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip"
+        },
+        {
+          "name": "Connected Tinted Glass",
+          "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
+          "icon": "connected_tinted_glass.png",
+          "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip"
         }
       ]
     }
