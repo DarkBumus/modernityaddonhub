@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(([tabsJson, downloadsJson]) => {
         data = tabsJson;
         downloadData = downloadsJson;
+        tagData = tagsJson;
         renderMainTabs();
     })
     .catch(err => console.error("Fehler beim Laden der JSON:", err));
