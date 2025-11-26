@@ -256,13 +256,22 @@ card.addEventListener("mouseenter", () => {
         previewContainer.appendChild(tagDiv);
     }
 
-    // Wenn mehrere Vorschaubilder, alle 5 Sekunden wechseln
-    if (previews.length > 1) {
-        previewInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % previews.length;
+   // Vorschaubilder
+    const previews = entry.preview && entry.preview.length > 0
+        ? entry.preview
+        : [entry.icon];
+
+    let currentIndex = 0;
+    img.src = defaults.preview_path + previews[currentIndex];
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % previews.length;
+        img.style.opacity = 0;
+        setTimeout(() => {
             img.src = defaults.preview_path + previews[currentIndex];
-        }, 3000);
-    }
+            img.style.opacity = 1;
+        }, 300); // 0.5s passend zur CSS-Transition
+    }, 3000); // alle 5 Sekunden
 });
 
             panelElement.appendChild(card);
