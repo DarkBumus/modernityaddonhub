@@ -3,15 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const versionContainer = document.getElementById("subtabs");
     const contentContainer = document.getElementById("content");
 
-    let data = {};
+    let data = {};          // Für tab_containers.json
+    let downloadData = {};  // Für downloads.json
 
-    fetch("tab_containers.json") // Name deiner JSON-Datei
-        .then(r => r.json())
-        .then(json => {
-            data = json;
+    // Beide JSONs laden
+    Promise.all([
+        fetch("tab_containers.json").then(r => r.json()),
+        fetch("downloads.json").then(r => r.json())
+    ])
+        .then(([tabsJson, downloadsJson]) => {
+            data = tabsJson;
+            downloadData = downloadsJson;
             renderMainTabs();
         })
         .catch(err => console.error("Fehler beim Laden der JSON:", err));
+
+    // -------------------------
+    // TABS
+    // -------------------------
 
     function renderMainTabs() {
         tabsContainer.innerHTML = "";
@@ -34,10 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 tabsContainer.appendChild(tabEl);
             });
 
-        // Ersten Haupttab laden
         const firstPack = Object.keys(data.packs).find(k => data.packs[k].visible);
         renderVersionTabs(firstPack);
     }
+
+    // -------------------------
+    // VERSIONEN
+    // -------------------------
 
     function renderVersionTabs(packName) {
         versionContainer.innerHTML = "";
@@ -47,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const versions = data.defaults.versions;
 
         versions.forEach((versionName, i) => {
-            // Override prüfen
             const versionOverride = pack.versions?.[versionName] || {};
             const versionVisible = versionOverride.visible !== undefined ? versionOverride.visible : true;
             if (!versionVisible) return;
@@ -55,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const vTab = document.createElement("div");
             vTab.className = "tab";
             vTab.textContent = versionName;
+
             if (i === 0) vTab.classList.add("active");
 
             vTab.addEventListener("click", () => {
@@ -66,13 +78,17 @@ document.addEventListener("DOMContentLoaded", () => {
             versionContainer.appendChild(vTab);
         });
 
-        // Ersten Versionstab laden
         const firstVersion = versions.find(v => {
             const vo = pack.versions?.[v] || {};
             return vo.visible !== false;
         });
+
         renderPanels(packName, firstVersion);
     }
+
+    // -------------------------
+    // PANELS (Collapsibles)
+    // -------------------------
 
     function renderPanels(packName, versionName) {
         contentContainer.innerHTML = "";
@@ -81,7 +97,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const versionOverride = pack.versions?.[versionName] || {};
 
         data.defaults.category_panels.forEach(panelName => {
-            const panelVisible = versionOverride.panels?.[panelName] !== undefined ? versionOverride.panels[panelName] : true;
+            const panelVisible =
+                versionOverride.panels?.[panelName] !== undefined
+                    ? versionOverride.panels[panelName]
+                    : true;
+
             if (!panelVisible) return;
 
             const coll = document.createElement("button");
@@ -91,6 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const panel = document.createElement("div");
             panel.className = "content-panel";
 
+            // *** HIER fügen wir die Packs ein ***
+            insertDownloadEntries(panel, packName, versionName, panelName);
+
             coll.addEventListener("click", () => {
                 coll.classList.toggle("active");
                 panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
@@ -98,6 +121,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
             contentContainer.appendChild(coll);
             contentContainer.appendChild(panel);
+        });
+    }
+
+    // -------------------------
+    // PACK DOWNLOAD-EINTRÄGE
+    // -------------------------
+
+    function insertDownloadEntries(panelElement, packName, versionName, panelName) {
+
+        const defaults = downloadData.defaults;
+
+        const packGroup = downloadData[packName];
+        if (!packGroup) return;
+
+        const versionGroup = packGroup[versionName];
+        if (!versionGroup) return;
+
+        const entries = versionGroup[panelName];
+        if (!entries || entries.length === 0) return;
+
+        entries.forEach(entry => {
+
+            const card = document.createElement("div");
+            card.className = "pack-card";
+
+            const icon = document.createElement("img");
+            icon.className = "pack-icon";
+            icon.src = defaults.iconPath + entry.icon;
+
+            const title = document.createElement("h3");
+            title.textContent = entry.name;
+
+            const desc = document.createElement("p");
+            desc.textContent = entry.description;
+
+            const dlBtn = document.createElement("a");
+            dlBtn.className = "download-btn";
+            dlBtn.textContent = "Download";
+            dlBtn.href = defaults.downloadPath + entry.file;
+            dlBtn.download = entry.file.split("/").pop();
+
+            card.appendChild(icon);
+            card.appendChild(title);
+            card.appendChild(desc);
+            card.appendChild(dlBtn);
+
+            panelElement.appendChild(card);
         });
     }
 });
