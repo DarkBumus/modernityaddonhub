@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(dlBtn);
 
 // Vorschau-Hover
-let previewInterval; // global oder im Scope deiner Funktion
+let previewInterval; // global, stoppt vorherige Intervalle
 
 card.addEventListener("mouseenter", () => {
     // vorherigen Interval stoppen
@@ -220,11 +220,14 @@ card.addEventListener("mouseenter", () => {
 
     previewContainer.innerHTML = "";
 
+    // Vorschaubilder oder Fallback auf Icon
     const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
     let currentIndex = 0;
 
     const img = document.createElement("img");
     img.src = defaults.preview_path + previews[currentIndex];
+    img.style.opacity = 1;
+    img.style.transition = "opacity 0.5s ease-in-out";
     previewContainer.appendChild(img);
 
     // Titel (zentriert)
@@ -238,7 +241,7 @@ card.addEventListener("mouseenter", () => {
     descEl.textContent = entry.description;
     descEl.style.textAlign = "left";
     descEl.style.marginTop = "10px";
-    descEl.style.flex = "1"; // nimmt den restlichen Platz ein
+    descEl.style.flex = "1"; 
     descEl.style.overflowY = "auto";
     previewContainer.appendChild(descEl);
 
@@ -246,7 +249,7 @@ card.addEventListener("mouseenter", () => {
     if (entry.tags && entry.tags.length > 0) {
         const tagDiv = document.createElement("div");
         tagDiv.className = "pack-tags";
-        tagDiv.style.marginTop = "auto"; // nach unten schieben
+        tagDiv.style.marginTop = "auto";
         entry.tags.filter(t => validTags[t]).forEach(tag => {
             const tagEl = document.createElement("span");
             tagEl.className = "pack-tag";
@@ -256,22 +259,17 @@ card.addEventListener("mouseenter", () => {
         previewContainer.appendChild(tagDiv);
     }
 
-   // Vorschaubilder
-    const previews = entry.preview && entry.preview.length > 0
-        ? entry.preview
-        : [entry.icon];
-
-    let currentIndex = 0;
-    img.src = defaults.preview_path + previews[currentIndex];
-
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % previews.length;
-        img.style.opacity = 0;
-        setTimeout(() => {
-            img.src = defaults.preview_path + previews[currentIndex];
-            img.style.opacity = 1;
-        }, 300); // 0.5s passend zur CSS-Transition
-    }, 3000); // alle 5 Sekunden
+    // Intervall für mehrere Vorschaubilder
+    if (previews.length > 1) {
+        previewInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % previews.length;
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = defaults.preview_path + previews[currentIndex];
+                img.style.opacity = 1;
+            }, 300); // sollte zur CSS-Transition passen
+        }, 3000); // alle 5 Sekunden
+    }
 });
 
             panelElement.appendChild(card);
