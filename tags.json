@@ -11,11 +11,17 @@
         "description": "This Addon requires FalsePattern's and Venn's Right Proper MCPatcher, a new and improved implementation of the MCPatcher functionality from OptiFine for Minecraft 1.7.10.",
         "link": "https://github.com/vfx-dev/Right-Proper-MCPatcher"
     },
-    "optifinecompatible": {
+    "optifine": {
         "emoji": "🔎",
+        "label": "Requires OptiFine",
+        "description": "This Addon Requires OptiFine.",
+        "link": "https://optifine.net/downloads"
+    },
+    "optifinecompatible": {
+        "emoji": "🤝",
         "label": "OptiFine-compatible",
         "description": "This Addon is compatible with OptiFine. Note that some Addons make use of functionality that is not available in OptiFine, but it instead provided for by other, similar mods. Modernity Addon Hub generally discourages the use of OptiFine, if better solutions are available, though if you do decide to make use of it, be sure that you download the right version.",
-        "link": "https://optifine.net/downloads"
+        "link": null
     },
     "optifineincompatible": {
         "emoji": "⚠️",
