@@ -126,6 +126,7 @@ header {
     max-width: 1200px;
     margin: 20px auto;
     gap: 20px;
+    align-items: flex-start;
 }
 
 /* Content Panel */
@@ -201,8 +202,13 @@ header {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     position: sticky;
     top: 20px;
+
     display: flex;
     flex-direction: column;
+
+    align-items: stretch;
+    height: auto;
+    max-height: none;
 }
 
 #preview img {
@@ -214,6 +220,11 @@ header {
 #preview h3 {
     text-align: center;
     margin: 5px 0 10px 0;
+}
+
+#preview p {
+    text-align: left;
+    margin: 0 0 10px 0;
 }
 
 #preview .placeholder {
