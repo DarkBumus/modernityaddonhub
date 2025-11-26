@@ -276,20 +276,20 @@ footer {
 /* ========================
    About-Seite Styles
    ======================== */
-#content {
+#about-content {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: center; /* bleibt für Überschrift mittig */
 }
 
-#content h1,
-#content h2 {
+#about-content h1,
+#about-content h2 {
     font-size: 2.7em;
     margin-bottom: 20px;
 }
 
-#content p {
+#about-content p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 0;      /* kein Abstand zwischen Absätzen */
