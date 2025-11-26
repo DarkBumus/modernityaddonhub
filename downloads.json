@@ -1,7 +1,7 @@
 {
   "defaults": {
-    "iconPath": "assets/icons/",
-    "downloadPath": "downloads/"
+    "icon_path": "assets/icons/",
+    "download_path": "downloads/"
   },
   "Modernity": {
     "1.7": {
