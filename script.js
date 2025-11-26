@@ -260,39 +260,16 @@ card.addEventListener("mouseenter", () => {
     }
 
     // Intervall für mehrere Vorschaubilder
-if (previews.length > 1) {
-    let imgCurrent = img; // das erste Bild
-
-    previewInterval = setInterval(() => {
-        const nextIndex = (currentIndex + 1) % previews.length;
-
-        const imgNext = document.createElement("img");
-        imgNext.src = defaults.preview_path + previews[nextIndex];
-        imgNext.style.position = "absolute";
-        imgNext.style.top = 0;
-        imgNext.style.left = 0;
-        imgNext.style.width = "100%";
-        imgNext.style.height = "auto";
-        imgNext.style.opacity = 0;
-        imgNext.style.transition = "opacity 0.5s ease-in-out";
-
-        previewContainer.appendChild(imgNext);
-
-        // Crossfade starten
-        requestAnimationFrame(() => {
-            imgNext.style.opacity = 1;
-            imgCurrent.style.opacity = 0;
-        });
-
-        // altes Bild nach der Transition entfernen
-        setTimeout(() => {
-            previewContainer.removeChild(imgCurrent);
-            imgCurrent = imgNext;
-            currentIndex = nextIndex;
-        }, 500); // muss zur CSS-Transition passen
-
-    }, 3000); // alle 3 Sekunden
-}
+    if (previews.length > 1) {
+        previewInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % previews.length;
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = defaults.preview_path + previews[currentIndex];
+                img.style.opacity = 1;
+            }, 500); // sollte zur CSS-Transition passen
+        }, 5000); // alle 5 Sekunden
+    }
 });
 
             panelElement.appendChild(card);
