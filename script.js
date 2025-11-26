@@ -76,34 +76,37 @@ function renderVersionTabs(packName) {
     const pack = data.packs[packName];
     const versions = data.defaults.versions;
 
-    versions
-        .filter(versionName => {
-            const override = pack.versions?.[versionName];
+versions
+    .filter(versionName => {
+        const override = pack.versions?.[versionName];
 
-            // explizit versteckt?
-            if (override?.visible === false) return false;
+        // explizit versteckt?
+        if (override?.visible === false) return false;
 
-            // explizit sichtbar?
-            if (override?.visible === true) return true;
+        // explizit sichtbar?
+        if (override?.visible === true) return true;
 
-            // Sonst auto-hide anhand der Downloads:
-            return versionHasEntries(packName, versionName);
-        })
-        .forEach((versionName, i) => {
-            const vTab = document.createElement("div");
-            vTab.className = "tab";
-            vTab.textContent = versionName;
+        // Sonst auto-hide anhand der Downloads:
+        return versionHasEntries(packName, versionName);
+    })
+    .forEach((versionName, i) => {
+        const vTab = document.createElement("div");
+        vTab.className = "tab";
 
-            if (i === 0) vTab.classList.add("active");
+        // Emoji aus defaults
+        const emoji = data.defaults.version_emojis?.[versionName] || "";
+        vTab.textContent = (emoji ? emoji + " " : "") + versionName;
 
-            vTab.addEventListener("click", () => {
-                versionContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                vTab.classList.add("active");
-                renderPanels(packName, versionName);
-            });
+        if (i === 0) vTab.classList.add("active");
 
-            versionContainer.appendChild(vTab);
+        vTab.addEventListener("click", () => {
+            versionContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+            vTab.classList.add("active");
+            renderPanels(packName, versionName);
         });
+
+        versionContainer.appendChild(vTab);
+    });
 
     const firstVersion = versions.find(v => {
         const override = pack.versions?.[v];
