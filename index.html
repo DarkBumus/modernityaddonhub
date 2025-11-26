@@ -1,200 +1,172 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modernity Addon Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modernity Addon Hub</title>
+<link rel="icon" type="image/png" href="assets/icons/pack8.png">
 
-    <link rel="icon" type="image/png" href="assets/icons/pack8.png">
-    
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f5f5f5;
-    }
-    header {
-        background: #333;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    /* Haupt-Tabs */
-    #tabs {
-        display: flex;
-        background: #222;
-        padding: 10px;
-        justify-content: center;
-        gap: 10px;
-    }
-    .tab {
-        color: white;
-        padding: 8px 15px;
-        background: #444;
-        border-radius: 6px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    .tab:hover {
-        background: #666;
-    }
-    .tab.active {
-        background: #0088ff;
-    }
+/* Haupt-Tabs */
+#tabs {
+    display: flex;
+    background: #222;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+.tab {
+    color: white;
+    padding: 8px 15px;
+    background: #444;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tab:hover { background: #666; }
+.tab.active { background: #0088ff; }
 
-    /* Versions-Tabs */
-    #subtabs {
-        display: flex;
-        background: #333;
-        padding: 8px;
-        justify-content: center;
-        gap: 8px;
-    }
-    #subtabs .tab {
-        background: #555;
-        padding: 6px 12px;
-    }
-    #subtabs .tab.active {
-        background: #0088ff;
-    }
+/* Versions-Tabs */
+#subtabs {
+    display: flex;
+    background: #333;
+    padding: 8px;
+    justify-content: center;
+    gap: 8px;
+}
+#subtabs .tab { background: #555; padding: 6px 12px; }
+#subtabs .tab.active { background: #0088ff; }
 
-    /* Panels + Preview Wrapper */
-    #main-container {
-        display: flex;
-        max-width: 1200px;
-        margin: 20px auto;
-        gap: 20px;
-    }
+/* Panels + Vorschau Wrapper */
+#main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
 
-    /* Collapsible Panels */
-    #content {
-        flex: 1;
-        padding-left: 20px;
-    }
-    .collapsible {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 16px;
-        border-radius: 5px;
-        margin-top: 5px;
-        transition: background 0.2s;
-    }
-    .collapsible.active {
-        background-color: #ccc;
-    }
-    .content-panel {
-        padding: 0 10px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: white;
-        border-radius: 0 0 5px 5px;
-        margin-bottom: 5px;
-    }
-    .pack-card {
-        background: #fafafa;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 12px;
-        margin: 10px 0;
-        display: flex;
-        gap: 15px;
-        align-items: center;
-    }
-    .pack-icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 6px;
-    }
-    .pack-card h3 {
-        margin: 0;
-        font-size: 18px;
-    }
-    .pack-card p {
-        margin: 5px 0 0 0;
-        color: #555;
-        font-size: 14px;
-    }
+/* Collapsible Panels */
+#content {
+    flex: 2.5;
+    padding-left: 10px;
+}
 
-    /* Download-Button */
-    .download-btn {
-        margin-left: auto;
-        padding: 8px 14px;
-        background: #0088ff;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 14px;
-    }
-    .download-btn:hover {
-        background: #006cd1;
-    }
+/* Panels */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background 0.2s;
+}
+.collapsible.active { background-color: #ccc; }
 
-    /* Tags */
-    .pack-tags {
-        margin-top: 4px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-    }
-    .pack-tag {
-        background-color: #eee;
-        color: #333;
-        padding: 2px 6px;
-        border-radius: 12px;
-        font-size: 0.8em;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-        transition: background 0.2s;
-    }
-    .pack-tag:hover {
-        background-color: #ddd;
-    }
-    .pack-tag .emoji {
-        display: inline-block;
-        height: 1em;
-        width: 1em;
-    }
+.content-panel {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 5px;
+}
 
-    /* Vorschau */
-    #preview {
-        width: 300px;
-        min-height: 400px;
-        background: #fff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        position: sticky;
-        top: 20px;
-        overflow: hidden;
-    }
-    #preview p {
-        color: #aaa;
-        text-align: center;
-        margin-top: 50%;
-    }
+/* Pack Cards */
+.pack-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.pack-icon { width: 48px; height: 48px; border-radius: 6px; }
+.pack-card h3 { margin: 0; font-size: 18px; }
 
-    footer {
-        text-align: center;
-        padding: 20px;
-        color: #444;
-    }
+/* Download Button */
+.download-btn {
+    margin-left: auto;
+    padding: 8px 14px;
+    background: #0088ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.download-btn:hover { background: #006cd1; }
+
+/* Vorschau */
+#preview {
+    flex: 1.2;
+    min-width: 380px;
+    height: 450px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#preview img { width: 100%; border-radius: 8px; margin-bottom: 10px; }
+#preview h3 { text-align: center; margin: 5px 0 10px 0; }
+#preview p { text-align: left; margin: 0 0 10px 0; flex: 1; overflow-y: auto; }
+
+/* Tags unten */
+#preview .pack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+}
+#preview .pack-tag {
+    background-color: #eee;
+    color: #333;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+#preview .pack-tag:hover { background-color: #ddd; }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #444;
+}
 </style>
 </head>
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:35 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:42 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -215,7 +187,6 @@
     © 2025 – Modernity Addon Hub
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
