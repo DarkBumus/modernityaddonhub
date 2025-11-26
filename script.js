@@ -315,7 +315,7 @@ function hideTagTooltip() {
                 img.src = defaults.preview_path + previews[currentIndex];
                 img.style.opacity = 1;
             }, 500); // sollte zur CSS-Transition passen
-        }, 5000); // alle 5 Sekunden
+        }, 3000); // alle 3 Sekunden
     }
 });
 
