@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modernity Addon Hub</title>
-    <link rel="icon" type="image/png" href="assets/icons/pack8.png">
 
+    <link rel="icon" type="image/png" href="assets/icons/pack8.png">
+    
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -13,7 +14,6 @@
         padding: 0;
         background: #f5f5f5;
     }
-
     header {
         background: #333;
         color: white;
@@ -70,10 +70,9 @@
 
     /* Collapsible Panels */
     #content {
-        flex: 2;
+        flex: 1;
         padding-left: 20px;
     }
-
     .collapsible {
         background-color: #eee;
         color: #444;
@@ -100,8 +99,6 @@
         border-radius: 0 0 5px 5px;
         margin-bottom: 5px;
     }
-
-    /* Pack Cards */
     .pack-card {
         background: #fafafa;
         border: 1px solid #ddd;
@@ -111,12 +108,7 @@
         display: flex;
         gap: 15px;
         align-items: center;
-        transition: box-shadow 0.2s;
     }
-    .pack-card:hover {
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
     .pack-icon {
         width: 48px;
         height: 48px;
@@ -132,7 +124,7 @@
         font-size: 14px;
     }
 
-    /* Download Button */
+    /* Download-Button */
     .download-btn {
         margin-left: auto;
         padding: 8px 14px;
@@ -146,11 +138,37 @@
         background: #006cd1;
     }
 
+    /* Tags */
+    .pack-tags {
+        margin-top: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .pack-tag {
+        background-color: #eee;
+        color: #333;
+        padding: 2px 6px;
+        border-radius: 12px;
+        font-size: 0.8em;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        transition: background 0.2s;
+    }
+    .pack-tag:hover {
+        background-color: #ddd;
+    }
+    .pack-tag .emoji {
+        display: inline-block;
+        height: 1em;
+        width: 1em;
+    }
+
     /* Vorschau */
     #preview {
-        flex: 1;
-        max-width: 350px;
-        height: 400px;
+        width: 300px;
+        min-height: 400px;
         background: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -158,30 +176,12 @@
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         position: sticky;
         top: 20px;
-        display: flex;
-        flex-direction: column;
         overflow: hidden;
     }
-    #preview img {
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    #preview h3 {
-        text-align: center;
-        margin: 5px 0 10px 0;
-    }
     #preview p {
-        flex: 1;
-        text-align: left;
-        overflow-y: auto;
-        margin: 0 0 10px 0;
-    }
-    #preview .pack-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-        margin-top: auto;
+        color: #aaa;
+        text-align: center;
+        margin-top: 50%;
     }
 
     footer {
@@ -194,7 +194,7 @@
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:33 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:35 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -215,6 +215,7 @@
     © 2025 – Modernity Addon Hub
 </footer>
 
+<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
