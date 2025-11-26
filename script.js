@@ -22,47 +22,75 @@ document.addEventListener("DOMContentLoaded", () => {
     // TABS
     // -------------------------
 
-    function renderMainTabs() {
-        tabsContainer.innerHTML = "";
+function renderMainTabs() {
+    tabsContainer.innerHTML = "";
 
-        Object.keys(data.packs)
-            .filter(packName => data.packs[packName].visible)
-            .forEach((packName, i) => {
-                const tabEl = document.createElement("div");
-                tabEl.className = "tab";
-                tabEl.textContent = packName;
+    Object.keys(data.packs)
+        .filter(packName => {
 
-                if (i === 0) tabEl.classList.add("active");
+            const pack = data.packs[packName];
 
-                tabEl.addEventListener("click", () => {
-                    tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-                    tabEl.classList.add("active");
-                    renderVersionTabs(packName);
-                });
+            // Wenn visible explizit false ist → immer verstecken
+            if (pack.visible === false) return false;
 
-                tabsContainer.appendChild(tabEl);
+            // Wenn visible true ist → NICHT automatisch verstecken
+            if (pack.visible === true) return true;
+
+            // Auto-hide wenn keine Downloads existieren
+            return packHasEntries(packName);
+
+        })
+        .forEach((packName, i) => {
+            const tabEl = document.createElement("div");
+            tabEl.className = "tab";
+            tabEl.textContent = packName;
+
+            if (i === 0) tabEl.classList.add("active");
+
+            tabEl.addEventListener("click", () => {
+                tabsContainer.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                tabEl.classList.add("active");
+                renderVersionTabs(packName);
             });
 
-        const firstPack = Object.keys(data.packs).find(k => data.packs[k].visible);
-        renderVersionTabs(firstPack);
-    }
+            tabsContainer.appendChild(tabEl);
+        });
+
+    const firstPack = Object.keys(data.packs).find(k => {
+        const pack = data.packs[k];
+        if (pack.visible === false) return false;
+        if (pack.visible === true) return true;
+        return packHasEntries(k);
+    });
+
+    renderVersionTabs(firstPack);
+}
 
     // -------------------------
     // VERSIONEN
     // -------------------------
 
-    function renderVersionTabs(packName) {
-        versionContainer.innerHTML = "";
-        contentContainer.innerHTML = "";
+function renderVersionTabs(packName) {
+    versionContainer.innerHTML = "";
+    contentContainer.innerHTML = "";
 
-        const pack = data.packs[packName];
-        const versions = data.defaults.versions;
+    const pack = data.packs[packName];
+    const versions = data.defaults.versions;
 
-        versions.forEach((versionName, i) => {
-            const versionOverride = pack.versions?.[versionName] || {};
-            const versionVisible = versionOverride.visible !== undefined ? versionOverride.visible : true;
-            if (!versionVisible) return;
+    versions
+        .filter(versionName => {
+            const override = pack.versions?.[versionName];
 
+            // explizit versteckt?
+            if (override?.visible === false) return false;
+
+            // explizit sichtbar?
+            if (override?.visible === true) return true;
+
+            // Sonst auto-hide anhand der Downloads:
+            return versionHasEntries(packName, versionName);
+        })
+        .forEach((versionName, i) => {
             const vTab = document.createElement("div");
             vTab.className = "tab";
             vTab.textContent = versionName;
@@ -78,14 +106,15 @@ document.addEventListener("DOMContentLoaded", () => {
             versionContainer.appendChild(vTab);
         });
 
-        const firstVersion = versions.find(v => {
-            const vo = pack.versions?.[v] || {};
-            return vo.visible !== false;
-        });
+    const firstVersion = versions.find(v => {
+        const override = pack.versions?.[v];
+        if (override?.visible === false) return false;
+        if (override?.visible === true) return true;
+        return versionHasEntries(packName, v);
+    });
 
-        renderPanels(packName, firstVersion);
-    }
-
+    renderPanels(packName, firstVersion);
+}
     // -------------------------
     // PANELS (Collapsibles)
     // -------------------------
@@ -100,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const panelVisible =
                 versionOverride.panels?.[panelName] !== undefined
                     ? versionOverride.panels[panelName]
-                    : true;
+                    : panelHasEntries(packName, versionName, panelName);
 
             if (!panelVisible) return;
 
@@ -123,6 +152,27 @@ document.addEventListener("DOMContentLoaded", () => {
             contentContainer.appendChild(panel);
         });
     }
+
+    function packHasEntries(packName) {
+    const pack = downloadData[packName];
+    if (!pack) return false;
+
+    return Object.values(pack).some(version =>
+        Object.values(version).some(entries => entries?.length > 0)
+    );
+}
+
+function versionHasEntries(packName, versionName) {
+    const version = downloadData[packName]?.[versionName];
+    if (!version) return false;
+
+    return Object.values(version).some(entries => entries?.length > 0);
+}
+
+function panelHasEntries(packName, versionName, panelName) {
+    const entries = downloadData[packName]?.[versionName]?.[panelName];
+    return entries && entries.length > 0;
+}
 
     // -------------------------
     // PACK DOWNLOAD-EINTRÄGE
