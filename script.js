@@ -272,8 +272,37 @@ function showTagTooltip(event, text) {
 
 function moveTagTooltip(event) {
     const tip = document.getElementById("tag-tooltip");
-    tip.style.left = (event.pageX + 12) + "px";
-    tip.style.top =  (event.pageY + 12) + "px";
+
+    const margin = 12; // Abstand zur Maus
+    const mouseX = event.pageX;
+    const mouseY = event.pageY;
+    const tooltipWidth = tip.offsetWidth;
+    const tooltipHeight = tip.offsetHeight;
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Standardposition rechts unten
+    let posX = mouseX + margin;
+    let posY = mouseY + margin;
+
+    // Rechts raus? → nach links verschieben
+    if (posX + tooltipWidth > viewportWidth) {
+        posX = mouseX - tooltipWidth - margin;
+    }
+
+    // Unten raus? → nach oben verschieben
+    if (posY + tooltipHeight > viewportHeight) {
+        posY = mouseY - tooltipHeight - margin;
+    }
+
+    // Falls oben raus → clamp nach 0
+    if (posY < 0) posY = 0;
+
+    // Falls links raus → clamp nach 0
+    if (posX < 0) posX = 0;
+
+    tip.style.left = posX + "px";
+    tip.style.top = posY + "px";
 }
 
 function hideTagTooltip() {
