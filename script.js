@@ -189,6 +189,7 @@ function insertDownloadEntries(panelElement, packName, versionName, panelName) {
 
     // Valid Tags und ihre Emojis
     const validTags = {
+        "Template": "📦",
         "Requires Right Proper MCPatcher": "🩹",
         "OptiFine-compatible": "🔎",
         "OptiFine-incompatible": "⚠️",
