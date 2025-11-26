@@ -14,15 +14,14 @@ body {
     background: #f5f5f5;
 }
 header {
-    position: relative; /* nötig für absolute Positionierung von Icon & Menü */
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     gap: 12px;
     background: #333;
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
 .hamburger-menu {
@@ -33,12 +32,11 @@ header {
 
 #hamburger-btn {
     position: absolute;
-    top: 20px;
     right: 20px;
-    bottom: 20px;
-    width: auto;
-    padding: 0 16px;
-    font-size: 2.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 8px 16px;
     background: #444;
     color: white;
     border: none;
@@ -49,12 +47,10 @@ header {
     justify-content: center;
 }
 
-/* Hover-Effekt */
 #hamburger-btn:hover {
     background: #555;
 }
 
-/* Dropdown-Menü */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -89,7 +85,6 @@ header {
     border-radius: 16px;
 }
 
-/* Haupt-Tabs */
 #tabs {
     display: flex;
     background: #222;
@@ -108,7 +103,6 @@ header {
 .tab:hover { background: #666; }
 .tab.active { background: #0088ff; }
 
-/* Versions-Tabs */
 #subtabs {
     display: flex;
     background: #333;
@@ -119,7 +113,6 @@ header {
 #subtabs .tab { background: #555; padding: 6px 12px; }
 #subtabs .tab.active { background: #0088ff; }
 
-/* Panels + Vorschau Wrapper */
 #main-container {
     display: flex;
     max-width: 1200px;
@@ -127,13 +120,11 @@ header {
     gap: 20px;
 }
 
-/* Collapsible Panels */
 #content {
     flex: 2.0;
     padding-left: 10px;
 }
 
-/* Panels */
 .collapsible {
     background-color: #eee;
     color: #444;
@@ -266,7 +257,7 @@ footer {
 <header>
     <img src="assets/icons/pack8.png" alt="Logo" id="top-left-icon">
     
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 16:52 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 16:58 🚧</h1>
     
     <!-- Hamburger Menü oben rechts -->
     <div class="hamburger-menu">
