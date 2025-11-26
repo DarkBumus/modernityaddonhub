@@ -212,7 +212,6 @@ document.addEventListener("DOMContentLoaded", () => {
 let previewInterval; // global, stoppt vorherige Intervalle
 
 card.addEventListener("mouseenter", () => {
-    // vorherigen Interval stoppen
     if (previewInterval) {
         clearInterval(previewInterval);
         previewInterval = null;
@@ -220,32 +219,40 @@ card.addEventListener("mouseenter", () => {
 
     previewContainer.innerHTML = "";
 
-    // Vorschaubilder oder Fallback auf Icon
     const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
     let currentIndex = 0;
 
-    const img = document.createElement("img");
-    img.src = defaults.preview_path + previews[currentIndex];
-    img.style.opacity = 1;
-    img.style.transition = "opacity 0.5s ease-in-out";
-    previewContainer.appendChild(img);
+    // erstes Bild
+    let imgCurrent = document.createElement("img");
+    imgCurrent.src = defaults.preview_path + previews[currentIndex];
+    imgCurrent.style.opacity = 1;
+    imgCurrent.style.position = "absolute";
+    imgCurrent.style.top = 0;
+    imgCurrent.style.left = 0;
+    imgCurrent.style.width = "100%";
+    imgCurrent.style.height = "auto";
+    imgCurrent.style.transition = "opacity 0.5s ease-in-out";
+    previewContainer.appendChild(imgCurrent);
 
-    // Titel (zentriert)
+    // Container für Positionierung
+    previewContainer.style.position = "relative";
+
+    // Titel
     const titleEl = document.createElement("h3");
     titleEl.textContent = entry.name;
     titleEl.style.textAlign = "center";
     previewContainer.appendChild(titleEl);
 
-    // Beschreibung (linksbündig)
+    // Beschreibung
     const descEl = document.createElement("p");
     descEl.textContent = entry.description;
     descEl.style.textAlign = "left";
     descEl.style.marginTop = "10px";
-    descEl.style.flex = "1"; 
+    descEl.style.flex = "1";
     descEl.style.overflowY = "auto";
     previewContainer.appendChild(descEl);
 
-    // Tags unten
+    // Tags
     if (entry.tags && entry.tags.length > 0) {
         const tagDiv = document.createElement("div");
         tagDiv.className = "pack-tags";
@@ -259,16 +266,36 @@ card.addEventListener("mouseenter", () => {
         previewContainer.appendChild(tagDiv);
     }
 
-    // Intervall für mehrere Vorschaubilder
+    // mehrere Bilder
     if (previews.length > 1) {
         previewInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % previews.length;
-            img.style.opacity = 0;
+            const nextIndex = (currentIndex + 1) % previews.length;
+
+            const imgNext = document.createElement("img");
+            imgNext.src = defaults.preview_path + previews[nextIndex];
+            imgNext.style.opacity = 0;
+            imgNext.style.position = "absolute";
+            imgNext.style.top = 0;
+            imgNext.style.left = 0;
+            imgNext.style.width = "100%";
+            imgNext.style.height = "auto";
+            imgNext.style.transition = "opacity 0.5s ease-in-out";
+
+            previewContainer.appendChild(imgNext);
+
+            // Crossfade
+            requestAnimationFrame(() => {
+                imgNext.style.opacity = 1;
+                imgCurrent.style.opacity = 0;
+            });
+
+            // altes Bild nach Fade entfernen
             setTimeout(() => {
-                img.src = defaults.preview_path + previews[currentIndex];
-                img.style.opacity = 1;
-            }, 500); // sollte zur CSS-Transition passen
-        }, 3000); // alle 5 Sekunden
+                previewContainer.removeChild(imgCurrent);
+                imgCurrent = imgNext;
+                currentIndex = nextIndex;
+            }, 500); // gleiche Dauer wie transition
+        }, 3000); // alle 3 Sekunden
     }
 });
 
