@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modernity Addon Hub</title>
-
     <link rel="icon" type="image/png" href="assets/icons/pack8.png">
-    
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -14,6 +13,7 @@
         padding: 0;
         background: #f5f5f5;
     }
+
     header {
         background: #333;
         color: white;
@@ -60,62 +60,129 @@
         background: #0088ff;
     }
 
-/* Panels + Preview Wrapper */
-#main-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    gap: 20px;
-}
+    /* Panels + Preview Wrapper */
+    #main-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+    }
 
-/* Collapsible Panels */
-#content {
-    flex: 2;
-    padding-left: 20px;
-}
+    /* Collapsible Panels */
+    #content {
+        flex: 2;
+        padding-left: 20px;
+    }
 
-/* Vorschau */
-#preview {
-    flex: 1;
-    max-width: 350px;       /* etwas breiter */
-    height: 400px;          /* etwas kürzer */
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
+    .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 5px;
+        transition: background 0.2s;
+    }
+    .collapsible.active {
+        background-color: #ccc;
+    }
+    .content-panel {
+        padding: 0 10px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: white;
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 5px;
+    }
 
-#preview img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
+    /* Pack Cards */
+    .pack-card {
+        background: #fafafa;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 12px;
+        margin: 10px 0;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        transition: box-shadow 0.2s;
+    }
+    .pack-card:hover {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-#preview h3 {
-    text-align: center;
-    margin: 5px 0 10px 0;
-}
+    .pack-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 6px;
+    }
+    .pack-card h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+    .pack-card p {
+        margin: 5px 0 0 0;
+        color: #555;
+        font-size: 14px;
+    }
 
-#preview p {
-    flex: 1;               /* nimmt den restlichen Platz ein */
-    text-align: left;
-    overflow-y: auto;      /* scrollt, falls Text zu lang */
-    margin: 0 0 10px 0;
-}
+    /* Download Button */
+    .download-btn {
+        margin-left: auto;
+        padding: 8px 14px;
+        background: #0088ff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+    .download-btn:hover {
+        background: #006cd1;
+    }
 
-/* Tags unten im Rahmen fixieren */
-#preview .pack-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-top: auto;      /* nach unten schieben */
-}
+    /* Vorschau */
+    #preview {
+        flex: 1;
+        max-width: 350px;
+        height: 400px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #preview img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    #preview h3 {
+        text-align: center;
+        margin: 5px 0 10px 0;
+    }
+    #preview p {
+        flex: 1;
+        text-align: left;
+        overflow-y: auto;
+        margin: 0 0 10px 0;
+    }
+    #preview .pack-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: auto;
+    }
 
     footer {
         text-align: center;
@@ -127,7 +194,7 @@
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:28 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:33 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -148,7 +215,6 @@
     © 2025 – Modernity Addon Hub
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
