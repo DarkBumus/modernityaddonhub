@@ -189,12 +189,20 @@ function insertDownloadEntries(panelElement, packName, versionName, panelName) {
 
     // Valid Tags und ihre Emojis
     const validTags = {
-        "OptiFine": "✨",
-        "Fabric": "🧵",
-        "Forge": "⚒️",
-        "Shaders": "💡",
-        "Performance": "⚡",
-        "Utility": "🛠️"
+        "Requires Right Proper MCPatcher": "🩹",
+        "OptiFine-compatible": "🔎",
+        "OptiFine-incompatible": "⚠️",
+        "Vanilla-compatbile": "🍦",
+        "Interpolated": "🧩",
+        "Complete Connection": "🖼️",
+        "Horizontal Connection": "🚥",
+        "Vertical Connection": "🚦",
+        "2-Side Rotation": "2️⃣",
+        "4-Side Rotation": "4️⃣",
+        "Mixed Rotation": "🔢",
+        "Requires MineTweaker/CraftTweaker": "🔁",
+        "Includes Script": "📜",
+        "Includes Mod": "🛠️"
         // Hier weitere Tags hinzufügen
     };
 
