@@ -29,7 +29,7 @@
           "name": "Connected Stained Glass",
           "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
           "icon": "modernity/connected_stained_glass.png",
-          "preview":["modernity/preview_connected_glass1.png", "modernity/preview_connected_glass2.png", "modernity/preview_connected_glass3.png", "modernity/preview_connected_glass4.png"],
+          "preview":["modernity/preview_connected_stained_glass1.png", "modernity/preview_connected_stained_glass2.png", "modernity/preview_connected_stained_glass3.png", "modernity/preview_connected_stained_glass4.png"],
           "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip",
           "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
         },
@@ -37,17 +37,25 @@
           "name": "Connected Tinted Glass",
           "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
           "icon": "modernity/connected_tinted_glass.png",
-          "preview":["modernity/preview_connected_glass1.png", "modernity/preview_connected_glass2.png", "modernity/preview_connected_glass3.png", "modernity/preview_connected_glass4.png"],
+          "preview":["modernity/preview_connected_tinted_glass1.png", "modernity/preview_connected_tinted_glass2.png", "modernity/preview_connected_tinted_glass3.png", "modernity/preview_connected_tinted_glass4.png"],
           "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip",
           "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Complete Connection"]
         },
         {
           "name": "Connected Sugarcane",
-          "description": "Connects the Sugarcane blocks so that they appear as as frazzled at the top, regardless of their height.",
+          "description": "Connects the Sugarcane blocks so that they appear as frazzled at the top, regardless of their height.",
           "icon": "modernity/connected_sugarcane.png",
-          "preview":["modernity/preview_connected_glass1.png", "modernity/preview_connected_glass2.png", "modernity/preview_connected_glass3.png", "modernity/preview_connected_glass4.png"],
+          "preview":["modernity/preview_connected_sugarcane1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Sugarcane.zip",
           "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Vertical Connection"]
+        },
+        {
+          "name": "Connected Bookshelves",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.",
+          "icon": "modernity/connected_bookshelf.png",
+          "preview":["modernity/preview_connected_bookshelf1.png"],
+          "file": "modernity/1.7/connected_textures/Connected_Bookshelves.zip",
+          "tags": ["Requires Right Proper MCPatcher", "OptiFine-compatible", "Horizontal Connection"]
         }
       ]
     }
