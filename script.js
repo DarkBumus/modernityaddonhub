@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("downloads.json").then(r => r.json()),
         fetch("tags.json").then(r => r.json())
     ])
-    .then(([tabsJson, downloadsJson]) => {
+    .then(([tabsJson, downloadsJson, tagsJson]) => {
         data = tabsJson;
         downloadData = downloadsJson;
         tagData = tagsJson;
