@@ -60,11 +60,18 @@
         background: #0088ff;
     }
 
+    /* Panels + Preview Wrapper */
+    #main-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
     /* Collapsible Panels */
     #content {
-        max-width: 900px;
-        margin: 20px auto;
-        padding: 0 10px 20px 10px;
+        flex: 1;
+        padding-left: 20px;
     }
     .collapsible {
         background-color: #eee;
@@ -102,18 +109,15 @@
         gap: 15px;
         align-items: center;
     }
-
     .pack-icon {
         width: 48px;
         height: 48px;
         border-radius: 6px;
     }
-
     .pack-card h3 {
         margin: 0;
         font-size: 18px;
     }
-
     .pack-card p {
         margin: 5px 0 0 0;
         color: #555;
@@ -141,7 +145,6 @@
         flex-wrap: wrap;
         gap: 4px;
     }
-
     .pack-tag {
         background-color: #eee;
         color: #333;
@@ -153,15 +156,32 @@
         gap: 4px;
         transition: background 0.2s;
     }
-
     .pack-tag:hover {
         background-color: #ddd;
     }
-
     .pack-tag .emoji {
         display: inline-block;
         height: 1em;
         width: 1em;
+    }
+
+    /* Vorschau */
+    #preview {
+        width: 300px;
+        min-height: 400px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 20px;
+        overflow: hidden;
+    }
+    #preview p {
+        color: #aaa;
+        text-align: center;
+        margin-top: 50%;
     }
 
     footer {
@@ -174,7 +194,7 @@
 <body>
 
 <header>
-    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:07 🚧</h1>
+    <h1>🚧 UNDER CONSTRUCTION 🚧 26.11.2025 05:19 🚧</h1>
 </header>
 
 <!-- Packs Tabs -->
@@ -183,8 +203,13 @@
 <!-- Versions Tabs -->
 <div id="subtabs"></div>
 
-<!-- Collapsible Panels -->
-<div id="content"></div>
+<!-- Panels + Vorschau -->
+<div id="main-container">
+    <div id="content"></div>
+    <div id="preview">
+        <p>Hover over a pack to preview</p>
+    </div>
+</div>
 
 <footer>
     © 2025 – Modernity Addon Hub
