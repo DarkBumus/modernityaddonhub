@@ -254,8 +254,7 @@ card.addEventListener("mouseenter", () => {
     previewContainer.appendChild(titleEl);
 
     // Beschreibung (linksbündig)
-    const descEl = document.createElement("p");
-    descEl.textContent = entry.description;
+    const descEl = formatDescription(entry.description);
     previewContainer.appendChild(descEl);
 
 // Tags unten (aus tags.json)
