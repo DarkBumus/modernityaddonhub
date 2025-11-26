@@ -146,14 +146,16 @@ function renderPanels(packName, versionName) {
             panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
         });
 
+        // Panels zuerst ans DOM hängen
+        contentContainer.appendChild(coll);
+        contentContainer.appendChild(panel);
+
         // Auto-open aus defaults.auto_open_panels
         if (data.defaults.auto_open_panels?.includes(panelName)) {
             coll.classList.add("active");
+            // maxHeight erst nach dem Anhängen setzen
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
-
-        contentContainer.appendChild(coll);
-        contentContainer.appendChild(panel);
     });
 }
 
@@ -202,7 +204,7 @@ function panelHasEntries(packName, versionName, panelName) {
 
             const icon = document.createElement("img");
             icon.className = "pack-icon";
-            icon.src = defaults.iconPath + entry.icon;
+            icon.src = defaults.icon_path + entry.icon;
 
             const title = document.createElement("h3");
             title.textContent = entry.name;
@@ -213,7 +215,7 @@ function panelHasEntries(packName, versionName, panelName) {
             const dlBtn = document.createElement("a");
             dlBtn.className = "download-btn";
             dlBtn.textContent = "Download";
-            dlBtn.href = defaults.downloadPath + entry.file;
+            dlBtn.href = defaults.download_path + entry.file;
             dlBtn.download = entry.file.split("/").pop();
 
             card.appendChild(icon);
