@@ -224,6 +224,7 @@ header {
 
 #preview p {
     text-align: left;
+    font-size: 14px;
     margin: 10px 0;
     flex: initial;
     overflow-y: visible; 
