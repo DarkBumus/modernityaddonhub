@@ -328,3 +328,18 @@ function hideTagTooltip() {
         });
     }
 });
+
+// Hamburger-Menü
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const dropdown = document.getElementById("hamburger-dropdown");
+
+hamburgerBtn.addEventListener("click", () => {
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+});
+
+// Klick außerhalb schließt das Menü
+document.addEventListener("click", (e) => {
+    if (!hamburgerBtn.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.style.display = "none";
+    }
+});
