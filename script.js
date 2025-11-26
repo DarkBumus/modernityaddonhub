@@ -143,3 +143,136 @@ document.addEventListener("DOMContentLoaded", () => {
             Object.values(version).some(entries => entries?.length > 0)
         );
     }
+
+    function versionHasEntries(packName, versionName) {
+        const version = downloadData[packName]?.[versionName];
+        if (!version) return false;
+        return Object.values(version).some(entries => entries?.length > 0);
+    }
+
+    function panelHasEntries(packName, versionName, panelName) {
+        const entries = downloadData[packName]?.[versionName]?.[panelName];
+        return entries && entries.length > 0;
+    }
+
+    // -------------------------
+    // PACK DOWNLOAD-ENTRIES
+    // -------------------------
+    function insertDownloadEntries(panelElement, packName, versionName, panelName) {
+        const defaults = downloadData.defaults;
+
+        const validTags = {
+            "Template": "📦",
+            "Requires Right Proper MCPatcher": "🩹",
+            "OptiFine-compatible": "🔎",
+            "OptiFine-incompatible": "⚠️",
+            "Vanilla-compatbile": "🍦",
+            "Interpolated": "🧩",
+            "Complete Connection": "🖼️",
+            "Horizontal Connection": "🚥",
+            "Vertical Connection": "🚦",
+            "2-Side Rotation": "2️⃣",
+            "4-Side Rotation": "4️⃣",
+            "Mixed Rotation": "🔢",
+            "Requires MineTweaker/CraftTweaker": "🔁",
+            "Includes Script": "📜",
+            "Includes Mod": "🛠️"
+        };
+
+        const packGroup = downloadData[packName];
+        if (!packGroup) return;
+        const versionGroup = packGroup[versionName];
+        if (!versionGroup) return;
+        const entries = versionGroup[panelName];
+        if (!entries || entries.length === 0) return;
+
+        entries.forEach(entry => {
+            const card = document.createElement("div");
+            card.className = "pack-card";
+
+            const icon = document.createElement("img");
+            icon.className = "pack-icon";
+            icon.src = defaults.icon_path + entry.icon;
+
+            const title = document.createElement("h3");
+            title.textContent = entry.name;
+
+            const dlBtn = document.createElement("a");
+            dlBtn.className = "download-btn";
+            dlBtn.textContent = "Download";
+            dlBtn.href = defaults.download_path + entry.file;
+            dlBtn.download = entry.file.split("/").pop();
+
+            // Panels zeigen nur Icon + Name + Download
+            card.appendChild(icon);
+            card.appendChild(title);
+            card.appendChild(dlBtn);
+
+// Vorschau-Hover
+let previewInterval; // global, stoppt vorherige Intervalle
+
+card.addEventListener("mouseenter", () => {
+    // vorherigen Interval stoppen
+    if (previewInterval) {
+        clearInterval(previewInterval);
+        previewInterval = null;
+    }
+
+    previewContainer.innerHTML = "";
+
+    // Vorschaubilder oder Fallback auf Icon
+    const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
+    let currentIndex = 0;
+
+    const img = document.createElement("img");
+    img.src = defaults.preview_path + previews[currentIndex];
+    img.style.opacity = 1;
+    img.style.transition = "opacity 0.5s ease-in-out";
+    previewContainer.appendChild(img);
+
+    // Titel (zentriert)
+    const titleEl = document.createElement("h3");
+    titleEl.textContent = entry.name;
+    titleEl.style.textAlign = "center";
+    previewContainer.appendChild(titleEl);
+
+    // Beschreibung (linksbündig)
+    const descEl = document.createElement("p");
+    descEl.textContent = entry.description;
+    descEl.style.textAlign = "left";
+    descEl.style.marginTop = "10px";
+    descEl.style.flex = "1"; 
+    descEl.style.overflowY = "auto";
+    previewContainer.appendChild(descEl);
+
+    // Tags unten
+    if (entry.tags && entry.tags.length > 0) {
+        const tagDiv = document.createElement("div");
+        tagDiv.className = "pack-tags";
+        tagDiv.style.marginTop = "auto";
+        entry.tags.filter(t => validTags[t]).forEach(tag => {
+            const tagEl = document.createElement("span");
+            tagEl.className = "pack-tag";
+            tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
+            tagDiv.appendChild(tagEl);
+        });
+        previewContainer.appendChild(tagDiv);
+    }
+
+    // Intervall für mehrere Vorschaubilder
+    if (previews.length > 1) {
+        previewInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % previews.length;
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = defaults.preview_path + previews[currentIndex];
+                img.style.opacity = 1;
+            }, 500); // sollte zur CSS-Transition passen
+        }, 5000); // alle 5 Sekunden
+    }
+});
+
+            panelElement.appendChild(card);
+        });
+    }
+});
