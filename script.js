@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let data = {};
     let downloadData = {};
+    let tagData = {};
 
     Promise.all([
         fetch("tab_containers.json").then(r => r.json()),
-        fetch("downloads.json").then(r => r.json())
+        fetch("downloads.json").then(r => r.json()),
+        fetch("tags.json").then(r => r.json())
     ])
     .then(([tabsJson, downloadsJson]) => {
         data = tabsJson;
@@ -161,24 +163,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function insertDownloadEntries(panelElement, packName, versionName, panelName) {
         const defaults = downloadData.defaults;
 
-        const validTags = {
-            "Template": "📦",
-            "Requires Right Proper MCPatcher": "🩹",
-            "OptiFine-compatible": "🔎",
-            "OptiFine-incompatible": "⚠️",
-            "Vanilla-compatbile": "🍦",
-            "Interpolated": "🧩",
-            "Complete Connection": "🖼️",
-            "Horizontal Connection": "🚥",
-            "Vertical Connection": "🚦",
-            "2-Side Rotation": "2️⃣",
-            "4-Side Rotation": "4️⃣",
-            "Mixed Rotation": "🔢",
-            "Requires MineTweaker/CraftTweaker": "🔁",
-            "Includes Script": "📜",
-            "Includes Mod": "🛠️"
-        };
-
         const packGroup = downloadData[packName];
         if (!packGroup) return;
         const versionGroup = packGroup[versionName];
@@ -245,19 +229,56 @@ card.addEventListener("mouseenter", () => {
     descEl.style.overflowY = "auto";
     previewContainer.appendChild(descEl);
 
-    // Tags unten
-    if (entry.tags && entry.tags.length > 0) {
-        const tagDiv = document.createElement("div");
-        tagDiv.className = "pack-tags";
-        tagDiv.style.marginTop = "auto";
-        entry.tags.filter(t => validTags[t]).forEach(tag => {
-            const tagEl = document.createElement("span");
-            tagEl.className = "pack-tag";
-            tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
-            tagDiv.appendChild(tagEl);
-        });
-        previewContainer.appendChild(tagDiv);
-    }
+// Tags unten (aus tags.json)
+if (entry.tags && entry.tags.length > 0) {
+    const tagDiv = document.createElement("div");
+    tagDiv.className = "pack-tags";
+    tagDiv.style.marginTop = "auto";
+
+    entry.tags.forEach(tagId => {
+        const info = tagData[tagId];
+        if (!info) return;
+
+        const tagEl = document.createElement("span");
+        tagEl.className = "pack-tag";
+        tagEl.textContent = `${info.emoji} ${info.label}`;
+
+        // Tooltip
+        tagEl.addEventListener("mouseenter", e => showTagTooltip(e, info.description));
+        tagEl.addEventListener("mousemove", e => moveTagTooltip(e));
+        tagEl.addEventListener("mouseleave", hideTagTooltip);
+
+        // Klickbare Tags (falls link != null)
+        if (info.link) {
+            tagEl.style.cursor = "pointer";
+            tagEl.addEventListener("click", () => {
+                window.open(info.link, "_blank");
+            });
+        }
+
+        tagDiv.appendChild(tagEl);
+    });
+
+    previewContainer.appendChild(tagDiv);
+}
+
+function showTagTooltip(event, text) {
+    const tip = document.getElementById("tag-tooltip");
+    tip.textContent = text;
+    tip.style.opacity = "1";
+    moveTagTooltip(event);
+}
+
+function moveTagTooltip(event) {
+    const tip = document.getElementById("tag-tooltip");
+    tip.style.left = (event.pageX + 12) + "px";
+    tip.style.top =  (event.pageY + 12) + "px";
+}
+
+function hideTagTooltip() {
+    const tip = document.getElementById("tag-tooltip");
+    tip.style.opacity = "0";
+}
 
     // Intervall für mehrere Vorschaubilder
     if (previews.length > 1) {
