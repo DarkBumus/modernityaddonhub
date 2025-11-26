@@ -209,12 +209,22 @@ document.addEventListener("DOMContentLoaded", () => {
             card.appendChild(dlBtn);
 
 // Vorschau-Hover
+let previewInterval; // global oder im Scope deiner Funktion
+
 card.addEventListener("mouseenter", () => {
+    // vorherigen Interval stoppen
+    if (previewInterval) {
+        clearInterval(previewInterval);
+        previewInterval = null;
+    }
+
     previewContainer.innerHTML = "";
 
-    // Icon
+    const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
+    let currentIndex = 0;
+
     const img = document.createElement("img");
-    img.src = defaults.icon_path + entry.icon;
+    img.src = defaults.preview_path + previews[currentIndex];
     previewContainer.appendChild(img);
 
     // Titel (zentriert)
@@ -232,7 +242,7 @@ card.addEventListener("mouseenter", () => {
     descEl.style.overflowY = "auto";
     previewContainer.appendChild(descEl);
 
-    // Tags unten im Vorschaufenster
+    // Tags unten
     if (entry.tags && entry.tags.length > 0) {
         const tagDiv = document.createElement("div");
         tagDiv.className = "pack-tags";
@@ -244,6 +254,22 @@ card.addEventListener("mouseenter", () => {
             tagDiv.appendChild(tagEl);
         });
         previewContainer.appendChild(tagDiv);
+    }
+
+    // Wenn mehrere Vorschaubilder, alle 5 Sekunden wechseln
+    if (previews.length > 1) {
+        previewInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % previews.length;
+            img.src = defaults.preview_path + previews[currentIndex];
+        }, 5000);
+    }
+});
+
+// Interval stoppen, wenn Maus das Card verlässt
+card.addEventListener("mouseleave", () => {
+    if (previewInterval) {
+        clearInterval(previewInterval);
+        previewInterval = null;
     }
 });
 
