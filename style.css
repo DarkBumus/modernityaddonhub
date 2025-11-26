@@ -272,3 +272,24 @@ footer {
     color: #0088ff;
     text-decoration: none;
 }
+
+/* ========================
+   About-Seite Styles
+   ======================== */
+#content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#content h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
