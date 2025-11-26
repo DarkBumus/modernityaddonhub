@@ -24,7 +24,8 @@
       "1.19": "🌸",
       "1.20": "🎍",
       "1.21": "🗡️"
-    }
+    },
+    "auto_open_panels": ["Templates"]
   },
   "packs": {
     "Modernity": {
