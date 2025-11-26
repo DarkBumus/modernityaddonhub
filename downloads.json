@@ -5,23 +5,31 @@
   },
   "Modernity": {
     "1.7": {
+      "Templates": [
+        {
+          "name": "Modernity Addon 1.7.10",
+          "description": "Download this first and place your downloaded Addons inside of it.",
+          "icon": "modernity/pack1.png",
+          "file": "modernity/1.7/templates/Modernity_Addon_1.7.10.zip"
+        }
+      ],
       "Connected Textures": [
         {
           "name": "Connected Glass",
           "description": "Connects the regular Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
-          "icon": "connected_glass.png",
+          "icon": "modernity/connected_glass.png",
           "file": "modernity/1.7/connected_textures/Connected_Glass.zip"
         },
         {
           "name": "Connected Stained Glass",
           "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass. This works for full Glass blocks as well as Glass Panes.",
-          "icon": "connected_stained_glass.png",
+          "icon": "modernity/connected_stained_glass.png",
           "file": "modernity/1.7/connected_textures/Connected_Stained_Glass.zip"
         },
         {
           "name": "Connected Tinted Glass",
           "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
-          "icon": "connected_tinted_glass.png",
+          "icon": "modernity/connected_tinted_glass.png",
           "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip"
         }
       ]
