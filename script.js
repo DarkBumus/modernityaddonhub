@@ -197,63 +197,45 @@ document.addEventListener("DOMContentLoaded", () => {
             const title = document.createElement("h3");
             title.textContent = entry.name;
 
-            const desc = document.createElement("p");
-            desc.textContent = entry.description;
-
             const dlBtn = document.createElement("a");
             dlBtn.className = "download-btn";
             dlBtn.textContent = "Download";
             dlBtn.href = defaults.download_path + entry.file;
             dlBtn.download = entry.file.split("/").pop();
 
+            // Panels zeigen nur Icon + Name + Download
             card.appendChild(icon);
             card.appendChild(title);
-            card.appendChild(desc);
             card.appendChild(dlBtn);
 
-            // Tags
-            if (entry.tags && entry.tags.length > 0) {
-                const tagContainer = document.createElement("div");
-                tagContainer.className = "pack-tags";
-
-                entry.tags.filter(tag => validTags[tag]).forEach(tag => {
-                    const tagEl = document.createElement("span");
-                    tagEl.className = "pack-tag";
-                    tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
-                    tagContainer.appendChild(tagEl);
-                });
-
-                card.appendChild(tagContainer);
-            }
-
             // Vorschau-Hover
-card.addEventListener("mouseenter", () => {
-    previewContainer.innerHTML = "";
+            card.addEventListener("mouseenter", () => {
+                previewContainer.innerHTML = "";
 
-    const img = document.createElement("img");
-    img.src = defaults.icon_path + entry.icon;
-    previewContainer.appendChild(img);
+                const img = document.createElement("img");
+                img.src = defaults.icon_path + entry.icon;
+                previewContainer.appendChild(img);
 
-    const title = document.createElement("h3");
-    title.textContent = entry.name;
-    previewContainer.appendChild(title);
+                const title = document.createElement("h3");
+                title.textContent = entry.name;
+                previewContainer.appendChild(title);
 
-    const desc = document.createElement("p");
-    desc.textContent = entry.description;
-    previewContainer.appendChild(desc);
+                const desc = document.createElement("p");
+                desc.textContent = entry.description;
+                previewContainer.appendChild(desc);
 
-    if (entry.tags && entry.tags.length > 0) {
-        const tagDiv = document.createElement("div");
-        tagDiv.className = "pack-tags";
-        entry.tags.filter(t => validTags[t]).forEach(tag => {
-            const tagEl = document.createElement("span");
-            tagEl.className = "pack-tag";
-            tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
-            tagDiv.appendChild(tagEl);
-        });
-        previewContainer.appendChild(tagDiv); // am Ende anhängen
-    }
-});
+                if (entry.tags && entry.tags.length > 0) {
+                    const tagDiv = document.createElement("div");
+                    tagDiv.className = "pack-tags";
+                    entry.tags.filter(t => validTags[t]).forEach(tag => {
+                        const tagEl = document.createElement("span");
+                        tagEl.className = "pack-tag";
+                        tagEl.textContent = (validTags[tag] ? validTags[tag] + " " : "") + tag;
+                        tagDiv.appendChild(tagEl);
+                    });
+                    previewContainer.appendChild(tagDiv);
+                }
+            });
 
             panelElement.appendChild(card);
         });
