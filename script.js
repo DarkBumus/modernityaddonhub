@@ -166,26 +166,29 @@ document.addEventListener("DOMContentLoaded", () => {
     // -------------------------------------------------------
     // ENTRY CHECK HELPERS
     // -------------------------------------------------------
-    function packHasEntries(packName) {
-        const pack = downloadData[packName];
-        if (!pack) return false;
+function packHasEntries(packName) {
+    if (MODE === "documentation") return true;
+    const pack = downloadData[packName];
+    if (!pack) return false;
 
-        return Object.values(pack).some(version =>
-            Object.values(version).some(entries => entries?.length > 0)
-        );
-    }
+    return Object.values(pack).some(version =>
+        Object.values(version).some(entries => entries?.length > 0)
+    );
+}
 
-    function versionHasEntries(packName, versionName) {
-        const version = downloadData[packName]?.[versionName];
-        if (!version) return false;
+function versionHasEntries(packName, versionName) {
+    if (MODE === "documentation") return true;
+    const version = downloadData[packName]?.[versionName];
+    if (!version) return false;
 
-        return Object.values(version).some(entries => entries?.length > 0);
-    }
+    return Object.values(version).some(entries => entries?.length > 0);
+}
 
-    function panelHasEntries(packName, versionName, panelName) {
-        const entries = downloadData[packName]?.[versionName]?.[panelName];
-        return entries && entries.length > 0;
-    }
+function panelHasEntries(packName, versionName, panelName) {
+    if (MODE === "documentation") return true;
+    const entries = downloadData[packName]?.[versionName]?.[panelName];
+    return entries && entries.length > 0;
+}
 
     // -------------------------------------------------------
     // CREATE ENTRY CARDS
