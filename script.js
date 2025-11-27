@@ -65,13 +65,13 @@ function formatDescription(text) {
 const filteredPacks = Object.keys(data.packs).filter(packName => {
     const pack = data.packs[packName];
 
-    // Wenn pack.page existiert → das überschreibt alles
     const packPage = pack.page ?? data.defaults.page;
 
-    // Auf falscher Seite? → Nicht anzeigen
-    if (packPage !== currentPageType) return false;
+    // Dokumentation? → NICHT filtern → alle Tabs anzeigen
+    if (currentPageType === "documentation") return packPage === "documentation";
 
-    // Sichtbarkeit prüfen
+    // Normalbetrieb → alles wie bisher
+    if (packPage !== currentPageType) return false;
     if (pack.visible === false) return false;
     if (pack.visible === true) return true;
 
@@ -112,12 +112,18 @@ const filteredPacks = Object.keys(data.packs).filter(packName => {
         const pack = data.packs[packName];
         const versions = data.defaults.versions;
 
-        const visibleVersions = versions.filter(versionName => {
-            const override = pack.versions?.[versionName];
-            if (override?.visible === false) return false;
-            if (override?.visible === true) return true;
-            return versionHasEntries(packName, versionName);
-        });
+const visibleVersions = versions.filter(versionName => {
+    const override = pack.versions?.[versionName];
+
+    // Dokumentations-Seite? → Immer anzeigen
+    if (currentPageType === "documentation") return true;
+
+    // Normalbetrieb
+    if (override?.visible === false) return false;
+    if (override?.visible === true) return true;
+
+    return versionHasEntries(packName, versionName);
+});
 
         visibleVersions.forEach((versionName, i) => {
             const vTab = document.createElement("div");
