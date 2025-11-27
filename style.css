@@ -219,8 +219,8 @@ header {
    margin: 10px 0;
 }
 
-#preview > div:not(.pack-tags) {
-    margin-bottom: 12px;  /* Abstand vor den Tags */
+#preview .preview-description {
+    margin-bottom: 14px;
 }
 
 #preview p {
