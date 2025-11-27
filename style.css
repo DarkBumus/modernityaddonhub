@@ -217,16 +217,21 @@ header {
     margin-bottom: 10px;
 }
 
+#preview .preview-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 #preview h3 {
     text-align: center;
-    margin: 10px 10px;
+    margin: 0;
 }
 
 #preview p {
     text-align: left;
-    margin: 10px 0 10px 0;
-    flex: initial;
-    overflow-y: visible;
+    margin: 0;
 }
 
 #preview .placeholder {
