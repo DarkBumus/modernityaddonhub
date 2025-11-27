@@ -7,52 +7,56 @@ document.addEventListener("DOMContentLoaded", () => {
     let data = {};
     let downloadData = {};
 
-let tagData = {}; // ganz oben definieren
+    let tagData = {}; // ganz oben definieren
 
-Promise.all([
-    fetch("tab_containers.json").then(r => r.json()),
-    fetch("downloads.json").then(r => r.json()),
-    fetch("tags.json").then(r => r.json()) // NEU
-])
-.then(([tabsJson, downloadsJson, tagsJson]) => {
-    data = tabsJson;
-    downloadData = downloadsJson;
-    tagData = tagsJson; // NEU
-    renderMainTabs();
-})
+    // Ermitteln, ob wir die Dokumentationsseite sind oder die normale Index-Seite.
+    // Dokumentation wird erkannt, wenn die URL "documentation.html" enthält.
+    const currentPage = window.location.pathname.includes("documentation.html") ? "documentation" : "normal";
+
+    Promise.all([
+        fetch("tab_containers.json").then(r => r.json()),
+        fetch("downloads.json").then(r => r.json()),
+        fetch("tags.json").then(r => r.json()) // NEU
+    ])
+    .then(([tabsJson, downloadsJson, tagsJson]) => {
+        data = tabsJson;
+        downloadData = downloadsJson;
+        tagData = tagsJson; // NEU
+        renderMainTabs();
+    })
     .catch(err => console.error("Fehler beim Laden der JSON:", err));
 
-// -------------------------
-// Mini-Markdown-Parser für Vorschau-Beschreibung
-// -------------------------
-function formatDescription(text) {
-    const container = document.createElement("div");
-    if (!text) return container;
+    // -------------------------
+    // Mini-Markdown-Parser für Vorschau-Beschreibung
+    // -------------------------
+    function formatDescription(text) {
+        const container = document.createElement("div");
+        if (!text) return container;
 
-    // Neue Zeilen → <br>
-    text = text.replace(/\r\n|\r|\n/g, "<br>");
+        // Neue Zeilen → <br>
+        text = text.replace(/\r\n|\r|\n/g, "<br>");
 
-    // Fett: **Text**
-    text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+        // Fett: **Text**
+        text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 
-    // Kursiv: *Text*
-    text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
+        // Kursiv: *Text*
+        text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
-    // Links: [Label](URL)
-    text = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        // Links: [Label](URL)
+        text = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
 
-    // Farben: #RRGGBB{Text}
-    text = text.replace(/#([0-9a-fA-F]{6})\{(.*?)\}/g, '<span style="color:#$1">$2</span>');
+        // Farben: #RRGGBB{Text}
+        text = text.replace(/#([0-9a-fA-F]{6})\{(.*?)\}/g, '<span style="color:#$1">$2</span>');
 
-    // Schriftgröße: @XXpx{Text}
-    text = text.replace(/@(\d+)px\{(.*?)\}/g, '<span style="font-size:$1px">$2</span>');
+        // Schriftgröße: @XXpx{Text}
+        text = text.replace(/@(\d+)px\{(.*?)\}/g, '<span style="font-size:$1px">$2</span>');
 
-    // Code: `Text`
-    text = text.replace(/`(.*?)`/g, "<code>$1</code>");
+        // Code: `Text`
+        text = text.replace(/`(.*?)`/g, "<code>$1</code>");
 
-    container.innerHTML = text;
-    return container;
-}
+        container.innerHTML = text;
+        return container;
+    }
 
     // -------------------------
     // TABS
@@ -60,9 +64,22 @@ function formatDescription(text) {
     function renderMainTabs() {
         tabsContainer.innerHTML = "";
 
+        // Fallback default page aus defaults (falls vorhanden)
+        const defaultPage = (data.defaults && data.defaults.page) ? data.defaults.page : "normal";
+
         const filteredPacks = Object.keys(data.packs).filter(packName => {
             const pack = data.packs[packName];
+
+            // Falls pack.visible explizit false → ausblenden
             if (pack.visible === false) return false;
+
+            // Bestimme welche "page" dieser Pack haben soll (falls nicht gesetzt, fallback auf defaults.page)
+            const packPage = pack.page || defaultPage;
+
+            // Wenn packPage nicht mit der aktuellen Seite übereinstimmt, ausblenden
+            if (packPage !== currentPage) return false;
+
+            // Sichtbarkeit ansonsten wie bisher: true/false oder abhängig von Einträgen
             if (pack.visible === true) return true;
             return packHasEntries(packName);
         });
@@ -99,12 +116,21 @@ function formatDescription(text) {
         contentContainer.innerHTML = "";
 
         const pack = data.packs[packName];
-        const versions = data.defaults.versions;
+        const versions = data.defaults.versions || [];
 
         const visibleVersions = versions.filter(versionName => {
             const override = pack.versions?.[versionName];
+
+            // Wenn explizit sichtbar false → immer ausblenden (egal welche Seite)
             if (override?.visible === false) return false;
+
+            // Wenn override.visible === true → anzeigen
             if (override?.visible === true) return true;
+
+            // Sonst: Wenn wir auf der Dokumentationsseite sind, sollen Versions-Tabs immer angezeigt werden (auch wenn leer).
+            if (currentPage === "documentation") return true;
+
+            // Standard-Verhalten für Index/normal: nur anzeigen, wenn Version Einträge hat
             return versionHasEntries(packName, versionName);
         });
 
@@ -193,6 +219,7 @@ function formatDescription(text) {
 
     // -------------------------
     // PACK DOWNLOAD-ENTRIES
+    // (Dein vorheriger Code für insertDownloadEntries kann unverändert bleiben)
     // -------------------------
     function insertDownloadEntries(panelElement, packName, versionName, panelName) {
         const defaults = downloadData.defaults;
@@ -225,7 +252,7 @@ function formatDescription(text) {
                 dlBtn.target = "_blank";
                 dlBtn.download = null; // nicht herunterladen, sondern öffnen
             } else if (entry.file) {
-                 // Interner Download
+                // Interner Download
                 dlBtn.href = defaults.download_path + entry.file;
                 dlBtn.download = entry.file.split("/").pop();
             } else {
@@ -239,147 +266,149 @@ function formatDescription(text) {
             card.appendChild(title);
             card.appendChild(dlBtn);
 
-// Vorschau-Hover
-let previewInterval; // global, stoppt vorherige Intervalle
+            // Vorschau-Hover
+            let previewInterval; // global, stoppt vorherige Intervalle
 
-card.addEventListener("mouseenter", () => {
-    // vorherigen Interval stoppen
-    if (previewInterval) {
-        clearInterval(previewInterval);
-        previewInterval = null;
-    }
+            card.addEventListener("mouseenter", () => {
+                // vorherigen Interval stoppen
+                if (previewInterval) {
+                    clearInterval(previewInterval);
+                    previewInterval = null;
+                }
 
-    previewContainer.innerHTML = "";
+                previewContainer.innerHTML = "";
 
-    // Vorschaubilder oder Fallback auf Icon
-    const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
-    let currentIndex = 0;
+                // Vorschaubilder oder Fallback auf Icon
+                const previews = entry.preview && entry.preview.length > 0 ? entry.preview : [entry.icon];
+                let currentIndex = 0;
 
-    const img = document.createElement("img");
-    img.src = defaults.preview_path + previews[currentIndex];
-    img.style.opacity = 1;
-    img.style.transition = "opacity 0.5s ease-in-out";
-    previewContainer.appendChild(img);
-
-    // Titel (zentriert)
-    const titleEl = document.createElement("h3");
-    titleEl.textContent = entry.name;
-    previewContainer.appendChild(titleEl);
-
-    // Beschreibung mit Mini-Markdown
-    const descEl = formatDescription(entry.description);
-    descEl.classList.add("preview-description");
-    previewContainer.appendChild(descEl);
-
-// Tags unten (aus tags.json)
-if (entry.tags && entry.tags.length > 0) {
-    const tagDiv = document.createElement("div");
-    tagDiv.className = "pack-tags";
-    tagDiv.style.marginTop = "auto";
-
-    entry.tags.forEach(tagId => {
-        const info = tagData[tagId];
-        if (!info) return;
-
-        const tagEl = document.createElement("span");
-        tagEl.className = "pack-tag";
-        tagEl.textContent = `${info.emoji} ${info.label}`;
-
-        // Tooltip
-        tagEl.addEventListener("mouseenter", e => showTagTooltip(e, info.description));
-        tagEl.addEventListener("mousemove", e => moveTagTooltip(e));
-        tagEl.addEventListener("mouseleave", hideTagTooltip);
-
-        // Klickbare Tags (falls link != null)
-        if (info.link) {
-            tagEl.style.cursor = "pointer";
-            tagEl.addEventListener("click", () => {
-                window.open(info.link, "_blank");
-            });
-        }
-
-        tagDiv.appendChild(tagEl);
-    });
-
-    previewContainer.appendChild(tagDiv);
-}
-
-function showTagTooltip(event, text) {
-    const tip = document.getElementById("tag-tooltip");
-    tip.textContent = text;
-    tip.style.opacity = "1";
-    moveTagTooltip(event);
-}
-
-function moveTagTooltip(event) {
-    const tip = document.getElementById("tag-tooltip");
-
-    const margin = 12; // Abstand zur Maus
-    const mouseX = event.pageX;
-    const mouseY = event.pageY;
-    const tooltipWidth = tip.offsetWidth;
-    const tooltipHeight = tip.offsetHeight;
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    // Standardposition rechts unten
-    let posX = mouseX + margin;
-    let posY = mouseY + margin;
-
-    // Rechts raus? → nach links verschieben
-    if (posX + tooltipWidth > viewportWidth) {
-        posX = mouseX - tooltipWidth - margin;
-    }
-
-    // Unten raus? → nach oben verschieben
-    if (posY + tooltipHeight > viewportHeight) {
-        posY = mouseY - tooltipHeight - margin;
-    }
-
-    // Falls oben raus → clamp nach 0
-    if (posY < 0) posY = 0;
-
-    // Falls links raus → clamp nach 0
-    if (posX < 0) posX = 0;
-
-    tip.style.left = posX + "px";
-    tip.style.top = posY + "px";
-}
-
-function hideTagTooltip() {
-    const tip = document.getElementById("tag-tooltip");
-    tip.style.opacity = "0";
-}
-
-    // Intervall für mehrere Vorschaubilder
-    if (previews.length > 1) {
-        previewInterval = setInterval(() => {
-            currentIndex = (currentIndex + 1) % previews.length;
-            img.style.opacity = 0;
-            setTimeout(() => {
+                const img = document.createElement("img");
                 img.src = defaults.preview_path + previews[currentIndex];
                 img.style.opacity = 1;
-            }, 500); // sollte zur CSS-Transition passen
-        }, 3000); // alle 3 Sekunden
-    }
-});
+                img.style.transition = "opacity 0.5s ease-in-out";
+                previewContainer.appendChild(img);
+
+                // Titel (zentriert)
+                const titleEl = document.createElement("h3");
+                titleEl.textContent = entry.name;
+                previewContainer.appendChild(titleEl);
+
+                // Beschreibung mit Mini-Markdown
+                const descEl = formatDescription(entry.description);
+                descEl.classList.add("preview-description");
+                previewContainer.appendChild(descEl);
+
+                // Tags unten (aus tags.json)
+                if (entry.tags && entry.tags.length > 0) {
+                    const tagDiv = document.createElement("div");
+                    tagDiv.className = "pack-tags";
+                    tagDiv.style.marginTop = "auto";
+
+                    entry.tags.forEach(tagId => {
+                        const info = tagData[tagId];
+                        if (!info) return;
+
+                        const tagEl = document.createElement("span");
+                        tagEl.className = "pack-tag";
+                        tagEl.textContent = `${info.emoji} ${info.label}`;
+
+                        // Tooltip
+                        tagEl.addEventListener("mouseenter", e => showTagTooltip(e, info.description));
+                        tagEl.addEventListener("mousemove", e => moveTagTooltip(e));
+                        tagEl.addEventListener("mouseleave", hideTagTooltip);
+
+                        // Klickbare Tags (falls link != null)
+                        if (info.link) {
+                            tagEl.style.cursor = "pointer";
+                            tagEl.addEventListener("click", () => {
+                                window.open(info.link, "_blank");
+                            });
+                        }
+
+                        tagDiv.appendChild(tagEl);
+                    });
+
+                    previewContainer.appendChild(tagDiv);
+                }
+
+                function showTagTooltip(event, text) {
+                    const tip = document.getElementById("tag-tooltip");
+                    tip.textContent = text;
+                    tip.style.opacity = "1";
+                    moveTagTooltip(event);
+                }
+
+                function moveTagTooltip(event) {
+                    const tip = document.getElementById("tag-tooltip");
+
+                    const margin = 12; // Abstand zur Maus
+                    const mouseX = event.pageX;
+                    const mouseY = event.pageY;
+                    const tooltipWidth = tip.offsetWidth;
+                    const tooltipHeight = tip.offsetHeight;
+                    const viewportWidth = window.innerWidth;
+                    const viewportHeight = window.innerHeight;
+
+                    // Standardposition rechts unten
+                    let posX = mouseX + margin;
+                    let posY = mouseY + margin;
+
+                    // Rechts raus? → nach links verschieben
+                    if (posX + tooltipWidth > viewportWidth) {
+                        posX = mouseX - tooltipWidth - margin;
+                    }
+
+                    // Unten raus? → nach oben verschieben
+                    if (posY + tooltipHeight > viewportHeight) {
+                        posY = mouseY - tooltipHeight - margin;
+                    }
+
+                    // Falls oben raus → clamp nach 0
+                    if (posY < 0) posY = 0;
+
+                    // Falls links raus → clamp nach 0
+                    if (posX < 0) posX = 0;
+
+                    tip.style.left = posX + "px";
+                    tip.style.top = posY + "px";
+                }
+
+                function hideTagTooltip() {
+                    const tip = document.getElementById("tag-tooltip");
+                    tip.style.opacity = "0";
+                }
+
+                // Intervall für mehrere Vorschaubilder
+                if (previews.length > 1) {
+                    previewInterval = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % previews.length;
+                        img.style.opacity = 0;
+                        setTimeout(() => {
+                            img.src = defaults.preview_path + previews[currentIndex];
+                            img.style.opacity = 1;
+                        }, 500); // sollte zur CSS-Transition passen
+                    }, 3000); // alle 3 Sekunden
+                }
+            });
 
             panelElement.appendChild(card);
         });
     }
-});
 
-// Hamburger-Menü
-const hamburgerBtn = document.getElementById("hamburger-btn");
-const dropdown = document.getElementById("hamburger-dropdown");
+    // Hamburger-Menü (am Ende der Datei)
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const dropdown = document.getElementById("hamburger-dropdown");
 
-hamburgerBtn.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-});
+    if (hamburgerBtn && dropdown) {
+        hamburgerBtn.addEventListener("click", () => {
+            dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+        });
 
-// Klick außerhalb schließt das Menü
-document.addEventListener("click", (e) => {
-    if (!hamburgerBtn.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.style.display = "none";
+        // Klick außerhalb schließt das Menü
+        document.addEventListener("click", (e) => {
+            if (!hamburgerBtn.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.style.display = "none";
+            }
+        });
     }
 });
