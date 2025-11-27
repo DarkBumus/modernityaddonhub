@@ -65,10 +65,10 @@ function formatDescription(text) {
 const filteredPacks = Object.keys(data.packs).filter(packName => {
     const pack = data.packs[packName];
 
-    const packPage = pack.page ?? data.defaults.page;
+    // Dokumentations-Seite? → alle Packs anzeigen
+    if (currentPageType === "documentation") return true;
 
-    // Dokumentation? → NICHT filtern → alle Tabs anzeigen
-    if (currentPageType === "documentation") return packPage === "documentation";
+    const packPage = pack.page ?? data.defaults.page;
 
     // Normalbetrieb → alles wie bisher
     if (packPage !== currentPageType) return false;
