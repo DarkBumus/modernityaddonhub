@@ -48,6 +48,7 @@
       "versions": {}
     },
     "Documentation": {
+      "visible": "true",
       "page": "documentation",
       "versions": {}
     }
