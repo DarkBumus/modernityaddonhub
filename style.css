@@ -106,6 +106,7 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    white-space: nowrap;
 }
 .tab:hover { background: #666; }
 .tab.active { background: #0088ff; }
