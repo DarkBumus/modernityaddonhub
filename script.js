@@ -218,8 +218,21 @@ function formatDescription(text) {
             const dlBtn = document.createElement("a");
             dlBtn.className = "download-btn";
             dlBtn.textContent = "Download";
-            dlBtn.href = defaults.download_path + entry.file;
-            dlBtn.download = entry.file.split("/").pop();
+
+            if (entry.external_downloads) {
+                // Externer Link
+                dlBtn.href = entry.external_downloads;
+                dlBtn.target = "_blank";
+                dlBtn.download = null; // nicht herunterladen, sondern öffnen
+            } else if (entry.file) {
+                 // Interner Download
+                dlBtn.href = defaults.download_path + entry.file;
+                dlBtn.download = entry.file.split("/").pop();
+            } else {
+                // Weder file noch external_downloads → Button deaktivieren (optional)
+                dlBtn.href = "#";
+                dlBtn.classList.add("disabled");
+            }
 
             // Panels zeigen nur Icon + Name + Download
             card.appendChild(icon);
