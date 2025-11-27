@@ -227,7 +227,7 @@ header {
 
 #preview h3 {
     text-align: center;
-    margin: 0;           /* Abstand via .preview-text */
+    margin: 5px;           /* Abstand via .preview-text */
 }
 
 #preview p {
