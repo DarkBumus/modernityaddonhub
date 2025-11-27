@@ -3,9 +3,19 @@
     "icon_path": "assets/icons/",
     "preview_path":"assets/previews/",
     "download_path": "downloads/"
+    "external_downloads": null
   },
   "Modernity": {
     "1.7": {
+      "Main Texture Pack": [
+        {
+          "name": "Modernity",
+          "description": "Modernity main texture pack."
+          "icon": "modernity/pack1.png"
+          "preview":["modernity/prewie_template1.png"],
+          "file": null,
+          "tags": ["mainpack"]
+          "external_downloads": "https://modrinth.com/resourcepack/modernity"
       "Templates": [
         {
           "name": "Modernity Addon 1.7.10",
