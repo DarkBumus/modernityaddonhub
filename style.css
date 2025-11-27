@@ -205,42 +205,34 @@ header {
 
     display: flex;
     flex-direction: column;
-
     align-items: stretch;
     height: auto;
     max-height: none;
 }
 
+/* Bild oben */
 #preview img {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Abstand Bild → Titel */
 }
 
+/* Wrapper für Titel + Beschreibung */
 #preview .preview-text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 10px;           /* Abstand Titel → Beschreibung */
+    margin-bottom: 10px; /* Abstand Beschreibung → Tags */
 }
 
 #preview h3 {
     text-align: center;
-    margin: 0;
+    margin: 0;           /* Abstand via .preview-text */
 }
 
 #preview p {
     text-align: left;
-    margin: 0;
-}
-
-#preview .placeholder {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin: 80px 0;
-    opacity: 0.9;
+    margin: 0;           /* Abstand via .preview-text */
 }
 
 /* Tags unten */
@@ -248,8 +240,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: auto;
+    margin-top: auto;    /* Tags kleben unten */
 }
+
 #preview .pack-tag {
     background-color: #eee;
     color: #333;
@@ -260,6 +253,7 @@ header {
     align-items: center;
     gap: 4px;
 }
+
 #preview .pack-tag:hover { background-color: #ddd; }
 
 /* Tooltip */
