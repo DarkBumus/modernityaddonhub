@@ -193,65 +193,62 @@ header {
    PREVIEW
 =========================== */
 #preview {
-    flex: 1.7;
-    min-width: 380px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: auto;
-    max-height: none;
+   flex: 1.7;
+   min-width: 380px;
+   background: #fff;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   padding: 10px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+   position: sticky;
+   top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   height: auto; max-height: none;
 }
 
-/* Bild oben */
 #preview img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px; /* Abstand Bild → Titel */
-}
-
-/* Wrapper für Titel + Beschreibung */
-#preview .preview-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;           /* Abstand Titel → Beschreibung */
-    margin-bottom: 10px; /* Abstand Beschreibung → Tags */
+   width: 100%;
+   border-radius: 8px;
+   margin-bottom: 10px;
 }
 
 #preview h3 {
-    text-align: center;
-    margin: 5px;           /* Abstand via .preview-text */
+   text-align: center;
+   margin: 10px 0;
 }
 
 #preview p {
-    text-align: left;
-    margin: 10px;           /* Abstand via .preview-text */
+   text-align: center;
+   margin: 10px 0;
+}
+
+#preview .placeholder {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   margin: 80px 0;
+   opacity: 0.9;
 }
 
 /* Tags unten */
 #preview .pack-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: auto;    /* Tags kleben unten */
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4px; margin-top: auto;
 }
 
 #preview .pack-tag {
-    background-color: #eee;
-    color: #333;
-    padding: 2px 6px;
-    border-radius: 12px;
-    font-size: 0.8em;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+   background-color: #eee;
+   color: #333;
+   padding: 2px 6px;
+   border-radius: 12px;
+   font-size: 0.8em;
+   display: inline-flex;
+   align-items: center;
+   gap: 4px;
 }
 
 #preview .pack-tag:hover { background-color: #ddd; }
