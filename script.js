@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Ermitteln, ob wir die Dokumentationsseite sind oder die normale Index-Seite.
     // Dokumentation wird erkannt, wenn die URL "documentation.html" enthält.
-    const currentPage = window.location.pathname.includes("documentation.html") ? "documentation" : "normal";
+    const currentPage = document.body.dataset.page || "normal";
 
     Promise.all([
         fetch("tab_containers.json").then(r => r.json()),
