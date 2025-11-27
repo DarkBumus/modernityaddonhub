@@ -220,8 +220,8 @@ header {
 }
 
 #preview p {
-   text-align: center;
-   margin: 10px 0;
+   text-align: left;
+   margin: 50px 0;
 }
 
 #preview .placeholder {
