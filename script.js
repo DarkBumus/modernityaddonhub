@@ -248,14 +248,20 @@ card.addEventListener("mouseenter", () => {
     img.style.transition = "opacity 0.5s ease-in-out";
     previewContainer.appendChild(img);
 
+    // Wrapper für Titel + Beschreibung
+    const textWrapper = document.createElement("div");
+    textWrapper.className = "preview-text";
+    
     // Titel (zentriert)
     const titleEl = document.createElement("h3");
     titleEl.textContent = entry.name;
-    previewContainer.appendChild(titleEl);
 
     // Beschreibung (linksbündig)
     const descEl = formatDescription(entry.description);
+
+    previewContainer.appendChild(titleEl);
     previewContainer.appendChild(descEl);
+    previewContainer.appendChild(textWrapper);
 
 // Tags unten (aus tags.json)
 if (entry.tags && entry.tags.length > 0) {
