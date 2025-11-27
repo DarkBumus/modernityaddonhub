@@ -11,8 +11,8 @@
         {
           "name": "Modernity",
           "description": "Modernity main texture pack.",
-          "icon": "modernity/pack1.png",
-          "preview":["modernity/prewie_template1.png"],
+          "icon": "modernity/pack0.png",
+          "preview":["modernity/preview_template1.png"],
           "file": null,
           "tags": ["mainpack"],
           "external_downloads": "https://modrinth.com/resourcepack/modernity"
