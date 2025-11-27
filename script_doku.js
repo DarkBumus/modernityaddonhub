@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const tabsContainer = document.getElementById("doc-tabs");
+    const tabsContainer = document.getElementById("tabs");
     const sections = document.querySelectorAll(".doc-section");
 
     fetch("tab_containers_doku.json")
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Hamburger Menü (gleich wie im Hauptscript)
+    // Hamburger Menü (identisch wie im Hauptscript)
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const dropdown = document.getElementById("hamburger-dropdown");
 
