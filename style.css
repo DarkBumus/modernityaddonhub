@@ -96,6 +96,18 @@ header {
     justify-content: center;
     gap: 10px;
 }
+#tabs::-webkit-scrollbar {
+    height: 6px;
+}
+
+#tabs::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+#tabs::-webkit-scrollbar-track {
+    background: #222;
+}
 .tab {
     color: white;
     padding: 8px 15px;
@@ -107,6 +119,10 @@ header {
     align-items: center;
     gap: 6px;
     white-space: nowrap;
+
+    overflow-x: auto;        /* horizontal scroll */
+    scrollbar-width: thin;   /* Firefox: dünne Scrollbar */
+    -webkit-overflow-scrolling: touch; /* flüssiges Scrollen auf iOS */
 }
 .tab:hover { background: #666; }
 .tab.active { background: #0088ff; }
