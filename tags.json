@@ -1,4 +1,10 @@
 {
+    "mainpack": {
+        "emoji": "🎨",
+        "label": "Main Texture Pack",
+        "description": "This is the Main Texture Pack. The 'Download' button will transfer you to the site where the texture pack is hosted.",
+        "link": null
+    },
     "template": {
         "emoji": "📦",
         "label": "Template",
