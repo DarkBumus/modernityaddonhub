@@ -25,7 +25,7 @@
       "1.20": "🎍",
       "1.21": "🗡️"
     },
-    "auto_open_panels": ["Main Texture Pack", "Templates"]
+    "auto_open_panels": ["Main Texture Pack", "Templates"],
     "page": "normal"
   },
   "packs": {
@@ -49,7 +49,7 @@
     },
     "Documentation": {
       "visible": true,
-      "versions": {}
+      "versions": {},
       "page": "documentation"
   }
 }
