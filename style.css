@@ -98,11 +98,11 @@ header {
 
     overflow-x: auto;        /* horizontal scroll, falls Inhalt zu breit */
     white-space: nowrap;     /* verhindert Zeilenumbruch */
-    scrollbar-width: auto;   /* Firefox */
+    scrollbar-width: normal;   /* Firefox */
     -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
 }
 #tabs::-webkit-scrollbar {
-    height: auto;        /* normale Scrollbar-Höhe */
+    height: normal;        /* normale Scrollbar-Höhe */
 }
 #tabs .tab {
     flex: 0 0 auto;      /* verhindern, dass Tabs schrumpfen */
