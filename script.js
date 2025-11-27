@@ -7,52 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
     let data = {};
     let downloadData = {};
 
-    let tagData = {}; // ganz oben definieren
+let tagData = {}; // ganz oben definieren
 
-    Promise.all([
-        fetch("tab_containers.json").then(r => r.json()),
-        fetch("downloads.json").then(r => r.json()),
-        fetch("tags.json").then(r => r.json()) // NEU
-    ])
-    .then(([tabsJson, downloadsJson, tagsJson]) => {
-        data = tabsJson;
-        downloadData = downloadsJson;
-        tagData = tagsJson; // NEU
-        renderMainTabs();
-    })
-        .catch(err => console.error("Fehler beim Laden der JSON:", err));
-    
-    // -------------------------
-    // Mini-Markdown-Parser für Vorschau-Beschreibung
-    // -------------------------
-    function formatDescription(text) {
-        const container = document.createElement("div");
-        if (!text) return container;
-
-        // Neue Zeilen → <br>
-        text = text.replace(/\r\n|\r|\n/g, "<br>");
-
-        // Fett: **Text**
-        text = text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-
-        // Kursiv: *Text*
-        text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
-
-        // Links: [Label](URL)
-        text = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
-
-        // Farben: #RRGGBB{Text}
-        text = text.replace(/#([0-9a-fA-F]{6})\{(.*?)\}/g, '<span style="color:#$1">$2</span>');
-
-        // Schriftgröße: @XXpx{Text}
-        text = text.replace(/@(\d+)px\{(.*?)\}/g, '<span style="font-size:$1px">$2</span>');
-
-        // Code: `Text`
-        text = text.replace(/`(.*?)`/g, "<code>$1</code>");
-
-        container.innerHTML = text;
-        return container;
-    }
+Promise.all([
+    fetch("tab_containers.json").then(r => r.json()),
+    fetch("downloads.json").then(r => r.json()),
+    fetch("tags.json").then(r => r.json()) // NEU
+])
+.then(([tabsJson, downloadsJson, tagsJson]) => {
+    data = tabsJson;
+    downloadData = downloadsJson;
+    tagData = tagsJson; // NEU
+    renderMainTabs();
+})
+    .catch(err => console.error("Fehler beim Laden der JSON:", err));
 
     // -------------------------
     // TABS
@@ -248,20 +216,15 @@ card.addEventListener("mouseenter", () => {
     img.style.transition = "opacity 0.5s ease-in-out";
     previewContainer.appendChild(img);
 
-    // Wrapper für Titel + Beschreibung
-    const textWrapper = document.createElement("div");
-    textWrapper.className = "preview-text";
-    
     // Titel (zentriert)
     const titleEl = document.createElement("h3");
     titleEl.textContent = entry.name;
+    previewContainer.appendChild(titleEl);
 
     // Beschreibung (linksbündig)
-    const descEl = formatDescription(entry.description);
-
-    previewContainer.appendChild(titleEl);
+    const descEl = document.createElement("p");
+    descEl.textContent = entry.description;
     previewContainer.appendChild(descEl);
-    previewContainer.appendChild(textWrapper);
 
 // Tags unten (aus tags.json)
 if (entry.tags && entry.tags.length > 0) {
