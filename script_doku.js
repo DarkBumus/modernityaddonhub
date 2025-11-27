@@ -10,28 +10,26 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderTabs(tabs) {
         tabsContainer.innerHTML = "";
 
-        tabs
-            .filter(t => t.visible !== false)
-            .forEach((tab, index) => {
-                const tabEl = document.createElement("div");
-                tabEl.className = "tab";
-                tabEl.textContent = (tab.emoji ? tab.emoji + " " : "") + tab.label;
+        tabs.forEach((tab, index) => {
+            const t = document.createElement("div");
+            t.className = "tab";
+            t.textContent = (tab.emoji ? tab.emoji + " " : "") + tab.label;
 
-                if (index === 0) {
-                    tabEl.classList.add("active");
-                    showSection(tab.id);
-                }
+            if (index === 0) {
+                t.classList.add("active");
+                showSection(tab.id);
+            }
 
-                tabEl.addEventListener("click", () => {
-                    tabsContainer.querySelectorAll(".tab")
-                        .forEach(t => t.classList.remove("active"));
+            t.addEventListener("click", () => {
+                document.querySelectorAll("#tabs .tab")
+                    .forEach(x => x.classList.remove("active"));
 
-                    tabEl.classList.add("active");
-                    showSection(tab.id);
-                });
-
-                tabsContainer.appendChild(tabEl);
+                t.classList.add("active");
+                showSection(tab.id);
             });
+
+            tabsContainer.appendChild(t);
+        });
     }
 
     function showSection(id) {
@@ -40,7 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Hamburger Menü (identisch wie im Hauptscript)
+
+
+    // Hamburger Menü identisch wie auf Startseite
     const hamburgerBtn = document.getElementById("hamburger-btn");
     const dropdown = document.getElementById("hamburger-dropdown");
 
