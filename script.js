@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("content");
     const previewContainer = document.getElementById("preview");
 
-    const currentPageType = document.body.dataset.page || "normal";
-
     let data = {};
     let downloadData = {};
 
@@ -62,21 +60,12 @@ function formatDescription(text) {
     function renderMainTabs() {
         tabsContainer.innerHTML = "";
 
-const filteredPacks = Object.keys(data.packs).filter(packName => {
-    const pack = data.packs[packName];
-
-    // Dokumentations-Seite? → alle Packs anzeigen
-    if (currentPageType === "documentation") return true;
-
-    const packPage = pack.page ?? data.defaults.page;
-
-    // Normalbetrieb → alles wie bisher
-    if (packPage !== currentPageType) return false;
-    if (pack.visible === false) return false;
-    if (pack.visible === true) return true;
-
-    return packHasEntries(packName);
-});
+        const filteredPacks = Object.keys(data.packs).filter(packName => {
+            const pack = data.packs[packName];
+            if (pack.visible === false) return false;
+            if (pack.visible === true) return true;
+            return packHasEntries(packName);
+        });
 
         filteredPacks.forEach((packName, i) => {
             const tabEl = document.createElement("div");
@@ -112,18 +101,12 @@ const filteredPacks = Object.keys(data.packs).filter(packName => {
         const pack = data.packs[packName];
         const versions = data.defaults.versions;
 
-const visibleVersions = versions.filter(versionName => {
-    const override = pack.versions?.[versionName];
-
-    // Dokumentations-Seite? → Immer anzeigen
-    if (currentPageType === "documentation") return true;
-
-    // Normalbetrieb
-    if (override?.visible === false) return false;
-    if (override?.visible === true) return true;
-
-    return versionHasEntries(packName, versionName);
-});
+        const visibleVersions = versions.filter(versionName => {
+            const override = pack.versions?.[versionName];
+            if (override?.visible === false) return false;
+            if (override?.visible === true) return true;
+            return versionHasEntries(packName, versionName);
+        });
 
         visibleVersions.forEach((versionName, i) => {
             const vTab = document.createElement("div");
@@ -151,69 +134,43 @@ const visibleVersions = versions.filter(versionName => {
     // -------------------------
     // PANELS
     // -------------------------
-function renderPanels(packName, versionName) {
-    contentContainer.innerHTML = "";
+    function renderPanels(packName, versionName) {
+        contentContainer.innerHTML = "";
 
-    const pack = data.packs[packName];
-    const packPage = pack.page ?? data.defaults.page;
+        const pack = data.packs[packName];
+        const versionOverride = pack.versions?.[versionName] || {};
 
-    // -----------------------------
-    // DOCUMENTATION MODE
-    // -----------------------------
-    if (packPage === "documentation") {
-        // Versionstitel anzeigen
-        const header = document.createElement("h2");
-        header.textContent = "Version " + versionName;
-        contentContainer.appendChild(header);
+        data.defaults.category_panels.forEach(panelName => {
+            const panelVisible =
+                versionOverride.panels?.[panelName] !== undefined
+                    ? versionOverride.panels[panelName]
+                    : panelHasEntries(packName, versionName, panelName);
 
-        // Platz für eigenen Text pro Version
-        const docBlock = document.createElement("div");
-        docBlock.className = "documentation-text";
-        docBlock.innerHTML = `
-            <!-- Du füllst diesen Bereich in documentation.html selbst aus -->
-            <p>Hier kannst du Text für <strong>${packName} – Version ${versionName}</strong> einfügen.</p>
-        `;
-        contentContainer.appendChild(docBlock);
+            if (!panelVisible) return;
 
-        return; // Ganz wichtig → Panels NICHT rendern!
-    }
+            const coll = document.createElement("button");
+            coll.className = "collapsible";
+            coll.textContent = panelName;
 
-    // -----------------------------
-    // NORMAL MODE (index.html)
-    // -----------------------------
-    const versionOverride = pack.versions?.[versionName] || {};
+            const panel = document.createElement("div");
+            panel.className = "content-panel";
 
-    data.defaults.category_panels.forEach(panelName => {
-        const panelVisible =
-            versionOverride.panels?.[panelName] !== undefined
-                ? versionOverride.panels[panelName]
-                : panelHasEntries(packName, versionName, panelName);
+            insertDownloadEntries(panel, packName, versionName, panelName);
 
-        if (!panelVisible) return;
+            coll.addEventListener("click", () => {
+                coll.classList.toggle("active");
+                panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+            });
 
-        const coll = document.createElement("button");
-        coll.className = "collapsible";
-        coll.textContent = panelName;
+            contentContainer.appendChild(coll);
+            contentContainer.appendChild(panel);
 
-        const panel = document.createElement("div");
-        panel.className = "content-panel";
-
-        insertDownloadEntries(panel, packName, versionName, panelName);
-
-        coll.addEventListener("click", () => {
-            coll.classList.toggle("active");
-            panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+            if (data.defaults.auto_open_panels?.includes(panelName)) {
+                coll.classList.add("active");
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
         });
-
-        contentContainer.appendChild(coll);
-        contentContainer.appendChild(panel);
-
-        if (data.defaults.auto_open_panels?.includes(panelName)) {
-            coll.classList.add("active");
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-}
+    }
 
     function packHasEntries(packName) {
         const pack = downloadData[packName];
