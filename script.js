@@ -255,6 +255,7 @@ card.addEventListener("mouseenter", () => {
 
     // Beschreibung mit Mini-Markdown
     const descEl = formatDescription(entry.description);
+    descEl.classList.add("preview-description");
     previewContainer.appendChild(descEl);
 
 // Tags unten (aus tags.json)
