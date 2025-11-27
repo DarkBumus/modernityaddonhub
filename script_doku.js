@@ -8,29 +8,37 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("JSON-Fehler:", err));
 
     function renderTabs(tabs) {
-        tabsContainer.innerHTML = "";
+    tabsContainer.innerHTML = "";
 
-        tabs.forEach((tab, index) => {
-            const t = document.createElement("div");
-            t.className = "tab";
-            t.textContent = (tab.emoji ? tab.emoji + " " : "") + tab.label;
+    tabs.forEach((tab, index) => {
+        const t = document.createElement("div");
+        t.className = "tab";
 
-            if (index === 0) {
-                t.classList.add("active");
-                showSection(tab.id);
-            }
+        // Emoji + Label sauber trennen wie in renderVersionTabs()
+        if (tab.emoji) {
+            const emojiSpan = document.createElement("span");
+            emojiSpan.textContent = tab.emoji;
+            t.appendChild(emojiSpan);
+        }
 
-            t.addEventListener("click", () => {
-                document.querySelectorAll("#tabs .tab")
-                    .forEach(x => x.classList.remove("active"));
+        const labelSpan = document.createElement("span");
+        labelSpan.textContent = tab.label;
+        t.appendChild(labelSpan);
 
-                t.classList.add("active");
-                showSection(tab.id);
-            });
+        if (index === 0) {
+            t.classList.add("active");
+            showSection(tab.id);
+        }
 
-            tabsContainer.appendChild(t);
+        t.addEventListener("click", () => {
+            document.querySelectorAll("#tabs .tab").forEach(x => x.classList.remove("active"));
+            t.classList.add("active");
+            showSection(tab.id);
         });
-    }
+
+        tabsContainer.appendChild(t);
+    });
+}
 
     function showSection(id) {
         sections.forEach(sec => {
