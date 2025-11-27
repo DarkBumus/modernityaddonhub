@@ -26,6 +26,7 @@
       "1.21": "🗡️"
     },
     "auto_open_panels": ["Main Texture Pack", "Templates"]
+    "page": "normal"
   },
   "packs": {
     "Modernity": {
@@ -45,6 +46,10 @@
     "DokuCraft": {
       "visible": false,
       "versions": {}
-    }
+    },
+    "Documentation": {
+      "visible": true,
+      "versions": {}
+      "page": "documentation"
   }
 }
