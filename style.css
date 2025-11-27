@@ -219,6 +219,10 @@ header {
    margin: 10px 0;
 }
 
+#preview > div:not(.pack-tags) {
+    margin-bottom: 12px;  /* Abstand vor den Tags */
+}
+
 #preview p {
    text-align: left;
    margin: 10px 0;
