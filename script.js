@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentContainer = document.getElementById("content");
     const previewContainer = document.getElementById("preview");
 
+    const currentPageType = document.body.dataset.page || "normal";
+
     let data = {};
     let downloadData = {};
 
