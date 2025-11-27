@@ -98,11 +98,14 @@ header {
 
     overflow-x: auto;        /* horizontal scroll, falls Inhalt zu breit */
     white-space: nowrap;     /* verhindert Zeilenumbruch */
-    scrollbar-width: thin;   /* Firefox */
+    scrollbar-width: auto;   /* Firefox */
     -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
 }
+#tabs::-webkit-scrollbar {
+    height: auto;        /* normale Scrollbar-Höhe */
+}
 #tabs .tab {
-    flex: 0 0 auto; /* verhindert, dass Tabs schrumpfen */
+    flex: 0 0 auto;      /* verhindern, dass Tabs schrumpfen */
 }
 .tab {
     color: white;
