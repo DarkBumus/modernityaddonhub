@@ -5,8 +5,11 @@
     "download_path": "downloads/",
     "external_downloads": null
   },
+  
   "Modernity": {
+    
     "1.7": {
+      
       "Main Texture Pack": [
         {
           "name": "Modernity",
@@ -28,6 +31,7 @@
           "tags": ["template"]
         }
       ],
+      
       "Connected Textures": [
         {
           "name": "Connected Glass",
@@ -63,15 +67,71 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with 'Randomized Bookshelves'!}",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack **is incompatible** with 'Randomized Bookshelves'!}",
           "icon": "modernity/connected_bookshelves.png",
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Bookshelves.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "horizontalconnection"]
         }
+      ],
+      
+      "Randomized Blocks": [
+        {
+          "name": "Randomized Bricks",
+          "description": "Randomizes the texture for Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Brick Walls require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#DD2E44{This pack **is incompatible** with 'Bricks Complete Pack'!}",
+          "icon": "modernity/randomized_bricks.png",
+          "preview":["modernity/preview_randomized_bricks1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Planks",
+          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>(Keep in mind, that Fences, Fence Gates, Buttons and Pressure Plates for the different wood types require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#FDCB58{This pack **gets overridden** by 'Desaturated Dark Oak Complete Pack'!}<br>#FDCB58{This pack **gets overridden** by 'Curracabah Acacia Complete Pack'!}<br>#FDCB58{This pack **gets overridden** by 'Vintage Cherry Complete Pack'!}<br>#FDCB58{This pack **gets overridden** by 'Darker Mangrove Complete Pack'!}<br>#FDCB58{This pack **gets overridden** by 'Red Crimson Complete Pack'!}<br>#FDCB58{This pack **gets overridden** by 'Muted Warped Wood Complete Pack'!}",
+          "icon": "modernity/randomized_planks.png",
+          "preview":["modernity/preview_randomized_planks1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Planks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Grass and Fern [old]",
+          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear to be of random height. Also applies a mirrored texture to Dead Bushes.<br><br>#DD2E44{This pack **is incompatible** with 'Randomized Grass and Fern'!}",
+          "icon": "modernity/randomized_grassold.png",
+          "preview":["modernity/preview_randomized_grassold1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Grass_and_Fern_[old].zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Bookshelves",
+          "description": "Randomizes the side texture for Bookshelves so that they appear to be more random.<br><br>#DD2E44{This pack **is incompatible** with 'Connected Bookshelves'!}",
+          "icon": "modernity/randomized_bookshelves.png",
+          "preview":["modernity/preview_randomized_bookshelves1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Bookshelves.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Pumpkins",
+          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by 'Pumpkin Complete Pack'!}",
+          "icon": "modernity/randomized_pumpkins.png",
+          "preview":["modernity/preview_randomized_pumpkins1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Pumpkins.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Mushrooms",
+          "description": "Randomizes the textures for Red and Brown Mushrooms.",
+          "icon": "modernity/randomized_mushrooms.png",
+          "preview":["modernity/preview_randomized_mushrooms1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Mushrooms.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        
       ]
     },
+
+
+    
     "1.12": {
+      
       "Main Texture Pack": [
         {
           "name": "Modernity",
@@ -93,7 +153,8 @@
           "tags": ["template"]
         }
       ],
-            "Connected Textures": [
+      
+      "Connected Textures": [
         {
           "name": "Connected Glass",
           "description": "Connects the regular Glass blocks so that they appear as one singular pane of glass.<br><br>This works for full Glass blocks as well as Glass Panes.",
@@ -121,8 +182,15 @@
       ]
     }
   },
+
+
+
+
+  
   "Palettized Programmer Art": {
+    
     "1.7": {
+      
       "Main Texture Pack": [
         {
           "name": "Palettized Programmer Art",
@@ -144,6 +212,7 @@
           "tags": ["template"]
         }
       ],
+      
       "Connected Textures": [
         {
           "name": "Connected Glass",
@@ -155,7 +224,7 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with 'Randomized Bookshelves'!}",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack **is incompatible** with 'Randomized Bookshelves'!}",
           "icon": "pprogrammerart/connected_bookshelves.png",
           "preview":["pprogrammerart/preview_connected_bookshelves1.png"],
           "file": "pprogrammerart/1.7/connected_textures/Connected_Bookshelves.zip",
