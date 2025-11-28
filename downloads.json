@@ -335,6 +335,17 @@
           "file": "modernity/1.7/randomized_entities/Occasional_Albino_Endermen.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         }
+      ],
+
+      "Rotated Blocks": [
+        {
+          "name": "Rotated Bedrock",
+          "description": "Rotates the Bedrock texture to appear more random.",
+          "icon": "modernity/rotated_bedrock.png",
+          "preview":["modernity/preview_rotated_bedrock1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Bedrock.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        }
       ]
     },
 
