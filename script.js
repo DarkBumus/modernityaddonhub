@@ -383,3 +383,5 @@ document.addEventListener("click", (e) => {
         dropdown.style.display = "none";
     }
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
