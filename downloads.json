@@ -201,7 +201,7 @@
       "Randomized Entities": [
         {
           "name": "Randomized Cows",
-          "description": "Randomizes the texture for Cows. Cold biomes will have wooly Cows in them. Now also includes the Cow textures from Minecraft Earth aswell as the Cold and Warm Cow textures from 1.21.5!",
+          "description": "Randomizes the texture for Cows. Cold biomes will have Wooly Cows in them. Now also includes the Cow textures from Minecraft Earth aswell as the Cold and Warm Cow textures from 1.21.5!",
           "icon": "modernity/randomized_cows.png",
           "preview":["modernity/preview_randomized_cows1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Cows.zip",
