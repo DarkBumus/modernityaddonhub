@@ -335,12 +335,14 @@ footer {
     text-align: left;      /* Text linksbündig */
 }
 
-.code-block {
-    font-family: inherit;      /* gleiche Schrift wie Fließtext */
-    font-size: 1em;            /* gleiche Größe wie normaler Text */
-    background: #f5f5f5;       /* optional, wie leichte Box */
+.custom-code-block {
+    font-family: monospace;     /* klassische Code-Schrift */
+    font-size: 1em;
+    background-color: #f5f5f5;  /* hellgrauer Hintergrund */
     padding: 10px;
     border-radius: 5px;
-    white-space: pre-wrap;     /* Zeilen umbrechen, wenn zu lang */
+    border: 1px solid #ddd;
+    white-space: pre-wrap;      /* Zeilenumbrüche erhalten */
+    word-break: break-word;     /* lange Zeilen umbrechen */
     margin: 10px 0;
 }
