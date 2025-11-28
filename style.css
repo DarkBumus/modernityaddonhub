@@ -337,7 +337,7 @@ footer {
 
 #about-content .custom-code-block {
     font-family: monospace;     /* klassische Code-Schrift */
-    font-size: 1.1em;
+    font-size: 1.2em;
     background-color: #f5f5f5;  /* hellgrauer Hintergrund */
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -352,4 +352,5 @@ footer {
 ul, ol {
     text-align: left;
     margin-left: 10px;   /* optional, damit es wie gewohnt eingerückt ist */
+    font-size: 1.1em;
 }
