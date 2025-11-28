@@ -230,11 +230,30 @@ function formatDescription(text) {
                 dlBtn.href = entry.external_downloads;
                 dlBtn.target = "_blank";
                 dlBtn.download = null; // nicht herunterladen, sondern öffnen
-            } else if (entry.file) {
-                 // Interner Download
-                dlBtn.href = defaults.download_path + entry.file;
-                dlBtn.download = entry.file.split("/").pop();
-            } else {
+} else if (entry.file) {
+    // Unterstützt einzelne Datei ODER Array
+    if (Array.isArray(entry.file)) {
+        dlBtn.href = "#";
+        dlBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            entry.file.forEach(f => {
+                const link = document.createElement("a");
+                link.href = defaults.download_path + f;
+                link.download = f.split("/").pop();
+                link.style.display = "none";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        });
+
+    } else {
+        // Einzelne Datei wie bisher
+        dlBtn.href = defaults.download_path + entry.file;
+        dlBtn.download = entry.file.split("/").pop();
+    }
+} else {
                 // Weder file noch external_downloads → Button deaktivieren (optional)
                 dlBtn.href = "#";
                 dlBtn.classList.add("disabled");
