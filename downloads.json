@@ -182,7 +182,7 @@
         },
         {
           "name": "Randomized Vines",
-          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.",
+          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>#DD2E44{This pack **is incompatible** with __Rotated Vines__!}<br><br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
           "icon": "modernity/randomized_vines.png",
           "preview":["modernity/preview_randomized_vines1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Vines.zip",
@@ -468,7 +468,7 @@
         },
         {
           "name": "Rotated Vines",
-          "description": "Rotates the Vine textures to appear more random.",
+          "description": "Rotates the Vine textures to appear more random.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Vines__!}<br><br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
           "icon": "modernity/rotated_vines.png",
           "preview":["modernity/preview_rotated_vines1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Vines.zip",
