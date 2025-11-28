@@ -178,7 +178,7 @@
           "icon": "modernity/randomized_leaves.png",
           "preview":["modernity/preview_randomized_leaves1.png"],
           "file": ["modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fancy] [1.7.10].zip", "modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fast] [1.7.10].zip"],
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["mainpack", "rpmcpatcher", "optifinecompatible"]
         },
         {
           "name": "Randomized Vines",
