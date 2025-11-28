@@ -351,6 +351,6 @@ footer {
 
 ul, ol {
     text-align: left;
-    margin-left: 10px;   /* optional, damit es wie gewohnt eingerückt ist */
+    margin-left: 5px;   /* optional, damit es wie gewohnt eingerückt ist */
     font-size: 1.1em;
 }
