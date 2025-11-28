@@ -325,7 +325,7 @@ footer {
 #about-content h4 {
     font-size: 1.5em;       /* kleiner als h3 (2em) */
     margin-bottom: 12px;    /* etwas Abstand nach unten */
-    font-weight: 500;       /* optional, normal bis leicht fett */
+    font-weight: 600;       /* optional, normal bis leicht fett */
     text-align: left;       /* linksbündig wie Fließtext */
 }
 #about-content p {
