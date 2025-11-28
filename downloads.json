@@ -537,9 +537,41 @@
           "preview":["modernity/preview_rotated_basalt1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Basalt.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
-        }
+        },
+        {
+          "name": "Rotated Nylium",
+          "description": "Rotates the top textures of Crimson and Warped Nylium to appear more random.<br><br>(Keep in mind, that Nylium requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_nylium.png",
+          "preview":["modernity/preview_rotated_nylium1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Nylium.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Moss",
+          "description": "Rotates the textures of Moss Blocks and Carpets to appear more random.<br><br>(Keep in mind, that Moss Blocks and Carpets require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_moss.png",
+          "preview":["modernity/preview_rotated_moss1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Moss.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Azalea",
+          "description": "Rotates the top and side textures of Azalea and Flowering Azalea to appear more random.<br><br>(Keep in mind, that Azalea and Flowering Azalea require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_azalea.png",
+          "preview":["modernity/preview_rotated_azalea1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Azalea.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Snow",
+          "description": "Rotates the top and side textures of Snow Layers and Snow Blocks to appear more random.",
+          "icon": "modernity/rotated_snow.png",
+          "preview":["modernity/preview_rotated_snow1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Snow.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        },
       ]
-    },
+    }
 
 
     
