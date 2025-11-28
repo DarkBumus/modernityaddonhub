@@ -11,10 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     tabsContainer.innerHTML = "";
 
     tabs.forEach((tab, index) => {
+        if (tab.visible === false) return;  // <- unsichtbare Tabs überspringen
+
         const t = document.createElement("div");
         t.className = "tab";
 
-        // Emoji + Label sauber trennen wie in renderVersionTabs()
+        // Emoji + Label sauber trennen
         if (tab.emoji) {
             const emojiSpan = document.createElement("span");
             emojiSpan.textContent = tab.emoji;
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         labelSpan.textContent = tab.label;
         t.appendChild(labelSpan);
 
-        if (index === 0) {
+        if (tabsContainer.children.length === 0) {
             t.classList.add("active");
             showSection(tab.id);
         }
