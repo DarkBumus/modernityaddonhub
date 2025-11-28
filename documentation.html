@@ -111,6 +111,26 @@
                 faces=all
             </div>
         </p>
+        <p>
+            <b>tiles</b><br>
+            Next, you will have to assign your created textures to this <code>.properties</code> file, using the <code>tiles</code> command.
+            You can refer to every texture that you created and put into this folder, but if you named them in numeric order, you can summarize them using <code>-</code>.
+            The following configurations are possible:<br>
+            > <code>tiles=bricks_topside bricks_topside2 bricks_topside3</code> (If you named your textures.)
+            > <code>tiles=0</code> (If only one texture is present.)
+            > <code>tiles=0 1 2 3 4 5 6 7 8 9 10</code> (If you want to write them all out.)
+            > <code>tiles=0 1 2 7 8 10</code> (If you don't want to use all provided textures.)
+            > <code>tiles=0-10</code> (If you want to summarize the textures.)
+            > <code>tiles=0-2 7-9 10</code> (If you want to summarize, but don't want to use all provided textures.)
+        </p>
+        <p>
+            Following our example, if we have 25 textures to assign to our brick block, it would look like this:<br>
+            <div class="custom-code-block">matchBlocks=minecraft:brick_block
+                metadata=0
+                faces=all
+                tiles=0-24
+            </div>
+        </p>
 
         
         
