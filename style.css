@@ -346,4 +346,5 @@ footer {
     margin: 0 0 0 0;
     padding: 10px;
     text-align: left;      /* Text linksbündig */
+    vertical-align: top;
 }
