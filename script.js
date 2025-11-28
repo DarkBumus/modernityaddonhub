@@ -38,6 +38,12 @@ function formatDescription(text) {
     // Kursiv: *Text*
     text = text.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
+    // Unterstrichen: __Text__
+    text = text.replace(/__(.*?)__/g, "<u>$1</u>");
+
+    // Durchgestrichen: ~~Text~~
+    text = text.replace(/~~(.*?)~~/g, "<s>$1</s>");
+
     // Links: [Label](URL)
     text = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
 
