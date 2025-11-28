@@ -296,9 +296,15 @@ footer {
     padding: 15px 0;
 }
 
-.footer-links {
+.footer-wrapper {
     display: flex;
-    gap: 20px;                   /* Abstand zwischen den Links */
+    gap: 40px;                   /* Abstand zwischen Copyright und Socials */
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    gap: 10px;                   /* Abstand zwischen Discord | Ko-Fi */
     align-items: center;
 }
 
@@ -309,6 +315,10 @@ footer {
 
 .footer-link:hover {
     text-decoration: underline;            /* optional */
+}
+
+.separator {
+    opacity: 0.7;
 }
 
 /* ========================
