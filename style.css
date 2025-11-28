@@ -291,14 +291,24 @@ header {
    FOOTER
 =========================== */
 footer {
-    text-align: center;
-    padding: 20px;
-    color: #444;
+    display: flex;
+    justify-content: center;     /* Footer bleibt zentriert */
+    padding: 15px 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;                   /* Abstand zwischen den Links */
+    align-items: center;
 }
 
 .footer-link {
     color: #0088ff;
     text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;            /* optional */
 }
 
 /* ========================
