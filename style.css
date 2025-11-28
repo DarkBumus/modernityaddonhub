@@ -334,3 +334,25 @@ footer {
     margin-bottom: 0;      /* kein Abstand zwischen Absätzen */
     text-align: left;      /* Text linksbündig */
 }
+
+/* ========================
+   Codeblock Styles
+   ======================== */
+.codeblock {
+    counter-reset: line;
+}
+.codeblock code {
+    display: block;
+}
+.codeblock code span {
+    counter-increment: line;
+    display: block;
+    position: relative;
+    padding-left: 3em;
+}
+.codeblock code span::before {
+    content: counter(line);
+    position: absolute;
+    left: 0;
+    color: gray;
+}
