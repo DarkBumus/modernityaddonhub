@@ -335,11 +335,12 @@ footer {
     text-align: left;      /* Text linksbündig */
 }
 
-pre, code {
-    text-align: left;       /* linksbündig */
-    font-family: monospace; /* monospace für Code */
-    background-color: #f5f5f5; /* optional, hellgrauer Hintergrund */
-    padding: 10px;          /* optional, Abstand innen */
-    border-radius: 6px;     /* optional, abgerundete Ecken */
-    overflow-x: auto;       /* horizontal scroll bei langen Zeilen */
+.code-block {
+    font-family: inherit;      /* gleiche Schrift wie Fließtext */
+    font-size: 1em;            /* gleiche Größe wie normaler Text */
+    background: #f5f5f5;       /* optional, wie leichte Box */
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap;     /* Zeilen umbrechen, wenn zu lang */
+    margin: 10px 0;
 }
