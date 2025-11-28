@@ -110,7 +110,7 @@
         },
         {
           "name": "Randomized Pumpkins",
-          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}",
+          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br><br>#DD2E44{This pack **is incompatible** with __Fixed Pumpkin__!}",
           "icon": "modernity/randomized_pumpkins.png",
           "preview":["modernity/preview_randomized_pumpkins1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Pumpkins.zip",
@@ -571,17 +571,82 @@
           "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
         }
       ],
+      
       "Fixes": [
         {
           "name": "Fixed Pistons",
-          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>(Inspiration drawn from [Vanilla Tweaks](https://vanillatweaks.net/).) ",
+          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>(Inspiration drawn from [Vanilla Tweaks](https://vanillatweaks.net/).)",
           "icon": "modernity/fixed_pistons.png",
           "preview":["modernity/preview_fixed_pistons1.png"],
           "file": "modernity/1.7/fixes/Fixed_Pistons.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Furnace",
+          "description": "Fixes the underside of Furnaces and Lit Furnaces. Now displays a modified version of the Smooth Stone topside.",
+          "icon": "modernity/fixed_furnace.png",
+          "preview":["modernity/preview_fixed_furnace1.png"],
+          "file": "modernity/1.7/fixes/Fixed_Furnace.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Crafting Table",
+          "description": "Fixes the underside of the Crafting Table. Now displays a simply modified Oak Planks texture.",
+          "icon": "modernity/fixed_crafting_table.png",
+          "preview":["modernity/preview_fixed_crafting_table1.png"],
+          "file": "modernity/1.7/fixes/Fixed_Crafting_Table.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Pumpkins",
+          "description": "Fixes the underside of the Pumpkin. Also applies to Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br><br>#DD2E44{This pack **is incompatible** with __Randomized Pumpkin__!}",
+          "icon": "modernity/fixed_pumpkins.png",
+          "preview":["modernity/preview_fixed_pumpkins1.png"],
+          "file": "modernity/1.7/fixes/Fixed_Pumpkins.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Golden Totem of Undying",
+          "description": "Changes the Totem of Undying's texture into actual Gold.<br><br>(Keep in mind, that the Totem of Undying requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/golden_totem_of_undying.png",
+          "preview":["modernity/preview_golden_totem_of_undying1.png"],
+          "file": "modernity/1.7/fixes/Golden_Totem_of_Undying.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Fixed Weighted Pressure Plates",
+          "description": "Changes the top texture of the Weighted Pressure Plates so that they have a rim around them.",
+          "icon": "modernity/fixed_weighted_pressure_plates.png",
+          "preview":["modernity/preview_fixed_weighted_pressure_plates1.png"],
+          "file": "modernity/1.7/fixes/Fixed_Weighted_Pressure_Plates.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Sand Concrete Powders",
+          "description": "Changes the textures for Concrete Powders to use the Sand lineart.",
+          "icon": "modernity/sand_concrete_powders.png",
+          "preview":["modernity/preview_sand_concrete_powders1.png"],
+          "file": "modernity/1.7/fixes/Sand_Concrete_Powders.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Colored Stems",
+          "description": "Applies coloration to the Pumpkin and Melon Stems in their normal and attached form.",
+          "icon": "modernity/colored_stems.png",
+          "preview":["modernity/preview_colored_stems1.png"],
+          "file": "modernity/1.7/fixes/Colored_Stems.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Deepslate Ore Top Textures",
+          "description": "Changes the top texture of the Weighted Pressure Plates so that they have a rim around them.",
+          "icon": "modernity/deepslate_ore_top_textures.png",
+          "preview":["modernity/preview_deepslate_ore_top_textures1.png"],
+          "file": "modernity/1.7/fixes/Deepslate_Ore_Top_Textures.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
-    },
+    }
 
 
     
