@@ -473,7 +473,71 @@
           "preview":["modernity/preview_rotated_vines1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Vines.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
-        }
+        },
+        {
+          "name": "Rotated Logs",
+          "description": "Rotates the Logs top textures to appear more random. Also rotates the textures of Crimson and Warped Stems and Cherry and Mangrove Logs and Bamboo Blocks.<br><br>(Keep in mind, that Crimson and Warped Stems and Cherry and Mangrove Logs require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_logs.png",
+          "preview":["modernity/preview_rotated_logs1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Logs.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Andesite",
+          "description": "Rotates the Andesite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Andesite Slabs and Stairs.<br><br>(Keep in mind, that Andesite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_andesite.png",
+          "preview":["modernity/preview_rotated_andesite1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Andesite.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        },
+        {
+          "name": "Rotated Granite",
+          "description": "Rotates the Granite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>(Keep in mind, that Granite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_granite.png",
+          "preview":["modernity/preview_rotated_granite1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Granite.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Diorite",
+          "description": "Rotates the Diorite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Diorite Slabs and Stairs.<br><br>(Keep in mind, that Diorite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_diorite.png",
+          "preview":["modernity/preview_rotated_diorite1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Diorite.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Black Granite",
+          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>(Keep in mind, that Granite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br>(Inspiration drawn from [Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/).)",
+          "icon": "modernity/rotated_black_granite.png",
+          "preview":["modernity/preview_rotated_black_granite1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Black_Granite.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Mushrooms",
+          "description": "Rotates the Mushroom blocks textures to appear more random.",
+          "icon": "modernity/rotated_mushrooms.png",
+          "preview":["modernity/preview_rotated_mushrooms1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Mushrooms.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Sand Concrete Powders",
+          "description": "Rotates the Sand Concrete Powder textures to appear more random.<br><br>(Keep in mind, that Concrete Powder requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_sand_concrete_powders.png",
+          "preview":["modernity/preview_rotated_sand_concrete_powders1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Sand_Concrete_Powders.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Basalt",
+          "description": "Rotates the Basalt side and top textures to appear more random.<br><br>(Keep in mind, that Basalt requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/rotated_basalt.png",
+          "preview":["modernity/preview_rotated_basalt1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Basalt.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
       ]
     },
 
