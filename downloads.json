@@ -241,7 +241,7 @@
         },
         {
           "name": "Minecraft Earth Zombies",
-          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.",
+          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.<br><br>#DD2E44{This pack **is incompatible** with 'Player Skin Zombies [1]'!}<br>#DD2E44{This pack **is incompatible** with 'Player Skin Zombies [2]'!}",
           "icon": "modernity/minecraft_earth_zombies.png",
           "preview":["modernity/preview_minecraft_earth_zombies1.png"],
           "file": "modernity/1.7/randomized_entities/Minecraft_Earth_Zombies.zip",
@@ -253,6 +253,54 @@
           "icon": "modernity/randomized_sheep.png",
           "preview":["modernity/preview_randomized_sheep1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Sheep.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Slimes",
+          "description": "Randomizes the texture for Slimes. Beaches and Oceans will have tropically blue slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!",
+          "icon": "modernity/randomized_slimes.png",
+          "preview":["modernity/preview_randomized_slimes1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Slimes.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Wolves",
+          "description": "Randomizes the texture for Wolves. Now also includes the new Wolf textures from 1.20.80!",
+          "icon": "modernity/randomized_wolves.png",
+          "preview":["modernity/preview_randomized_wolves1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Wolves.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Classic-style Spider",
+          "description": "Randomizes the texture for Spiders. Includes a brown Spider that looks similar to the Classic version. Also includes a version for the Cave Spider.",
+          "icon": "modernity/classic-style_spider.png",
+          "preview":["modernity/preview_classic-style_spider1.png"],
+          "file": "modernity/1.7/randomized_entities/Classic-style_Spider.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Alpha-style Zombie Pigman",
+          "description": "Randomizes the texture for Zombie Pigmen. Includes a bloody Zombie Pigman that looks similar to the Alpha version.",
+          "icon": "modernity/alpha-style_zombie_pigman.png",
+          "preview":["modernity/preview_alpha-style_zombie_pigman1.png"],
+          "file": "modernity/1.7/randomized_entities/Alpha-style_Zombie_Pigman.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Player Skin Zombies [1]",
+          "description": "Randomizes the texture for Zombies. Includes zombified versions of the new player skins that were added in 1.19.<br><br>#DD2E44{This pack **is incompatible** with 'Minecraft Earth Zombies'!}<br>#DD2E44{This pack **is incompatible** with 'Player Skin Zombies [2]'!}",
+          "icon": "modernity/player_skin_zombies_one.png",
+          "preview":["modernity/preview_player_skin_zombies_one1.png"],
+          "file": "modernity/1.7/randomized_entities/Player_Skin_Zombies_1.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Player Skin Zombies [2]",
+          "description": "Randomizes the texture for Zombies. Includes even more raggedy zombified versions of the new player skins that were added in 1.19.<br><br>#DD2E44{This pack **is incompatible** with 'Minecraft Earth Zombies'!}<br>#DD2E44{This pack **is incompatible** with 'Player Skin Zombies [1]'!}",
+          "icon": "modernity/player_skin_zombies_two.png",
+          "preview":["modernity/preview_player_skin_zombies_two1.png"],
+          "file": "modernity/1.7/randomized_entities/Player_Skin_Zombies_2.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
