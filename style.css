@@ -339,11 +339,11 @@ footer {
     font-family: monospace;     /* klassische Code-Schrift */
     font-size: 1.1em;
     background-color: #f5f5f5;  /* hellgrauer Hintergrund */
-    padding: 10px;
+    padding: 5px 8px;
     border-radius: 5px;
     border: 1px solid #ddd;
     white-space: pre-wrap;      /* Zeilenumbrüche erhalten */
     word-break: break-word;     /* lange Zeilen umbrechen */
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: left;      /* Text linksbündig */
 }
