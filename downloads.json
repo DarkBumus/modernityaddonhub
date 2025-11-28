@@ -302,6 +302,38 @@
           "preview":["modernity/preview_player_skin_zombies_two1.png"],
           "file": "modernity/1.7/randomized_entities/Player_Skin_Zombies_2.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Tribal Ghast",
+          "description": "Randomizes the texture for Ghasts. Sometimes they have dark red lines on them.<br><br>(Inspiration drawn from [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest).)",
+          "icon": "modernity/tribal_ghast.png",
+          "preview":["modernity/preview_tribal_ghast1.png"],
+          "file": "modernity/1.7/randomized_entities/Tribal_Ghast.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Mossy Skeleton",
+          "description": "Randomizes the texture for Skeletons. Adds a beheaded and a mossy variant. Now also includes the Skeleton textures from the Stray without clothing and the Bogged from 1.20.5 with its overlay texture merged into the normal layer!",
+          "icon": "modernity/mossy_skeleton.png",
+          "preview":["modernity/preview_mossy_skeleton1.png"],
+          "file": "modernity/1.7/randomized_entities/Mossy_Skeleton.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Rabbits",
+          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!<br><br>(Keep in mind, that Rabbits require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/randomized_rabbits.png",
+          "preview":["modernity/preview_randomized_rabbits1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Rabbits.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Occasional Albino Endermen",
+          "description": "Randomizes the texture for Endermen. Occasionally you'll encounter a rare white Enderman with green eyes!",
+          "icon": "modernity/occasional_albino_endermen.png",
+          "preview":["modernity/preview_occasional_albino_endermen1.png"],
+          "file": "modernity/1.7/randomized_entities/Occasional_Albino_Endermen.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     },
