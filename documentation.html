@@ -13,7 +13,7 @@
         <img src="assets/icons/pack8.png" alt="Logo" id="top-left-icon">
     </a>
     <a href="./" class="header-link">
-        <h1>🚧 UNDER CONSTRUCTION 🚧 DOCUMENTATION TEST 🚧</h1>
+        <h1>Modernity Addon Hub</h1>
     </a>
 
     <div class="hamburger-menu">
@@ -127,7 +127,7 @@
             </ul>
         </p>
         <p>
-            Following our example, if we have 25 textures to assign to our brick block, it would look like this:<br>
+            Following our example, if we have 25 textures to assign to our brick block, it would look like this:
             <div class="custom-code-block">matchBlocks=minecraft:brick_block
                 metadata=0
                 faces=all
@@ -141,7 +141,7 @@
             If you have 5 textures, that have the weights of 1, 2, 3, 4 and 5, respectively, texture one will be distributed 1 out of (1+2+3+4+5=15) times.
             The weights don't have to add up to 100, we're not talking percentages (even though, if calculated, you could very well make out a percentage of how many times a certain texture will appear, according to its weight, but I think you get the point).<br>
             Keep in mind that you have to specify a weight value for every single texture file that you're adding, in the order they are specified in the tiles function.<br>
-            Following our example, if we weight our textures differently, it would look like this:<br>
+            Following our example, if we weight our textures differently, it would look like this:
             <div class="custom-code-block">matchBlocks=minecraft:brick_block
                 metadata=0
                 faces=all
@@ -166,7 +166,7 @@
         </p>
         <img src="assets/documentation/ctm_template.png" alt="CTM Template" style="max-width:100%; height:auto; margin-top:10px;">
         <p>
-            Following our example and giving it the random method, it would look like this:<br>
+            Following our example and giving it the random method, it would look like this:
             <div class="custom-code-block">matchBlocks=minecraft:brick_block
                 metadata=0
                 faces=all
@@ -247,7 +247,7 @@
             </div>
         </p>
         <p>
-            Following our example and wanting the randomization to only apply to mesa biomes, it would look like this:<br>
+            Following our example and wanting the randomization to only apply to mesa biomes, it would look like this:
             <div class="custom-code-block">matchBlocks=minecraft:brick_block
                 metadata=0
                 faces=all
@@ -255,6 +255,83 @@
                 weights=4 4 4 4 4 4 4 3 3 3 3 3 3 2 2 2 2 2 2 1 1 1 1 1 1
                 biomes=mesa mesaplateauf mesaplateau mesa(bryce) mesaplateaufm mesaplateaum
             </div>
+        </p>
+        
+        <h3>Random Mobs</h3>
+        <h4>Naming Conventions</h4>
+        <p>
+            Now, randomized mob textures work a little differently than the above CTM functions.
+            For random mob textures to work, it is actually integral to copy the folder structure of the regular mob textures in the filepath <code>mcpatcher\mob</code>.
+            In there, you will have to name them after the mob that you want to change, with a number attached to it (for example <code>chicken.png</code>, <code>chicken2.png</code>, <code>chicken3.png</code> and so forth).
+            This will lead to the effect that some mob textures will be inside their own folders and some in the actual mob folder.
+            To find out which textures are which, you can refer to this <a href="https://github.com/InventivetalentDev/minecraft-assets/tree/1.7.10/assets/minecraft/textures/entity">texture resource</a> and check, which mob textures are just loosely dropped into the vanilla mob folder (like Squids, Chicken and Snow Golems, for example) and which have their designated folders (like Sheep, Cows or Pigs, for example).
+            For the <code>.properties</code> files, you will also have to name them after the mob that you're looking to change.
+            So a properties file for chicken will always have to be named <code>chicken.properties</code>.
+            For mobs that utilize more than one texture (like how Sheep use a different texture for their fur or Wolves use different texture for their angry or tamed state) it is sufficient to provide one singular <code>.properties</code> file, as long as you provide secondary texture files (for example <code>sheep.png</code>+<code>sheep_fur.png</code>, <code>sheep2.png</code>+<code>sheep_fur2.png</code>, <code>sheep3.png</code>+<code>sheep_fur3.png</code> and so forth).
+            In case you're unsure about a specific example, you can try rummaging through some of the Addons that I provide, relating to mobs.<br>
+            This naming convention is not optional, it has to be kept for randomized mob textures to work!
+        </p>
+
+        <h4><code>.properties</code> Files</h4>
+        <p>
+            Same as with CTM .properties files, you will have to fit your files with certain functions in order to make them recognize the textures you provided.
+        </p>
+        <p>
+            <b>skins</b><br>
+            The first thing you will want to do is to specify the texture that you created.
+            This is done through the <code>skins</code> function.
+            An important distinction between mobs and blocks is that you can ever only have one <code>.properties</code> file, so the textures all have to be defined in this one.
+            In order to give different properties to different textures, mob <code>.properties</code> files have a way to order the functions.
+            When adding a function, you will have to add a <code>.n</code>(with <code>n</code> refering to the number of the function) behind it.<br>
+            Keep in mind that mob textures will always be randomized between the ones you provide.
+            If you only provide one, then it will stick with that, but since you generally should assign the vanilla texture as the normal, you'd just have a mob that gets randomized with the same texture all the time...<br>
+            Let's say for an example you want to randomize the Chicken's textures. In that case you'll have to do the following:
+            <div class="custom-code-block">skins.1=1-3
+            </div>
+        </p>
+        <p>
+            <b>biomes</b><br>
+            Another thing that's possible, like with blocks, is to specify, in which biome the mob will have which texture.
+            Keep note that the textures are assigned upon loading the area (either by starting up the world or re-loading the chunks), so if you have a mob that has one texture in biome X and another in biome Y, and while you were present it travelled to a different biome, it will change its texture upon reload.
+            So, for the <code>biome</code> function, the biome names are the same as for block <code>.properties</code> files, refer to the list I attached above.
+            Following our example from before, it would look like this, if we were to randomize our chickens only in plains and sunflower plains (as with blocks, biomes are separated not by <code>,</code>):
+            <div class="custom-code-block">skins.1=1-3
+                biomes.1=plains sunflowerplains
+            </div>
+        </p>
+        <p>
+            One thing to keep in mind is that, unlike blocks, it is not necessary to assign some textures for all other biomes.
+            You just have to order them differently here.
+            It is wise to assign all the mob textures for specific biomes first (using <code>skins.1</code>, <code>skins.2</code>, <code>skins.3</code> and so forth) and only <b>after</b> that assign all the textures that should be randomized between all the other biomes.<br>
+            As an example, I'll show you the <code>.properties</code> files I used for Chickens and Sheep.<br>
+            Chickens:
+            <div class="custom-code-block">skins.1=10
+                biomes.1=mushroomisland mushroomislandshore
+                
+                skins.2=11
+                biomes.2=sky
+                
+                skins.3=1-9
+            </div>
+        </p>
+        <p>
+            This makes <code>chicken10.png</code> appear only in Mushroom Islands and <code>chicken11.png</code> only in the End dimension.
+            The rest (<code>chicken.png</code>-<code>chicken9.png</code>) will appear anywhere but Mushroom Islands and the End.<br>
+            Sheep:
+            <div class="custom-code-block">skins.1=2
+                biomes.1=frozenriver iceplains icemountains coldbeach coldtaiga coldtaigahills iceplainsspikes coldtaigam
+                
+                skins.2=3
+                biomes.2=taiga taigahills megataiga megataigahills taigam megasprucetaiga
+                
+                kins.3=5
+                biomes.3=extremehills stonebeach extremehills+ extremehillsm extremehills+m
+                
+                skins.4=1 4
+            </div>
+        </p>
+        <p>
+            This makes <code>sheep2.png</code>+<code>sheep_fur2.png</code> appear in Ice/Cold related biomes, <code>sheep3.png</code>+<code>sheep_fur3.png</code> in Taiga biomes, <code>sheep5.png</code>+<code>sheep_fur5.png</code> in Mountain biomes and <code>sheep.png</code>+<code>sheep_fur.png</code> aswell as <code>sheep4.png</code>+<code>sheep_fur4.png</code> in all biomes that are not Cold, Taiga or Mountain related.
         </p>
 
 
