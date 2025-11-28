@@ -12,7 +12,7 @@
           "name": "Modernity",
           "description": "Modernity texture pack, made by [AstroTibs](https://modrinth.com/user/AstroTibs).",
           "icon": "modernity/pack0.png",
-          "preview":["modernity/preview_modernity1.png"],
+          "preview":["modernity/preview_modernity1.png", "modernity/preview_modernity2.png", "modernity/preview_modernity3.png", "modernity/preview_modernity4.png"],
           "file": null,
           "tags": ["mainpack"],
           "external_downloads": "https://modrinth.com/resourcepack/modernity"
@@ -23,7 +23,7 @@
           "name": "Modernity Addon 1.7.10",
           "description": "Download this first and place your downloaded Addons inside of it.",
           "icon": "modernity/pack1.png",
-          "preview":["modernity/preview_template1.png"],
+          "preview":["modernity/preview_template1.png", "modernity/preview_template2.png", "modernity/preview_template3.png", "modernity/preview_template4.png"],
           "file": "modernity/1.7/templates/Modernity_Addon_1.7.10.zip",
           "tags": ["template"]
         }
