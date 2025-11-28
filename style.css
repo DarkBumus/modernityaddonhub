@@ -336,7 +336,6 @@ footer {
 }
 
 #about-content .custom-code-block {
-    display: inline-block;
     font-family: monospace;     /* klassische Code-Schrift */
     font-size: 1.1em;
     background-color: #f5f5f5;  /* hellgrauer Hintergrund */
@@ -348,4 +347,7 @@ footer {
     padding: 10px;
     text-align: left;      /* Text linksbündig */
     vertical-align: top;
+}
+.custom-code-block:first-child {
+    margin-top: 0;               /* Kein extra Abstand oben, falls erstes Element */
 }
