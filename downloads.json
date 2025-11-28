@@ -123,6 +123,54 @@
           "preview":["modernity/preview_randomized_mushrooms1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Mushrooms.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Flowers",
+          "description": "Randomizes the textures for Dandelion, Poppy, Allium, Azure Bluet, Blue Orchid, Oxeye Daisy, Tulips, Cornflower, Lily of the Valley and Wither Rose.<br><br>(Keep in mind, that the Cornflower, Lily of the Valley and Wither Rose all require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/randomized_flowers.png",
+          "preview":["modernity/preview_randomized_flowers1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Flowers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Lilypads",
+          "description": "Randomizes the textures for Lilypads to make them more random.",
+          "icon": "modernity/randomized_lilypads.png",
+          "preview":["modernity/preview_randomized_lilypads1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Lilypads.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Cobblestone",
+          "description": "Randomizes the texture of Cobblestone to appear more random. Also applies to Cobblestone Slabs, Stairs and Walls.",
+          "icon": "modernity/randomized_cobblestone.png",
+          "preview":["modernity/preview_randomized_cobblestone1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Cobblestone.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Stone Bricks",
+          "description": "Randomizes the texture for Stone Bricks, Mossy Stone Bricks, Cracked Stone Bricks and Chiseled Stone Bricks in whole Blocks and Stairs, Slabs and Walls. Also makes Mossy Stone Brick take on a more saturated look when in certain biomes associated with wetness.<br><br>(Keep in mind, that Stone Brick Walls, Mossy Stone Brick Slabs, Mossy Stone Brick Stairs and Mossy Stone Brick Walls require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#FDCB58{This pack **overrides** 'Saturated Mossy Stone'!}",
+          "icon": "modernity/randomized_stonebricks.png",
+          "preview":["modernity/preview_randomized_stonebricks1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Stone_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Deepslate and Blackstone Bricks",
+          "description": "Randomizes the texture for Deepslate Bricks, Cracked Deepslate Bricks, Blackstone Bricks and Cracked Blackstone Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Deepslate and Blackstone require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/randomized_deepslateblackstonebricks.png",
+          "preview":["modernity/preview_randomized_deepslateblackstonebricks1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Deepslate_and_Blackstone_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Mud Bricks",
+          "description": "Randomizes the texture for Mud Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Mud Bricks require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "icon": "modernity/randomized_mudbricks.png",
+          "preview":["modernity/preview_randomized_mudbricks1.png"],
+          "file": "modernity/1.7/randomized_blocks/Randomized_Mud_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
         
       ]
