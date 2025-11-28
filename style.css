@@ -342,8 +342,7 @@ footer {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    white-space: pre-wrap;      /* Zeilenumbrüche erhalten */
+    white-space: pre-line;      /* Zeilenumbrüche erhalten */
     word-break: break-word;     /* lange Zeilen umbrechen */
-    margin: 3px 0;
     text-align: left;      /* Text linksbündig */
 }
