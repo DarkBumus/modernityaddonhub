@@ -298,7 +298,7 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    gap: 40px;                   /* Abstand zwischen Copyright und Socials */
+    gap: 120px;                   /* Abstand zwischen Copyright und Socials */
     align-items: center;
 }
 
