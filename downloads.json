@@ -84,7 +84,17 @@
           "tags": ["mainpack"],
           "external_downloads": "https://modrinth.com/resourcepack/palettized-programmer-art"
         }
-      ]
+      ],
+      "Templates": [
+        {
+          "name": "Palettized Programmer Art Addon 1.7.10",
+          "description": "Download this first and place your downloaded Addons inside of it.",
+          "icon": "pprogrammerart/pack7.png",
+          "preview":["pprogrammerart/preview_template1.png", "pprogrammerart/preview_template2.png"],
+          "file": "modernity/1.7/templates/Palettized Programmer Art Addon [1.7.10].zip",
+          "tags": ["template"]
+        }
+      ],
     }
   }
 }
