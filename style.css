@@ -316,7 +316,12 @@ footer {
     font-size: 2.7em;
     margin-bottom: 20px;
 }
-
+#about-content h3 {
+    font-size: 2em;        /* kleiner als h2 (2.7em) */
+    margin-bottom: 16px;   /* etwas Abstand nach unten */
+    font-weight: 600;      /* optional, etwas leichter als h2 */
+    text-align: left;      /* linksbündig wie Fließtext */
+}
 #about-content p {
     font-size: 1.1em;
     line-height: 1.6;
