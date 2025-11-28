@@ -69,7 +69,6 @@
             <div class="custom-code-block">matchBlocks=minecraft:brick_block
             </div>
         </p>
-
         <p>
             <b>metadata</b><br>
             Next, since you can't refer to specific metadata, using just <code>matchBlocks</code>, you will have to do this in a secondary step.
@@ -84,6 +83,30 @@
         <p>
             Keep in mind that some seriously cursed stuff is achieved through metadata, which, on the one hand, makes you immensely powerful when dealing with textures, for example allowing you do differentiate between normal and upside-down slabs with completely different textures, but it also leads to some things being unchangable, like the side textures of doors.
         </p>
+        <p>
+            <b>faces</b><br>
+            Because you don't always want to change all sides of a block into the same textures, CTM allows for you to specify every single texture as you see fit.
+            This is achieved through the <code>faces</code> command. You can use the following methods here:
+            > <code>faces=all</code> (Changes all textures on a block.)<br>
+            > <code>faces=sides</code> (Changes all side textures on a block.)<br>
+            > <code>faces=top</code> (Changes the top texture on a block.)<br>
+            > <code>faces=bottom</code> (Changes the bottom texture on a block.)<br>
+            > <code>faces=north</code> (Changes the northern texture on a block (check the F3 screen in game to see which direction you're looking at).)<br>
+            > <code>faces=south</code> (Changes the southern texture on a block.)<br>
+            > <code>faces=east</code> (Changes the eastern texture on a block.)<br>
+            > <code>faces=west</code> (Changes the western texture on a block.)<br>
+            This function is necessary to change "face textures" for blocks that follow the player's facing direction when being placed, like Pumpkins or Furnaces.
+            A combination of <code>metadata</code> and <code>faces</code> has to be employed for this to work.
+            This is the reason for a lot of texture folders looking like below, because you generally cannot assign different textures in one file.
+            For every side of the block that you want the texture to change, and for every state of the block you want this change to apply to, you'll have to make a new file, which can lead to something like the picture below.
+            You <b>can</b> refer to multiple meta values or faces in one file, but only if you want to apply the same texture to them.<br>
+            Following our example, if we want to change all faces, it would look like this:
+            <div class="custom-code-block">matchBlocks=minecraft:brick_block
+                metadata=0
+                faces=all
+            </div>
+        </p>
+        <img src="assets/documentation/folder_structur.png" alt="Folder Structure" style="max-width:100%; height:auto; margin-top:10px;">
         
         
     </section>
