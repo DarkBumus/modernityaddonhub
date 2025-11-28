@@ -63,7 +63,7 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with 'Randomized Bookshelves'!}",
           "icon": "modernity/connected_bookshelves.png",
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Bookshelves.zip",
@@ -112,7 +112,7 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with 'Randomized Bookshelves'!}",
           "icon": "modernity/connected_bookshelves.png",
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.12/connected_textures/Connected_Bookshelves.zip",
@@ -155,7 +155,7 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with 'Randomized Bookshelves'!}",
           "icon": "pprogrammerart/connected_bookshelves.png",
           "preview":["pprogrammerart/preview_connected_bookshelves1.png"],
           "file": "pprogrammerart/1.7/connected_textures/Connected_Bookshelves.zip",
