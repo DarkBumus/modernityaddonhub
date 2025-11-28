@@ -206,6 +206,54 @@
           "preview":["modernity/preview_randomized_cows1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Cows.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Creepers",
+          "description": "Randomizes the texture for Creepers.",
+          "icon": "modernity/randomized_creepers.png",
+          "preview":["modernity/preview_randomized_creepers1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Creepers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Chickens",
+          "description": "Randomizes the texture for Chickens. Mushroom Islands will have Cluckshrooms on them. The End will have Midnight Chickens in them. Now also includes the Chicken textures from Minecraft Earth aswell as the Cold and Warm Chicken textures from 1.21.5!",
+          "icon": "modernity/randomized_chickens.png",
+          "preview":["modernity/preview_randomized_chickens1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Chickens.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Occasional Glowsquids",
+          "description": "Randomizes the texture for Squids to include Glowsquids.",
+          "icon": "modernity/occasional_glowsquids.png",
+          "preview":["modernity/preview_occasional_glowsquids1.png"],
+          "file": "modernity/1.7/randomized_entities/Occasional_Glowsquids.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Pigs",
+          "description": "Randomizes the texture for Pigs. Swamplands will have muddy Pigs in them. Now also includes the Pig textures from Minecraft Earth aswell as the Cold and Warm Pig textures from 1.21.5!",
+          "icon": "modernity/randomized_pigs.png",
+          "preview":["modernity/preview_randomized_pigs1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Pigs.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Minecraft Earth Zombies",
+          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.",
+          "icon": "modernity/minecraft_earth_zombies.png",
+          "preview":["modernity/preview_minecraft_earth_zombies1.png"],
+          "file": "modernity/1.7/randomized_entities/Minecraft_Earth_Zombies.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Sheep",
+          "description": "Randomizes the texture for Sheep. Cold biomes will have fuzzy Sheep in them, Taiga biomes will have inky Sheep in them and Extreme Hills will have rocky Sheep in them. Now also includes the Cow textures from Minecraft Earth!",
+          "icon": "modernity/randomized_sheep.png",
+          "preview":["modernity/preview_randomized_sheep1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Sheep.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     },
