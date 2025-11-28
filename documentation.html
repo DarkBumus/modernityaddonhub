@@ -55,6 +55,35 @@
         </p>
         <img src="assets/documentation/naming_conventions.png" alt="Naming Conventions" style="max-width:100%; height:auto; margin-top:10px;">
 
+        <h4><code>.properties</code> Files</h4>
+        <p>
+            Now. You have created your textures and now you want OptiFine to recognize and use them. This is achieved through text files with a .properties extension, as long as it's utilized properly.
+        </p>
+        <p>
+            <b>matchBlocks</b><br>
+            Firstly, you'll need to tell the file which tile (block), you want to change the texture for.
+            This is achieved with the matchBlocks function.
+            I'm told that matchTiles works aswell, but so far, working with matchBlocks has held no negative effects for me.
+            If someone knows a measurable difference between the two, I'll reflect that in future.
+            For the sake of avoiding misunderstandings, I'd recommend always refering to the wanted block in full, so <code>modname:blockname</code>, achieving something that looks like this:
+            <pre><code>
+                matchBlocks=minecraft:brick_block
+            </code></pre>
+        </p>
+        <p>
+            <b>metadata</b><br>
+            Next, since you can't refer to specific metadata, using just <code>matchBlocks</code>, you will have to do this in a secondary step.
+            If you don't know what "Metadata" is, they are the predecessor to the later "Blockstates" and define different iterations of the same block.
+            For example, if a stair block is rotated to the left or right, a slab is turned upside-down or if a mossy stone brick is used instead of a regular one, the metadata reflects that.
+            If you don't know all metadata by heart (why would you, ever?), I recommend using <a href="https://www.curseforge.com/minecraft/mc-mods/waila">WAILA</a> or something similar to find out the metadata of the block you're looking at in-game.<br>
+            Following our example from above, if we refer to a brick block of the metadata of 0, it would look like this:
+            <pre><code>
+                matchBlocks=minecraft:brick_block
+                metadata=0
+            </code></pre>
+            Keep in mind that some seriously cursed stuff is achieved through metadata, which, on the one hand, makes you immensely powerful when dealing with textures, for example allowing you do differentiate between normal and upside-down slabs with completely different textures, but it also leads to some things being unchangable, like the side textures of doors.
+        </p>
+
         
     </section>
 
