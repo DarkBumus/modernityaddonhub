@@ -174,7 +174,7 @@
         },
         {
           "name": "Randomized Leaves",
-          "description": "Gives Oak, Spruce, Birch, Jungle, Acacia and Dark Oak Leaves colorful blots and randomizes them aswell to avoid tiling.<br><br>(Inspiration drawn from [Os' Colorful Leaves](https://www.planetminecraft.com/texture-pack/os-colorful-leaves/).)<br><br>**⚠️ Warning: Due to technical limitations, it is not possible to correctly differentiate between *Fancy* and *Fast* Leaves. As a workaround, I will provide two fully functional texture packs instead of normal Addons. These packs are Labeled '[Fancy]' and '[Fast]' respectively. This will be addressed when Right Proper MCPatcher supports dynamic texture picking for Leaves.**",
+          "description": "Gives Oak, Spruce, Birch, Jungle, Acacia and Dark Oak Leaves colorful blots and randomizes them aswell to avoid tiling.<br><br>(Inspiration drawn from [Os' Colorful Leaves](https://www.planetminecraft.com/texture-pack/os-colorful-leaves/).)<br><br>**⚠️ Warning: Due to technical limitations, it is not possible to correctly differentiate between *Fancy* and *Fast* Leaves. As a workaround, I will provide two fully functional texture packs instead of normal Addons. These packs are Labeled '[Fancy]' and '[Fast]' respectively. Just switch the packs as you see fit (or just use the one you want). This will be addressed when Right Proper MCPatcher supports dynamic texture picking for Leaves.**",
           "icon": "modernity/randomized_leaves.png",
           "preview":["modernity/preview_randomized_leaves1.png"],
           "file": ["modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fancy] [1.7.10].zip", "modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fast] [1.7.10].zip"],
