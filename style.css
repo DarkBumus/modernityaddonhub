@@ -348,3 +348,8 @@ footer {
     text-align: left;      /* Text linksbündig */
     vertical-align: top;
 }
+
+ul, ol {
+    text-align: left;
+    margin-left: 20px;   /* optional, damit es wie gewohnt eingerückt ist */
+}
