@@ -343,11 +343,8 @@ footer {
     border: 1px solid #ddd;
     white-space: pre-line;      /* Zeilenumbrüche erhalten */
     word-break: break-word;     /* lange Zeilen umbrechen */
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 10px;
     text-align: left;      /* Text linksbündig */
     vertical-align: top;
-}
-.custom-code-block:first-child {
-    margin-top: 0;               /* Kein extra Abstand oben, falls erstes Element */
 }
