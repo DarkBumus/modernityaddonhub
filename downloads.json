@@ -312,11 +312,11 @@
           "tags": ["rpmcpatcher", "optifinecompatible"]
         },
         {
-          "name": "Mossy Skeleton",
+          "name": "Randomized Skeletons",
           "description": "Randomizes the texture for Skeletons. Adds a beheaded and a mossy variant. Now also includes the Skeleton textures from the Stray without clothing and the Bogged from 1.20.5 with its overlay texture merged into the normal layer!",
-          "icon": "modernity/mossy_skeleton.png",
-          "preview":["modernity/preview_mossy_skeleton1.png"],
-          "file": "modernity/1.7/randomized_entities/Mossy_Skeleton.zip",
+          "icon": "modernity/randomized_skeletons.png",
+          "preview":["modernity/preview_randomized_skeletons1.png"],
+          "file": "modernity/1.7/randomized_entities/Randomized_Skeletons.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         },
         {
