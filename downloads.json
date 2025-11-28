@@ -570,6 +570,16 @@
           "file": "modernity/1.7/rotated_blocks/Rotated_Snow.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
         }
+      ],
+      "Fixes": [
+        {
+          "name": "Fixed Pistons",
+          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>(Inspiration drawn from [Vanilla Tweaks](https://vanillatweaks.net/).) ",
+          "icon": "modernity/fixed_pistons.png",
+          "preview":["modernity/preview_fixed_pistons1.png"],
+          "file": "modernity/1.7/rotated_blocks/Fixed_Pistons.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
       ]
     },
 
@@ -623,17 +633,6 @@
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.12/connected_textures/Connected_Bookshelves.zip",
           "tags": ["optifine", "horizontalconnection"]
-        }
-      ],
-      
-      "Fixes": [
-        {
-          "name": "Fixed Pistons",
-          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>(Inspiration drawn from [Vanilla Tweaks](https://vanillatweaks.net/).) ",
-          "icon": "modernity/fixed_pistons.png",
-          "preview":["modernity/preview_fixed_pistons1.png"],
-          "file": "modernity/1.7/rotated_blocks/Fixed_Pistons.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
