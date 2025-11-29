@@ -107,8 +107,8 @@
         {
           "name": "Visible Ores",
           "description": "Changes the Ore textures to be more visible.<br><br>requiresefr<br><br>inspirationvt<br><br>#78B159{Attached are two additional files that include visible versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
-          "icon": "modernity/visible_ore.png",
-          "preview":["modernity/preview_visible_ore1.png"],
+          "icon": "modernity/visible_ores.png",
+          "preview":["modernity/preview_visible_ores1.png"],
           "file": ["modernity/1.7/utility/Visible_Ore.zip", "modernity/1.7/utility/Gold-speckled_Visible_Lapis_Lazuli.zip", "modernity/1.7/utility/Unlit_Visible_Redstone_Ore.zip"],
           "tags": ["vanillacompatible"]
         },
