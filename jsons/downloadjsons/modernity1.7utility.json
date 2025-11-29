@@ -113,6 +113,14 @@
           "tags": ["vanillacompatible"]
         },
         {
+          "name": "Actually Waxed Copper",
+          "description": "Gives the Waxed variants of Copper Blocks, Cut Copper Blocks and their Slabs and Stairs, Chiseled Copper Blocks, Copper Grates, Copper Bulbs and Copper Trapdoors a new texture to distinguish them from non-Waxed Copper Blocks.<br><br>requiresefr",
+          "icon": "modernity/actually_waxed_copper.png",
+          "preview":["modernity/preview_actually_waxed_copper1.png"],
+          "file": "modernity/1.7/utility/Actually_Waxed_Copper.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
           "name": "Unique Enchanted Books",
           "description": "Changes the textures of all Enchanted Books of Vanilla and Et Futurum Requiem to make them look unique. Do note that this only applies to Enchanted Books that are practically accessible. Books that are cheated to have an Enchantment Level over 5 will display with a black band instead.<br>If you want to see other Enchanted Books from other mods, make sure to suggest them on [Discord](https://discord.gg/cg73PFHvfV)!<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Enchanted Books consistent with __Darker Leather__.}",
           "icon": "modernity/unique_enchanted_books.png",
@@ -207,6 +215,62 @@
           "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_cherry1.png"],
           "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Cherry.zip",
           "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Crimson]",
+          "description": "Changes the texture of the Crimson tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Red Crimson__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_crimson.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_crimson1.png"],
+          "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Crimson.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Dark Oak]",
+          "description": "Changes the texture of the Dark Oak tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Desaturated Dark Oak__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_dark_oak.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_dark_oak1.png"],
+          "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Dark_Oak.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Mangrove]",
+          "description": "Changes the texture of the Mangrove tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Darker Mangrove__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_mangrove.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_mangrove1.png"],
+          "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Mangrove.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Warped]",
+          "description": "Changes the texture of the Warped tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Muted Warped Wood__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_warped.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_warped1.png"],
+          "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Warped.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Stacking Tipped Arrows]",
+          "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__.<br><br>requiresefr<br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows1.png"],
+          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows.zip", "modernity/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Stacking Tipped Arrows, 1.19.4 Potion Colors]",
+          "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__, aswell as the __1.19.4 Potion Colors__.<br><br>requiresefr<br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
+          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Armor Upgrade",
+          "description": "Changes the textures of all armors. All armors receive a shiny finish and adhere to the color palettes of their components. Additionally, through the use of a mix of CIT functionality and the recipe manipulation techniques in MineTweaker, this Addon supports a couple of alternative armors.<br>Iron Armor has a Steel variant, when crafted with Steel.<br>Gold Armor has a Crown variant that is crafted with a Diamond.<br>Netherite Armor has a Gilded Netherite Armor variant that is crafted in the Smithing Table with Gold.<br>All armor pieces also degrade with use, both in item and model form.<br><br>Careful: All of these features are purely visual in nature! Steel Armor isn't more durable than Iron Armor, and there are no differences between the Netherite and Gilded Netherite!<br><br>requiresefr<br><br>incompat{Full-colored Leather Armor}<br><br>attscript",
+          "icon": "modernity/comprehensive_armor_upgrade.png",
+          "preview":["modernity/preview_comprehensive_armor_upgrade1.png"],
+          "file": ["modernity/1.7/utility/Comprehensive_Armor_Upgrade.zip", "modernity/1.7/utility/Necessary_Comprehensive_Armor_Upgrade_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
         }
       ]
     }
