@@ -213,7 +213,7 @@
           "description": "Changes the textures of Lapis Lazuli, Lapis Lazuli Ore, Lapis Lazuli Block and Deepslate Lapis Lazuli Ore to feature tiny golden specs, like they're found in real Lapis Lazuli. Also adds a Deepslate Ore top texture.<br><br>requiresefr<br><br>inspiration{[Sr_Paulo](https://www.planetminecraft.com/texture-pack/better-lapis-lazuli/)}<br><br>incompat{Deepslate Ore Top Textures}<br><br>#78B159{Attached is a mod that makes Lapis Lazuli Ore occasionally drop Gold Nuggets.}",
           "icon": "modernity/gold-speckled_lapis_lazuli.png",
           "preview":["modernity/preview_gold-speckled_lapis_lazul1.png"],
-          "file": ["modernity/1.7/tweaks/Gold-speckled_Lapis_Lazuli.zip", "LapisNugget [1.7.10] [1.0].jar"],
+          "file": ["modernity/1.7/tweaks/Gold-speckled_Lapis_Lazuli.zip", "modernity/1.7/tweaks/LapisNugget [1.7.10] [1.0].jar"],
           "tags": ["vanillacompatible", "mod"]
         },
         {
