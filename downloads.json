@@ -110,7 +110,7 @@
         },
         {
           "name": "Randomized Pumpkins",
-          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br><br>#DD2E44{This pack **is incompatible** with __Fixed Pumpkin__!}",
+          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br>#DD2E44{This pack **is incompatible** with __Fixed Pumpkin__!}",
           "icon": "modernity/randomized_pumpkins.png",
           "preview":["modernity/preview_randomized_pumpkins1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Pumpkins.zip",
@@ -182,7 +182,7 @@
         },
         {
           "name": "Randomized Vines",
-          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>#DD2E44{This pack **is incompatible** with __Rotated Vines__!}<br><br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
+          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>#DD2E44{This pack **is incompatible** with __Rotated Vines__!}<br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
           "icon": "modernity/randomized_vines.png",
           "preview":["modernity/preview_randomized_vines1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Vines.zip",
@@ -364,7 +364,7 @@
         },
         {
           "name": "Rotated Cactus",
-          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>#FDCB58{This pack **overrides** __Blooming Cactus__!}<br><br>#DD2E44{This pack **is incompatible** with __Cactus Complete Pack__!}",
+          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>#FDCB58{This pack **overrides** __Blooming Cactus__!}<br>#DD2E44{This pack **is incompatible** with __Cactus Complete Pack__!}",
           "icon": "modernity/rotated_cactus.png",
           "preview":["modernity/preview_rotated_cactus1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Cactus.zip",
@@ -468,7 +468,7 @@
         },
         {
           "name": "Rotated Vines",
-          "description": "Rotates the Vine textures to appear more random.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Vines__!}<br><br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
+          "description": "Rotates the Vine textures to appear more random.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Vines__!}<br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
           "icon": "modernity/rotated_vines.png",
           "preview":["modernity/preview_rotated_vines1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Vines.zip",
@@ -599,7 +599,7 @@
         },
         {
           "name": "Fixed Pumpkins",
-          "description": "Fixes the underside of the Pumpkin. Also applies to Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br><br>#DD2E44{This pack **is incompatible** with __Randomized Pumpkin__!}",
+          "description": "Fixes the underside of the Pumpkin. Also applies to Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br>#DD2E44{This pack **is incompatible** with __Randomized Pumpkin__!}",
           "icon": "modernity/fixed_pumpkins.png",
           "preview":["modernity/preview_fixed_pumpkins1.png"],
           "file": "modernity/1.7/fixes/Fixed_Pumpkins.zip",
