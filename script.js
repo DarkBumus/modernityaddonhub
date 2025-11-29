@@ -63,11 +63,8 @@ function formatDescription(text) {
 
     // Ersetzt alle Vorkommen der Form name[arg]
     text = text.replace(
-        /(\w+)\[(.*?)\]/g,
-        (match, name, arg) => {
-            if (macros[name]) return macros[name](arg);
-            return match; // falls kein Macro vorhanden → nichts tun
-        }
+        /([a-zA-Z_][a-zA-Z0-9_-]*)\[(.*?)\]/g,
+        (match, name, arg) => macros[name] ? macros[name](arg) : match
     );
 
     // Ersetzt requiresefr ohne Argumente
