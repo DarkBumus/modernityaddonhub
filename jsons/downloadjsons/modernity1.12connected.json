@@ -26,7 +26,7 @@
         },
         {
           "name": "Connected Bookshelves",
-          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack is **incompatible** with __Randomized Bookshelves__!}",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>incompat{Randomized Bookshelves}",
           "icon": "modernity/connected_bookshelves.png",
           "preview":["modernity/preview_connected_bookshelves1.png"],
           "file": "modernity/1.12/connected_textures/Connected_Bookshelves.zip",
