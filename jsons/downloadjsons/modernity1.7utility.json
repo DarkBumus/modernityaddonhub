@@ -79,6 +79,70 @@
           "preview":["modernity/preview_visual_composter_fill_level1.png"],
           "file": "modernity/1.7/utility/Visual_Composter_Fill_Level.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Breaking Cross",
+          "description": "Changes the Breaking Overlay to display a slowly closing cross to better signify breaking progress.<br><br>inspirationvt",
+          "icon": "modernity/breaking_cross.png",
+          "preview":["modernity/preview_breaking_cross1.png"],
+          "file": "modernity/1.7/utility/Breaking_Cross.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Beacon Beam",
+          "description": "Changes the Beacon Beam texture to be invisible.<br><br>inspirationvt",
+          "icon": "modernity/invisible_beacon_beam.png",
+          "preview":["modernity/preview_invisible_beacon_beam1.png"],
+          "file": "modernity/1.7/utility/Invisible_Beacon_Beam.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Visible Tripwire",
+          "description": "Changes the Tripwire's texture to be more visible.<br><br>inspirationvt",
+          "icon": "modernity/visible_tripwire.png",
+          "preview":["modernity/preview_visible_tripwire1.png"],
+          "file": "modernity/1.7/utility/Visible_Tripwire.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Visible Ores",
+          "description": "Changes the Ore textures to be more visible.<br><br>requiresefr<br><br>inspirationvt<br><br>#78B159{Attached are two additional files that include visible versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
+          "icon": "modernity/visible_ore.png",
+          "preview":["modernity/preview_visible_ore1.png"],
+          "file": ["modernity/1.7/utility/Visible_Ore.zip", "modernity/1.7/utility/Gold-speckled_Visible_Lapis_Lazuli.zip", "modernity/1.7/utility/Unlit_Visible_Redstone_Ore.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Unique Enchanted Books",
+          "description": "Changes the textures of all Enchanted Books of Vanilla and Et Futurum Requiem to make them look unique. Do note that this only applies to Enchanted Books that are practically accessible. Books that are cheated to have an Enchantment Level over 5 will display with a black band instead.<br>If you want to see other Enchanted Books from other mods, make sure to suggest them on [Discord](https://discord.gg/cg73PFHvfV)!<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Enchanted Books consistent with __Darker Leather__.}",
+          "icon": "modernity/unique_enchanted_books.png",
+          "preview":["modernity/preview_unique_enchanted_books1.png"],
+          "file": ["modernity/1.7/utility/Unique_Enchanted_Books.zip", "modernity/1.7/utility/Darker_Unique_Enchanted_Books.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Enchanted Books [Colorblind Edition]",
+          "description": "Changes the textures of all Enchanted Books of Vanilla and Et Futurum Requiem to make them look unique. Do note that this only applies to Enchanted Books that are practically accessible. Books that are cheated to have an Enchantment Level over 5 will display with a black band instead.<br>In this edition, all books display the Enchantment Level in roman numerals so that colorblind players, who can't distinguish the colors, know which level the Books they find have.<br>If you want to see other Enchanted Books from other mods, make sure to suggest them on [Discord](https://discord.gg/cg73PFHvfV)!<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Enchanted Books consistent with __Darker Leather__.}",
+          "icon": "modernity/unique_enchanted_books_colorblind_edition.png",
+          "preview":["modernity/preview_unique_enchanted_books_colorblind_edition1.png", "modernity/preview_unique_enchanted_books_colorblind_edition2.png", "modernity/preview_unique_enchanted_books_colorblind_edition3.png", "modernity/preview_unique_enchanted_books_colorblind_edition4.png", "modernity/preview_unique_enchanted_books_colorblind_edition5.png", "modernity/preview_unique_enchanted_books_colorblind_edition6.png", "modernity/preview_unique_enchanted_books_colorblind_edition7.png", "modernity/preview_unique_enchanted_books_colorblind_edition8.png", "modernity/preview_unique_enchanted_books_colorblind_edition9.png"],
+          "file": ["modernity/1.7/utility/Unique_Enchanted_Books_Colorblind_Edition.zip", "modernity/1.7/utility/Darker_Unique_Enchanted_Books_Colorblind_Edition.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Potions",
+          "description": "Changes the textures of all Potions, Splash Potions and Lingering Potions of Vanilla and Et Futurum Requiem to make them use their 1.19.4 colors and give them tiered, unique textures.<br><br>requiresefr<br><br>inspiration{[Firch](https://www.planetminecraft.com/texture-pack/mncrft-more-jappafied-textures-v1-0-terracotta-and-glazed-terracotta/)}",
+          "icon": "modernity/unique_potions.png",
+          "preview":["modernity/preview_unique_potions1.png"],
+          "file": "modernity/1.7/utility/Unique_Potions.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Potions [Colorblind Edition]",
+          "description": "Changes the textures of all Potions, Splash Potions and Lingering Potions of Vanilla and Et Futurum Requiem to make them use their 1.19.4 colors and give them tiered, unique textures.<br>In this edition, all potions display the Potion Effect so that colorblind players, who can't distinguish the colors, know which Effect the Potions they find have.<br><br>requiresefr<br><br>inspiration{[Firch](https://www.planetminecraft.com/texture-pack/mncrft-more-jappafied-textures-v1-0-terracotta-and-glazed-terracotta/)}",
+          "icon": "modernity/unique_potions_colorblind_edition.png",
+          "preview":["modernity/preview_unique_potions_colorblind_edition1.png", "modernity/preview_unique_potions_colorblind_edition2.png", "modernity/preview_unique_potions_colorblind_edition3.png", "modernity/preview_unique_potions_colorblind_edition4.png", "modernity/preview_unique_potions_colorblind_edition5.png", "modernity/preview_unique_potions_colorblind_edition6.png", "modernity/preview_unique_potions_colorblind_edition7.png", "modernity/preview_unique_potions_colorblind_edition8.png", "modernity/preview_unique_potions_colorblind_edition9.png"],
+          "file": "modernity/1.7/utility/Unique_Potions_Colorblind_Edition.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
         }
       ]
     }
