@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.7": {
+      "Utility": [
+        {
+          "name": "Utility Silverfish Stones",
+          "description": "Gives Silverfish Stones a Black and Yellow outline to make them stand out.<br><br>inspiration{[Vanilla Tweaks](https://vanillatweaks.net/)}<br><br>incompat{Suspicious Silverfish Stones}",
+          "icon": "modernity/utility_silverfish_stones.png",
+          "preview":["modernity/preview_utility_silverfish_stones1.png"],
+          "file": "modernity/1.7/fixes/Utility_Silverfish_Stones.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
+      ]
+    }
+  }
+}

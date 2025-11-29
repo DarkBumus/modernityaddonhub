@@ -1,0 +1,33 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Main Texture Pack": [
+        {
+          "name": "Palettized Programmer Art",
+          "description": "Palettized Programmer Art texture pack, made by me. Its goal is to retain as much of the Programmer Art look as possible while also providing sane palettes to the textures so that texture artists can work with them more easily.",
+          "icon": "pprogrammerart/pack6.png",
+          "preview":["pprogrammerart/preview_pprogrammerart1.png", "pprogrammerart/preview_pprogrammerart2.png", "pprogrammerart/preview_pprogrammerart3.png", "pprogrammerart/preview_pprogrammerart4.png"],
+          "file": null,
+          "tags": ["mainpack"],
+          "external_downloads": "https://modrinth.com/resourcepack/palettized-programmer-art"
+        }
+      ],
+      "Templates": [
+        {
+          "name": "Palettized Programmer Art Addon 1.7.10",
+          "description": "Download this first and place your downloaded Addons inside of it.",
+          "icon": "pprogrammerart/pack7.png",
+          "preview":["pprogrammerart/preview_template1.png", "pprogrammerart/preview_template2.png"],
+          "file": "templates/Palettized Programmer Art Addon [1.7.10].zip",
+          "tags": ["template"]
+        }
+      ]
+    }
+  }
+}
