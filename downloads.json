@@ -680,8 +680,8 @@
         {
           "name": "1.19.4 Potion Colors",
           "description": "Changes the textures of all Potions, Splash Potions and Lingering Potions of Vanilla and Et Futurum Requiem to make them use their 1.19.4 colors.<br><br>(Keep in mind, that Lingering Potions require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>⚠️ Careful: This Addon is a bit overkill. Not only does it replace all the potion colors using a `color.properties` file, it also replaces every single potion in (as I hope) every possible configuration with a finished texture that overrides the vanilla 'bottle + potion overlay' system. This is not technically necessary to change the potion colors, but it gets rid of the Enchantment Glint, that was also removed from potions in 1.19.4.",
-          "icon": "modernity/1.19.4_potion_polors.png",
-          "preview":["modernity/preview_1.19.4_potion_polors1.png"],
+          "icon": "modernity/1.19.4_potion_colors.png",
+          "preview":["modernity/preview_1.19.4_potion_colors1.png"],
           "file": "modernity/1.7/fixes/1.19.4_Potion_Colors.zip",
           "tags": ["rpmcpatcher", "optifineincompatible"]
         },
