@@ -63,7 +63,7 @@ function formatDescription(text) {
 
     // Ersetzt alle Vorkommen der Form name[arg]
     text = text.replace(
-        /([a-zA-Z_][a-zA-Z0-9_-]*)\[(.*?)\]/g,
+        /([a-zA-Z_][a-zA-Z0-9_-]*)\{(.*?)\}/g,
         (match, name, arg) => macros[name] ? macros[name](arg) : match
     );
 
