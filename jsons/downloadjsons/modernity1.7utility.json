@@ -63,6 +63,22 @@
           "preview":["modernity/preview_directional_observers1.png"],
           "file": "modernity/1.7/utility/Directional_Observers.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Visual Cauldron Fill Level",
+          "description": "Gives Cauldrons windows on the side that display the fill level. Also applies these windows to Et Futurum Requiem's Potion Cauldron.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/visual_cauldron_fill_level.png",
+          "preview":["modernity/preview_visual_cauldron_fill_level1.png"],
+          "file": "modernity/1.7/utility/Visual_Cauldron_Fill_Level.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Visual Composter Fill Level",
+          "description": "Gives Composters windows on the side that display the fill level.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/visual_composter_fill_level.png",
+          "preview":["modernity/preview_visual_composter_fill_level1.png"],
+          "file": "modernity/1.7/utility/Visual_Composter_Fill_Level.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
