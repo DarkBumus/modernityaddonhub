@@ -112,7 +112,7 @@ function formatDescription(text) {
 
         //requiresmod[args]
         requiresmod: (arg) =>
-            `(Keep in mind that some or all of this content requires ${arg} to be present.)`
+            `(Keep in mind that some or all of this content requires ${arg} to be present.)`,
 
         //attscript | kein arg benötigt
         attscript: () =>
