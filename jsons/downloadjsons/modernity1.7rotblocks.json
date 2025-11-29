@@ -34,7 +34,7 @@
         },
         {
           "name": "Rotated Cactus",
-          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>#FDCB58{This pack **overrides** __Blooming Cactus__!}<br>#DD2E44{This pack **is incompatible** with __Cactus Complete Pack__!}",
+          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>overridemaster{Blooming Cactus}<br>incompat{Cactus Complete Pack}",
           "icon": "modernity/rotated_cactus.png",
           "preview":["modernity/preview_rotated_cactus1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Cactus.zip",
@@ -90,7 +90,7 @@
         },
         {
           "name": "Rotated Podzol",
-          "description": "Rotates the Podzol texture to appear more random. Also rotates the underside Dirt texture.<br><br>#DD2E44{This pack **is incompatible** with __Podzol Complete Pack__!}",
+          "description": "Rotates the Podzol texture to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
           "icon": "modernity/rotated_podzol.png",
           "preview":["modernity/preview_rotated_podzol1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Podzol.zip",
@@ -98,7 +98,7 @@
         },
         {
           "name": "Rotated Brown Podzol",
-          "description": "Changes the Podzol texture to remove the greenish specs in it and rotates it to appear more random. Also rotates the underside Dirt texture.<br><br>#DD2E44{This pack **is incompatible** with __Podzol Complete Pack__!}",
+          "description": "Changes the Podzol texture to remove the greenish specs in it and rotates it to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
           "icon": "modernity/rotated_brown_podzol.png",
           "preview":["modernity/preview_rotated_brown_podzol1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Brown_Podzol.zip",
@@ -122,7 +122,7 @@
         },
         {
           "name": "Rotated Cake",
-          "description": "Rotates the Cake textures to appear more random.<br><br>#DD2E44{This pack **is incompatible** with __Cake Complete Pack__!}",
+          "description": "Rotates the Cake textures to appear more random.<br><br>incompat{Cake Complete Pack}",
           "icon": "modernity/rotated_cake.png",
           "preview":["modernity/preview_rotated_cake1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Cake.zip",
@@ -138,7 +138,7 @@
         },
         {
           "name": "Rotated Vines",
-          "description": "Rotates the Vine textures to appear more random.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Vines__!}<br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
+          "description": "Rotates the Vine textures to appear more random.<br><br>incompat{Randomized Vines}<br>incompat{Vines Complete Pack}",
           "icon": "modernity/rotated_vines.png",
           "preview":["modernity/preview_rotated_vines1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Vines.zip",
@@ -146,7 +146,7 @@
         },
         {
           "name": "Rotated Logs",
-          "description": "Rotates the Logs top textures to appear more random. Also rotates the textures of Crimson and Warped Stems and Cherry and Mangrove Logs and Bamboo Blocks.<br><br>(Keep in mind, that Crimson and Warped Stems and Cherry and Mangrove Logs require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Logs top textures to appear more random. Also rotates the textures of Crimson and Warped Stems and Cherry and Mangrove Logs and Bamboo Blocks.<br><br>requiresefr",
           "icon": "modernity/rotated_logs.png",
           "preview":["modernity/preview_rotated_logs1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Logs.zip",
@@ -154,7 +154,7 @@
         },
         {
           "name": "Rotated Andesite",
-          "description": "Rotates the Andesite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Andesite Slabs and Stairs.<br><br>(Keep in mind, that Andesite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Andesite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Andesite Slabs and Stairs.<br><br>requiresefr",
           "icon": "modernity/rotated_andesite.png",
           "preview":["modernity/preview_rotated_andesite1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Andesite.zip",
@@ -162,7 +162,7 @@
         },
         {
           "name": "Rotated Granite",
-          "description": "Rotates the Granite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>(Keep in mind, that Granite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Granite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>requiresefr",
           "icon": "modernity/rotated_granite.png",
           "preview":["modernity/preview_rotated_granite1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Granite.zip",
@@ -170,7 +170,7 @@
         },
         {
           "name": "Rotated Diorite",
-          "description": "Rotates the Diorite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Diorite Slabs and Stairs.<br><br>(Keep in mind, that Diorite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Diorite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Diorite Slabs and Stairs.<br><br>requiresefr",
           "icon": "modernity/rotated_diorite.png",
           "preview":["modernity/preview_rotated_diorite1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Diorite.zip",
@@ -178,7 +178,7 @@
         },
         {
           "name": "Rotated Black Granite",
-          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>(Keep in mind, that Granite requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br>(Inspiration drawn from [Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/).)",
+          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>requiresefr<br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
           "icon": "modernity/rotated_black_granite.png",
           "preview":["modernity/preview_rotated_black_granite1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Black_Granite.zip",
@@ -194,7 +194,7 @@
         },
         {
           "name": "Rotated Sand Concrete Powders",
-          "description": "Rotates the Sand Concrete Powder textures to appear more random.<br><br>(Keep in mind, that Concrete Powder requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Sand Concrete Powder textures to appear more random.<br><br>requiresefr",
           "icon": "modernity/rotated_sand_concrete_powders.png",
           "preview":["modernity/preview_rotated_sand_concrete_powders1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Sand_Concrete_Powders.zip",
@@ -202,7 +202,7 @@
         },
         {
           "name": "Rotated Basalt",
-          "description": "Rotates the Basalt side and top textures to appear more random.<br><br>(Keep in mind, that Basalt requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the Basalt side and top textures to appear more random.<br><br>requiresefr",
           "icon": "modernity/rotated_basalt.png",
           "preview":["modernity/preview_rotated_basalt1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Basalt.zip",
@@ -210,7 +210,7 @@
         },
         {
           "name": "Rotated Nylium",
-          "description": "Rotates the top textures of Crimson and Warped Nylium to appear more random.<br><br>(Keep in mind, that Nylium requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the top textures of Crimson and Warped Nylium to appear more random.<br><br>requiresefr",
           "icon": "modernity/rotated_nylium.png",
           "preview":["modernity/preview_rotated_nylium1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Nylium.zip",
@@ -218,7 +218,7 @@
         },
         {
           "name": "Rotated Moss",
-          "description": "Rotates the textures of Moss Blocks and Carpets to appear more random.<br><br>(Keep in mind, that Moss Blocks and Carpets require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the textures of Moss Blocks and Carpets to appear more random.<br><br>requiresefr",
           "icon": "modernity/rotated_moss.png",
           "preview":["modernity/preview_rotated_moss1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Moss.zip",
@@ -226,7 +226,7 @@
         },
         {
           "name": "Rotated Azalea",
-          "description": "Rotates the top and side textures of Azalea and Flowering Azalea to appear more random.<br><br>(Keep in mind, that Azalea and Flowering Azalea require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Rotates the top and side textures of Azalea and Flowering Azalea to appear more random.<br><br>requiresefr",
           "icon": "modernity/rotated_azalea.png",
           "preview":["modernity/preview_rotated_azalea1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Azalea.zip",
