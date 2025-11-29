@@ -26,7 +26,7 @@
     "optifinecompatible": {
         "emoji": "🤝",
         "label": "OptiFine-compatible",
-        "description": "This Addon is compatible with OptiFine. Note that some Addons make use of functionality that is not available in OptiFine, but it instead provided by other, similar mods. Modernity Addon Hub generally discourages the use of OptiFine, if better solutions are available, though if you do decide to make use of it, be sure that you download the right version.",
+        "description": "This Addon is compatible with OptiFine. Note that some Addons make use of functionality that is not available in OptiFine, but is instead provided by other, similar mods. Modernity Addon Hub generally discourages the use of OptiFine, if better solutions are available, though if you do decide to make use of it, be sure that you download the right version.",
         "link": null
     },
     "optifineincompatible": {
