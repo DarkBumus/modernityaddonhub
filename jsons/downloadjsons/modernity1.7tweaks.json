@@ -9,8 +9,72 @@
     "1.7": {
       "Tweaks": [
         {
+          "name": "Tweaked Gravel",
+          "description": "Changes the Gravel texture to make it grainier.",
+          "icon": "modernity/tweaked_gravel.png",
+          "preview":["modernity/preview_tweaked_gravel1.png"],
+          "file": "modernity/1.7/tweaks/Tweaked_Gravel.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Desaturated Dark Oak",
+          "description": "Desaturates all Dark Oak related textures.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Desaturated Dark Oak Complete Pack}",
+          "icon": "modernity/desaturated_dark_oak.png",
+          "preview":["modernity/preview_desaturated_dark_oak1.png"],
+          "file": "modernity/1.7/tweaks/Desaturated_Dark_Oak.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Curracabah Acacia",
+          "description": "Changes all Acacia related textures.<br><br>requiresefr<br><br>inspiration{[Os' Curracabah Acacia](https://www.planetminecraft.com/texture-pack/os-curracabah-acacia/)}<br><br>overrideslave{Curracabah Acacia Complete Pack}",
+          "icon": "modernity/curracabah_acacia.png",
+          "preview":["modernity/preview_curracabah_acacia1.png"],
+          "file": "modernity/1.7/tweaks/Curracabah_Acacia.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Brown Podzol",
+          "description": "Changes the Podzol texture to remove the greenish specs in it.",
+          "icon": "modernity/brown_podzol.png",
+          "preview":["modernity/preview_brown_podzol1.png"],
+          "file": "modernity/1.7/tweaks/Brown_Podzol.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Programmer Art Colored Melon",
+          "description": "Changes the Melon textures to the Programmer Art Color Palette. Also adds a colored stem.",
+          "icon": "modernity/programmer_art_colored_melon.png",
+          "preview":["modernity/preview_programmer_art_colored_melon1.png"],
+          "file": "modernity/1.7/tweaks/Programmer_Art_Colored_Melon.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Faceless Pumpkins",
+          "description": "Exchanges the Pumpkin's face texture with its side texture to rid the standard Pumpkins of their faces.",
+          "icon": "modernity/faceless_pumpkins.png",
+          "preview":["modernity/preview_faceless_pumpkins1.png"],
+          "file": "modernity/1.7/tweaks/Faceless_Pumpkins.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Horse Armor",
+          "description": "Changes the Iron and Diamond Horse Armor to be consistent with their item versions. Iron Horse Armor will get a black saddle and Diamond Horse Armor will get a blue saddle.",
+          "icon": "modernity/consistent_horse_armor.png",
+          "preview":["modernity/preview_consistent_horse_armor1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Horse_Armor.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Ender Eye",
+          "description": "Gives the Ender Eye an animation that has it blinking from time to time.",
+          "icon": "modernity/blinking_ender_eye.png",
+          "preview":["modernity/preview_blinking_ender_eye1.png"],
+          "file": "modernity/1.7/tweaks/Blinking_Ender_Eye.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
           "name": "Mixed Hurt Sounds",
-          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>requiresefr<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.r",
+          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>requiresefr<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.",
           "icon": "modernity/mixed_hurt_sounds.png",
           "preview":["modernity/preview_mixed_hurt_sounds1.png"],
           "file": "modernity/1.7/tweaks/Mixed_Hurt_Sounds.zip",
