@@ -19,7 +19,7 @@
         {
           "name": "Translucent Pumpkin Overlay",
           "description": "Changes visibility of the Pumpkin Overlay to be slightly translucent.<br><br>inspirationvt",
-          "icon": "modernity/translucent_pumpkin_overlay.png",
+          "icon": "modernity/pumpkin_overlay.png",
           "preview":["modernity/preview_translucent_pumpkin_overlay1.png"],
           "file": "modernity/1.7/utility/Translucent_Pumpkin_Overlay.zip",
           "tags": ["vanillacompatible"]
@@ -27,7 +27,7 @@
         {
           "name": "Invisible Pumpkin Overlay",
           "description": "Changes visibility of the Pumpkin Overlay to be completely invisible.<br><br>inspirationvt",
-          "icon": "modernity/invisible_pumpkin_overlay.png",
+          "icon": "modernity/pumpkin_overlay.png",
           "preview":["modernity/preview_invisible_pumpkin_overlay1.png"],
           "file": "modernity/1.7/utility/Invisible_Pumpkin_Overlay.zip",
           "tags": ["vanillacompatible"]
