@@ -138,7 +138,7 @@
         },
         {
           "name": "Fixed Trapdoor Sides",
-          "description": "Fixes the side textures of all Trapdoors.<br><br>requiresefr<br><br>#78B159{(Attached is an additional file that makes the Copper Trapdoors consistent with __Actually Waxed Copper__.)}",
+          "description": "Fixes the side textures of all Trapdoors.<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Copper Trapdoors consistent with __Actually Waxed Copper__.}",
           "icon": "modernity/fixed_trapdoor_sides.png",
           "preview":["modernity/preview_fixed_trapdoor_sides1.png"],
           "file": ["modernity/1.7/fixes/Fixed_Trapdoor_Sides.zip", "modernity/1.7/fixes/Actually_Waxed_Fixed_Trapdoor_Sides.zip"],
