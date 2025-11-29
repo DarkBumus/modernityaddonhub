@@ -253,7 +253,7 @@
           "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__.<br><br>requiresefr<br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
           "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows1.png"],
-          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows.zip", "modernity/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows.zip"],
+          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows.zip", "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows.zip"],
           "tags": ["rpmcpatcher", "optifineincompatible"]
         },
         {
@@ -261,7 +261,7 @@
           "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__, aswell as the __1.19.4 Potion Colors__.<br><br>requiresefr<br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
           "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
-          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
+          "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
           "tags": ["rpmcpatcher", "optifineincompatible"]
         },
         {
