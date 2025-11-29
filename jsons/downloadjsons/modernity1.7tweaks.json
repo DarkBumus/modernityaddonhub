@@ -134,7 +134,7 @@
           "icon": "modernity/unlit_redstone_ore.png",
           "preview":["modernity/preview_unlit_redstone_ore1.png"],
           "file": "modernity/1.7/tweaks/Unlit_Redstone_Ore.zip",
-          "tags": ["vanillacompatible"]
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         },
         {
           "name": "Saturated Mossy Stone",
@@ -142,7 +142,71 @@
           "icon": "modernity/saturated_mossy_stone.png",
           "preview":["modernity/preview_saturated_mossy_stone1.png"],
           "file": "modernity/1.7/tweaks/Saturated_Mossy_Stone.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Beta Cow Sounds",
+          "description": "Changes all sounds Cows make into those of Minecraft Beta.<br><br>⚠️ Careful: Should a mod add another type of cow that utilizes vanilla cows as a basis, they will also emit the sounds from this Addon.",
+          "icon": "modernity/beta_cow_sounds.png",
+          "preview":["modernity/preview_beta_cow_sounds1.png"],
+          "file": "modernity/1.7/tweaks/Beta_Cow_Sounds.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Bedrock Nether Bricks",
+          "description": "Changes the Nether Bricks textures to a lighter shade, like in Bedrock Edition. Also applies to Cracked Nether Bricks and Chiseled Nether Bricks, aswell as Nether Brick Fences, Nether Brick Walls, Nether Brick Stairs and Nether Brick Slabs.<br><br>requiresefr",
+          "icon": "modernity/bedrock_nether_bricks.png",
+          "preview":["modernity/preview_bedrock_nether_bricks1.png"],
+          "file": "modernity/1.7/tweaks/Bedrock_Nether_Bricks.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Double-wide Hay Bale Rims",
+          "description": "Changes the side texture of Hay Bales to give the rims a double-wide appearance.",
+          "icon": "modernity/double-wide_hay_bale_rims.png",
+          "preview":["modernity/preview_double-wide_hay_bale_rims1.png"],
+          "file": "modernity/1.7/tweaks/Double-wide_Hay_Bale_Rims.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Iron Nugget",
+          "description": "Changes the texture of the Iron Nugget, to fit the lineart of the Gold Nugget and the color palette of the Iron Ingot.<br><br>requiresefr",
+          "icon": "modernity/consistent_iron_nugget.png",
+          "preview":["modernity/preview_consistent_iron_nugget1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Iron_Nugget.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Programmer Art Rabbit",
+          "description": "Changes the texture of the Raw Rabbit and Cooked Rabbit, to fit the lineart of their Programmer Art versions, with the color palette of the Jappa versions.<br><br>requiresefr",
+          "icon": "modernity/programmer_art_rabbit.png",
+          "preview":["modernity/preview_programmer_art_rabbit1.png"],
+          "file": "modernity/1.7/tweaks/Programmer_Art_Rabbit.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Black Granite",
+          "description": "Changes the Granite texture to turn it into deep black with white specs.<br><br>requiresefr<br><br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
+          "icon": "modernity/black_granite.png",
+          "preview":["modernity/preview_black_granite1.png"],
+          "file": "modernity/1.7/tweaks/Black_Granite.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Biome-specific Monster Spawner",
+          "description": "Changes the textures of the Monster Spawners to give it a dedicated top and bottom texture, aswell as some biome-specific textures.",
+          "icon": "modernity/biome-specific_monster_spawner.png",
+          "preview":["modernity/preview_biome-specific_monster_spawner1.png"],
+          "file": "modernity/1.7/tweaks/Biome-specific_Monster_Spawner.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Pebble-free Dirt",
+          "description": "Changes the textures of all dirt variations so that they have no pebbles in them.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/pebble-free_dirt.png",
+          "preview":["modernity/preview_pebble-free_dirt1.png"],
+          "file": "modernity/1.7/tweaks/Pebble-free_Dirt.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
