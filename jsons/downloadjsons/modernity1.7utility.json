@@ -170,7 +170,7 @@
         },
         {
           "name": "Comprehensive Tool Upgrade",
-          "description": "test",
+          "description": "test2",
           "icon": "modernity/comprehensive_tool_upgrade.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade1.png"],
           "file": ["modernity/1.7/utility/Comprehensive_Tool_Upgrade.zip", "modernity/1.7/utility/Necessary_Comprehensive_Tool_Upgrade_Recipe_Script.zip"],
