@@ -193,11 +193,11 @@
           "tags": ["vanillacompatible"]
         },
         {
-          "name": "Biome-specific Monster Spawner",
+          "name": "Biome-specific Monster Spawners",
           "description": "Changes the textures of the Monster Spawners to give it a dedicated top and bottom texture, aswell as some biome-specific textures.",
-          "icon": "modernity/biome-specific_monster_spawner.png",
-          "preview":["modernity/preview_biome-specific_monster_spawner1.png"],
-          "file": "modernity/1.7/tweaks/Biome-specific_Monster_Spawner.zip",
+          "icon": "modernity/biome-specific_monster_spawners.png",
+          "preview":["modernity/preview_biome-specific_monster_spawners1.png"],
+          "file": "modernity/1.7/tweaks/Biome-specific_Monster_Spawners.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         },
         {
