@@ -25,6 +25,7 @@ Promise.all([
 // -------------------------
 // Mini-Markdown-Parser + Shorthand-System
 // -------------------------
+    
 function formatDescription(text) {
     const container = document.createElement("div");
     if (!text) return container;
