@@ -9,18 +9,68 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let tagData = {}; // ganz oben definieren
 
+// Hilfsfunktion: alle Downloads JSONs laden und zusammenführen
+async function loadAllDownloadJSONs() {
+    // Liste der Dateien manuell oder automatisch festlegen
+    const jsonFiles = [
+        "downloadjsons/modernity1.12main.json",
+        "downloadjsons/modernity1.12connected.json",
+        "downloadjsons/modernity1.7main.json",
+        "downloadjsons/modernity1.7connected.json",
+        "downloadjsons/modernity1.7fixes.json",
+        "downloadjsons/modernity1.7randblocks.json",
+        "downloadjsons/modernity1.7randentities.json",
+        "downloadjsons/modernity1.7rotblocks.json",
+        "downloadjsons/modernity1.7utility.json",
+        "downloadjsons/pprogrammerart1.7main.json",
+        "downloadjsons/pprogrammerart1.7connected.json"
+    ];
+
+    const allJSONs = await Promise.all(jsonFiles.map(f => fetch(f).then(r => r.json())));
+
+    const merged = { defaults: {} };
+
+    allJSONs.forEach(json => {
+        // Defaults übernehmen (nur einmal, z.B. von der ersten JSON)
+        if (Object.keys(merged.defaults).length === 0 && json.defaults) {
+            merged.defaults = json.defaults;
+        }
+
+        // Autoren und Versionen zusammenführen
+        for (const author in json) {
+            if (author === "defaults") continue;
+
+            merged[author] = merged[author] || {};
+
+            for (const version in json[author]) {
+                merged[author][version] = merged[author][version] || {};
+
+                for (const category in json[author][version]) {
+                    merged[author][version][category] = merged[author][version][category] || [];
+                    merged[author][version][category].push(...json[author][version][category]);
+                }
+            }
+        }
+    });
+
+    return merged;
+}
+
+// -------------------------
+// Loader
+// -------------------------
 Promise.all([
     fetch("tab_containers.json").then(r => r.json()),
-    fetch("downloads.json").then(r => r.json()),
-    fetch("tags.json").then(r => r.json()) // NEU
+    loadAllDownloadJSONs(),
+    fetch("tags.json").then(r => r.json())
 ])
 .then(([tabsJson, downloadsJson, tagsJson]) => {
     data = tabsJson;
-    downloadData = downloadsJson;
-    tagData = tagsJson; // NEU
+    downloadData = downloadsJson; // jetzt zusammengeführt
+    tagData = tagsJson;
     renderMainTabs();
 })
-    .catch(err => console.error("Fehler beim Laden der JSON:", err));
+.catch(err => console.error("Error while trying to load the JSON:", err));
 
 // -------------------------
 // Mini-Markdown-Parser + Shorthand-System
