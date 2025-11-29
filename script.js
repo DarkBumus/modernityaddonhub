@@ -60,9 +60,9 @@ async function loadAllDownloadJSONs() {
 // Loader
 // -------------------------
 Promise.all([
-    fetch("tab_containers.json").then(r => r.json()),
+    fetch("jsons/tab_containers.json").then(r => r.json()),
     loadAllDownloadJSONs(),
-    fetch("tags.json").then(r => r.json())
+    fetch("jsons/tags.json").then(r => r.json())
 ])
 .then(([tabsJson, downloadsJson, tagsJson]) => {
     data = tabsJson;
