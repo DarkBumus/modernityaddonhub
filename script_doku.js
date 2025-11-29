@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tabsContainer = document.getElementById("tabs");
     const sections = document.querySelectorAll(".doc-section");
 
-    fetch("tab_containers_doku.json")
+    fetch("jsons/tab_containers_doku.json")
         .then(r => r.json())
         .then(data => renderTabs(data.tabs))
         .catch(err => console.error("JSON-Fehler:", err));
