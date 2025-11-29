@@ -33,7 +33,7 @@
       "versions": {
         "1.6": {
           "panels": {
-            "Fixes": false
+            "Fixes": true
           }
         }
       }
