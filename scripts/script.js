@@ -13,17 +13,17 @@ let tagData = {}; // ganz oben definieren
 async function loadAllDownloadJSONs() {
     // Liste der Dateien manuell oder automatisch festlegen
     const jsonFiles = [
-        "downloadjsons/modernity1.12main.json",
-        "downloadjsons/modernity1.12connected.json",
-        "downloadjsons/modernity1.7main.json",
-        "downloadjsons/modernity1.7connected.json",
-        "downloadjsons/modernity1.7fixes.json",
-        "downloadjsons/modernity1.7randblocks.json",
-        "downloadjsons/modernity1.7randentities.json",
-        "downloadjsons/modernity1.7rotblocks.json",
-        "downloadjsons/modernity1.7utility.json",
-        "downloadjsons/pprogrammerart1.7main.json",
-        "downloadjsons/pprogrammerart1.7connected.json"
+        "jsons/downloadjsons/modernity1.12main.json",
+        "jsons/downloadjsons/modernity1.12connected.json",
+        "jsons/downloadjsons/modernity1.7main.json",
+        "jsons/downloadjsons/modernity1.7connected.json",
+        "jsons/downloadjsons/modernity1.7fixes.json",
+        "jsons/downloadjsons/modernity1.7randblocks.json",
+        "jsons/downloadjsons/modernity1.7randentities.json",
+        "jsons/downloadjsons/modernity1.7rotblocks.json",
+        "jsons/downloadjsons/modernity1.7utility.json",
+        "jsons/downloadjsons/pprogrammerart1.7main.json",
+        "jsons/downloadjsons/pprogrammerart1.7connected.json"
     ];
 
     const allJSONs = await Promise.all(jsonFiles.map(f => fetch(f).then(r => r.json())));
