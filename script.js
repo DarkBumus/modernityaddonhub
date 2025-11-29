@@ -35,22 +35,28 @@ function formatDescription(text) {
     // -----------------------------------
 
     const macros = {
+
+        //incompat[args]
         incompat: (arg) =>
             `<span style="color:#DD2E44;">This pack is <strong>incompatible</strong> with <u>${arg}</u>.</span>`,
 
+        //overridemaster[args]
         overridemaster: (arg) =>
             `<span style="color:#FDCB58;">This pack <strong>overrides</strong> <u>${arg}</u>.</span>`,
 
+        //overrideslave[args]
         overrideslave: (arg) =>
             `<span style="color:#FDCB58;">This pack <strong>gets overridden</strong> by <u>${arg}</u>.</span>`,
 
+        //inspiration[args]
         inspiration: (arg) =>
             `(Inspiration drawn from ${arg}.)`,
 
-        // kein arg für requiresefr
+        //requiresefr | kein arg für requiresefr
         requiresefr: () =>
             `(Keep in mind that some or all of this content requires <a href="https://modrinth.com/mod/etfuturum" target="_blank">Et Futurum Requiem</a> to be present.)`,
 
+        //requiresmod[args]
         requiresmod: (arg) =>
             `(Keep in mind that some or all of this content requires ${arg} to be present.)`
     };
