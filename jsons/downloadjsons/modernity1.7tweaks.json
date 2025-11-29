@@ -10,7 +10,7 @@
       "Tweaks": [
         {
           "name": "Mixed Hurt Sounds",
-          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>requiresefr<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.<br><br>requiresefr",
+          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>requiresefr<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.r",
           "icon": "modernity/mixed_hurt_sounds.png",
           "preview":["modernity/preview_mixed_hurt_sounds1.png"],
           "file": "modernity/1.7/tweaks/Mixed_Hurt_Sounds.zip",
