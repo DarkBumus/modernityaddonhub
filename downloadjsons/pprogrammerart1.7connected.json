@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Connected Textures": [
+        {
+          "name": "Connected Glass",
+          "description": "Connects the regular Glass blocks so that they appear as one singular pane of glass.<br><br>This works for full Glass blocks as well as Glass Panes.",
+          "icon": "pprogrammerart/connected_glass.png",
+          "preview":["pprogrammerart/preview_connected_glass1.png", "pprogrammerart/preview_connected_glass2.png"],
+          "file": "pprogrammerart/1.7/connected_textures/Connected_Glass.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
+        },
+        {
+          "name": "Connected Bookshelves",
+          "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Bookshelves__!}",
+          "icon": "pprogrammerart/connected_bookshelves.png",
+          "preview":["pprogrammerart/preview_connected_bookshelves1.png"],
+          "file": "pprogrammerart/1.7/connected_textures/Connected_Bookshelves.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "horizontalconnection"]
+        }
+      ]
+    }
+  }
+}
