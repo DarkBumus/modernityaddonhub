@@ -79,6 +79,70 @@
           "preview":["modernity/preview_mixed_hurt_sounds1.png"],
           "file": "modernity/1.7/tweaks/Mixed_Hurt_Sounds.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Wheat",
+          "description": "Makes the Wheat texture consistent with the color palette of Hay Bales.",
+          "icon": "modernity/consistent_wheat.png",
+          "preview":["modernity/preview_consistent_wheat1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Wheat.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Useful Chainmail",
+          "description": "Changes the texture of all Chainmail pieces so that they look a little more tangible.<br><br>requiresefr<br><br>attscript",
+          "icon": "modernity/useful_chainmail.png",
+          "preview":["modernity/preview_useful_chainmail1.png"],
+          "file": ["modernity/1.7/tweaks/Useful_Chainmail.zip", "modernity/1.7/tweaks/Optional_Chainmail_Recipe_Script.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Equalized Cake",
+          "description": "Removes the central cherry from the Cake top texture and item texture.<br><br>inspirationvt",
+          "icon": "modernity/equalized_cake.png",
+          "preview":["modernity/preview_equalized_cake1.png"],
+          "file": "modernity/1.7/tweaks/Equalized_Cake.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Helmets",
+          "description": "Provides a noseguard in the item textures of Iron Helmets, Gold Helmets and Diamond Helmets.<br><br>inspirationvt",
+          "icon": "modernity/consistent_helmets.png",
+          "preview":["modernity/preview_consistent_helmets1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Helmets.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Observers",
+          "description": "Gives the Observer face an animation that has it blinking and shifting eyes from time to time.<br><br>requiresefr",
+          "icon": "modernity/blinking_observers.png",
+          "preview":["modernity/preview_blinking_observers1.png"],
+          "file": "modernity/1.7/tweaks/Blinking_Observers.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blooming Cactus",
+          "description": "Adds blooming blossoms to the side and top of the Cactus texture.<br><br>incompat{Cactus Complete Pack}",
+          "icon": "modernity/blooming_cactus.png",
+          "preview":["modernity/preview_blooming_cactus1.png"],
+          "file": "modernity/1.7/tweaks/Blooming_Cactus.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Unlit Redstone Ore",
+          "description": "Adds an unlit variant to Redstone Ore and Deepslate Redstone Ore. Also adds a Deepslate Ore top texture.<br><br>requiresefr<br><br>inspirationvt<br><br>incompat{Deepslate Ore Top Textures}",
+          "icon": "modernity/unlit_redstone_ore.png",
+          "preview":["modernity/preview_unlit_redstone_ore1.png"],
+          "file": "modernity/1.7/tweaks/Unlit_Redstone_Ore.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Saturated Mossy Stone",
+          "description": "Saturates the moss in Mossy Cobblestone and Mossy Stone Bricks and their respective Slabs, Stairs and Walls, when they are placed in wet biomes.<br><br>requiresefr",
+          "icon": "modernity/saturated_mossy_stone.png",
+          "preview":["modernity/preview_saturated_mossy_stone1.png"],
+          "file": "modernity/1.7/tweaks/Saturated_Mossy_Stone.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
