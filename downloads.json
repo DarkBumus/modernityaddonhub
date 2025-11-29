@@ -654,7 +654,7 @@
           "tags": ["vanillacompatible"]
         },
         {
-          "name": "Gilded Blackstone Top Texture",
+          "name": "Gilded Blackstone Top Textures",
           "description": "Provides a dedicated top texture to Gilded Blackstone.<br><br>(Keep in mind, that Gilded Blackstone requires [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
           "icon": "modernity/gilded_blackstone_top_textures.png",
           "preview":["modernity/preview_gilded_blackstone_top_textures1.png"],
