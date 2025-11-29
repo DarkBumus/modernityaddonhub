@@ -98,6 +98,10 @@ function formatDescription(text) {
         overrideslave: (arg) =>
             `<span style="color:#FDCB58;">This pack <strong>gets overridden</strong> by <u>${arg}</u>.</span>`,
 
+        // inspirationvt | kein arg benötigt
+        inspirationvt: () =>
+            `(Inspiration drawn from <a href="https://vanillatweaks.net/" target="_blank">Vanilla Tweaks</a>.)`,
+
         //inspiration[args]
         inspiration: (arg) =>
             `(Inspiration drawn from ${arg}.)`,
@@ -115,6 +119,12 @@ function formatDescription(text) {
     text = text.replace(
         /([a-zA-Z_][a-zA-Z0-9_-]*)\{(.*?)\}/g,
         (match, name, arg) => macros[name] ? macros[name](arg) : match
+    );
+
+    // Ersetzt inspirationvt ohne Argumente
+    text = text.replace(
+        /\binspirationvt\b/g,
+        () => macros.inspirationvt()
     );
 
     // Ersetzt requiresefr ohne Argumente
