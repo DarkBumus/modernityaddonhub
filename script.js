@@ -23,11 +23,55 @@ Promise.all([
     .catch(err => console.error("Fehler beim Laden der JSON:", err));
 
 // -------------------------
-// Mini-Markdown-Parser für Vorschau-Beschreibung
+// Mini-Markdown-Parser + Shorthand-System
 // -------------------------
 function formatDescription(text) {
     const container = document.createElement("div");
     if (!text) return container;
+
+    // -----------------------------------
+    // 1. Shorthands / Macros
+    // -----------------------------------
+
+    const macros = {
+        incompat: (arg) =>
+            `<span style="color:#DD2E44;">This pack is <strong>incompatible</strong> with <u>${arg}</u>.</span>`,
+
+        overridemaster: (arg) =>
+            `<span style="color:#FDCB58;">This pack <strong>overrides</strong> <u>${arg}</u>.</span>`,
+
+        overrideslave: (arg) =>
+            `<span style="color:#FDCB58;">This pack <strong>gets overridden</strong> by <u>${arg}</u>.</span>`,
+
+        inspiration: (arg) =>
+            `(Inspiration drawn from ${arg}.)`,
+
+        // kein arg für requiresefr
+        requiresefr: () =>
+            `(Keep in mind that some or all of this content requires <a href="https://modrinth.com/mod/etfuturum" target="_blank">Et Futurum Requiem</a> to be present.)`,
+
+        requiresmod: (arg) =>
+            `(Keep in mind that some or all of this content requires ${arg} to be present.)`
+    };
+
+    // Ersetzt alle Vorkommen der Form name[arg]
+    text = text.replace(
+        /(\w+)\[(.*?)\]/g,
+        (match, name, arg) => {
+            if (macros[name]) return macros[name](arg);
+            return match; // falls kein Macro vorhanden → nichts tun
+        }
+    );
+
+    // Ersetzt requiresefr ohne Argumente
+    text = text.replace(
+        /\brequiresefr\b/g,
+        () => macros.requiresefr()
+    );
+
+    // -----------------------------------
+    // 2. Mini-Markdown
+    // -----------------------------------
 
     // Neue Zeilen → <br>
     text = text.replace(/\r\n|\r|\n/g, "<br>");
