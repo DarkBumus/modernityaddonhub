@@ -10,7 +10,7 @@
       "Randomized Blocks": [
         {
           "name": "Randomized Bricks",
-          "description": "Randomizes the texture for Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Brick Walls require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#DD2E44{This pack **is incompatible** with __Bricks Complete Pack__!}",
+          "description": "Randomizes the texture for Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>requiresefr<br><br>incompat{Bricks Complete Pack}",
           "icon": "modernity/randomized_bricks.png",
           "preview":["modernity/preview_randomized_bricks1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Bricks.zip",
@@ -18,7 +18,7 @@
         },
         {
           "name": "Randomized Planks",
-          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>(Keep in mind, that Fences, Fence Gates, Buttons and Pressure Plates for the different wood types require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#FDCB58{This pack **gets overridden** by __Desaturated Dark Oak Complete Pack__!}<br>#FDCB58{This pack **gets overridden** by __Curracabah Acacia Complete Pack__!}<br>#FDCB58{This pack **gets overridden** by __Vintage Cherry Complete Pack__!}<br>#FDCB58{This pack **gets overridden** by __Darker Mangrove Complete Pack__!}<br>#FDCB58{This pack **gets overridden** by __Red Crimson Complete Pack__!}<br>#FDCB58{This pack **gets overridden** by __Muted Warped Wood Complete Pack__!}",
+          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>requiresefr<br><br>overrideslave{Desaturated Dark Oak Complete Pack}<br>overrideslave{Curracabah Acacia Complete Pack}<br>overrideslave{Vintage Cherry Complete Pack}<br>overrideslave{Darker Mangrove Complete Pack}<br>overrideslave{Red Crimson Complete Pack}<br>overrideslave{Muted Warped Wood Complete Pack}",
           "icon": "modernity/randomized_planks.png",
           "preview":["modernity/preview_randomized_planks1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Planks.zip",
@@ -26,7 +26,7 @@
         },
         {
           "name": "Randomized Grass and Fern [old]",
-          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear to be of random height. Also applies a mirrored texture to Dead Bushes.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Grass and Fern__!}",
+          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear to be of random height. Also applies a mirrored texture to Dead Bushes.<br><br>incompat{Randomized Grass and Fern}",
           "icon": "modernity/randomized_grassold.png",
           "preview":["modernity/preview_randomized_grassold1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Grass_and_Fern_[old].zip",
@@ -34,7 +34,7 @@
         },
         {
           "name": "Randomized Bookshelves",
-          "description": "Randomizes the side texture for Bookshelves so that they appear to be more random.<br><br>#DD2E44{This pack **is incompatible** with __Connected Bookshelves__!}",
+          "description": "Randomizes the side texture for Bookshelves so that they appear to be more random.<br><br>incompat{Connected Bookshelves}",
           "icon": "modernity/randomized_bookshelves.png",
           "preview":["modernity/preview_randomized_bookshelves1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Bookshelves.zip",
@@ -42,7 +42,7 @@
         },
         {
           "name": "Randomized Pumpkins",
-          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>#FDCB58{This pack **gets overridden** by __Pumpkin Complete Pack__!}<br>#DD2E44{This pack **is incompatible** with __Fixed Pumpkin__!}",
+          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>overrideslave{Pumpkin Complete Pack}<br>incompat{Fixed Pumpkin}",
           "icon": "modernity/randomized_pumpkins.png",
           "preview":["modernity/preview_randomized_pumpkins1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Pumpkins.zip",
@@ -58,7 +58,7 @@
         },
         {
           "name": "Randomized Flowers",
-          "description": "Randomizes the textures for Dandelion, Poppy, Allium, Azure Bluet, Blue Orchid, Oxeye Daisy, Tulips, Cornflower, Lily of the Valley and Wither Rose.<br><br>(Keep in mind, that the Cornflower, Lily of the Valley and Wither Rose all require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Randomizes the textures for Dandelion, Poppy, Allium, Azure Bluet, Blue Orchid, Oxeye Daisy, Tulips, Cornflower, Lily of the Valley and Wither Rose.<br><br>requiresefr",
           "icon": "modernity/randomized_flowers.png",
           "preview":["modernity/preview_randomized_flowers1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Flowers.zip",
@@ -82,7 +82,7 @@
         },
         {
           "name": "Randomized Stone Bricks",
-          "description": "Randomizes the texture for Stone Bricks, Mossy Stone Bricks, Cracked Stone Bricks and Chiseled Stone Bricks in whole Blocks and Stairs, Slabs and Walls. Also makes Mossy Stone Brick take on a more saturated look when in certain biomes associated with wetness.<br><br>(Keep in mind, that Stone Brick Walls, Mossy Stone Brick Slabs, Mossy Stone Brick Stairs and Mossy Stone Brick Walls require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)<br><br>#FDCB58{This pack **overrides** __Saturated Mossy Stone__!}",
+          "description": "Randomizes the texture for Stone Bricks, Mossy Stone Bricks, Cracked Stone Bricks and Chiseled Stone Bricks in whole Blocks and Stairs, Slabs and Walls. Also makes Mossy Stone Brick take on a more saturated look when in certain biomes associated with wetness.<br><br>requiresefr<br><br>overridemaster{Saturated Mossy Stone}",
           "icon": "modernity/randomized_stonebricks.png",
           "preview":["modernity/preview_randomized_stonebricks1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Stone_Bricks.zip",
@@ -90,7 +90,7 @@
         },
         {
           "name": "Randomized Deepslate and Blackstone Bricks",
-          "description": "Randomizes the texture for Deepslate Bricks, Cracked Deepslate Bricks, Blackstone Bricks and Cracked Blackstone Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Deepslate and Blackstone require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Randomizes the texture for Deepslate Bricks, Cracked Deepslate Bricks, Blackstone Bricks and Cracked Blackstone Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>requiresefr",
           "icon": "modernity/randomized_deepslateblackstonebricks.png",
           "preview":["modernity/preview_randomized_deepslateblackstonebricks1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Deepslate_and_Blackstone_Bricks.zip",
@@ -98,7 +98,7 @@
         },
         {
           "name": "Randomized Mud Bricks",
-          "description": "Randomizes the texture for Mud Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>(Keep in mind, that Mud Bricks require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Randomizes the texture for Mud Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>requiresefr",
           "icon": "modernity/randomized_mudbricks.png",
           "preview":["modernity/preview_randomized_mudbricks1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Mud_Bricks.zip",
@@ -106,7 +106,7 @@
         },
         {
           "name": "Randomized Leaves",
-          "description": "Gives Oak, Spruce, Birch, Jungle, Acacia and Dark Oak Leaves colorful blots and randomizes them aswell to avoid tiling.<br><br>(Inspiration drawn from [Os' Colorful Leaves](https://www.planetminecraft.com/texture-pack/os-colorful-leaves/).)<br><br>**⚠️ Warning: Due to technical limitations, it is not possible to correctly differentiate between *Fancy* and *Fast* Leaves. As a workaround, I will provide two fully functional texture packs instead of normal Addons. These packs are Labeled [Fancy] and [Fast] respectively. Just switch the packs as you see fit (or just use the one you want). This will be addressed when Right Proper MCPatcher supports dynamic texture picking for Leaves.**",
+          "description": "Gives Oak, Spruce, Birch, Jungle, Acacia and Dark Oak Leaves colorful blots and randomizes them aswell to avoid tiling.<br><br>inspiration{[Os' Colorful Leaves](https://www.planetminecraft.com/texture-pack/os-colorful-leaves/)}<br><br>**⚠️ Warning: Due to technical limitations, it is not possible to correctly differentiate between *Fancy* and *Fast* Leaves. As a workaround, I will provide two fully functional texture packs instead of normal Addons. These packs are Labeled [Fancy] and [Fast] respectively. Just switch the packs as you see fit (or just use the one you want). This will be addressed when Right Proper MCPatcher supports dynamic texture picking for Leaves.**",
           "icon": "modernity/randomized_leaves.png",
           "preview":["modernity/preview_randomized_leaves1.png"],
           "file": ["modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fancy] [1.7.10].zip", "modernity/1.7/randomized_blocks/Modernity Addon Randomized Leaves [Fast] [1.7.10].zip"],
@@ -114,7 +114,7 @@
         },
         {
           "name": "Randomized Vines",
-          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>#DD2E44{This pack **is incompatible** with __Rotated Vines__!}<br>#DD2E44{This pack **is incompatible** with __Vines Complete Pack__!}",
+          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>incompat{Rotated Vines}<br>incompat{Vines Complete Pack}",
           "icon": "modernity/randomized_vines.png",
           "preview":["modernity/preview_randomized_vines1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Vines.zip",
@@ -122,7 +122,7 @@
         },
         {
           "name": "Randomized Grass and Fern",
-          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear more diverse. Also applies a new textures to Dead Bushes. Makes use of the new Bush textures from 1.21.5.<br><br>#DD2E44{This pack **is incompatible** with __Randomized Grass and Fern [old]__!}",
+          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear more diverse. Also applies a new textures to Dead Bushes. Makes use of the new Bush textures from 1.21.5.<br><br>incompat{Randomized Grass and Fern [old]}",
           "icon": "modernity/randomized_grass.png",
           "preview":["modernity/preview_randomized_grass1.png"],
           "file": "modernity/1.7/randomized_blocks/Randomized_Grass_and_Fern.zip",
