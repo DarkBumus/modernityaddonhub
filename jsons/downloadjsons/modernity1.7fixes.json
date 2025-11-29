@@ -10,7 +10,7 @@
       "Fixes": [
         {
           "name": "Fixed Pistons",
-          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>inspiration{[Vanilla Tweaks](https://vanillatweaks.net/)}",
+          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>inspirationvt",
           "icon": "modernity/fixed_pistons.png",
           "preview":["modernity/preview_fixed_pistons1.png"],
           "file": "modernity/1.7/fixes/Fixed_Pistons.zip",
@@ -98,7 +98,7 @@
         },
         {
           "name": "Better Opaque Leaves",
-          "description": "Fixes the black pixels on the 'Fast' setting Leaves textures to be more in line with the Leaves of the trees added in later versions.<br><br>inspiration{Vanilla Tweaks](https://vanillatweaks.net/)}<br><br>overrideslave{Darker Dark Oak Leaves}",
+          "description": "Fixes the black pixels on the 'Fast' setting Leaves textures to be more in line with the Leaves of the trees added in later versions.<br><br>inspirationvt<br><br>overrideslave{Darker Dark Oak Leaves}",
           "icon": "modernity/better_opaque_leaves.png",
           "preview":["modernity/preview_better_opaque_leaves1.png"],
           "file": "modernity/1.7/fixes/Better_Opaque_Leaves.zip",
@@ -106,7 +106,7 @@
         },
         {
           "name": "Fixed Campfires",
-          "description": "Changes Campfires to be free of ash when they're not lit. Also applies a Soul Soil texture to Soul Campfires.<br><br>requiresmod{[CampfireBackport](https://www.curseforge.com/minecraft/mc-mods/campfire-backport)}<br><br>inspiration{[Vanilla Tweaks](https://vanillatweaks.net/)}<br><br>⚠️ Careful: This Addon can't simply be placed into the `assets/minecraft` folder. You have to place it into the `assets` folder, because the `campfirebackport` folder is in the Addon itself!",
+          "description": "Changes Campfires to be free of ash when they're not lit. Also applies a Soul Soil texture to Soul Campfires.<br><br>requiresmod{[CampfireBackport](https://www.curseforge.com/minecraft/mc-mods/campfire-backport)}<br><br>inspirationvt<br><br>⚠️ Careful: This Addon can't simply be placed into the `assets/minecraft` folder. You have to place it into the `assets` folder, because the `campfirebackport` folder is in the Addon itself!",
           "icon": "modernity/fixed_campfires.png",
           "preview":["modernity/preview_fixed_campfires1.png"],
           "file": "modernity/1.7/fixes/Fixed_Campfires.zip",
