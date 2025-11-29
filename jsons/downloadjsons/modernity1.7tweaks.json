@@ -206,8 +206,72 @@
           "icon": "modernity/pebble-free_dirt.png",
           "preview":["modernity/preview_pebble-free_dirt1.png"],
           "file": "modernity/1.7/tweaks/Pebble-free_Dirt.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Gold-speckled Lapis Lazuli",
+          "description": "Changes the textures of Lapis Lazuli, Lapis Lazuli Ore, Lapis Lazuli Block and Deepslate Lapis Lazuli Ore to feature tiny golden specs, like they're found in real Lapis Lazuli. Also adds a Deepslate Ore top texture.<br><br>requiresefr<br><br>inspiration{[Sr_Paulo](https://www.planetminecraft.com/texture-pack/better-lapis-lazuli/)}<br><br>incompat{Deepslate Ore Top Textures}<br><br>#78B159{Attached is a mod that makes Lapis Lazuli Ore occasionally drop Gold Nuggets.}",
+          "icon": "modernity/gold-speckled_lapis_lazuli.png",
+          "preview":["modernity/preview_gold-speckled_lapis_lazul1.png"],
+          "file": ["modernity/1.7/tweaks/Gold-speckled_Lapis_Lazuli.zip", "LapisNugget [1.7.10] [1.0].jar"],
+          "tags": ["vanillacompatible", "mod"]
+        },
+        {
+          "name": "Illager Witch",
+          "description": "Changes the color scheme of the Witch to be more in line with how the Illagers from the Village & Pillage Update look.",
+          "icon": "modernity/illager_witch.png",
+          "preview":["modernity/preview_illager_witch1.png"],
+          "file": "modernity/1.7/tweaks/Illager_Witch.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Leather",
+          "description": "Changes the textures of Leather, Saddles, Item Frames (both in item and entity/block form) and Books to have the color palette of Leather Armor.<br><br>inspirationvt",
+          "icon": "modernity/consistent_leather.png",
+          "preview":["modernity/preview_consistent_leather1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Leather.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Desert Shulkers",
+          "description": "Changes the textures for Shulkers when placed in Desert or Mesa biomes. The texture is a palette swap of the __Fixed Shulkers Addon__, that uses the color palette of Red Sandstone.<br><br>requiresefr<br><br>inspiration{[Whimzee](https://www.youtube.com/watch?v=8qKTXf_-obk)}",
+          "icon": "modernity/desert_shulkers.png",
+          "preview":["modernity/preview_desert_shulkers1.png"],
+          "file": "modernity/1.7/tweaks/Desert_Shulkers.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
-        }
+        },
+        {
+          "name": "Netherite-colored Ancient Debris",
+          "description": "Changes the textures for Ancient Debris and Ancient Scrap to use the color palette of Netherite.<br><br>requiresefr",
+          "icon": "modernity/netherite-colored_ancient_debris.png",
+          "preview":["modernity/preview_netherite-colored_ancient_debris1.png"],
+          "file": "modernity/1.7/tweaks/Netherite-colored_Ancient_Debris.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Faded Classic Command Block",
+          "description": "Changes the texture of the old Command Block to be faded with lowly blinking lights. It is recommended to only use this Addon in conjunction with [Future Commands](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2888753-moved-to-a-new-website-future-commands-v1-3). Also renames the Command Block to 'Classic Command Block'.",
+          "icon": "modernity/faded_classic_command_block.png",
+          "preview":["modernity/preview_faded_classic_command_block1.png"],
+          "file": "modernity/1.7/tweaks/Faded_Classic_Command_Block.zip",
+          "tags": ["vanillacompatible", "interpolated1710"]
+        },
+        {
+          "name": "Programmer Art Rabbit's Foot",
+          "description": "Changes the texture of the Rabbit's Foot, to fit the lineart of its Programmer Art version, with the color palette of the Jappa version.<br><br>requiresefr",
+          "icon": "modernity/programmer_art_rabbits_foot.png",
+          "preview":["modernity/preview_programmer_art_rabbits_foot1.png"],
+          "file": "modernity/1.7/tweaks/Programmer_Art_Rabbits_Foot.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Vintage Cherry",
+          "description": "Changes all Cherry related textures to be darker. Also changes Pink Petals and the Petal particles emitted from Cherry Leaves.<br><br>requiresefr<br><br>inspiration{[Rediscovered](https://www.curseforge.com/minecraft/mc-mods/rediscovered)}<br><br>overrideslave{Vintage Cherry Complete Pack}",
+          "icon": "modernity/vintage_cherry.png",
+          "preview":["modernity/preview_vintage_cherry1.png"],
+          "file": "modernity/1.7/tweaks/Vintage_Cherry.zip",
+          "tags": ["vanillacompatible"]
+        },
       ]
     }
   }
