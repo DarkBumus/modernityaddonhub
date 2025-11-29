@@ -50,7 +50,7 @@
         },
         {
           "name": "Minecraft Earth Zombies",
-          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.<br><br>#DD2E44{This pack **is incompatible** with __Player Skin Zombies [1]__!}<br>#DD2E44{This pack **is incompatible** with __Player Skin Zombies [2]__!}",
+          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.<br><br>incompat{Player Skin Zombies [1]}<br>incompat{Player Skin Zombies [2]}",
           "icon": "modernity/minecraft_earth_zombies.png",
           "preview":["modernity/preview_minecraft_earth_zombies1.png"],
           "file": "modernity/1.7/randomized_entities/Minecraft_Earth_Zombies.zip",
@@ -98,7 +98,7 @@
         },
         {
           "name": "Player Skin Zombies [1]",
-          "description": "Randomizes the texture for Zombies. Includes zombified versions of the new player skins that were added in 1.19.<br><br>#DD2E44{This pack **is incompatible** with __Minecraft Earth Zombies__!}<br>#DD2E44{This pack **is incompatible** with __Player Skin Zombies [2]__!}",
+          "description": "Randomizes the texture for Zombies. Includes zombified versions of the new player skins that were added in 1.19.<br><br>incompat{Minecraft Earth Zombies}<br>incompat{Player Skin Zombies [2]}",
           "icon": "modernity/player_skin_zombies_one.png",
           "preview":["modernity/preview_player_skin_zombies_one1.png"],
           "file": "modernity/1.7/randomized_entities/Player_Skin_Zombies_1.zip",
@@ -106,7 +106,7 @@
         },
         {
           "name": "Player Skin Zombies [2]",
-          "description": "Randomizes the texture for Zombies. Includes even more raggedy zombified versions of the new player skins that were added in 1.19.<br><br>#DD2E44{This pack **is incompatible** with __Minecraft Earth Zombies__!}<br>#DD2E44{This pack **is incompatible** with __Player Skin Zombies [1]__!}",
+          "description": "Randomizes the texture for Zombies. Includes even more raggedy zombified versions of the new player skins that were added in 1.19.<br><br>incompat{Minecraft Earth Zombies}<br>incompat{Player Skin Zombies [1]}",
           "icon": "modernity/player_skin_zombies_two.png",
           "preview":["modernity/preview_player_skin_zombies_two1.png"],
           "file": "modernity/1.7/randomized_entities/Player_Skin_Zombies_2.zip",
@@ -114,7 +114,7 @@
         },
         {
           "name": "Tribal Ghast",
-          "description": "Randomizes the texture for Ghasts. Sometimes they have dark red lines on them.<br><br>(Inspiration drawn from [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest).)",
+          "description": "Randomizes the texture for Ghasts. Sometimes they have dark red lines on them.<br><br>inspiration{[Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)}",
           "icon": "modernity/tribal_ghast.png",
           "preview":["modernity/preview_tribal_ghast1.png"],
           "file": "modernity/1.7/randomized_entities/Tribal_Ghast.zip",
@@ -130,7 +130,7 @@
         },
         {
           "name": "Randomized Rabbits",
-          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!<br><br>(Keep in mind, that Rabbits require [Et Futurum Requiem](https://modrinth.com/mod/etfuturum) to be present.)",
+          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!<br><br>requiresefr",
           "icon": "modernity/randomized_rabbits.png",
           "preview":["modernity/preview_randomized_rabbits1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Rabbits.zip",
