@@ -106,13 +106,17 @@ function formatDescription(text) {
         inspiration: (arg) =>
             `(Inspiration drawn from ${arg}.)`,
 
-        //requiresefr | kein arg für requiresefr
+        //requiresefr | kein arg benötigt
         requiresefr: () =>
             `(Keep in mind that some or all of this content requires <a href="https://modrinth.com/mod/etfuturum" target="_blank">Et Futurum Requiem</a> to be present.)`,
 
         //requiresmod[args]
         requiresmod: (arg) =>
             `(Keep in mind that some or all of this content requires ${arg} to be present.)`
+
+        //attscript | kein arg benötigt
+        attscript: () =>
+            `<span style="color:#78B159;">Attached is an additional file with the MineTweaker Script.</span>`
     };
 
     // Ersetzt alle Vorkommen der Form name[arg]
@@ -131,6 +135,12 @@ function formatDescription(text) {
     text = text.replace(
         /\brequiresefr\b/g,
         () => macros.requiresefr()
+    );
+
+    // Ersetzt attscript ohne Argumente
+    text = text.replace(
+        /\battscript\b/g,
+        () => macros.attscript()
     );
 
     // -----------------------------------
