@@ -178,7 +178,7 @@
         },
         {
           "name": "Rotated Black Granite",
-          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>requiresefr<br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
+          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>requiresefr<br><br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
           "icon": "modernity/rotated_black_granite.png",
           "preview":["modernity/preview_rotated_black_granite1.png"],
           "file": "modernity/1.7/rotated_blocks/Rotated_Black_Granite.zip",
