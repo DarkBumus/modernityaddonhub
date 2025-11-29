@@ -50,7 +50,7 @@ function formatDescription(text) {
 
         //inspiration[args]
         inspiration: (arg) =>
-            `(Inspiration drawn from ${arg}.)`,
+            `(Inspiration drawn from ${arg}).`,
 
         //requiresefr | kein arg für requiresefr
         requiresefr: () =>
