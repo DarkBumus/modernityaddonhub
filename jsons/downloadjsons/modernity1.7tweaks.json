@@ -399,6 +399,70 @@
           "preview":["modernity/preview_clean_redstone1.png"],
           "file": "modernity/1.7/tweaks/Clean_Redstone.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Full-colored Leather Armor",
+          "description": "Changes the texture of all Leather armor pieces so that they lose the brown overlay and instead get colored all the way.<br><br>inspirationvt<br><br>incompat{Comprehensive Armor Upgrade}",
+          "icon": "modernity/full-colored_leather_armor.png",
+          "preview":["modernity/preview_full-colored_leather_armor1.png"],
+          "file": "modernity/1.7/tweaks/Full-colored_Leather_Armor.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Bamboo Stalks",
+          "description": "Changes the textures of Bamboo, Bamboo Stalks and Bamboo Leaves to follow the palette of Bamboo Blocks.<br><br>requiresefr",
+          "icon": "modernity/consistent_bamboo_stalks.png",
+          "preview":["modernity/preview_consistent_bamboo_stalks1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Bamboo_Stalks.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Stacking Paper",
+          "description": "Changes Paper, Maps and Filled Maps so that they display different textures when they are stacked.",
+          "icon": "modernity/stacking_paper.png",
+          "preview":["modernity/preview_stacking_paper1.png"],
+          "file": "modernity/1.7/tweaks/Stacking_Paper.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Splash Bottle o'Enchanting",
+          "description": "Changes the Bottle o'Enchanting's texture to be more fitting to its purpose and the __Unique Potions Addon__.",
+          "icon": "modernity/splash_bottle_oenchanting.png",
+          "preview":["modernity/preview_splash_bottle_oenchanting1.png"],
+          "file": "modernity/1.7/tweaks/Splash_Bottle_oEnchanting.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Pooling Dusts",
+          "description": "Changes Gunpowder, Redstone Dust, Glowstone Dust and Sugar so that they display different textures when they are stacked.",
+          "icon": "modernity/pooling_dusts.png",
+          "preview":["modernity/preview_pooling_dusts1.png"],
+          "file": "modernity/1.7/tweaks/Pooling_Dusts.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Spinning Jukebox",
+          "description": "Changes the Jukebox's western side texture to show a record, that starts spinning when a disc is placed into it.",
+          "icon": "modernity/spinning_jukebox.png",
+          "preview":["modernity/preview_spinning_jukebox1.png"],
+          "file": "modernity/1.7/tweaks/Spinning_Jukebox.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Suspicious Silverfish Stones",
+          "description": "Gives Silverfish Stones an overlay that looks like Suspicious Gravel in relation to normal Gravel.<br><br>incompat{Utility Silverfish Stones}",
+          "icon": "modernity/suspicious_silverfish_stones.png",
+          "preview":["modernity/preview_suspicious_silverfish_stones1.png"],
+          "file": "modernity/1.7/tweaks/Suspicious_Silverfish_Stones.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Bottled Ghast Tear",
+          "description": "Changes the Ghast Tear texture to make it appear bottled rather than just on its own.<br><br>inspiration{[Sukuro](https://www.planetminecraft.com/texture-pack/mob-drop-tweaks/)}",
+          "icon": "modernity/bottled_ghast_tear.png",
+          "preview":["modernity/preview_bottled_ghast_tear1.png"],
+          "file": "modernity/1.7/tweaks/Bottled_Ghast_Tear.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
