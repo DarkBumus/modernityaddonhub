@@ -2,21 +2,6 @@
     --base-bg: #1a1a1a;  /* globaler Hintergrund dunkel */
 }
 
-/* Alle Hyperlinks einheitlich blau */
-a, a:visited, a:hover, a:active,
-.footer-link,
-.tab,
-#subtabs .tab {
-    color: #0088ff;
-}
-
-.footer-link:hover,
-.tab:hover,
-#subtabs .tab:hover {
-    color: #0088ff;      /* Hover ebenfalls Blau */
-    text-decoration: underline; /* optional */
-}
-
 /* ===========================
    BODY & GLOBAL
 =========================== */
