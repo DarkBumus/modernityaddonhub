@@ -1,3 +1,7 @@
+:root {
+    --base-bg: #f5f5f5;  /* globaler Hintergrund */
+}
+
 /* ===========================
    BODY & GLOBAL
 =========================== */
