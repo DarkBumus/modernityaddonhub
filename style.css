@@ -311,8 +311,8 @@ footer {
     justify-content: center;
     padding: 15px 0;
     margin-top: auto;
-    background: #111; /* vorher f5f5f5 */
-    color: #1A1A1A;
+    background: #1A1A1A; /* vorher f5f5f5 */
+    color: #e6e6e6;
 }
 
 .footer-wrapper {
