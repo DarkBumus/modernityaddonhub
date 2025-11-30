@@ -1,0 +1,110 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Crafting Tweaks": [
+        {
+          "name": "Smeltable Raw Ore Blocks",
+          "description": "Allows for Raw Copper Blocks, Raw Iron Blocks and Raw Gold Blocks to be smelted into Copper Blocks, Iron Blocks and Gold Blocks respectively. This will conserve coal, but will pay out less XP. The recipe is available both for the vanilla Furnace and Et Futurum Requiem's Blast Furnace.<br><br>requiresefr<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/smeltable_raw_ore_blocks.png",
+          "preview":["craftingtweaks/preview_smeltable_raw_ore_blocks1.png"],
+          "file": "crafting_tweaks/1.7/Smeltable_Raw_Ore_Blocks.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Coal to Black Dye",
+          "description": "Allows for Coal and Charcoal to be crafted into Black Dye.<br><br>requiresefr<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/coal_to_black_dye.png",
+          "preview":["craftingtweaks/preview_coal_to_black_dye1.png"],
+          "file": "crafting_tweaks/1.7/Coal_to_Black_Dye.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Flint to Gravel",
+          "description": "Allows for Gravel to be crafted from Flint.<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/flint_to_gravel.png",
+          "preview":["craftingtweaks/preview_flint_to_gravel1.png"],
+          "file": "crafting_tweaks/1.7/Flint_to_Gravel.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Sand to Red Sand",
+          "description": "Allows for Red Sand to be crafted from Sand and Orange Dye.<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/sand_to_red_sand.png",
+          "preview":["craftingtweaks/preview_sand_to_red_sand1.png"],
+          "file": "crafting_tweaks/1.7/Sand_to_Red_Sand.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Smeltable Concrete Powder",
+          "description": "Allows for Concrete Powder to be smelted into Stained Glass.<br><br>requiresefr<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/smeltable_concrete_powder.png",
+          "preview":["craftingtweaks/preview_smeltable_concrete_powder1.png"],
+          "file": "crafting_tweaks/1.7/Smeltable_Concrete_Powder.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Dirt to Grass",
+          "description": "Allows for Grass to be crafted from Dirt and Wheat Seeds, aswell as Podzol to be crafted from Coarse Dirt and Wheat Seeds.<br><br>requiresefr<br><br>attscript",
+          "icon": "craftingtweaks/dirt_to_grass.png",
+          "preview":["craftingtweaks/preview_dirt_to_grass1.png"],
+          "file": "crafting_tweaks/1.7/Dirt_to_Grass.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Dropper to Dispenser",
+          "description": "Allows for Dispensers to be crafted from Droppers, Sticks and Strings. This allows for the convenience of bulk crafting Dispensers, as you don't need bows anymore.<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/dropper_to_dispenser.png",
+          "preview":["craftingtweaks/preview_dropper_to_dispenser1.png"],
+          "file": "crafting_tweaks/1.7/Dropper_to_Dispenser.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Dye to Flowers",
+          "description": "Allows for Flowers to be replicated by crafting them from their respective Dye, Bone Meal and Seeds.<br><br>requiresefr<br><br>attscript",
+          "icon": "craftingtweaks/dye_to_flowers.png",
+          "preview":["craftingtweaks/preview_dye_to_flowers1.png"],
+          "file": "crafting_tweaks/1.7/Dye_to_Flowers.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Mushroom Blocks to Mushrooms",
+          "description": "Allows for Mushrooms to be crafted from Mushroom Blocks, should you somehow get your hands on them.<br><br>attscript",
+          "icon": "craftingtweaks/mushroom_blocks_to_mushrooms.png",
+          "preview":["craftingtweaks/preview_mushroom_blocks_to_mushrooms1.png"],
+          "file": "crafting_tweaks/1.7/Mushroom_Blocks_to_Mushrooms.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Packable Ice",
+          "description": "Allows for Ice to be packed and unpacked into Packed Ice and Blue Ice. Also includes a crafting recipe for Ice, made from Water and Snowballs.<br><br>requiresefr<br><br>inspirationvt<br><br>attscript",
+          "icon": "craftingtweaks/packable_ice.png",
+          "preview":["craftingtweaks/preview_packable_ice1.png"],
+          "file": "crafting_tweaks/1.7/Packable_Ice.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Wool to String",
+          "description": "Allows for String to be crafted from all colors of Wool.<br><br>attscript",
+          "icon": "craftingtweaks/wool_to_string.png",
+          "preview":["craftingtweaks/preview_wool_to_string1.png"],
+          "file": "crafting_tweaks/1.7/Wool_to_String.zip",
+          "tags": ["minetweaker", "script"]
+        },
+        {
+          "name": "Rotten Flesh to Slime Ball",
+          "description": "Allows for Rotten Flesh to be smelted into Leather and Leather to be smelted into Slime Balls.<br><br>attscript",
+          "icon": "craftingtweaks/rotten_flesh_to_slime_ball.png",
+          "preview":["craftingtweaks/preview_rotten_flesh_to_slime_ball1.png"],
+          "file": "crafting_tweaks/1.7/Rotten_Flesh_to_Slime_Ball.zip",
+          "tags": ["minetweaker", "script"]
+        }
+      ]
+    }
+  }
+}
