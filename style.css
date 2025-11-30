@@ -400,18 +400,13 @@ ul, ol {
     color: #e6e6e6;
 }
 
-#content a,
-#about-content a,
-#preview p a,
-#preview li a {
-    color: #0088ff;
-    text-decoration: none;
+/* Standard-Link-Farben überschreiben */
+a:link, a:visited {
+    color: #0088ff;      /* alle Links Blau */
+    text-decoration: none; /* optional */
 }
 
-#content a:hover,
-#about-content a:hover,
-#preview p a:hover,
-#preview li a:hover {
-    color: #0088ff;
-    text-decoration: underline;
+a:hover, a:active {
+    color: #0088ff;      /* auch Hover & Active Blau */
+    text-decoration: underline; /* optional für Hover/Active */
 }
