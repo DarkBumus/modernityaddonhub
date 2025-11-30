@@ -27,7 +27,8 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/modernity1.7tweaks.json",
         "jsons/downloadjsons/modernity1.7utility.json",
         "jsons/downloadjsons/pprogrammerart1.7main.json",
-        "jsons/downloadjsons/pprogrammerart1.7connected.json"
+        "jsons/downloadjsons/pprogrammerart1.7connected.json",
+        "jsons/downloadjsons/pprogrammerart1.7crafting.json"
     ];
 
     const allJSONs = await Promise.all(jsonFiles.map(f => fetch(f).then(r => r.json())));
