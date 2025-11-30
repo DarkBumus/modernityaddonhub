@@ -1,9 +1,9 @@
 :root {
-    --base-bg: #f5f5f5;  /* globaler Hintergrund */
+    --base-bg: #f5f5f5;
 }
 
 /* ===========================
-   BODY & GLOBAL
+   GLOBAL
 =========================== */
 html, body {
     height: 100%;
@@ -14,7 +14,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: var(--base-bg);
     display: flex;
     flex-direction: column;
 }
@@ -69,7 +69,7 @@ header {
     background-color: #444;
     min-width: 140px;
     border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     flex-direction: column;
 }
@@ -93,155 +93,192 @@ header {
     transform: translateY(-50%);
     width: 85px;
     height: 85px;
-    z-index: 1000;
     border-radius: 16px;
+    z-index: 1000;
 }
 
 /* ===========================
-   TABS
+   MAIN TABS
 =========================== */
 #tabs {
     display: flex;
-    background: #222;
-    padding: 10px;
     justify-content: center;
     gap: 10px;
+    padding: 10px;
+    background: #222;
 
-    overflow: visible;      /* <— kein Scrollen */
-    flex-wrap: wrap;        /* <— bricht um, wenn nötig */
-    white-space: normal;    /* <— erlaubt mehrere Zeilen */
+    overflow: visible;
+    flex-wrap: wrap;
+    white-space: normal;
 }
-#tabs::-webkit-scrollbar {
-    height: normal;        /* normale Scrollbar-Höhe */
-}
+
 #tabs .tab {
-    flex: 0 0 auto;      /* verhindern, dass Tabs schrumpfen */
+    flex: 0 0 auto;
 }
+
 .tab {
-    color: white;
-    padding: 8px 15px;
-    background: #444;
-    border-radius: 6px;
-    text-decoration: none;
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    white-space: nowrap;
-}
-.tab:hover { background: #666; }
-.tab.active { background: #0088ff; }
 
-/* Versions Tabs */
+    padding: 8px 15px;
+    background: #444;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background: #666;
+}
+
+.tab.active {
+    background: #0088ff;
+}
+
+/* Version Subtabs */
 #subtabs {
     display: flex;
-    background: #333;
-    padding: 8px;
     justify-content: center;
     gap: 8px;
+    padding: 8px;
+    background: #333;
 }
-#subtabs .tab { background: #555; padding: 6px 12px; }
-#subtabs .tab.active { background: #0088ff; }
+
+#subtabs .tab {
+    padding: 6px 12px;
+    background: #555;
+}
+
+#subtabs .tab.active {
+    background: #0088ff;
+}
 
 /* ===========================
-   MAIN CONTAINER
+   MAIN LAYOUT CONTAINER
 =========================== */
 #main-container {
     display: flex;
+    align-items: flex-start;
+    gap: 20px;
     max-width: 1200px;
     margin: 20px auto;
-    gap: 20px;
-    align-items: flex-start;
 }
 
-/* Content Panel */
+/* Main Content */
 #content {
-    flex: 2.0;
+    flex: 2;
     padding-left: 10px;
 }
 
-/* Collapsible Panels */
+/* ===========================
+   COLLAPSIBLE PANELS
+=========================== */
 .collapsible {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+
     background-color: #eee;
     color: #444;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
+
     border: none;
-    text-align: left;
-    outline: none;
-    font-size: 16px;
     border-radius: 5px;
-    margin-top: 5px;
+
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+
     transition: background 0.2s;
 }
-.collapsible.active { background-color: #ccc; }
+
+.collapsible.active {
+    background-color: #ccc;
+}
 
 .content-panel {
     padding: 0 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
     background-color: white;
     border-radius: 0 0 5px 5px;
+    max-height: 0;
+    overflow: hidden;
     margin-bottom: 5px;
+    transition: max-height 0.2s ease-out;
 }
 
 /* ===========================
    PACK CARDS
 =========================== */
 .pack-card {
-    background: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 12px;
-    margin: 10px 0;
     display: flex;
     align-items: center;
     gap: 15px;
+
+    padding: 12px;
+    margin: 10px 0;
+
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
-.pack-icon { width: 48px; height: 48px; border-radius: 0; }
-.pack-card h3 { margin: 0; font-size: 18px; }
+
+.pack-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.pack-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
 
 .download-btn {
     margin-left: auto;
     padding: 8px 14px;
+
     background: #0088ff;
     color: white;
-    text-decoration: none;
     border-radius: 6px;
+    text-decoration: none;
     font-size: 14px;
 }
-.download-btn:hover { background: #006cd1; }
+
+.download-btn:hover {
+    background: #006cd1;
+}
 
 /* ===========================
-   PREVIEW
+   PREVIEW PANEL
 =========================== */
 #preview {
-   flex: 1.7;
-   min-width: 380px;
-   background: #fff;
-   border: 1px solid #ddd;
-   border-radius: 8px;
-   padding: 10px;
-   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-   position: sticky;
-   top: 20px;
-   display: flex;
-   flex-direction: column;
-   align-items: stretch;
-   height: auto; max-height: none;
+    flex: 1.7;
+    min-width: 380px;
+
+    position: sticky;
+    top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #preview img {
-   width: 100%;
-   border-radius: 8px;
-   margin-bottom: 10px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 #preview h3 {
-   text-align: center;
-   margin: 10px 0;
+    margin: 10px 0;
+    text-align: center;
 }
 
 #preview .preview-description {
@@ -249,52 +286,59 @@ header {
 }
 
 #preview p {
-   text-align: left;
-   margin: 10px 0;
+    margin: 10px 0;
+    text-align: left;
 }
 
 #preview .placeholder {
-   text-align: center;
-   font-size: 18px;
-   font-weight: bold;
-   color: white;
-   margin: 80px 0;
-   opacity: 0.9;
+    margin: 80px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
 }
 
-/* Tags unten */
+/* Tags */
 #preview .pack-tags {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 4px; margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
 }
 
 #preview .pack-tag {
-   background-color: #eee;
-   color: #333;
-   padding: 2px 6px;
-   border-radius: 12px;
-   font-size: 0.8em;
-   display: inline-flex;
-   align-items: center;
-   gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 2px 6px;
+    font-size: 0.8em;
+
+    background-color: #eee;
+    color: #333;
+    border-radius: 12px;
 }
 
-#preview .pack-tag:hover { background-color: #ddd; }
+#preview .pack-tag:hover {
+    background-color: #ddd;
+}
 
 /* Tooltip */
 #tag-tooltip {
     position: absolute;
-    background: rgba(0, 0, 0, 0.85);
-    padding: 8px 12px;
-    border-radius: 6px;
-    color: white;
-    font-size: 14px;
+    z-index: 9999;
     max-width: 260px;
+
+    padding: 8px 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 6px;
+
+    font-size: 14px;
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.15s ease-in-out;
-    z-index: 9999;
 }
 
 /* ===========================
@@ -302,22 +346,22 @@ header {
 =========================== */
 footer {
     display: flex;
-    justify-content: center;     /* Footer bleibt zentriert */
+    justify-content: center;
+    background: var(--base-bg);
     padding: 15px 0;
-    margin-top: auto; /* Footer an das Seitenende drücken */
-    background: #f5f5f5;
+    margin-top: auto;
 }
 
 .footer-wrapper {
     display: flex;
-    gap: 600px;                   /* Abstand zwischen Copyright und Socials */
     align-items: center;
+    gap: 600px;
 }
 
 .footer-right {
     display: flex;
-    gap: 10px;                   /* Abstand zwischen Discord | Ko-Fi */
     align-items: center;
+    gap: 10px;
 }
 
 .footer-link {
@@ -326,21 +370,21 @@ footer {
 }
 
 .footer-link:hover {
-    text-decoration: underline;            /* optional */
+    text-decoration: underline;
 }
 
 .separator {
     opacity: 0.7;
 }
 
-/* ========================
-   About-Seite Styles
-   ======================== */
+/* ===========================
+   ABOUT PAGE
+=========================== */
 #about-content {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    text-align: center; /* bleibt für Überschrift mittig */
+    text-align: center;
 }
 
 #about-content h1,
@@ -348,41 +392,45 @@ footer {
     font-size: 2.7em;
     margin-bottom: 20px;
 }
+
 #about-content h3 {
-    font-size: 2em;        /* kleiner als h2 (2.7em) */
-    margin-bottom: 16px;   /* etwas Abstand nach unten */
-    font-weight: 600;      /* optional, etwas leichter als h2 */
-    text-align: left;      /* linksbündig wie Fließtext */
+    font-size: 2em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: left;
 }
+
 #about-content h4 {
-    font-size: 1.5em;       /* kleiner als h3 (2em) */
-    margin-bottom: 12px;    /* etwas Abstand nach unten */
-    font-weight: 600;       /* optional, normal bis leicht fett */
-    text-align: left;       /* linksbündig wie Fließtext */
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: left;
 }
+
 #about-content p {
     font-size: 1.1em;
     line-height: 1.6;
-    margin-bottom: 0;      /* kein Abstand zwischen Absätzen */
-    text-align: left;      /* Text linksbündig */
+    margin-bottom: 0;
+    text-align: left;
 }
 
 #about-content .custom-code-block {
-    font-family: monospace;     /* klassische Code-Schrift */
-    font-size: 1.2em;
-    background-color: #f5f5f5;  /* hellgrauer Hintergrund */
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    white-space: pre-line;      /* Zeilenumbrüche erhalten */
-    word-break: break-word;     /* lange Zeilen umbrechen */
-    margin: 0;
     padding: 10px;
-    text-align: left;      /* Text linksbündig */
-    vertical-align: top;
+    margin: 0;
+
+    font-family: monospace;
+    font-size: 1.2em;
+    white-space: pre-line;
+    word-break: break-word;
+
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
 }
 
 ul, ol {
-    text-align: left;
-    margin-left: 5px;   /* optional, damit es wie gewohnt eingerückt ist */
+    margin-left: 5px;
     font-size: 1.1em;
+    text-align: left;
 }
