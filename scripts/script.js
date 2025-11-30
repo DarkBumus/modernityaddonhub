@@ -14,6 +14,7 @@ async function loadAllDownloadJSONs() {
     // Liste der Dateien manuell oder automatisch festlegen
     const jsonFiles = [
         "jsons/downloadjsons/modernity1.12main.json",
+        "jsons/downloadjsons/modernity1.12complete.json",
         "jsons/downloadjsons/modernity1.12connected.json",
         "jsons/downloadjsons/modernity1.7main.json",
         "jsons/downloadjsons/modernity1.7complete.json",
