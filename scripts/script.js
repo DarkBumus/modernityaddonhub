@@ -18,6 +18,7 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/modernity1.7main.json",
         "jsons/downloadjsons/modernity1.7complete.json",
         "jsons/downloadjsons/modernity1.7connected.json",
+        "jsons/downloadjsons/modernity1.7crafting.json",
         "jsons/downloadjsons/modernity1.7fixes.json",
         "jsons/downloadjsons/modernity1.7fun.json",
         "jsons/downloadjsons/modernity1.7randblocks.json",
