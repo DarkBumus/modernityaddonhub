@@ -386,7 +386,7 @@
         },
         {
           "name": "Uniform Ores",
-          "description": "Changes the Ore textures to be uniform versions of their pre-Jappa configuration.<br><br>requiresefr<br><br>inspirationvt<br><br>incompat{Lower Sides}<br><br>#78B159{Attached are two additional files that include uniform versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
+          "description": "Changes the Ore textures to be uniform versions of their pre-Jappa configuration.<br><br>requiresefr<br><br>inspirationvt<br><br>#78B159{Attached are two additional files that include uniform versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
           "icon": "modernity/uniform_ores.png",
           "preview":["modernity/preview_uniform_ores1.png"],
           "file": ["modernity/1.7/tweaks/Uniform_Ores.zip", "modernity/1.7/tweaks/Gold-speckled_Uniform_Lapis_Lazuli.zip", "modernity/1.7/tweaks/Unlit_Uniform_Redstone_Ore.zip"],
