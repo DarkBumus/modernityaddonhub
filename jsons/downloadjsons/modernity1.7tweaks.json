@@ -322,7 +322,7 @@
         },
         {
           "name": "Stacking Arrows",
-          "description": "Changes Arrows so that they display different textures when they are stacked.#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "description": "Changes Arrows so that they display different textures when they are stacked.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
           "icon": "modernity/stacking_arrows.png",
           "preview":["modernity/preview_stacking_arrows1.png"],
           "file": ["modernity/1.7/tweaks/Stacking_Arrows.zip", "modernity/1.7/tweaks/Darker_Stacking_Arrows.zip"],
@@ -335,7 +335,71 @@
           "preview":["modernity/preview_blank_name_tag1.png"],
           "file": "modernity/1.7/tweaks/Blank_Name_Tag.zip",
           "tags": ["rpmcpatcher", "optifineincompatible"]
-        }
+        },
+        {
+          "name": "Desaturated Purpur",
+          "description": "Changes all Purpur Block textures to be slightly desaturated. Also applies to the pink part of the End Rod.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/desaturated_purpur.png",
+          "preview":["modernity/preview_desaturated_purpur1.png"],
+          "file": "modernity/1.7/tweaks/Desaturated_Purpur.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Darker Dark Oak Leaves",
+          "description": "Changes the texture of Dark Oak Leaves to be slightly darker than the normal Oak Leaves counterpart.<br><br>inspirationvt<br><br>overridemaster{Better Opaque Leaves}",
+          "icon": "modernity/darker_dark_oak_leaves.png",
+          "preview":["modernity/preview_darker_dark_oak_leaves1.png"],
+          "file": "modernity/1.7/tweaks/Darker_Dark_Oak_Leaves.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Magical Mushrooms",
+          "description": "Changes the textures of the Mushrooms blocks, to take on a purple (in case of Brown Mushroom) and pink (in case of Red Mushroom) shade, when placed in Roofed Forests. or Thaumcraft's Magical Forest. Also includes the rotational properties of the Rotated Mushrooms Addon.<br><br>inspiration{[Os' Mystical Mushrooms](https://modrinth.com/resourcepack/os-mystical-mushrooms)}<br><br>overridemaster{Rotated Mushrooms}",
+          "icon": "modernity/magical_mushrooms.png",
+          "preview":["modernity/preview_magical_mushrooms1.png"],
+          "file": "modernity/1.7/tweaks/Magical_Mushrooms.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Muted Warped Wood",
+          "description": "Changes all Warped related textures to be more smooth and less contrast-y.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Muted Warped Wood Complete Pack}",
+          "icon": "modernity/muted_warped_wood.png",
+          "preview":["modernity/preview_muted_warped_wood1.png"],
+          "file": "modernity/1.7/tweaks/Muted_Warped_Wood.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Lower Sides",
+          "description": "Changes the side textures of Grass, Podzol, Mycelium, Grass Paths and Crimson and Warped Nylium to be lowered.<br><br>requiresefr<br><br>inspirationvt<br><br>incompat{Full Sides}<br><br>#78B159{Attached is an additional file that includes a lower side texture for __Brown Podzol__.}",
+          "icon": "modernity/lower_sides.png",
+          "preview":["modernity/preview_lower_sides1.png"],
+          "file": ["modernity/1.7/tweaks/Lower_Sides.zip", "modernity/1.7/tweaks/Lower_Brown_Podzol.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Full Sides",
+          "description": "Changes the side textures of Grass, Podzol, Mycelium, Grass Paths and Crimson and Warped Nylium to be full, like the top textures.<br><br>requiresefr<br><br>inspirationvt<br><br>incompat{Lower Sides}<br><br>#78B159{Attached is an additional file that includes a full side texture for __Brown Podzol__.}",
+          "icon": "modernity/full_sides.png",
+          "preview":["modernity/preview_full_sides1.png"],
+          "file": ["modernity/1.7/tweaks/Full_Sides.zip", "modernity/1.7/tweaks/Full_Brown_Podzol.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Uniform Ores",
+          "description": "Changes the Ore textures to be uniform versions of their pre-Jappa configuration.<br><br>requiresefr<br><br>inspirationvt<br><br>incompat{Lower Sides}<br><br>#78B159{Attached are two additional files that include uniform versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
+          "icon": "modernity/uniform_ores.png",
+          "preview":["modernity/preview_uniform_ores1.png"],
+          "file": ["modernity/1.7/tweaks/Uniform_Ores.zip", "modernity/1.7/tweaks/Gold-speckled_Uniform_Lapis_Lazuli.zip", "modernity/1.7/tweaks/Unlit_Uniform_Redstone_Ore.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Clean Redstone",
+          "description": "Changes the textures of placed-down Redstone Dust to be cleaner and less frizzy.<br><br>inspirationvt",
+          "icon": "modernity/clean_redstone.png",
+          "preview":["modernity/preview_clean_redstone1.png"],
+          "file": "modernity/1.7/tweaks/Clean_Redstone.zip",
+          "tags": ["vanillacompatible"]
+        },
       ]
     }
   }
