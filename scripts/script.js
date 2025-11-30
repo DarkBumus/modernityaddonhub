@@ -16,13 +16,14 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/modernity1.12main.json",
         "jsons/downloadjsons/modernity1.12connected.json",
         "jsons/downloadjsons/modernity1.7main.json",
+        "jsons/downloadjsons/modernity1.7complete.json",
         "jsons/downloadjsons/modernity1.7connected.json",
         "jsons/downloadjsons/modernity1.7fixes.json",
         "jsons/downloadjsons/modernity1.7randblocks.json",
         "jsons/downloadjsons/modernity1.7randentities.json",
         "jsons/downloadjsons/modernity1.7rotblocks.json",
-        "jsons/downloadjsons/modernity1.7utility.json",
         "jsons/downloadjsons/modernity1.7tweaks.json",
+        "jsons/downloadjsons/modernity1.7utility.json",
         "jsons/downloadjsons/pprogrammerart1.7main.json",
         "jsons/downloadjsons/pprogrammerart1.7connected.json"
     ];
