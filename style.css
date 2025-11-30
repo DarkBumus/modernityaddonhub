@@ -103,10 +103,9 @@ header {
     justify-content: center;
     gap: 10px;
 
-    overflow-x: auto;        /* horizontal scroll, falls Inhalt zu breit */
-    white-space: nowrap;     /* verhindert Zeilenumbruch */
-    scrollbar-width: normal;   /* Firefox */
-    -webkit-overflow-scrolling: touch; /* iOS smooth scroll */
+    overflow: visible;      /* <— kein Scrollen */
+    flex-wrap: wrap;        /* <— bricht um, wenn nötig */
+    white-space: normal;    /* <— erlaubt mehrere Zeilen */
 }
 #tabs::-webkit-scrollbar {
     height: normal;        /* normale Scrollbar-Höhe */
