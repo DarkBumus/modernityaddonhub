@@ -400,16 +400,18 @@ ul, ol {
     color: #e6e6e6;
 }
 
-a, a:visited, a:hover, a:active,
-.footer-link,
-.tab,
-#subtabs .tab {
+#content a,
+#about-content a,
+#preview p a,
+#preview li a {
     color: #0088ff;
+    text-decoration: none;
 }
 
-.footer-link:hover,
-.tab:hover,
-#subtabs .tab:hover {
-    color: #0088ff;      /* Hover ebenfalls Blau */
-    text-decoration: underline; /* optional */
+#content a:hover,
+#about-content a:hover,
+#preview p a:hover,
+#preview li a:hover {
+    color: #0088ff;
+    text-decoration: underline;
 }
