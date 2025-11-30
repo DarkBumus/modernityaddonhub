@@ -13,7 +13,7 @@
           "description": "Plays [Michael Scott's iconic line](https://www.youtube.com/watch?v=2UMpTktizX4) over the sound effect of the Totem of Undying shattering.<br><br>requiresefr",
           "icon": "modernity/michaels_second_life.png",
           "preview":["modernity/preview_michaels_second_life1.png"],
-          "file": "modernity/1.7/fun/Michaels_Second_Life.zip",
+          "file": "modernity/1.7/fun_features/Michaels_Second_Life.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
