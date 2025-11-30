@@ -87,6 +87,70 @@
           "preview":["modernity/preview_curracabah_acacia_complete_pack1.png"],
           "file": "modernity/1.7/complete_packs/Curracabah_Acacia_Complete_Pack.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Zombies Complete Pack",
+          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies, Lobber Zombies and normal and raggedy player skin Zombies.<br><br>overridemaster{Minecraft Earth Zombies}<br>overridemaster{Player Skin Zombies [1]}<br>overridemaster{Player Skin Zombies [2]}",
+          "icon": "modernity/zombies_complete_pack.png",
+          "preview":["modernity/preview_zombies_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Zombies_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Vintage Cherry Complete Pack",
+          "description": "Changes all Cherry related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs. Also includes the changed Pink Petals.<br><br>requiresefr<br><br>inspiration{[Rediscovered](https://www.curseforge.com/minecraft/mc-mods/rediscovered)}<br><br>overridemaster{Vintage Cherry}",
+          "icon": "modernity/vintage_cherry_complete_pack.png",
+          "preview":["modernity/preview_vintage_cherry_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Vintage_Cherry_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Darker Mangrove Complete Pack",
+          "description": "Changes all Mangrove related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>overridemaster{Darker Mangrove}",
+          "icon": "modernity/darker_mangrove_complete_pack.png",
+          "preview":["modernity/preview_darker_mangrove_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Darker_Mangrove_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Red Crimson Complete Pack",
+          "description": "Changes all Crimson related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>overridemaster{Red Crimson}",
+          "icon": "modernity/red_crimson_complete_pack.png",
+          "preview":["modernity/preview_red_crimson_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Red_Crimson_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Consistent Bamboo Complete Pack",
+          "description": "Changes all Bamboo related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>overridemaster{Consistent Bamboo}",
+          "icon": "modernity/consistent_bamboo_complete_pack.png",
+          "preview":["modernity/preview_consistent_bamboo_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Consistent_Bamboo_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Moss Complete Pack",
+          "description": "Changes Moss Blocks and Carpets to randomly have Azalea-style blossoms on them and rotates them randomly.<br><br>requiresefr<br><br>inspirationvt<br><br>overridemaster{Rotated Moss}",
+          "icon": "modernity/moss_complete_pack.png",
+          "preview":["modernity/preview_moss_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Moss_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Muted Warped Wood Complete Pack",
+          "description": "Changes all Warped related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>inspirationvt<br><br>overridemaster{Muted Warped Wood}",
+          "icon": "modernity/muted_warped_wood_complete_pack.png",
+          "preview":["modernity/preview_muted_warped_wood_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Muted_Warped_Wood_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Vines Complete Pack",
+          "description": "Mixes and rotates the Vine textures to appear even more random.<br><br>incompat{Rotated Vines}<br>incompat{Randomized Vines}",
+          "icon": "modernity/vines_complete_pack.png",
+          "preview":["modernity/preview_vines_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Vines_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
