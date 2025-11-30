@@ -1,5 +1,5 @@
 :root {
-    --base-bg: #f5f5f5;  /* globaler Hintergrund */
+    --base-bg: #1a1a1a;  /* globaler Hintergrund dunkel */
 }
 
 /* ===========================
@@ -14,7 +14,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: #1a1a1a; /* vorher f5f5f5 */
+    color: #e6e6e6;
     display: flex;
     flex-direction: column;
 }
@@ -28,8 +29,8 @@ header {
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background: #333;
-    color: white;
+    background: #111;       /* vorher #333 */
+    color: #e6e6e6;
     padding: 20px;
     text-align: center;
 }
@@ -48,8 +49,8 @@ header {
 }
 
 #hamburger-btn {
-    background: #444;
-    color: white;
+    background: #333; /* vorher 444 */
+    color: #e6e6e6;
     border: none;
     padding: 12px 18px;
     font-size: 18px;
@@ -58,7 +59,7 @@ header {
 }
 
 #hamburger-btn:hover {
-    background: #555;
+    background: #444; /* vorher 555 */
 }
 
 .dropdown-content {
@@ -66,23 +67,23 @@ header {
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: #444;
+    background-color: #2a2a2a; /* vorher 444 */
     min-width: 140px;
     border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
     z-index: 1000;
     flex-direction: column;
 }
 
 .dropdown-content a {
-    color: white;
+    color: #e6e6e6;
     padding: 10px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    background-color: #3a3a3a; /* vorher 555 */
 }
 
 /* Header Icon */
@@ -102,25 +103,28 @@ header {
 =========================== */
 #tabs {
     display: flex;
-    background: #222;
+    background: #0f0f0f; /* vorher 222 */
     padding: 10px;
     justify-content: center;
     gap: 10px;
 
-    overflow: visible;      /* <— kein Scrollen */
-    flex-wrap: wrap;        /* <— bricht um, wenn nötig */
-    white-space: normal;    /* <— erlaubt mehrere Zeilen */
+    overflow: visible;
+    flex-wrap: wrap;
+    white-space: normal;
 }
+
 #tabs::-webkit-scrollbar {
-    height: normal;        /* normale Scrollbar-Höhe */
+    height: normal;
 }
+
 #tabs .tab {
-    flex: 0 0 auto;      /* verhindern, dass Tabs schrumpfen */
+    flex: 0 0 auto;
 }
+
 .tab {
-    color: white;
+    color: #e6e6e6;
     padding: 8px 15px;
-    background: #444;
+    background: #333; /* vorher 444 */
     border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
@@ -129,18 +133,20 @@ header {
     gap: 6px;
     white-space: nowrap;
 }
-.tab:hover { background: #666; }
+
+.tab:hover { background: #444; }
 .tab.active { background: #0088ff; }
 
 /* Versions Tabs */
 #subtabs {
     display: flex;
-    background: #333;
+    background: #161616; /* vorher 333 */
     padding: 8px;
     justify-content: center;
     gap: 8px;
 }
-#subtabs .tab { background: #555; padding: 6px 12px; }
+
+#subtabs .tab { background: #444; padding: 6px 12px; } /* vorher 555 */
 #subtabs .tab.active { background: #0088ff; }
 
 /* ===========================
@@ -162,8 +168,8 @@ header {
 
 /* Collapsible Panels */
 .collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: #2a2a2a; /* vorher eee */
+    color: #e6e6e6;           /* vorher 444 */
     cursor: pointer;
     padding: 10px;
     width: 100%;
@@ -175,14 +181,14 @@ header {
     margin-top: 5px;
     transition: background 0.2s;
 }
-.collapsible.active { background-color: #ccc; }
+.collapsible.active { background-color: #3a3a3a; } /* vorher ccc */
 
 .content-panel {
     padding: 0 10px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: white;
+    background-color: #1e1e1e; /* vorher white */
     border-radius: 0 0 5px 5px;
     margin-bottom: 5px;
 }
@@ -191,8 +197,8 @@ header {
    PACK CARDS
 =========================== */
 .pack-card {
-    background: #fafafa;
-    border: 1px solid #ddd;
+    background: #262626; /* vorher fafafa */
+    border: 1px solid #444; /* vorher ddd */
     border-radius: 8px;
     padding: 12px;
     margin: 10px 0;
@@ -220,11 +226,11 @@ header {
 #preview {
    flex: 1.7;
    min-width: 380px;
-   background: #fff;
-   border: 1px solid #ddd;
+   background: #262626; /* vorher white */
+   border: 1px solid #444; /* vorher ddd */
    border-radius: 8px;
    padding: 10px;
-   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+   box-shadow: 0 2px 6px rgba(0,0,0,0.6);
    position: sticky;
    top: 20px;
    display: flex;
@@ -257,7 +263,7 @@ header {
    text-align: center;
    font-size: 18px;
    font-weight: bold;
-   color: white;
+   color: #e6e6e6;
    margin: 80px 0;
    opacity: 0.9;
 }
@@ -270,8 +276,8 @@ header {
 }
 
 #preview .pack-tag {
-   background-color: #eee;
-   color: #333;
+   background-color: #333; /* vorher eee */
+   color: #e6e6e6;         /* vorher 333 */
    padding: 2px 6px;
    border-radius: 12px;
    font-size: 0.8em;
@@ -280,7 +286,7 @@ header {
    gap: 4px;
 }
 
-#preview .pack-tag:hover { background-color: #ddd; }
+#preview .pack-tag:hover { background-color: #444; }
 
 /* Tooltip */
 #tag-tooltip {
@@ -302,21 +308,22 @@ header {
 =========================== */
 footer {
     display: flex;
-    justify-content: center;     /* Footer bleibt zentriert */
+    justify-content: center;
     padding: 15px 0;
-    margin-top: auto; /* Footer an das Seitenende drücken */
-    background: #f5f5f5;
+    margin-top: auto;
+    background: #111; /* vorher f5f5f5 */
+    color: #e6e6e6;
 }
 
 .footer-wrapper {
     display: flex;
-    gap: 600px;                   /* Abstand zwischen Copyright und Socials */
+    gap: 600px;
     align-items: center;
 }
 
 .footer-right {
     display: flex;
-    gap: 10px;                   /* Abstand zwischen Discord | Ko-Fi */
+    gap: 10px;
     align-items: center;
 }
 
@@ -326,7 +333,7 @@ footer {
 }
 
 .footer-link:hover {
-    text-decoration: underline;            /* optional */
+    text-decoration: underline;
 }
 
 .separator {
@@ -335,12 +342,12 @@ footer {
 
 /* ========================
    About-Seite Styles
-   ======================== */
+=========================== */
 #about-content {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
-    text-align: center; /* bleibt für Überschrift mittig */
+    text-align: center;
 }
 
 #about-content h1,
@@ -348,41 +355,47 @@ footer {
     font-size: 2.7em;
     margin-bottom: 20px;
 }
+
 #about-content h3 {
-    font-size: 2em;        /* kleiner als h2 (2.7em) */
-    margin-bottom: 16px;   /* etwas Abstand nach unten */
-    font-weight: 600;      /* optional, etwas leichter als h2 */
-    text-align: left;      /* linksbündig wie Fließtext */
+    font-size: 2em;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-align: left;
 }
+
 #about-content h4 {
-    font-size: 1.5em;       /* kleiner als h3 (2em) */
-    margin-bottom: 12px;    /* etwas Abstand nach unten */
-    font-weight: 600;       /* optional, normal bis leicht fett */
-    text-align: left;       /* linksbündig wie Fließtext */
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: left;
 }
+
 #about-content p {
     font-size: 1.1em;
     line-height: 1.6;
-    margin-bottom: 0;      /* kein Abstand zwischen Absätzen */
-    text-align: left;      /* Text linksbündig */
+    margin-bottom: 0;
+    text-align: left;
+    color: #e6e6e6;
 }
 
 #about-content .custom-code-block {
-    font-family: monospace;     /* klassische Code-Schrift */
+    font-family: monospace;
     font-size: 1.2em;
-    background-color: #f5f5f5;  /* hellgrauer Hintergrund */
+    background-color: #2a2a2a; /* vorher f5f5f5 */
     border-radius: 5px;
-    border: 1px solid #ddd;
-    white-space: pre-line;      /* Zeilenumbrüche erhalten */
-    word-break: break-word;     /* lange Zeilen umbrechen */
+    border: 1px solid #444; /* vorher ddd */
+    white-space: pre-line;
+    word-break: break-word;
     margin: 0;
     padding: 10px;
-    text-align: left;      /* Text linksbündig */
+    text-align: left;
     vertical-align: top;
+    color: #e6e6e6;
 }
 
 ul, ol {
     text-align: left;
-    margin-left: 5px;   /* optional, damit es wie gewohnt eingerückt ist */
+    margin-left: 5px;
     font-size: 1.1em;
+    color: #e6e6e6;
 }
