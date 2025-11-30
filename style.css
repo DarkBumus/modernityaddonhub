@@ -302,6 +302,7 @@ footer {
     justify-content: center;     /* Footer bleibt zentriert */
     padding: 15px 0;
     margin-top: auto; /* Footer an das Seitenende drücken */
+    background: #f5f5f5;
 }
 
 .footer-wrapper {
