@@ -271,7 +271,71 @@
           "preview":["modernity/preview_vintage_cherry1.png"],
           "file": "modernity/1.7/tweaks/Vintage_Cherry.zip",
           "tags": ["vanillacompatible"]
-        }
+        },
+        {
+          "name": "Darker Mangrove",
+          "description": "Changes all Mangrove related textures to be darker.<br><br>requiresefr<br><br>overrideslave{Darker Mangrove Complete Pack}",
+          "icon": "modernity/darker_mangrove.png",
+          "preview":["modernity/preview_darker_mangrove1.png"],
+          "file": "modernity/1.7/tweaks/Darker_Mangrove.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Red Crimson",
+          "description": "Changes all Crimson related textures to be red.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Red Crimson Complete Pack}",
+          "icon": "modernity/red_crimson.png",
+          "preview":["modernity/preview_red_crimson1.png"],
+          "file": "modernity/1.7/tweaks/Red_Crimson.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Shifting Prismarine Bricks",
+          "description": "Changes the texture of the Prismarine Bricks to slowly shift color to match Prismarine.<br><br>requiresefr",
+          "icon": "modernity/shifting_prismarine_bricks.png",
+          "preview":["modernity/preview_shifting_prismarine_bricks1.png"],
+          "file": "modernity/1.7/tweaks/Shifting_Prismarine_Bricks.zip",
+          "tags": ["vanillacompatible", "interpolated1710"]
+        },
+        {
+          "name": "Consistent Bamboo",
+          "description": "Changes Bamboo Planks, Bamboo Mosaic and Bamboo Signs to be consistent with other wood types.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Consistent Bamboo Complete Pack}",
+          "icon": "modernity/consistent_bamboo.png",
+          "preview":["modernity/preview_consistent_bamboo1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Bamboo.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blooming Moss",
+          "description": "Changes Moss Blocks and Carpets to randomly have Azalea-style blossoms on them.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/blooming_moss.png",
+          "preview":["modernity/preview_blooming_moss1.png"],
+          "file": "modernity/1.7/tweaks/Blooming_Moss.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Written Note",
+          "description": "Changes Written Books whose titles include 'Note' in any way to appear as a Paper with scribbles on it. Additionally, when titled 'Crumpled Note', it'll appear as crumpled and when titled 'Ripped Note' appears as a ripped piece of paper.",
+          "icon": "modernity/written_note.png",
+          "preview":["modernity/preview_written_note1.png"],
+          "file": "modernity/1.7/tweaks/Written_Note.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Stacking Arrows",
+          "description": "Changes Arrows so that they display different textures when they are stacked.#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_arrows.png",
+          "preview":["modernity/preview_stacking_arrows1.png"],
+          "file": ["modernity/1.7/tweaks/Stacking_Arrows.zip", "modernity/1.7/tweaks/Darker_Stacking_Arrows.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Blank Name Tag",
+          "description": "Changes Name Tags so that they appear blank until they're named. Then they appear written. When the Name Tag is named 'Dinnerbone' or 'Grumm', it will look like it's upside-down, when it's named 'jeb_', it will cycle through the wool colors, when it's named 'Toast', it will display the Toast rabbit coloring and when it's named 'Johnny', it will look like it's been slashed and battered.",
+          "icon": "modernity/blank_name_tag.png",
+          "preview":["modernity/preview_blank_name_tag1.png"],
+          "file": "modernity/1.7/tweaks/Blank_Name_Tag.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
       ]
     }
   }
