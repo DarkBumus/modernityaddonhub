@@ -10,11 +10,11 @@
       "Complete Packs": [
         {
           "name": "Bricks Complete Pack",
-          "description": "Randomizes the texture for Bricks in whole Blocks, Stairs and Walls. Gives Slabs an assortment of randomized horizontal bricks so that they can be used ontop of windows or arches for extra flavor.<br><br>requiresefr<br><br>incompat{Randomized Bricks}",
+          "description": "Randomizes the texture for Bricks in whole Blocks, Stairs and Walls. Gives Slabs an assortment of randomized horizontal bricks so that they can be used ontop of windows or arches for extra flavor.<br><br>incompat{Randomized Bricks}",
           "icon": "modernity/bricks_complete_pack.png",
           "preview":["modernity/preview_bricks_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Bricks_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Podzol Complete Pack",
@@ -22,7 +22,7 @@
           "icon": "modernity/podzol_complete_pack.png",
           "preview":["modernity/preview_podzol_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Podzol_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Cake Complete Pack",
@@ -30,7 +30,7 @@
           "icon": "modernity/cake_complete_pack.png",
           "preview":["modernity/preview_cake_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Cake_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Pumpkin Complete Pack",
@@ -38,31 +38,31 @@
           "icon": "modernity/pumpkin_complete_pack.png",
           "preview":["modernity/preview_pumpkin_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Pumpkin_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Sandstone Complete Pack",
-          "description": "A complete overhaul for Sandstone. Includes normal Sandstone and its Slabs, Stairs and Walls having the bottom texture on all sides, Chiseled Sandstone having randomized side textures and a new top texture, Cut Sandstone having a new top texture and connecting into a vertical pillar.<br><br>requiresefr",
+          "description": "A complete overhaul for Sandstone. Includes normal Sandstone and its Slabs, Stairs and Walls having the bottom texture on all sides, Chiseled Sandstone having randomized side textures and a new top texture, Cut Sandstone having a new top texture and connecting into a vertical pillar.",
           "icon": "modernity/sandstone_complete_pack.png",
           "preview":["modernity/preview_sandstone_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Sandstone_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Red Sandstone Complete Pack",
-          "description": "A complete overhaul for Red Sandstone. Includes normal Red Sandstone and its Slabs, Stairs and Walls having the bottom texture on all sides, Chiseled Red Sandstone having randomized side textures and a new top texture, Cut Red Sandstone having a new top texture and connecting into a vertical pillar.<br><br>requiresefr",
+          "description": "A complete overhaul for Red Sandstone. Includes normal Red Sandstone and its Slabs, Stairs and Walls having the bottom texture on all sides, Chiseled Red Sandstone having randomized side textures and a new top texture, Cut Red Sandstone having a new top texture and connecting into a vertical pillar.",
           "icon": "modernity/red_sandstone_complete_pack.png",
           "preview":["modernity/preview_red_sandstone_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Red_Sandstone_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Quartz Complete Pack",
-          "description": "A complete overhaul for Quartz. Includes normal Quartz and its Slabs and Stairs having the top texture on the bottom aswell, Chiseled Quartz having the Programmer Art lineart, and Quartz Pillars connecting horizontally.<br><br>requiresefr",
+          "description": "A complete overhaul for Quartz. Includes normal Quartz and its Slabs and Stairs having the top texture on the bottom aswell, Chiseled Quartz having the Programmer Art lineart, and Quartz Pillars connecting horizontally.",
           "icon": "modernity/quartz_complete_pack.png",
           "preview":["modernity/preview_quartz_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Quartz_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Cactus Complete Pack",
@@ -70,23 +70,23 @@
           "icon": "modernity/cactus_complete_pack.png",
           "preview":["modernity/preview_cactus_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Cactus_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Desaturated Dark Oak Complete Pack",
-          "description": "Desaturates all Dark Oak related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>overridemaster{Desaturated Dark Oak}",
+          "description": "Desaturates all Dark Oak related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>overridemaster{Desaturated Dark Oak}",
           "icon": "modernity/desaturated_dark_oak_complete_pack.png",
           "preview":["modernity/preview_desaturated_dark_oak_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Desaturated_Dark_Oak_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Curracabah Acacia Complete Pack",
-          "description": "Changes all Acacia related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>requiresefr<br><br>inspiration{[O's Carved Wood](https://modrinth.com/resourcepack/os-carved-wood)}<br><br>overridemaster{Curracabah Acacia}",
+          "description": "Changes all Acacia related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>inspiration{[O's Carved Wood](https://modrinth.com/resourcepack/os-carved-wood)}<br><br>overridemaster{Curracabah Acacia}",
           "icon": "modernity/curracabah_acacia_complete_pack.png",
           "preview":["modernity/preview_curracabah_acacia_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Curracabah_Acacia_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Zombies Complete Pack",
@@ -94,7 +94,7 @@
           "icon": "modernity/zombies_complete_pack.png",
           "preview":["modernity/preview_zombies_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Zombies_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         }
       ]
     }
