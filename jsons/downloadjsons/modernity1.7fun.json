@@ -14,7 +14,47 @@
           "icon": "modernity/michaels_second_life.png",
           "preview":["modernity/preview_michaels_second_life1.png"],
           "file": "modernity/1.7/fun_features/Michaels_Second_Life.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Monocle Observer",
+          "description": "Gives the Observer a monocle.<br><br>requiresefr<br><br>inspiration{[More Observers](https://www.curseforge.com/minecraft/mc-mods/more-observers)}",
+          "icon": "modernity/monocle_observer.png",
+          "preview":["modernity/preview_monocle_observer1.png"],
+          "file": "modernity/1.7/fun_features/Monocle_Observer.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Calm4.ogg for Record 11",
+          "description": "Changes broken 'Record 11' into a normal looking one that plays the infamous 'calm4.ogg' when inserted into a Jukebox. The disc uses the colors of the old Mojang logo.<br><br>***M O J A N G   S P E C I F I C A T I O N S !***",
+          "icon": "modernity/calm4.ogg_for_record_11.png",
+          "preview":["modernity/preview_calm4.ogg_for_record_111.png"],
+          "file": "modernity/1.7/fun_features/Calm4.ogg_for_Record_11.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Emeralds to Rubies",
+          "description": "Changes the texture of Emeralds, Emerald Ore and Deepslate Emerald Ore to turn them into the Rubies from Minecraft Earth. Also adds a Deepslate Ore top texture.<br><br>requiresefr<br><br>inspirationvt<br><br>#78B159{Attached is an additional file that changes the small Emerald on the Villager skin of [Village Names](https://modrinth.com/mod/village-names) into Rubies aswell.}<br><br>⚠️ Careful: The second file can't simply be placed into the `assets/minecraft` folder. You have to place it into the `assets` folder, because the `villagenames` folder is in the Addon itself!",
+          "icon": "modernity/emeralds_to_rubies.png",
+          "preview":["modernity/preview_emeralds_to_rubies1.png"],
+          "file": ["modernity/1.7/fun_features/Emeralds_to_Rubies.zip", "modernity/1.7/fun_features/Emeralds_to_Rubies_Villagers.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Angelica Elytra",
+          "description": "Changes the model texture of the Elytra to look like the Angelica mod's logo.<br><br>requiresefr<br><br>#78B159{Attached is an additional file that allows you to use this texture when you're wearing a cape. For this to function, you need to go the `.minecraft/assets/skins/23` directory. In there you will find a file whose name consists of a large string of numbers and letters and that has no file name extension. To manipulate this file, you'll need to rename it to add `.png` on the end, after which it becomes an editable image file. Add (NOT replace with) the downloaded texture to the file you just opened in an image editing software and save it. Afterwards, remove the `.png` extension from the file again and it should work in game.}",
+          "icon": "modernity/angelica_elytra.png",
+          "preview":["modernity/preview_angelica_elytra1.png"],
+          "file": ["modernity/1.7/fun_features/Angelica_Elytra.zip", "modernity/1.7/fun_features/Angelica_Elytra_Loose.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Easter Eggs",
+          "description": "Adds Painted Eggs that can be created using Eggs and Dyes. Combinations go up to two Dyes at the moment.<br><br>⚠️ Careful: All eggs function the same way, they work in all recipes and can be thrown as normal!<br><br>attscript",
+          "icon": "modernity/easter_eggs.png",
+          "preview":["modernity/preview_easter_eggs1.png"],
+          "file": ["modernity/1.7/fun_features/Easter_Eggs.zip", "modernity/1.7/fun_features/Necessary_Easter_Eggs_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
         }
       ]
     }
