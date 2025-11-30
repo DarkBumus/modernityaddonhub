@@ -13,7 +13,7 @@
           "description": "Randomizes the texture for Bricks in whole Blocks, Stairs and Walls. Gives Slabs an assortment of randomized horizontal bricks so that they can be used ontop of windows or arches for extra flavor.<br><br>requiresefr<br><br>incompat{Randomized Bricks}",
           "icon": "modernity/bricks_complete_pack.png",
           "preview":["modernity/preview_bricks_complete_pack1.png"],
-          "file": "modernity/1.7/utility/Bricks_Complete_Pack.zip",
+          "file": "modernity/1.7/complete_packs/Bricks_Complete_Pack.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         },
         {
@@ -21,7 +21,7 @@
           "description": "Mixes and rotates both Podzol textures to appear even more random. Also rotates the underside Dirt texture.<br><br>incompat{Rotated Podzol}<br>incompat{Rotated Brown Podzol}",
           "icon": "modernity/podzol_complete_pack.png",
           "preview":["modernity/preview_podzol_complete_pack1.png"],
-          "file": "modernity/1.7/utility/Podzol_Complete_Pack.zip",
+          "file": "modernity/1.7/complete_packs/Podzol_Complete_Pack.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
