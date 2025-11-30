@@ -54,7 +54,7 @@
           "icon": "modernity/easter_eggs.png",
           "preview":["modernity/preview_easter_eggs1.png"],
           "file": ["modernity/1.7/fun_features/Easter_Eggs.zip", "modernity/1.7/fun_features/Necessary_Easter_Eggs_Recipe_Script.zip"],
-          "tags": ["rpmcpatcher", "optifineincompatible"]
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
         }
       ]
     }
