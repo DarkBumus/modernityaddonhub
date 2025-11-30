@@ -399,14 +399,3 @@ ul, ol {
     font-size: 1.1em;
     color: #e6e6e6;
 }
-
-/* Standard-Link-Farben überschreiben */
-a:link, a:visited {
-    color: #0088ff;      /* alle Links Blau */
-    text-decoration: none; /* optional */
-}
-
-a:hover, a:active {
-    color: #0088ff;      /* auch Hover & Active Blau */
-    text-decoration: underline; /* optional für Hover/Active */
-}
