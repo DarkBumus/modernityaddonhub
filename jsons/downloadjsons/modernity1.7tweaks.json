@@ -463,6 +463,38 @@
           "preview":["modernity/preview_bottled_ghast_tear1.png"],
           "file": "modernity/1.7/tweaks/Bottled_Ghast_Tear.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Ball o'Yarn",
+          "description": "Changes Strings so that they display different textures when they are stacked.",
+          "icon": "modernity/ball_oyarn.png",
+          "preview":["modernity/preview_ball_oyarn1.png"],
+          "file": "modernity/1.7/tweaks/Ball_oYarn.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Beetroot to Radishes",
+          "description": "Changes the textures of Beetroot Seeds, Beetroot and Beetroot Soup. Also renames the aforementioned into Radish Seeds, Radish and Radish Salad, respectively.<br><br>requiresefr<br><br>inspiration{[Ok Corz' Animated Shorts Series](https://www.youtube.com/watch?v=N1MKsdxNxU8)}",
+          "icon": "modernity/beetroot_to_radishes.png",
+          "preview":["modernity/preview_beetroot_to_radishes1.png"],
+          "file": "modernity/1.7/tweaks/Beetroot_to_Radishes.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Stacking Tipped Arrows",
+          "description": "Changes Tipped Arrows so that they display different textures when they are stacked.<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_tipped_arrows.png",
+          "preview":["modernity/preview_stacking_tipped_arrows1.png"],
+          "file": ["modernity/1.7/tweaks/Stacking_Tipped_Arrows.zip", "modernity/1.7/tweaks/Darker_Stacking_Tipped_Arrows.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Stacking Tipped Arrows [1.19.4 Potion Colors]",
+          "description": "Changes Tipped Arrows so that they display different textures when they are stacked. Reflects the __1.19.4 Potion Colors__.<br><br>requiresefr<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_tipped_arrows_1.19.4_potion_colors.png",
+          "preview":["modernity/preview_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
+          "file": ["modernity/1.7/tweaks/Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/1.7/tweaks/Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
         }
       ]
     }
