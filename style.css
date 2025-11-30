@@ -399,3 +399,17 @@ ul, ol {
     font-size: 1.1em;
     color: #e6e6e6;
 }
+
+a, a:visited, a:hover, a:active,
+.footer-link,
+.tab,
+#subtabs .tab {
+    color: #0088ff;
+}
+
+.footer-link:hover,
+.tab:hover,
+#subtabs .tab:hover {
+    color: #0088ff;      /* Hover ebenfalls Blau */
+    text-decoration: underline; /* optional */
+}
