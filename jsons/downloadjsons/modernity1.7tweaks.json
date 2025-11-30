@@ -292,7 +292,7 @@
           "name": "Shifting Prismarine Bricks",
           "description": "Changes the texture of the Prismarine Bricks to slowly shift color to match Prismarine.<br><br>requiresefr",
           "icon": "modernity/shifting_prismarine_bricks.png",
-          "preview":["modernity/preview_shifting_prismarine_bricks1.png"],
+          "preview":["modernity/preview_shifting_prismarine_bricks1.png", "modernity/preview_shifting_prismarine_bricks2.png", "modernity/preview_shifting_prismarine_bricks3.png", "modernity/preview_shifting_prismarine_bricks4.png"],
           "file": "modernity/1.7/tweaks/Shifting_Prismarine_Bricks.zip",
           "tags": ["vanillacompatible", "interpolated1710"]
         },
