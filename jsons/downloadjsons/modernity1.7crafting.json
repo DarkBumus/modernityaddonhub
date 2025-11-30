@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.7": {
+      "Crafting Tweaks": [
+        {
+          "name": "Smeltable Raw Ore Blocks",
+          "description": "Allows for Raw Copper Blocks, Raw Iron Blocks and Raw Gold Blocks to be smelted into Copper Blocks, Iron Blocks and Gold Blocks respectively. This will conserve coal, but will pay out less XP. The recipe is available both for the vanilla Furnace and Et Futurum Requiem's Blast Furnace.<br><br>requiresefr<br><br>attscript",
+          "icon": "craftingtweaks/smeltable_raw_ore_blocks.png",
+          "preview":["craftingtweaks/preview_smeltable_raw_ore_blocks1.png"],
+          "file": "craftingtweaks/1.7/fixes/Smeltable_Raw_Ore_Blocks.zip",
+          "tags": ["minetweaker", "script"]
+        }
+      ]
+    }
+  }
+}
