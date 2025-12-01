@@ -1,0 +1,46 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Fun Features": [
+        {
+          "name": "Michael's Second Life",
+          "description": "Plays [Michael Scott's iconic line](https://www.youtube.com/watch?v=2UMpTktizX4) over the sound effect of the Totem of Undying shattering.",
+          "icon": "modernity/michaels_second_life.png",
+          "preview":["modernity/preview_michaels_second_life1.png"],
+          "file": "modernity/1.12/fun_features/Michaels_Second_Life.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Monocle Observer",
+          "description": "Gives the Observer a monocle.<br><br>inspiration{[More Observers](https://www.curseforge.com/minecraft/mc-mods/more-observers)}",
+          "icon": "modernity/monocle_observer.png",
+          "preview":["modernity/preview_monocle_observer1.png"],
+          "file": "modernity/1.12/fun_features/Monocle_Observer.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Calm4.ogg for Record 11",
+          "description": "Changes broken 'Record 11' into a normal looking one that plays the infamous 'calm4.ogg' when inserted into a Jukebox. The disc uses the colors of the old Mojang logo.<br><br>***M O J A N G   S P E C I F I C A T I O N S !***",
+          "icon": "modernity/calm4.ogg_for_record_11.png",
+          "preview":["modernity/preview_calm4.ogg_for_record_111.png"],
+          "file": "modernity/1.12/fun_features/Calm4.ogg_for_Record_11.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Emeralds to Rubies",
+          "description": "Changes the texture of Emeralds, Emerald Ore and Deepslate Emerald Ore to turn them into the Rubies from Minecraft Earth. Also adds a Deepslate Ore top texture.<br><br>inspirationvt",
+          "icon": "modernity/emeralds_to_rubies.png",
+          "preview":["modernity/preview_emeralds_to_rubies1.png"],
+          "file": "modernity/1.12/fun_features/Emeralds_to_Rubies.zip",
+          "tags": ["vanillacompatible"]
+        }
+      ]
+    }
+  }
+}
