@@ -14,7 +14,7 @@
           "icon": "modernity/randomized_cows.png",
           "preview":["modernity/preview_randomized_cows1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Cows.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Creepers",
@@ -22,7 +22,7 @@
           "icon": "modernity/randomized_creepers.png",
           "preview":["modernity/preview_randomized_creepers1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Creepers.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Chickens",
@@ -30,7 +30,7 @@
           "icon": "modernity/randomized_chickens.png",
           "preview":["modernity/preview_randomized_chickens1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Chickens.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Occasional Glowsquids",
@@ -38,7 +38,7 @@
           "icon": "modernity/occasional_glowsquids.png",
           "preview":["modernity/preview_occasional_glowsquids1.png"],
           "file": "modernity/1.12/randomized_entities/Occasional_Glowsquids.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Pigs",
@@ -46,7 +46,7 @@
           "icon": "modernity/randomized_pigs.png",
           "preview":["modernity/preview_randomized_pigs1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Pigs.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Minecraft Earth Zombies",
@@ -54,7 +54,7 @@
           "icon": "modernity/minecraft_earth_zombies.png",
           "preview":["modernity/preview_minecraft_earth_zombies1.png"],
           "file": "modernity/1.12/randomized_entities/Minecraft_Earth_Zombies.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Sheep",
@@ -62,7 +62,7 @@
           "icon": "modernity/randomized_sheep.png",
           "preview":["modernity/preview_randomized_sheep1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Sheep.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Slimes",
@@ -70,7 +70,7 @@
           "icon": "modernity/randomized_slimes.png",
           "preview":["modernity/preview_randomized_slimes1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Slimes.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Wolves",
@@ -78,7 +78,7 @@
           "icon": "modernity/randomized_wolves.png",
           "preview":["modernity/preview_randomized_wolves1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Wolves.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Classic-style Spider",
@@ -86,7 +86,7 @@
           "icon": "modernity/classic-style_spider.png",
           "preview":["modernity/preview_classic-style_spider1.png"],
           "file": "modernity/1.12/randomized_entities/Classic-style_Spider.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Alpha-style Zombie Pigman",
@@ -94,7 +94,7 @@
           "icon": "modernity/alpha-style_zombie_pigman.png",
           "preview":["modernity/preview_alpha-style_zombie_pigman1.png"],
           "file": "modernity/1.12/randomized_entities/Alpha-style_Zombie_Pigman.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Player Skin Zombies [1]",
@@ -102,7 +102,7 @@
           "icon": "modernity/player_skin_zombies_one.png",
           "preview":["modernity/preview_player_skin_zombies_one1.png"],
           "file": "modernity/1.12/randomized_entities/Player_Skin_Zombies_1.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Player Skin Zombies [2]",
@@ -110,7 +110,7 @@
           "icon": "modernity/player_skin_zombies_two.png",
           "preview":["modernity/preview_player_skin_zombies_two1.png"],
           "file": "modernity/1.12/randomized_entities/Player_Skin_Zombies_2.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Tribal Ghast",
@@ -118,7 +118,7 @@
           "icon": "modernity/tribal_ghast.png",
           "preview":["modernity/preview_tribal_ghast1.png"],
           "file": "modernity/1.12/randomized_entities/Tribal_Ghast.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Skeletons",
@@ -126,7 +126,7 @@
           "icon": "modernity/randomized_skeletons.png",
           "preview":["modernity/preview_randomized_skeletons1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Skeletons.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Randomized Rabbits",
@@ -134,7 +134,7 @@
           "icon": "modernity/randomized_rabbits.png",
           "preview":["modernity/preview_randomized_rabbits1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Rabbits.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Occasional Albino Endermen",
@@ -142,7 +142,7 @@
           "icon": "modernity/occasional_albino_endermen.png",
           "preview":["modernity/preview_occasional_albino_endermen1.png"],
           "file": "modernity/1.12/randomized_entities/Occasional_Albino_Endermen.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         }
       ]
     }
