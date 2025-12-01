@@ -1,0 +1,278 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Utility": [
+        {
+          "name": "Utility Silverfish Stones",
+          "description": "Gives Silverfish Stones a Black and Yellow outline to make them stand out.<br><br>inspirationvt<br><br>incompat{Suspicious Silverfish Stones}",
+          "icon": "modernity/utility_silverfish_stones.png",
+          "preview":["modernity/preview_utility_silverfish_stones1.png"],
+          "file": "modernity/1.12/utility/Utility_Silverfish_Stones.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Translucent Pumpkin Overlay",
+          "description": "Changes visibility of the Pumpkin Overlay to be slightly translucent.<br><br>inspirationvt",
+          "icon": "modernity/pumpkin_overlay.png",
+          "preview":["modernity/preview_translucent_pumpkin_overlay1.png"],
+          "file": "modernity/1.12/utility/Translucent_Pumpkin_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Pumpkin Overlay",
+          "description": "Changes visibility of the Pumpkin Overlay to be completely invisible.<br><br>inspirationvt",
+          "icon": "modernity/pumpkin_overlay.png",
+          "preview":["modernity/preview_invisible_pumpkin_overlay1.png"],
+          "file": "modernity/1.12/utility/Invisible_Pumpkin_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Underwater Overlay",
+          "description": "Changes visibility of the Underwater Overlay to be completely invisible. Makes for a way clearer diving experience.",
+          "icon": "modernity/invisible_underwater_overlay.png",
+          "preview":["modernity/preview_invisible_underwater_overlay1.png"],
+          "file": "modernity/1.12/utility/Invisible_Underwater_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Directional Hoppers",
+          "description": "Gives Hoppers some markings on the side when their facing into a block. Also fixes the underside of Hoppers to not look so god-awful.<br>The directonal markings also apply to Grated Hoppers from [Hopper Ducts](https://www.curseforge.com/minecraft/mc-mods/hopper-ducts) and the underside fix also works for [Round Robin Hopper](https://www.curseforge.com/minecraft/mc-mods/round-robin-hopper).<br><br>inspirationvt",
+          "icon": "modernity/directional_hoppers.png",
+          "preview":["modernity/preview_directional_hoppers1.png"],
+          "file": "modernity/1.12/utility/Directional_Hoppers.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Directional Dispensers/Droppers",
+          "description": "Gives Dispensers and Droppers some markings on the side when they're facing into a block. Also applies a fitting bottom texture to Dispensers and Droppers and lets them keep their side textures when facing up or down.<br><br>inspirationvt",
+          "icon": "modernity/directional_dispensers_droppers.png",
+          "preview":["modernity/preview_directional_dispensers_droppers1.png"],
+          "file": "modernity/1.12/utility/Directional_Dispensers_Droppers.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Directional Observers",
+          "description": "Gives Observers some markings on the side when they're facing into a block. Also applies a little blob of Redstone to the top texture so that the player can see when the Observer is firing.<br><br>inspirationvt",
+          "icon": "modernity/directional_observers.png",
+          "preview":["modernity/preview_directional_observers1.png"],
+          "file": "modernity/1.12/utility/Directional_Observers.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Visual Cauldron Fill Level",
+          "description": "Gives Cauldrons windows on the side that display the fill level. Also applies these windows to Et Futurum Requiem's Potion Cauldron.<br><br>inspirationvt",
+          "icon": "modernity/visual_cauldron_fill_level.png",
+          "preview":["modernity/preview_visual_cauldron_fill_level1.png"],
+          "file": "modernity/1.12/utility/Visual_Cauldron_Fill_Level.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Visual Composter Fill Level",
+          "description": "Gives Composters windows on the side that display the fill level.<br><br>inspirationvt",
+          "icon": "modernity/visual_composter_fill_level.png",
+          "preview":["modernity/preview_visual_composter_fill_level1.png"],
+          "file": "modernity/1.12/utility/Visual_Composter_Fill_Level.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Breaking Cross",
+          "description": "Changes the Breaking Overlay to display a slowly closing cross to better signify breaking progress.<br><br>inspirationvt",
+          "icon": "modernity/breaking_cross.png",
+          "preview":["modernity/preview_breaking_cross1.png"],
+          "file": "modernity/1.12/utility/Breaking_Cross.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Beacon Beam",
+          "description": "Changes the Beacon Beam texture to be invisible.<br><br>inspirationvt",
+          "icon": "modernity/invisible_beacon_beam.png",
+          "preview":["modernity/preview_invisible_beacon_beam1.png"],
+          "file": "modernity/1.12/utility/Invisible_Beacon_Beam.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Visible Tripwire",
+          "description": "Changes the Tripwire's texture to be more visible.<br><br>inspirationvt",
+          "icon": "modernity/visible_tripwire.png",
+          "preview":["modernity/preview_visible_tripwire1.png"],
+          "file": "modernity/1.12/utility/Visible_Tripwire.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Visible Ores",
+          "description": "Changes the Ore textures to be more visible.<br><br>inspirationvt<br><br>#78B159{Attached are two additional files that include visible versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
+          "icon": "modernity/visible_ores.png",
+          "preview":["modernity/preview_visible_ores1.png"],
+          "file": ["modernity/1.12/utility/Visible_Ores.zip", "modernity/1.12/utility/Gold-speckled_Visible_Lapis_Lazuli.zip", "modernity/1.12/utility/Unlit_Visible_Redstone_Ore.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Actually Waxed Copper",
+          "description": "Gives the Waxed variants of Copper Blocks, Cut Copper Blocks and their Slabs and Stairs, Chiseled Copper Blocks, Copper Grates, Copper Bulbs and Copper Trapdoors a new texture to distinguish them from non-Waxed Copper Blocks.",
+          "icon": "modernity/actually_waxed_copper.png",
+          "preview":["modernity/preview_actually_waxed_copper1.png"],
+          "file": "modernity/1.12/utility/Actually_Waxed_Copper.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Unique Enchanted Books",
+          "description": "Changes the textures of all Enchanted Books of Vanilla and Et Futurum Requiem to make them look unique. Do note that this only applies to Enchanted Books that are practically accessible. Books that are cheated to have an Enchantment Level over 5 will display with a black band instead.<br>If you want to see other Enchanted Books from other mods, make sure to suggest them on [Discord](https://discord.gg/cg73PFHvfV)!<br><br>#78B159{Attached is an additional file that makes the Enchanted Books consistent with __Darker Leather__.}",
+          "icon": "modernity/unique_enchanted_books.png",
+          "preview":["modernity/preview_unique_enchanted_books1.png"],
+          "file": ["modernity/1.12/utility/Unique_Enchanted_Books.zip", "modernity/1.12/utility/Darker_Unique_Enchanted_Books.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Enchanted Books [Colorblind Edition]",
+          "description": "Changes the textures of all Enchanted Books of Vanilla and Et Futurum Requiem to make them look unique. Do note that this only applies to Enchanted Books that are practically accessible. Books that are cheated to have an Enchantment Level over 5 will display with a black band instead.<br>In this edition, all books display the Enchantment Level in roman numerals so that colorblind players, who can't distinguish the colors, know which level the Books they find have.<br>If you want to see other Enchanted Books from other mods, make sure to suggest them on [Discord](https://discord.gg/cg73PFHvfV)!<br><br>#78B159{Attached is an additional file that makes the Enchanted Books consistent with __Consistent Leather__.}",
+          "icon": "modernity/unique_enchanted_books_colorblind_edition.png",
+          "preview":["modernity/preview_unique_enchanted_books_colorblind_edition1.png", "modernity/preview_unique_enchanted_books_colorblind_edition2.png", "modernity/preview_unique_enchanted_books_colorblind_edition3.png", "modernity/preview_unique_enchanted_books_colorblind_edition4.png", "modernity/preview_unique_enchanted_books_colorblind_edition5.png", "modernity/preview_unique_enchanted_books_colorblind_edition6.png", "modernity/preview_unique_enchanted_books_colorblind_edition7.png", "modernity/preview_unique_enchanted_books_colorblind_edition8.png", "modernity/preview_unique_enchanted_books_colorblind_edition9.png"],
+          "file": ["modernity/1.12/utility/Unique_Enchanted_Books_Colorblind_Edition.zip", "modernity/1.12/utility/Darker_Unique_Enchanted_Books_Colorblind_Edition.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Potions",
+          "description": "Changes the textures of all Potions, Splash Potions and Lingering Potions of Vanilla and Et Futurum Requiem to make them use their 1.19.4 colors and give them tiered, unique textures.<br><br>inspiration{[Firch](https://www.planetminecraft.com/texture-pack/mncrft-more-jappafied-textures-v1-0-terracotta-and-glazed-terracotta/)}",
+          "icon": "modernity/unique_potions.png",
+          "preview":["modernity/preview_unique_potions1.png"],
+          "file": "modernity/1.12/utility/Unique_Potions.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Unique Potions [Colorblind Edition]",
+          "description": "Changes the textures of all Potions, Splash Potions and Lingering Potions of Vanilla and Et Futurum Requiem to make them use their 1.19.4 colors and give them tiered, unique textures.<br>In this edition, all potions display the Potion Effect so that colorblind players, who can't distinguish the colors, know which Effect the Potions they find have.<br><br>inspiration{[Firch](https://www.planetminecraft.com/texture-pack/mncrft-more-jappafied-textures-v1-0-terracotta-and-glazed-terracotta/)}",
+          "icon": "modernity/unique_potions_colorblind_edition.png",
+          "preview":["modernity/preview_unique_potions_colorblind_edition1.png", "modernity/preview_unique_potions_colorblind_edition2.png", "modernity/preview_unique_potions_colorblind_edition3.png", "modernity/preview_unique_potions_colorblind_edition4.png", "modernity/preview_unique_potions_colorblind_edition5.png", "modernity/preview_unique_potions_colorblind_edition6.png", "modernity/preview_unique_potions_colorblind_edition7.png", "modernity/preview_unique_potions_colorblind_edition8.png", "modernity/preview_unique_potions_colorblind_edition9.png"],
+          "file": "modernity/1.12/utility/Unique_Potions_Colorblind_Edition.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Bamboo Bow",
+          "description": "Changes the texture of the Bow to look like it's made from Bamboo, once specific NBT data is fulfilled.<br><br>incompat{Comprehensive Tool Upgrade}<br><br>attscript",
+          "icon": "modernity/bamboo_bow.png",
+          "preview":["modernity/preview_bamboo_bow1.png"],
+          "file": ["modernity/1.12/utility/Bamboo_Bow.zip", "modernity/1.12/utility/Necessary_Bamboo_Bow_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+        },
+        {
+          "name": "Bamboo Fishing Rod",
+          "description": "Changes the texture of the Fishing Rod to look like it's made from Bamboo, once specific NBT data is fulfilled.<br><br>incompat{Comprehensive Tool Upgrade}<br><br>attscript",
+          "icon": "modernity/bamboo_fishing_rod.png",
+          "preview":["modernity/preview_bamboo_fishing_rod1.png"],
+          "file": ["modernity/1.12/utility/Bamboo_Fishing_Rod.zip", "modernity/1.12/utility/Necessary_Bamboo_Fishing_Rod_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+        },
+        {
+          "name": "Degrading Tools",
+          "description": "Changes the textures of the Swords, Pickaxes, Axes, Shovels and Hoes of all materials, as well as those of the Bow, Fishing Rod, Flint and Steel and Shears to display wearing with degrading durability. Also provides the same service to the __Bamboo Bow__ and __Bamboo Fishing Rod__, but to make use of those, you'll still need the MineTweaker scripts of the respective Addons. The increments at which the degradation will show are 0-70%, 71-80%, 81-90% and 91-100% for normal tools and weapons and 0-90% and 91-100% for Fishing Rods.<br><br>incompat{Comprehensive Tool Upgrade}",
+          "icon": "modernity/degrading_tools.png",
+          "preview":["modernity/preview_degrading_tools1.png"],
+          "file": "modernity/1.12/utility/Degrading_Tools.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade",
+          "description": "Changes the textures of all tools. All tools receive a shiny finish and adhere to the color palettes of their components. Additionally, through the use of a mix of CIT functionality and the recipe manipulation techniques in MineTweaker, this Addon supports a wide variety of alternative tool types.<br>Wooden Tools now not just come as wooden tools, but also as tools of every single wood type, should you choose to craft a tool with only planks of that specific wood type. For tools crafted from multiple different planks, the standard Wooden Tools texture will be used.<br>Stone Tools now can be crafted from Cobblestone, Flint, Deepslate and Blackstone.<br>Iron Tools and Shears have a Steel variant, when crafted from Steel.<br>Bows can be crafted as Recurve Bows or Bamboo Bows, and the latter is also true for Fishing Rods and Carrots on a Stick.<br>Arrows (the item and the design displayed in the 'Pulled Bow' texture, aswell as the Arrow entity) have also received an upgrade, making them use darker tips, more akin to Flint, than Iron.<br>Additionally, there are now a variety of different tool types that differ from the standard ones:<br>Swords can also display as Battlestaves, Daggers and Sabers.<br>Axes can also display as Waraxes.<br>All tools also degrade with use.<br><br>⚠️ Careful: All of these features are purely visual in nature! Steel Tools aren't more durable than Iron Tools, and there are no differences between the wood types!<br><br>incompat{Bamboo Bow}<br>incompat{Bamboo Fishing Rod}<br>incompat{Degrading Tools}<br><br>attscript",
+          "icon": "modernity/comprehensive_tool_upgrade.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade1.png"],
+          "file": ["modernity/1.12/utility/Comprehensive_Tool_Upgrade.zip", "modernity/1.12/utility/Necessary_Comprehensive_Tool_Upgrade_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Arrows]",
+          "description": "Changes the texture of the Stacking Arrows of the __Comprehensive Tool Upgrade__ to use the darker Leather color palette from __Consistent Leather__.<br><br>overridemaster{Comprehensive Tool Upgrade}<br>incompat{Stacking Arrows}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_arrows.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_arrows1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Arrows.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Acacia]",
+          "description": "Changes the texture of the Acacia tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Curracabah Acacia__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_acacia.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_acacia1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Acacia.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Bamboo]",
+          "description": "Changes the texture of the Bamboo tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Consistent Bamboo Stalks__ for their handles.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_bamboo.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_bamboo1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Bamboo.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Cherry]",
+          "description": "Changes the texture of the Cherry tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Vintage Cherry__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_cherry.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_cherry1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Cherry.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Crimson]",
+          "description": "Changes the texture of the Crimson tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Red Crimson__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_crimson.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_crimson1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Crimson.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Dark Oak]",
+          "description": "Changes the texture of the Dark Oak tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Desaturated Dark Oak__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_dark_oak.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_dark_oak1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Dark_Oak.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Mangrove]",
+          "description": "Changes the texture of the Mangrove tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Darker Mangrove__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_mangrove.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_mangrove1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Mangrove.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Alternative Warped]",
+          "description": "Changes the texture of the Warped tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Muted Warped Wood__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
+          "icon": "modernity/comprehensive_tool_upgrade_alternative_warped.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_warped1.png"],
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Warped.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Stacking Tipped Arrows]",
+          "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows1.png"],
+          "file": ["modernity/1.12/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows.zip", "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Tool Upgrade [Stacking Tipped Arrows, 1.19.4 Potion Colors]",
+          "description": "Changes the texture of the Stacking Tipped Arrows from the from the __Stacking Tipped Arrows__ Addon to reflect the changes in the __Comprehensive Tool Upgrade__, aswell as the __1.19.4 Potion Colors__.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors.png",
+          "preview":["modernity/preview_comprehensive_tool_upgrade_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
+          "file": ["modernity/1.12/utility/Comprehensive_Tool_Upgrade_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Comprehensive Armor Upgrade",
+          "description": "Changes the textures of all armors. All armors receive a shiny finish and adhere to the color palettes of their components. Additionally, through the use of a mix of CIT functionality and the recipe manipulation techniques in MineTweaker, this Addon supports a couple of alternative armors.<br>Iron Armor has a Steel variant, when crafted with Steel.<br>Gold Armor has a Crown variant that is crafted with a Diamond.<br>Netherite Armor has a Gilded Netherite Armor variant that is crafted in the Smithing Table with Gold.<br>All armor pieces also degrade with use, both in item and model form.<br><br>⚠️ Careful: All of these features are purely visual in nature! Steel Armor isn't more durable than Iron Armor, and there are no differences between the Netherite and Gilded Netherite!<br><br>incompat{Full-colored Leather Armor}<br><br>attscript",
+          "icon": "modernity/comprehensive_armor_upgrade.png",
+          "preview":["modernity/preview_comprehensive_armor_upgrade1.png"],
+          "file": ["modernity/1.12/utility/Comprehensive_Armor_Upgrade.zip", "modernity/1.12/utility/Necessary_Comprehensive_Armor_Upgrade_Recipe_Script.zip"],
+          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+        }
+      ]
+    }
+  }
+}
