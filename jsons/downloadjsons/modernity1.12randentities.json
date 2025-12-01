@@ -1,0 +1,150 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Randomized Entities": [
+        {
+          "name": "Randomized Cows",
+          "description": "Randomizes the texture for Cows. Cold biomes will have Wooly Cows in them. Now also includes the Cow textures from Minecraft Earth aswell as the Cold and Warm Cow textures from 1.21.5!",
+          "icon": "modernity/randomized_cows.png",
+          "preview":["modernity/preview_randomized_cows1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Cows.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Creepers",
+          "description": "Randomizes the texture for Creepers.",
+          "icon": "modernity/randomized_creepers.png",
+          "preview":["modernity/preview_randomized_creepers1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Creepers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Chickens",
+          "description": "Randomizes the texture for Chickens. Mushroom Islands will have Cluckshrooms on them. The End will have Midnight Chickens in them. Now also includes the Chicken textures from Minecraft Earth aswell as the Cold and Warm Chicken textures from 1.21.5!",
+          "icon": "modernity/randomized_chickens.png",
+          "preview":["modernity/preview_randomized_chickens1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Chickens.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Occasional Glowsquids",
+          "description": "Randomizes the texture for Squids to include Glowsquids.",
+          "icon": "modernity/occasional_glowsquids.png",
+          "preview":["modernity/preview_occasional_glowsquids1.png"],
+          "file": "modernity/1.12/randomized_entities/Occasional_Glowsquids.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Pigs",
+          "description": "Randomizes the texture for Pigs. Swamplands will have muddy Pigs in them. Now also includes the Pig textures from Minecraft Earth aswell as the Cold and Warm Pig textures from 1.21.5!",
+          "icon": "modernity/randomized_pigs.png",
+          "preview":["modernity/preview_randomized_pigs1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Pigs.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Minecraft Earth Zombies",
+          "description": "Randomizes the texture for Zombies. Extreme Hills will have Bouldering Zombies in them. Everywhere else gets a mix of normal Zombies and Lobber Zombies.<br><br>incompat{Player Skin Zombies [1]}<br>incompat{Player Skin Zombies [2]}",
+          "icon": "modernity/minecraft_earth_zombies.png",
+          "preview":["modernity/preview_minecraft_earth_zombies1.png"],
+          "file": "modernity/1.12/randomized_entities/Minecraft_Earth_Zombies.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Sheep",
+          "description": "Randomizes the texture for Sheep. Cold biomes will have fuzzy Sheep in them, Taiga biomes will have inky Sheep in them and Extreme Hills will have rocky Sheep in them. Now also includes the Cow textures from Minecraft Earth!",
+          "icon": "modernity/randomized_sheep.png",
+          "preview":["modernity/preview_randomized_sheep1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Sheep.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Slimes",
+          "description": "Randomizes the texture for Slimes. Beaches and Oceans will have tropically blue slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!",
+          "icon": "modernity/randomized_slimes.png",
+          "preview":["modernity/preview_randomized_slimes1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Slimes.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Wolves",
+          "description": "Randomizes the texture for Wolves. Now also includes the new Wolf textures from 1.20.80!",
+          "icon": "modernity/randomized_wolves.png",
+          "preview":["modernity/preview_randomized_wolves1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Wolves.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Classic-style Spider",
+          "description": "Randomizes the texture for Spiders. Includes a brown Spider that looks similar to the Classic version. Also includes a version for the Cave Spider.",
+          "icon": "modernity/classic-style_spider.png",
+          "preview":["modernity/preview_classic-style_spider1.png"],
+          "file": "modernity/1.12/randomized_entities/Classic-style_Spider.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Alpha-style Zombie Pigman",
+          "description": "Randomizes the texture for Zombie Pigmen. Includes a bloody Zombie Pigman that looks similar to the Alpha version.",
+          "icon": "modernity/alpha-style_zombie_pigman.png",
+          "preview":["modernity/preview_alpha-style_zombie_pigman1.png"],
+          "file": "modernity/1.12/randomized_entities/Alpha-style_Zombie_Pigman.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Player Skin Zombies [1]",
+          "description": "Randomizes the texture for Zombies. Includes zombified versions of the new player skins that were added in 1.19.<br><br>incompat{Minecraft Earth Zombies}<br>incompat{Player Skin Zombies [2]}",
+          "icon": "modernity/player_skin_zombies_one.png",
+          "preview":["modernity/preview_player_skin_zombies_one1.png"],
+          "file": "modernity/1.12/randomized_entities/Player_Skin_Zombies_1.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Player Skin Zombies [2]",
+          "description": "Randomizes the texture for Zombies. Includes even more raggedy zombified versions of the new player skins that were added in 1.19.<br><br>incompat{Minecraft Earth Zombies}<br>incompat{Player Skin Zombies [1]}",
+          "icon": "modernity/player_skin_zombies_two.png",
+          "preview":["modernity/preview_player_skin_zombies_two1.png"],
+          "file": "modernity/1.12/randomized_entities/Player_Skin_Zombies_2.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Tribal Ghast",
+          "description": "Randomizes the texture for Ghasts. Sometimes they have dark red lines on them.<br><br>inspiration{[Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)}",
+          "icon": "modernity/tribal_ghast.png",
+          "preview":["modernity/preview_tribal_ghast1.png"],
+          "file": "modernity/1.12/randomized_entities/Tribal_Ghast.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Skeletons",
+          "description": "Randomizes the texture for Skeletons. Adds a beheaded and a mossy variant. Now also includes the Skeleton textures from the Stray without clothing and the Bogged from 1.20.5 with its overlay texture merged into the normal layer!",
+          "icon": "modernity/randomized_skeletons.png",
+          "preview":["modernity/preview_randomized_skeletons1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Skeletons.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Rabbits",
+          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!<br><br>requiresefr",
+          "icon": "modernity/randomized_rabbits.png",
+          "preview":["modernity/preview_randomized_rabbits1.png"],
+          "file": "modernity/1.12/randomized_entities/Randomized_Rabbits.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Occasional Albino Endermen",
+          "description": "Randomizes the texture for Endermen. Occasionally you'll encounter a rare white Enderman with green eyes!",
+          "icon": "modernity/occasional_albino_endermen.png",
+          "preview":["modernity/preview_occasional_albino_endermen1.png"],
+          "file": "modernity/1.12/randomized_entities/Occasional_Albino_Endermen.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
+      ]
+    }
+  }
+}
