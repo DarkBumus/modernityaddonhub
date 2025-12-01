@@ -1,0 +1,94 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Fixes": [
+        {
+          "name": "Fixed Pistons",
+          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>inspirationvt",
+          "icon": "modernity/fixed_pistons.png",
+          "preview":["modernity/preview_fixed_pistons1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Pistons.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Fixed Furnace",
+          "description": "Fixes the underside of Furnaces and Lit Furnaces. Now displays a modified version of the Smooth Stone topside.",
+          "icon": "modernity/fixed_furnace.png",
+          "preview":["modernity/preview_fixed_furnace1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Furnace.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Fixed Crafting Table",
+          "description": "Fixes the underside of the Crafting Table. Now displays a simply modified Oak Planks texture.",
+          "icon": "modernity/fixed_crafting_table.png",
+          "preview":["modernity/preview_fixed_crafting_table1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Crafting_Table.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Fixed Pumpkins",
+          "description": "Fixes the underside of the Pumpkin. Also applies to Jack o'Lanterns.<br><br>overrideslave{Pumpkin Complete Pack}<br>incompat{Randomized Pumpkin}",
+          "icon": "modernity/fixed_pumpkins.png",
+          "preview":["modernity/preview_fixed_pumpkins1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Pumpkins.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Golden Totem of Undying",
+          "description": "Changes the Totem of Undying's texture into actual Gold.",
+          "icon": "modernity/golden_totem_of_undying.png",
+          "preview":["modernity/preview_golden_totem_of_undying1.png"],
+          "file": "modernity/1.12/fixes/Golden_Totem_of_Undying.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Fixed Weighted Pressure Plates",
+          "description": "Changes the top texture of the Weighted Pressure Plates so that they have a rim around them.",
+          "icon": "modernity/fixed_weighted_pressure_plates.png",
+          "preview":["modernity/preview_fixed_weighted_pressure_plates1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Weighted_Pressure_Plates.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Sand Concrete Powders",
+          "description": "Changes the textures for Concrete Powders to use the Sand lineart.",
+          "icon": "modernity/sand_concrete_powders.png",
+          "preview":["modernity/preview_sand_concrete_powders1.png"],
+          "file": "modernity/1.12/fixes/Sand_Concrete_Powders.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Colored Stems",
+          "description": "Applies coloration to the Pumpkin and Melon Stems in their normal and attached form.",
+          "icon": "modernity/colored_stems.png",
+          "preview":["modernity/preview_colored_stems1.png"],
+          "file": "modernity/1.12/fixes/Colored_Stems.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Fixed Shulkers",
+          "description": "Changes the textures for Shulkers and Shulker Boxes that haven't been touched by Jappa.",
+          "icon": "modernity/fixed_shulkers.png",
+          "preview":["modernity/preview_fixed_shulkers1.png"],
+          "file": "modernity/1.12/fixes/Fixed_Shulkers.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Fixed Trapdoor Sides",
+          "description": "Fixes the side textures of all Trapdoors.<br><br>#78B159{Attached is an additional file that makes the Copper Trapdoors consistent with __Actually Waxed Copper__.}",
+          "icon": "modernity/fixed_trapdoor_sides.png",
+          "preview":["modernity/preview_fixed_trapdoor_sides1.png"],
+          "file": ["modernity/1.12/fixes/Fixed_Trapdoor_Sides.zip", "modernity/1.12/fixes/Actually_Waxed_Fixed_Trapdoor_Sides.zip"],
+          "tags": ["optifine"]
+        }
+      ]
+    }
+  }
+}
