@@ -1,0 +1,158 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Rotated Blocks": [
+        {
+          "name": "Rotated Cactus",
+          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>overridemaster{Blooming Cactus}<br>incompat{Cactus Complete Pack}",
+          "icon": "modernity/rotated_cactus.png",
+          "preview":["modernity/preview_rotated_cactus1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Cactus.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Clay",
+          "description": "Rotates the Clay texture to appear more random.",
+          "icon": "modernity/rotated_clay.png",
+          "preview":["modernity/preview_rotated_clay1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Clay.zip",
+          "tags": ["optifine", "2siderotation"]
+        },
+        {
+          "name": "Rotated Cobweb",
+          "description": "Rotates the Cobweb texture to appear more random.",
+          "icon": "modernity/rotated_cobweb.png",
+          "preview":["modernity/preview_rotated_cobweb1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Cobweb.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Mycelium",
+          "description": "Rotates the Mycelium texture to appear more random. Also rotates the underside Dirt texture.",
+          "icon": "modernity/rotated_mycelium.png",
+          "preview":["modernity/preview_rotated_mycelium1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Mycelium.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Podzol",
+          "description": "Rotates the Podzol texture to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
+          "icon": "modernity/rotated_podzol.png",
+          "preview":["modernity/preview_rotated_podzol1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Podzol.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Brown Podzol",
+          "description": "Changes the Podzol texture to remove the greenish specs in it and rotates it to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
+          "icon": "modernity/rotated_brown_podzol.png",
+          "preview":["modernity/preview_rotated_brown_podzol1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Brown_Podzol.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Gravel",
+          "description": "Rotates the Gravel texture to appear more random.",
+          "icon": "modernity/rotated_gravel.png",
+          "preview":["modernity/preview_rotated_gravel1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Gravel.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Tweaked Gravel",
+          "description": "Changes the Gravel texture into a more grainy variant and rotates it to appear more random.",
+          "icon": "modernity/rotated_tweaked_gravel.png",
+          "preview":["modernity/preview_rotated_tweaked_gravel1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Tweaked_Gravel.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Cake",
+          "description": "Rotates the Cake textures to appear more random.<br><br>incompat{Cake Complete Pack}",
+          "icon": "modernity/rotated_cake.png",
+          "preview":["modernity/preview_rotated_cake1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Cake.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Wool",
+          "description": "Rotates the Wool textures to appear more random.",
+          "icon": "modernity/rotated_wool.png",
+          "preview":["modernity/preview_rotated_wool1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Wool.zip",
+          "tags": ["optifine", "2siderotation"]
+        },
+        {
+          "name": "Rotated Vines",
+          "description": "Rotates the Vine textures to appear more random.<br><br>incompat{Randomized Vines}<br>incompat{Vines Complete Pack}",
+          "icon": "modernity/rotated_vines.png",
+          "preview":["modernity/preview_rotated_vines1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Vines.zip",
+          "tags": ["optifine", "2siderotation"]
+        },
+        {
+          "name": "Rotated Logs",
+          "description": "Rotates the Logs top textures to appear more random. Also rotates the textures of Crimson and Warped Stems and Cherry and Mangrove Logs and Bamboo Blocks.",
+          "icon": "modernity/rotated_logs.png",
+          "preview":["modernity/preview_rotated_logs1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Logs.zip",
+          "tags": ["optifine", "4siderotation"]
+        },
+        {
+          "name": "Rotated Andesite",
+          "description": "Rotates the Andesite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Andesite Slabs and Stairs.",
+          "icon": "modernity/rotated_andesite.png",
+          "preview":["modernity/preview_rotated_andesite1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Andesite.zip",
+          "tags": ["optifine", "2siderotation"]
+        },
+        {
+          "name": "Rotated Granite",
+          "description": "Rotates the Granite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.",
+          "icon": "modernity/rotated_granite.png",
+          "preview":["modernity/preview_rotated_granite1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Granite.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Diorite",
+          "description": "Rotates the Diorite textures in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Diorite Slabs and Stairs.",
+          "icon": "modernity/rotated_diorite.png",
+          "preview":["modernity/preview_rotated_diorite1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Diorite.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Black Granite",
+          "description": "Replaces the Granite textures with a deep black one and rotates them in whole blocks, Slabs, Stairs and Walls to appear more random. Also fixes the side texture of Polished Granite Slabs and Stairs.<br><br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
+          "icon": "modernity/rotated_black_granite.png",
+          "preview":["modernity/preview_rotated_black_granite1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Black_Granite.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Mushrooms",
+          "description": "Rotates the Mushroom blocks textures to appear more random.",
+          "icon": "modernity/rotated_mushrooms.png",
+          "preview":["modernity/preview_rotated_mushrooms1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Mushrooms.zip",
+          "tags": ["optifine", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Snow",
+          "description": "Rotates the top and side textures of Snow Layers and Snow Blocks to appear more random.",
+          "icon": "modernity/rotated_snow.png",
+          "preview":["modernity/preview_rotated_snow1.png"],
+          "file": "modernity/1.12/rotated_blocks/Rotated_Snow.zip",
+          "tags": ["optifine", "2siderotation"]
+        }
+      ]
+    }
+  }
+}
