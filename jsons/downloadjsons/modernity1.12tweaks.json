@@ -1,0 +1,422 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Modernity": {
+    "1.12": {
+      "Tweaks": [
+        {
+          "name": "Tweaked Gravel",
+          "description": "Changes the Gravel texture to make it grainier.",
+          "icon": "modernity/tweaked_gravel.png",
+          "preview":["modernity/preview_tweaked_gravel1.png"],
+          "file": "modernity/1.12/tweaks/Tweaked_Gravel.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Desaturated Dark Oak",
+          "description": "Desaturates all Dark Oak related textures.<br><br>inspirationvt<br><br>overrideslave{Desaturated Dark Oak Complete Pack}",
+          "icon": "modernity/desaturated_dark_oak.png",
+          "preview":["modernity/preview_desaturated_dark_oak1.png"],
+          "file": "modernity/1.12/tweaks/Desaturated_Dark_Oak.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Curracabah Acacia",
+          "description": "Changes all Acacia related textures.<br><br>inspiration{[Os' Curracabah Acacia](https://www.planetminecraft.com/texture-pack/os-curracabah-acacia/)}<br><br>overrideslave{Curracabah Acacia Complete Pack}",
+          "icon": "modernity/curracabah_acacia.png",
+          "preview":["modernity/preview_curracabah_acacia1.png"],
+          "file": "modernity/1.12/tweaks/Curracabah_Acacia.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Brown Podzol",
+          "description": "Changes the Podzol texture to remove the greenish specs in it.",
+          "icon": "modernity/brown_podzol.png",
+          "preview":["modernity/preview_brown_podzol1.png"],
+          "file": "modernity/1.12/tweaks/Brown_Podzol.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Programmer Art Colored Melon",
+          "description": "Changes the Melon textures to the Programmer Art Color Palette. Also adds a colored stem.",
+          "icon": "modernity/programmer_art_colored_melon.png",
+          "preview":["modernity/preview_programmer_art_colored_melon1.png"],
+          "file": "modernity/1.12/tweaks/Programmer_Art_Colored_Melon.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Faceless Pumpkins",
+          "description": "Exchanges the Pumpkin's face texture with its side texture to rid the standard Pumpkins of their faces.",
+          "icon": "modernity/faceless_pumpkins.png",
+          "preview":["modernity/preview_faceless_pumpkins1.png"],
+          "file": "modernity/1.12/tweaks/Faceless_Pumpkins.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Ender Eye",
+          "description": "Gives the Ender Eye an animation that has it blinking from time to time.",
+          "icon": "modernity/blinking_ender_eye.png",
+          "preview":["modernity/preview_blinking_ender_eye1.png"],
+          "file": "modernity/1.12/tweaks/Blinking_Ender_Eye.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Mixed Hurt Sounds",
+          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.",
+          "icon": "modernity/mixed_hurt_sounds.png",
+          "preview":["modernity/preview_mixed_hurt_sounds1.png"],
+          "file": "modernity/1.12/tweaks/Mixed_Hurt_Sounds.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Wheat",
+          "description": "Makes the Wheat texture consistent with the color palette of Hay Bales.",
+          "icon": "modernity/consistent_wheat.png",
+          "preview":["modernity/preview_consistent_wheat1.png"],
+          "file": "modernity/1.12/tweaks/Consistent_Wheat.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Useful Chainmail",
+          "description": "Changes the texture of all Chainmail pieces so that they look a little more tangible.<br><br>attscript",
+          "icon": "modernity/useful_chainmail.png",
+          "preview":["modernity/preview_useful_chainmail1.png"],
+          "file": ["modernity/1.12/tweaks/Useful_Chainmail.zip", "modernity/1.12/tweaks/Optional_Chainmail_Recipe_Script.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Equalized Cake",
+          "description": "Removes the central cherry from the Cake top texture and item texture.<br><br>inspirationvt",
+          "icon": "modernity/equalized_cake.png",
+          "preview":["modernity/preview_equalized_cake1.png"],
+          "file": "modernity/1.12/tweaks/Equalized_Cake.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Helmets",
+          "description": "Provides a noseguard in the item textures of Iron Helmets, Gold Helmets and Diamond Helmets.<br><br>inspirationvt",
+          "icon": "modernity/consistent_helmets.png",
+          "preview":["modernity/preview_consistent_helmets1.png"],
+          "file": "modernity/1.12/tweaks/Consistent_Helmets.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Observers",
+          "description": "Gives the Observer face an animation that has it blinking and shifting eyes from time to time.",
+          "icon": "modernity/blinking_observers.png",
+          "preview":["modernity/preview_blinking_observers1.png"],
+          "file": "modernity/1.12/tweaks/Blinking_Observers.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blooming Cactus",
+          "description": "Adds blooming blossoms to the side and top of the Cactus texture.<br><br>incompat{Cactus Complete Pack}",
+          "icon": "modernity/blooming_cactus.png",
+          "preview":["modernity/preview_blooming_cactus1.png"],
+          "file": "modernity/1.12/tweaks/Blooming_Cactus.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Unlit Redstone Ore",
+          "description": "Adds an unlit variant to Redstone Ore and Deepslate Redstone Ore. Also adds a Deepslate Ore top texture.<br><br>inspirationvt",
+          "icon": "modernity/unlit_redstone_ore.png",
+          "preview":["modernity/preview_unlit_redstone_ore1.png"],
+          "file": "modernity/1.12/tweaks/Unlit_Redstone_Ore.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Saturated Mossy Stone",
+          "description": "Saturates the moss in Mossy Cobblestone and Mossy Stone Bricks and their respective Slabs, Stairs and Walls, when they are placed in wet biomes.",
+          "icon": "modernity/saturated_mossy_stone.png",
+          "preview":["modernity/preview_saturated_mossy_stone1.png"],
+          "file": "modernity/1.12/tweaks/Saturated_Mossy_Stone.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Beta Cow Sounds",
+          "description": "Changes all sounds Cows make into those of Minecraft Beta.<br><br>⚠️ Careful: Should a mod add another type of cow that utilizes vanilla cows as a basis, they will also emit the sounds from this Addon.",
+          "icon": "modernity/beta_cow_sounds.png",
+          "preview":["modernity/preview_beta_cow_sounds1.png"],
+          "file": "modernity/1.12/tweaks/Beta_Cow_Sounds.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Bedrock Nether Bricks",
+          "description": "Changes the Nether Bricks textures to a lighter shade, like in Bedrock Edition. Also applies to Cracked Nether Bricks and Chiseled Nether Bricks, aswell as Nether Brick Fences, Nether Brick Walls, Nether Brick Stairs and Nether Brick Slabs.",
+          "icon": "modernity/bedrock_nether_bricks.png",
+          "preview":["modernity/preview_bedrock_nether_bricks1.png"],
+          "file": "modernity/1.12/tweaks/Bedrock_Nether_Bricks.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Double-wide Hay Bale Rims",
+          "description": "Changes the side texture of Hay Bales to give the rims a double-wide appearance.",
+          "icon": "modernity/double-wide_hay_bale_rims.png",
+          "preview":["modernity/preview_double-wide_hay_bale_rims1.png"],
+          "file": "modernity/1.12/tweaks/Double-wide_Hay_Bale_Rims.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Iron Nugget",
+          "description": "Changes the texture of the Iron Nugget, to fit the lineart of the Gold Nugget and the color palette of the Iron Ingot.",
+          "icon": "modernity/consistent_iron_nugget.png",
+          "preview":["modernity/preview_consistent_iron_nugget1.png"],
+          "file": "modernity/1.12/tweaks/Consistent_Iron_Nugget.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Programmer Art Rabbit",
+          "description": "Changes the texture of the Raw Rabbit and Cooked Rabbit, to fit the lineart of their Programmer Art versions, with the color palette of the Jappa versions.",
+          "icon": "modernity/programmer_art_rabbit.png",
+          "preview":["modernity/preview_programmer_art_rabbit1.png"],
+          "file": "modernity/1.12/tweaks/Programmer_Art_Rabbit.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Black Granite",
+          "description": "Changes the Granite texture to turn it into deep black with white specs.<br><br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
+          "icon": "modernity/black_granite.png",
+          "preview":["modernity/preview_black_granite1.png"],
+          "file": "modernity/1.12/tweaks/Black_Granite.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Biome-specific Monster Spawners",
+          "description": "Changes the textures of the Monster Spawners to give it a dedicated top and bottom texture, aswell as some biome-specific textures.",
+          "icon": "modernity/biome-specific_monster_spawners.png",
+          "preview":["modernity/preview_biome-specific_monster_spawners1.png"],
+          "file": "modernity/1.12/tweaks/Biome-specific_Monster_Spawners.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Pebble-free Dirt",
+          "description": "Changes the textures of all dirt variations so that they have no pebbles in them.<br><br>inspirationvt",
+          "icon": "modernity/pebble-free_dirt.png",
+          "preview":["modernity/preview_pebble-free_dirt1.png"],
+          "file": "modernity/1.12/tweaks/Pebble-free_Dirt.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Gold-speckled Lapis Lazuli",
+          "description": "Changes the textures of Lapis Lazuli, Lapis Lazuli Ore, Lapis Lazuli Block and Deepslate Lapis Lazuli Ore to feature tiny golden specs, like they're found in real Lapis Lazuli. Also adds a Deepslate Ore top texture.<br><br>inspiration{[Sr_Paulo](https://www.planetminecraft.com/texture-pack/better-lapis-lazuli/)}",
+          "icon": "modernity/gold-speckled_lapis_lazuli.png",
+          "preview":["modernity/preview_gold-speckled_lapis_lazul1.png"],
+          "file": "modernity/1.12/tweaks/Gold-speckled_Lapis_Lazuli.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Illager Witch",
+          "description": "Changes the color scheme of the Witch to be more in line with how the Illagers from the Village & Pillage Update look.",
+          "icon": "modernity/illager_witch.png",
+          "preview":["modernity/preview_illager_witch1.png"],
+          "file": "modernity/1.12/tweaks/Illager_Witch.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Leather",
+          "description": "Changes the textures of Leather, Saddles, Item Frames (both in item and entity/block form) and Books to have the color palette of Leather Armor.<br><br>inspirationvt",
+          "icon": "modernity/consistent_leather.png",
+          "preview":["modernity/preview_consistent_leather1.png"],
+          "file": "modernity/1.12/tweaks/Consistent_Leather.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Desert Shulkers",
+          "description": "Changes the textures for Shulkers when placed in Desert or Mesa biomes. The texture is a palette swap of the __Fixed Shulkers Addon__, that uses the color palette of Red Sandstone.<br><br>inspiration{[Whimzee](https://www.youtube.com/watch?v=8qKTXf_-obk)}",
+          "icon": "modernity/desert_shulkers.png",
+          "preview":["modernity/preview_desert_shulkers1.png"],
+          "file": "modernity/1.12/tweaks/Desert_Shulkers.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Programmer Art Rabbit's Foot",
+          "description": "Changes the texture of the Rabbit's Foot, to fit the lineart of its Programmer Art version, with the color palette of the Jappa version.",
+          "icon": "modernity/programmer_art_rabbits_foot.png",
+          "preview":["modernity/preview_programmer_art_rabbits_foot1.png"],
+          "file": "modernity/1.12/tweaks/Programmer_Art_Rabbits_Foot.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Shifting Prismarine Bricks",
+          "description": "Changes the texture of the Prismarine Bricks to slowly shift color to match Prismarine.",
+          "icon": "modernity/shifting_prismarine_bricks.png",
+          "preview":["modernity/preview_shifting_prismarine_bricks1.png", "modernity/preview_shifting_prismarine_bricks2.png", "modernity/preview_shifting_prismarine_bricks3.png", "modernity/preview_shifting_prismarine_bricks4.png"],
+          "file": "modernity/1.12/tweaks/Shifting_Prismarine_Bricks.zip",
+          "tags": ["vanillacompatible", "interpolated18"]
+        },
+        {
+          "name": "Written Note",
+          "description": "Changes Written Books whose titles include 'Note' in any way to appear as a Paper with scribbles on it. Additionally, when titled 'Crumpled Note', it'll appear as crumpled and when titled 'Ripped Note' appears as a ripped piece of paper.",
+          "icon": "modernity/written_note.png",
+          "preview":["modernity/preview_written_note1.png"],
+          "file": "modernity/1.12/tweaks/Written_Note.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Stacking Arrows",
+          "description": "Changes Arrows so that they display different textures when they are stacked.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_arrows.png",
+          "preview":["modernity/preview_stacking_arrows1.png"],
+          "file": ["modernity/1.12/tweaks/Stacking_Arrows.zip", "modernity/1.12/tweaks/Darker_Stacking_Arrows.zip"],
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Blank Name Tag",
+          "description": "Changes Name Tags so that they appear blank until they're named. Then they appear written. When the Name Tag is named 'Dinnerbone' or 'Grumm', it will look like it's upside-down, when it's named 'jeb_', it will cycle through the wool colors, when it's named 'Toast', it will display the Toast rabbit coloring and when it's named 'Johnny', it will look like it's been slashed and battered.",
+          "icon": "modernity/blank_name_tag.png",
+          "preview":["modernity/preview_blank_name_tag1.png"],
+          "file": "modernity/1.12/tweaks/Blank_Name_Tag.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Desaturated Purpur",
+          "description": "Changes all Purpur Block textures to be slightly desaturated. Also applies to the pink part of the End Rod.<br><br>inspirationvt",
+          "icon": "modernity/desaturated_purpur.png",
+          "preview":["modernity/preview_desaturated_purpur1.png"],
+          "file": "modernity/1.12/tweaks/Desaturated_Purpur.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Darker Dark Oak Leaves",
+          "description": "Changes the texture of Dark Oak Leaves to be slightly darker than the normal Oak Leaves counterpart.<br><br>inspirationvt<br><br>overridemaster{Better Opaque Leaves}",
+          "icon": "modernity/darker_dark_oak_leaves.png",
+          "preview":["modernity/preview_darker_dark_oak_leaves1.png"],
+          "file": "modernity/1.12/tweaks/Darker_Dark_Oak_Leaves.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Magical Mushrooms",
+          "description": "Changes the textures of the Mushrooms blocks, to take on a purple (in case of Brown Mushroom) and pink (in case of Red Mushroom) shade, when placed in Roofed Forests. or Thaumcraft's Magical Forest. Also includes the rotational properties of the Rotated Mushrooms Addon.<br><br>inspiration{[Os' Mystical Mushrooms](https://modrinth.com/resourcepack/os-mystical-mushrooms)}<br><br>overridemaster{Rotated Mushrooms}",
+          "icon": "modernity/magical_mushrooms.png",
+          "preview":["modernity/preview_magical_mushrooms1.png"],
+          "file": "modernity/1.12/tweaks/Magical_Mushrooms.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Lower Sides",
+          "description": "Changes the side textures of Grass, Podzol, Mycelium, Grass Paths and Crimson and Warped Nylium to be lowered.<br><br>inspirationvt<br><br>incompat{Full Sides}<br><br>#78B159{Attached is an additional file that includes a lower side texture for __Brown Podzol__.}",
+          "icon": "modernity/lower_sides.png",
+          "preview":["modernity/preview_lower_sides1.png"],
+          "file": ["modernity/1.12/tweaks/Lower_Sides.zip", "modernity/1.12/tweaks/Lower_Brown_Podzol.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Full Sides",
+          "description": "Changes the side textures of Grass, Podzol, Mycelium, Grass Paths and Crimson and Warped Nylium to be full, like the top textures.<br><br>inspirationvt<br><br>incompat{Lower Sides}<br><br>#78B159{Attached is an additional file that includes a full side texture for __Brown Podzol__.}",
+          "icon": "modernity/full_sides.png",
+          "preview":["modernity/preview_full_sides1.png"],
+          "file": ["modernity/1.12/tweaks/Full_Sides.zip", "modernity/1.12/tweaks/Full_Brown_Podzol.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Uniform Ores",
+          "description": "Changes the Ore textures to be uniform versions of their pre-Jappa configuration.<br><br>inspirationvt<br><br>#78B159{Attached are two additional files that include uniform versions of __Gold-speckled Lapis Lazuli__ and __Unlit Redstone__.}",
+          "icon": "modernity/uniform_ores.png",
+          "preview":["modernity/preview_uniform_ores1.png"],
+          "file": ["modernity/1.12/tweaks/Uniform_Ores.zip", "modernity/1.12/tweaks/Gold-speckled_Uniform_Lapis_Lazuli.zip", "modernity/1.12/tweaks/Unlit_Uniform_Redstone_Ore.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Clean Redstone",
+          "description": "Changes the textures of placed-down Redstone Dust to be cleaner and less frizzy.<br><br>inspirationvt",
+          "icon": "modernity/clean_redstone.png",
+          "preview":["modernity/preview_clean_redstone1.png"],
+          "file": "modernity/1.12/tweaks/Clean_Redstone.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Full-colored Leather Armor",
+          "description": "Changes the texture of all Leather armor pieces so that they lose the brown overlay and instead get colored all the way.<br><br>inspirationvt<br><br>incompat{Comprehensive Armor Upgrade}",
+          "icon": "modernity/full-colored_leather_armor.png",
+          "preview":["modernity/preview_full-colored_leather_armor1.png"],
+          "file": "modernity/1.12/tweaks/Full-colored_Leather_Armor.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Stacking Paper",
+          "description": "Changes Paper, Maps and Filled Maps so that they display different textures when they are stacked.",
+          "icon": "modernity/stacking_paper.png",
+          "preview":["modernity/preview_stacking_paper1.png"],
+          "file": "modernity/1.12/tweaks/Stacking_Paper.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Splash Bottle o'Enchanting",
+          "description": "Changes the Bottle o'Enchanting's texture to be more fitting to its purpose and the __Unique Potions Addon__.",
+          "icon": "modernity/splash_bottle_oenchanting.png",
+          "preview":["modernity/preview_splash_bottle_oenchanting1.png"],
+          "file": "modernity/1.12/tweaks/Splash_Bottle_oEnchanting.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Pooling Dusts",
+          "description": "Changes Gunpowder, Redstone Dust, Glowstone Dust and Sugar so that they display different textures when they are stacked.",
+          "icon": "modernity/pooling_dusts.png",
+          "preview":["modernity/preview_pooling_dusts1.png"],
+          "file": "modernity/1.12/tweaks/Pooling_Dusts.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Spinning Jukebox",
+          "description": "Changes the Jukebox's western side texture to show a record, that starts spinning when a disc is placed into it.",
+          "icon": "modernity/spinning_jukebox.png",
+          "preview":["modernity/preview_spinning_jukebox1.png"],
+          "file": "modernity/1.12/tweaks/Spinning_Jukebox.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Suspicious Silverfish Stones",
+          "description": "Gives Silverfish Stones an overlay that looks like Suspicious Gravel in relation to normal Gravel.<br><br>incompat{Utility Silverfish Stones}",
+          "icon": "modernity/suspicious_silverfish_stones.png",
+          "preview":["modernity/preview_suspicious_silverfish_stones1.png"],
+          "file": "modernity/1.12/tweaks/Suspicious_Silverfish_Stones.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Bottled Ghast Tear",
+          "description": "Changes the Ghast Tear texture to make it appear bottled rather than just on its own.<br><br>inspiration{[Sukuro](https://www.planetminecraft.com/texture-pack/mob-drop-tweaks/)}",
+          "icon": "modernity/bottled_ghast_tear.png",
+          "preview":["modernity/preview_bottled_ghast_tear1.png"],
+          "file": "modernity/1.12/tweaks/Bottled_Ghast_Tear.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Ball o'Yarn",
+          "description": "Changes Strings so that they display different textures when they are stacked.",
+          "icon": "modernity/ball_oyarn.png",
+          "preview":["modernity/preview_ball_oyarn1.png"],
+          "file": "modernity/1.12/tweaks/Ball_oYarn.zip",
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Beetroot to Radishes",
+          "description": "Changes the textures of Beetroot Seeds, Beetroot and Beetroot Soup. Also renames the aforementioned into Radish Seeds, Radish and Radish Salad, respectively.<br><br>inspiration{[Ok Corz' Animated Shorts Series](https://www.youtube.com/watch?v=N1MKsdxNxU8)}",
+          "icon": "modernity/beetroot_to_radishes.png",
+          "preview":["modernity/preview_beetroot_to_radishes1.png"],
+          "file": "modernity/1.12/tweaks/Beetroot_to_Radishes.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Stacking Tipped Arrows",
+          "description": "Changes Tipped Arrows so that they display different textures when they are stacked.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_tipped_arrows.png",
+          "preview":["modernity/preview_stacking_tipped_arrows1.png"],
+          "file": ["modernity/1.12/tweaks/Stacking_Tipped_Arrows.zip", "modernity/1.12/tweaks/Darker_Stacking_Tipped_Arrows.zip"],
+          "tags": ["optifine"]
+        },
+        {
+          "name": "Stacking Tipped Arrows [1.19.4 Potion Colors]",
+          "description": "Changes Tipped Arrows so that they display different textures when they are stacked. Reflects the __1.19.4 Potion Colors__.<br><br>#78B159{Attached is an additional file that makes the Quiver textures consistent with __Consistent Leather__.}",
+          "icon": "modernity/stacking_tipped_arrows_1.19.4_potion_colors.png",
+          "preview":["modernity/preview_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
+          "file": ["modernity/1.12/tweaks/Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/1.12/tweaks/Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
+          "tags": ["optifine"]
+        }
+      ]
+    }
+  }
+}
