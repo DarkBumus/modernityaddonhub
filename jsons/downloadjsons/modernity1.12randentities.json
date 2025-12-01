@@ -130,7 +130,7 @@
         },
         {
           "name": "Randomized Rabbits",
-          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!<br><br>requiresefr",
+          "description": "Randomizes the texture for Rabbits. Desert Rabbits will not be changed, same as Toast and Killer Bunny. Now also includes the Rabbit textures from Minecraft Earth!",
           "icon": "modernity/randomized_rabbits.png",
           "preview":["modernity/preview_randomized_rabbits1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Rabbits.zip",
