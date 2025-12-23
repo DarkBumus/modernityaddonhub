@@ -42,7 +42,7 @@
         },
         {
           "name": "Randomized Pigs",
-          "description": "Randomizes the texture for Pigs. Swamplands will have muddy Pigs in them. Now also includes the Pig textures from Minecraft Earth aswell as the Cold and Warm Pig textures from 1.21.5!",
+          "description": "Randomizes the texture for Pigs. Swamplands will have Muddy Pigs in them. Now also includes the Pig textures from Minecraft Earth aswell as the Cold and Warm Pig textures from 1.21.5!",
           "icon": "modernity/randomized_pigs.png",
           "preview":["modernity/preview_randomized_pigs1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Pigs.zip",
@@ -122,7 +122,7 @@
         },
         {
           "name": "Randomized Skeletons",
-          "description": "Randomizes the texture for Skeletons. Adds a beheaded and a mossy variant. Now also includes the Skeleton textures from the Stray without clothing and the Bogged from 1.20.5 with its overlay texture merged into the normal layer!",
+          "description": "Randomizes the texture for Skeletons. Cold biomes will have Strays without their overlay, Swamplands will have Bogged with their textures merged and Deserts and Mesas will have Parched with their textures merged.",
           "icon": "modernity/randomized_skeletons.png",
           "preview":["modernity/preview_randomized_skeletons1.png"],
           "file": "modernity/1.7/randomized_entities/Randomized_Skeletons.zip",
