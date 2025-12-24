@@ -503,6 +503,14 @@
           "preview":["modernity/preview_opaque_slime_blocks1.png"],
           "file": "modernity/1.7/tweaks/Opaque_Slime_Blocks.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Standalone Dyes",
+          "description": "Changes the Dyes textures to exclude the paper that is displayed under them.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "modernity/standalone_dyes.png",
+          "preview":["modernity/preview_standalone_dyes1.png"],
+          "file": "modernity/1.7/tweaks/Standalone_Dyes.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
