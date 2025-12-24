@@ -18,7 +18,7 @@
         },
         {
           "name": "Randomized Planks",
-          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>overrideslave{Desaturated Dark Oak Complete Pack}<br>overrideslave{Curracabah Acacia Complete Pack}",
+          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>overrideslave{Desaturated Dark Oak Complete Pack}<br>overrideslave{Curracabah Acacia Complete Pack}",
           "icon": "modernity/randomized_planks.png",
           "preview":["modernity/preview_randomized_planks1.png"],
           "file": "modernity/1.12/randomized_blocks/Randomized_Planks.zip",
