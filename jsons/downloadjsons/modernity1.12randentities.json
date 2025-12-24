@@ -66,7 +66,7 @@
         },
         {
           "name": "Randomized Slimes",
-          "description": "Randomizes the texture for Slimes. Beaches and Oceans will have tropically blue slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!",
+          "description": "Randomizes the texture for Slimes. Beaches and Oceans will have tropically blue slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!<br><br>incompat{Rainbow Slimes}",
           "icon": "modernity/randomized_slimes.png",
           "preview":["modernity/preview_randomized_slimes1.png"],
           "file": "modernity/1.12/randomized_entities/Randomized_Slimes.zip",
@@ -74,7 +74,7 @@
         },
         {
           "name": "Rainbow Slimes",
-          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors.<br><br>inspirationvt",
+          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors.<br><br>inspirationvt<br><br>incompat{Randomized Slimes}",
           "icon": "modernity/rainbow_slimes.png",
           "preview":["modernity/preview_rainbow_slimes1.png", "modernity/preview_rainbow_slimes2.png", "modernity/preview_rainbow_slimes3.png"],
           "file": "modernity/1.12/randomized_entities/Rainbow_Slimes.zip",
