@@ -151,6 +151,14 @@
           "preview":["modernity/preview_vines_complete_pack1.png"],
           "file": "modernity/1.7/complete_packs/Vines_Complete_Pack.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Slimes Complete Pack",
+          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors. Oceans and Beaches have tropically blue Slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!<br><br>incompat{Randomized Slimes}<br>incompat{Rainbow Slimes}",
+          "icon": "modernity/randomized_slimes.png",
+          "preview":["modernity/preview_slimes_complete_pack1.png"],
+          "file": "modernity/1.7/complete_packs/Slimes_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
