@@ -74,7 +74,7 @@
         },
         {
           "name": "Desaturated Dark Oak Complete Pack",
-          "description": "Desaturates all Dark Oak related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>overridemaster{Desaturated Dark Oak}",
+          "description": "Desaturates all Dark Oak related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>overridemaster{Desaturated Dark Oak}",
           "icon": "modernity/desaturated_dark_oak_complete_pack.png",
           "preview":["modernity/preview_desaturated_dark_oak_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Desaturated_Dark_Oak_Complete_Pack.zip",
@@ -82,7 +82,7 @@
         },
         {
           "name": "Curracabah Acacia Complete Pack",
-          "description": "Changes all Acacia related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes small tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>inspiration{[O's Carved Wood](https://modrinth.com/resourcepack/os-carved-wood)}<br><br>overridemaster{Curracabah Acacia}",
+          "description": "Changes all Acacia related textures and randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes tweaks for Fences, Buttons and Pressure Plates. Also includes the fix for the Trapdoor's side texture. Also includes the rotated Logs.<br><br>inspiration{[O's Carved Wood](https://modrinth.com/resourcepack/os-carved-wood)}<br><br>overridemaster{Curracabah Acacia}",
           "icon": "modernity/curracabah_acacia_complete_pack.png",
           "preview":["modernity/preview_curracabah_acacia_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Curracabah_Acacia_Complete_Pack.zip",
