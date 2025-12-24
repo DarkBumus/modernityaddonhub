@@ -415,6 +415,14 @@
           "preview":["modernity/preview_stacking_tipped_arrows_1.19.4_potion_colors1.png"],
           "file": ["modernity/1.12/tweaks/Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip", "modernity/1.12/tweaks/Darker_Stacking_Tipped_Arrows_1.19.4_Potion_Colors.zip"],
           "tags": ["optifine"]
+        },
+        {
+          "name": "Opaque Slime Blocks",
+          "description": "Changes the Slime Block texture to be completely opaque.<br><br>inspirationvt<br><br>⚠️ Careful: This does not change the properties of the block. It will still be transparent and will not block light.",
+          "icon": "modernity/opaque_slime_blocks.png",
+          "preview":["modernity/preview_opaque_slime_blocks1.png"],
+          "file": "modernity/1.12/tweaks/Opaque_Slime_Blocks.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
