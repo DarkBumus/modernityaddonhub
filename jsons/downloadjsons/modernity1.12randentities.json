@@ -73,6 +73,14 @@
           "tags": ["optifine"]
         },
         {
+          "name": "Rainbow Slimes",
+          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors.<br><br>inspirationvt",
+          "icon": "modernity/rainbow_slimes.png",
+          "preview":["modernity/preview_rainbow_slimes1.png", "modernity/preview_rainbow_slimes2.png", "modernity/preview_rainbow_slimes3.png"],
+          "file": "modernity/1.12/randomized_entities/Rainbow_Slimes.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
           "name": "Randomized Wolves",
           "description": "Randomizes the texture for Wolves. Now also includes the new Wolf textures from 1.20.80!",
           "icon": "modernity/randomized_wolves.png",

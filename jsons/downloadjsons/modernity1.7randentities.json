@@ -74,7 +74,7 @@
         },
         {
           "name": "Rainbow Slimes",
-          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors.",
+          "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors.<br><br>inspirationvt",
           "icon": "modernity/rainbow_slimes.png",
           "preview":["modernity/preview_rainbow_slimes1.png", "modernity/preview_rainbow_slimes2.png", "modernity/preview_rainbow_slimes3.png"],
           "file": "modernity/1.7/randomized_entities/Rainbow_Slimes.zip",
