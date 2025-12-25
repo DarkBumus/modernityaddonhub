@@ -28,7 +28,7 @@
           "name": "Connected Tinted Glass",
           "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
           "icon": "modernity/connected_tinted_glass.png",
-          "preview":["modernity/preview_connected_tinted_glass1.png", "modernity/preview_connected_tinted_glass2.png", "modernity/preview_connected_tinted_glass3.png", "modernity/preview_connected_tinted_glass4.png"],
+          "preview":["modernity/preview_connected_tinted_glass1.png"],
           "file": "modernity/1.7/connected_textures/Connected_Tinted_Glass.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },

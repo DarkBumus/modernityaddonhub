@@ -17,6 +17,14 @@
           "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },
         {
+          "name": "Connected Tinted Glass",
+          "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
+          "icon": "pprogrammerart/connected_tinted_glass.png",
+          "preview":["pprogrammerart/preview_connected_tinted_glass1.png"],
+          "file": "pprogrammerart/1.7/connected_textures/Connected_Tinted_Glass.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
+        },
+        {
           "name": "Connected Bookshelves",
           "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>incompat{Randomized Bookshelves}",
           "icon": "pprogrammerart/connected_bookshelves.png",
