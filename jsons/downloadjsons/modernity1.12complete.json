@@ -102,7 +102,7 @@
           "icon": "modernity/vines_complete_pack.png",
           "preview":["modernity/preview_vines_complete_pack1.png"],
           "file": "modernity/1.12/complete_packs/Vines_Complete_Pack.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Slimes Complete Pack",

@@ -39,6 +39,14 @@
           "preview":["modernity/preview_emeralds_to_rubies1.png"],
           "file": "modernity/1.12/fun_features/Emeralds_to_Rubies.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Easter Eggs",
+          "description": "Adds Painted Eggs that can be created using Eggs and Dyes. Combinations go up to two Dyes at the moment.<br><br>requiresefr<br><br>⚠️ Careful: All eggs function the same way, they work in all recipes and can be thrown as normal!<br><br>attscript",
+          "icon": "modernity/easter_eggs.png",
+          "preview":["modernity/preview_easter_eggs1.png"],
+          "file": ["modernity/1.12/fun_features/Easter_Eggs.zip", "modernity/1.12/fun_features/Necessary_Easter_Eggs_Recipe_Script.zip"],
+          "tags": ["optifine", "minetweaker", "script"]
         }
       ]
     }
