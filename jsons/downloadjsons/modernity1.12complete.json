@@ -97,6 +97,14 @@
           "tags": ["optifine"]
         },
         {
+          "name": "Vines Complete Pack",
+          "description": "Mixes and rotates the Vine textures to appear even more random.<br><br>incompat{Rotated Vines}<br>incompat{Randomized Vines}",
+          "icon": "modernity/vines_complete_pack.png",
+          "preview":["modernity/preview_vines_complete_pack1.png"],
+          "file": "modernity/1.12/complete_packs/Vines_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
           "name": "Slimes Complete Pack",
           "description": "Randomizes the texture for Slimes to make them spawn in all 16 colors. Oceans and Beaches have tropically blue Slimes. Now also includes the Slime textures from Minecraft Earth and Minecraft Dungeons!<br><br>incompat{Randomized Slimes}<br>incompat{Rainbow Slimes}",
           "icon": "modernity/randomized_slimes.png",
