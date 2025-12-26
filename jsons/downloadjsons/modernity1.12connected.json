@@ -25,6 +25,14 @@
           "tags": ["optifine", "completeconnection"]
         },
         {
+          "name": "Connected Sugarcane",
+          "description": "Connects the Sugarcane blocks so that they appear as frazzled at the top, regardless of their height.",
+          "icon": "modernity/connected_sugarcane.png",
+          "preview":["modernity/preview_connected_sugarcane1.png"],
+          "file": "modernity/1.12/connected_textures/Connected_Sugarcane.zip",
+          "tags": ["optifine", "verticalconnection"]
+        },
+        {
           "name": "Connected Bookshelves",
           "description": "Connects the Bookshelves so that they appear as one long shelf.<br><br>incompat{Randomized Bookshelves}",
           "icon": "modernity/connected_bookshelves.png",

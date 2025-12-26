@@ -110,7 +110,7 @@
           "icon": "modernity/degrading_tools.png",
           "preview":["modernity/preview_degrading_tools1.png"],
           "file": "modernity/1.12/utility/Degrading_Tools.zip",
-          "tags": ["rpmcpatcher", "optifineincompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Comprehensive Tool Upgrade",
@@ -118,7 +118,7 @@
           "icon": "modernity/comprehensive_tool_upgrade.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade1.png"],
           "file": ["modernity/1.12/utility/Comprehensive_Tool_Upgrade.zip", "modernity/1.12/utility/Necessary_Comprehensive_Tool_Upgrade_Recipe_Script.zip"],
-          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+          "tags": ["optifine", "minetweaker", "script"]
         },
         {
           "name": "Comprehensive Tool Upgrade [Alternative Arrows]",
@@ -126,7 +126,7 @@
           "icon": "modernity/comprehensive_tool_upgrade_alternative_arrows.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_arrows1.png"],
           "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Arrows.zip",
-          "tags": ["rpmcpatcher", "optifineincompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Comprehensive Tool Upgrade [Alternative Acacia]",
@@ -134,7 +134,7 @@
           "icon": "modernity/comprehensive_tool_upgrade_alternative_acacia.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_acacia1.png"],
           "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Acacia.zip",
-          "tags": ["rpmcpatcher", "optifineincompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Comprehensive Tool Upgrade [Alternative Dark Oak]",
@@ -142,7 +142,7 @@
           "icon": "modernity/comprehensive_tool_upgrade_alternative_dark_oak.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_dark_oak1.png"],
           "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Dark_Oak.zip",
-          "tags": ["rpmcpatcher", "optifineincompatible"]
+          "tags": ["optifine"]
         },
         {
           "name": "Comprehensive Armor Upgrade",
@@ -150,7 +150,7 @@
           "icon": "modernity/comprehensive_armor_upgrade.png",
           "preview":["modernity/preview_comprehensive_armor_upgrade1.png"],
           "file": ["modernity/1.12/utility/Comprehensive_Armor_Upgrade.zip", "modernity/1.12/utility/Necessary_Comprehensive_Armor_Upgrade_Recipe_Script.zip"],
-          "tags": ["rpmcpatcher", "optifineincompatible", "minetweaker", "script"]
+          "tags": ["optifine", "minetweaker", "script"]
         }
       ]
     }
