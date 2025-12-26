@@ -26,11 +26,19 @@
         },
         {
           "name": "Connected Tinted Glass",
-          "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
+          "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.<br><br>requiresefr",
           "icon": "pprogrammerart/connected_tinted_glass.png",
           "preview":["pprogrammerart/preview_connected_tinted_glass1.png"],
           "file": "pprogrammerart/1.7/connected_textures/Connected_Tinted_Glass.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
+        },
+        {
+          "name": "Connected Sugarcane",
+          "description": "Connects the Sugarcane blocks so that they appear as frazzled at the top, regardless of their height.",
+          "icon": "pprogrammerart/connected_sugarcane.png",
+          "preview":["pprogrammerart/preview_connected_sugarcane1.png"],
+          "file": "pprogrammerart/1.7/connected_textures/Connected_Sugarcane.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "verticalconnection"]
         },
         {
           "name": "Connected Bookshelves",
