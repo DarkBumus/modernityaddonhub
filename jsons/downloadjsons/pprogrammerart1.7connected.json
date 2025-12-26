@@ -17,6 +17,14 @@
           "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
         },
         {
+          "name": "Connected Stained Glass",
+          "description": "Connects the Stained Glass blocks so that they appear as one singular pane of glass.<br>This works for full Glass blocks as well as Glass Panes.",
+          "icon": "pprogrammerart/connected_stained_glass.png",
+          "preview":["pprogrammerart/preview_connected_stained_glass1.png", "pprogrammerart/preview_connected_stained_glass2.png", "pprogrammerart/preview_connected_stained_glass3.png", "pprogrammerart/preview_connected_stained_glass4.png"],
+          "file": "pprogrammerart/1.7/connected_textures/Connected_Stained_Glass.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "completeconnection"]
+        },
+        {
           "name": "Connected Tinted Glass",
           "description": "Connects the Tinted Glass blocks so that they appear as one singular pane of glass.",
           "icon": "pprogrammerart/connected_tinted_glass.png",
