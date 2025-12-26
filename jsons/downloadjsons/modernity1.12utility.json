@@ -103,6 +103,14 @@
           "preview":["modernity/preview_visible_ores1.png"],
           "file": ["modernity/1.12/utility/Visible_Ores.zip", "modernity/1.12/utility/Gold-speckled_Visible_Lapis_Lazuli.zip", "modernity/1.12/utility/Unlit_Visible_Redstone_Ore.zip"],
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Degrading Tools",
+          "description": "Changes the textures of the Swords, Pickaxes, Axes, Shovels and Hoes of all materials, as well as those of the Bow, Flint and Steel and Shears to display wearing with degrading durability. The increments at which the degradation will show are 0-70%, 71-80%, 81-90% and 91-100%.<br><br>requiresefr<br><br>incompat{Comprehensive Tool Upgrade}",
+          "icon": "modernity/degrading_tools.png",
+          "preview":["modernity/preview_degrading_tools1.png"],
+          "file": "modernity/1.12/utility/Degrading_Tools.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
         }
       ]
     }
