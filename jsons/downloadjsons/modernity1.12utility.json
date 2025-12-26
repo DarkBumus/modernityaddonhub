@@ -141,7 +141,7 @@
           "description": "Changes the texture of the Dark Oak tools of the __Comprehensive Tool Upgrade__ to use the color palette from __Desaturated Dark Oak__.<br><br>overridemaster{Comprehensive Tool Upgrade}",
           "icon": "modernity/comprehensive_tool_upgrade_alternative_dark_oak.png",
           "preview":["modernity/preview_comprehensive_tool_upgrade_alternative_dark_oak1.png"],
-          "file": "modernity/1.7/utility/Comprehensive_Tool_Upgrade_Alternative_Dark_Oak.zip",
+          "file": "modernity/1.12/utility/Comprehensive_Tool_Upgrade_Alternative_Dark_Oak.zip",
           "tags": ["rpmcpatcher", "optifineincompatible"]
         },
         {
