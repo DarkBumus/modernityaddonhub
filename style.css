@@ -163,7 +163,7 @@ header {
 /* Content Panel */
 #content {
     flex: 2.0;
-    padding-left: 10px;
+    padding-left: 0;
 }
 
 /* Collapsible Panels */
@@ -225,7 +225,7 @@ header {
 =========================== */
 #preview {
    flex: 1.7;
-   min-width: 380px;
+   min-width: 0;
    background: #262626; /* vorher white */
    border: 1px solid #444; /* vorher ddd */
    border-radius: 8px;
