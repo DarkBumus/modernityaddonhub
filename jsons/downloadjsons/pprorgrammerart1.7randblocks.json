@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "pprogrammerart": {
+    "1.7": {
+      "Randomized Blocks": [
+        {
+          "name": "Randomized Bricks",
+          "description": "Randomizes the texture for Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>requiresefr<br><br>incompat{Bricks Complete Pack}",
+          "icon": "pprogrammerart/randomized_bricks.png",
+          "preview":["pprogrammerart/preview_randomized_bricks1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
+      ]
+    }
+  }
+}

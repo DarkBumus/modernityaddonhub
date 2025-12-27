@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "pprogrammerart": {
+    "1.7": {
+      "Complete Packs": [
+        {
+          "name": "Bricks Complete Pack",
+          "description": "Randomizes the texture for Bricks in whole Blocks, Stairs and Walls. Gives Slabs an assortment of randomized horizontal bricks so that they can be used ontop of windows or arches for extra flavor.<br><br>requiresefr<br><br>incompat{Randomized Bricks}",
+          "icon": "pprogrammerart/bricks_complete_pack.png",
+          "preview":["pprogrammerart/preview_bricks_complete_pack1.png"],
+          "file": "pprogrammerart/1.7/complete_packs/Bricks_Complete_Pack.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
+      ]
+    }
+  }
+}
