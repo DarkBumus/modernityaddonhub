@@ -9,9 +9,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let tagData = {}; // ganz oben definieren
 
-// Hilfsfunktion: alle Downloads JSONs laden und zusammenführen
+// -------------------------
+// JSON Loader mit Fehlerunterscheidung
+// -------------------------
+async function loadJSONWithErrors(file) {
+    try {
+        const response = await fetch(file);
+
+        if (!response.ok) {
+            throw new Error(`FILE_NOT_FOUND:${file}`);
+        }
+
+        try {
+            return await response.json();
+        } catch (e) {
+            throw new Error(`JSON_SYNTAX_ERROR:${file}`);
+        }
+
+    } catch (err) {
+        return { __error: err.message };
+    }
+}
+
 async function loadAllDownloadJSONs() {
-    // Liste der Dateien manuell oder automatisch festlegen
+
     const jsonFiles = [
         "jsons/downloadjsons/modernity1.7main.json",
         "jsons/downloadjsons/modernity1.7complete.json",
@@ -24,8 +45,8 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/modernity1.7rotblocks.json",
         "jsons/downloadjsons/modernity1.7tweaks.json",
         "jsons/downloadjsons/modernity1.7utility.json",
-		
-		"jsons/downloadjsons/modernity1.12main.json",
+
+        "jsons/downloadjsons/modernity1.12main.json",
         "jsons/downloadjsons/modernity1.12complete.json",
         "jsons/downloadjsons/modernity1.12connected.json",
         "jsons/downloadjsons/modernity1.12crafting.json",
@@ -36,7 +57,7 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/modernity1.12rotblocks.json",
         "jsons/downloadjsons/modernity1.12tweaks.json",
         "jsons/downloadjsons/modernity1.12utility.json",
-        
+
         "jsons/downloadjsons/pprogrammerart1.7main.json",
         "jsons/downloadjsons/pprogrammerart1.7complete.json",
         "jsons/downloadjsons/pprogrammerart1.7connected.json",
@@ -44,17 +65,26 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/pprogrammerart1.7randblocks.json"
     ];
 
-    const allJSONs = await Promise.all(jsonFiles.map(f => fetch(f).then(r => r.json())));
+    const allJSONs = await Promise.all(
+        jsonFiles.map(f => loadJSONWithErrors(f))
+    );
 
     const merged = { defaults: {} };
+    const errors = [];
 
     allJSONs.forEach(json => {
-        // Defaults übernehmen (nur einmal, z.B. von der ersten JSON)
+
+        // Fehlerhafte JSONs sammeln, aber NICHT abbrechen
+        if (json.__error) {
+            errors.push(json.__error);
+            return;
+        }
+
+        // Defaults nur einmal übernehmen
         if (Object.keys(merged.defaults).length === 0 && json.defaults) {
             merged.defaults = json.defaults;
         }
 
-        // Autoren und Versionen zusammenführen
         for (const author in json) {
             if (author === "defaults") continue;
 
@@ -64,12 +94,38 @@ async function loadAllDownloadJSONs() {
                 merged[author][version] = merged[author][version] || {};
 
                 for (const category in json[author][version]) {
-                    merged[author][version][category] = merged[author][version][category] || [];
-                    merged[author][version][category].push(...json[author][version][category]);
+                    merged[author][version][category] =
+                        merged[author][version][category] || [];
+
+                    merged[author][version][category]
+                        .push(...json[author][version][category]);
                 }
             }
         }
     });
+
+    // Fehler sauber ausgeben
+    if (errors.length > 0) {
+        console.group("⚠️ Download JSON Loader Errors");
+
+        errors.forEach(err => {
+            if (err.startsWith("FILE_NOT_FOUND")) {
+                console.error(
+                    "Missing JSON file:",
+                    err.replace("FILE_NOT_FOUND:", "")
+                );
+            } else if (err.startsWith("JSON_SYNTAX_ERROR")) {
+                console.error(
+                    "Invalid JSON syntax:",
+                    err.replace("JSON_SYNTAX_ERROR:", "")
+                );
+            } else {
+                console.error("Unknown error:", err);
+            }
+        });
+
+        console.groupEnd();
+    }
 
     return merged;
 }
