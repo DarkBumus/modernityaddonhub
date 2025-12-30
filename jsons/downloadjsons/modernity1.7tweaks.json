@@ -33,6 +33,46 @@
           "tags": ["vanillacompatible"]
         },
         {
+          "name": "Vintage Cherry",
+          "description": "Changes all Cherry related textures to be darker. Also changes Pink Petals and the Petal particles emitted from Cherry Leaves.<br><br>requiresefr<br><br>inspiration{[Rediscovered](https://www.curseforge.com/minecraft/mc-mods/rediscovered)}<br><br>overrideslave{Vintage Cherry Complete Pack}",
+          "icon": "modernity/vintage_cherry.png",
+          "preview":["modernity/preview_vintage_cherry1.png"],
+          "file": "modernity/1.7/tweaks/Vintage_Cherry.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Darker Mangrove",
+          "description": "Changes all Mangrove related textures to be darker.<br><br>requiresefr<br><br>overrideslave{Darker Mangrove Complete Pack}",
+          "icon": "modernity/darker_mangrove.png",
+          "preview":["modernity/preview_darker_mangrove1.png"],
+          "file": "modernity/1.7/tweaks/Darker_Mangrove.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Red Crimson",
+          "description": "Changes all Crimson related textures to be red.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Red Crimson Complete Pack}",
+          "icon": "modernity/red_crimson.png",
+          "preview":["modernity/preview_red_crimson1.png"],
+          "file": "modernity/1.7/tweaks/Red_Crimson.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Bamboo",
+          "description": "Changes Bamboo Planks, Bamboo Mosaic and Bamboo Signs to be consistent with other wood types.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Consistent Bamboo Complete Pack}",
+          "icon": "modernity/consistent_bamboo.png",
+          "preview":["modernity/preview_consistent_bamboo1.png"],
+          "file": "modernity/1.7/tweaks/Consistent_Bamboo.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Muted Warped Wood",
+          "description": "Changes all Warped related textures to be more smooth and less contrast-y.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Muted Warped Wood Complete Pack}",
+          "icon": "modernity/muted_warped_wood.png",
+          "preview":["modernity/preview_muted_warped_wood1.png"],
+          "file": "modernity/1.7/tweaks/Muted_Warped_Wood.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
           "name": "Brown Podzol",
           "description": "Changes the Podzol texture to remove the greenish specs in it.",
           "icon": "modernity/brown_podzol.png",
@@ -265,44 +305,12 @@
           "tags": ["vanillacompatible"]
         },
         {
-          "name": "Vintage Cherry",
-          "description": "Changes all Cherry related textures to be darker. Also changes Pink Petals and the Petal particles emitted from Cherry Leaves.<br><br>requiresefr<br><br>inspiration{[Rediscovered](https://www.curseforge.com/minecraft/mc-mods/rediscovered)}<br><br>overrideslave{Vintage Cherry Complete Pack}",
-          "icon": "modernity/vintage_cherry.png",
-          "preview":["modernity/preview_vintage_cherry1.png"],
-          "file": "modernity/1.7/tweaks/Vintage_Cherry.zip",
-          "tags": ["vanillacompatible"]
-        },
-        {
-          "name": "Darker Mangrove",
-          "description": "Changes all Mangrove related textures to be darker.<br><br>requiresefr<br><br>overrideslave{Darker Mangrove Complete Pack}",
-          "icon": "modernity/darker_mangrove.png",
-          "preview":["modernity/preview_darker_mangrove1.png"],
-          "file": "modernity/1.7/tweaks/Darker_Mangrove.zip",
-          "tags": ["vanillacompatible"]
-        },
-        {
-          "name": "Red Crimson",
-          "description": "Changes all Crimson related textures to be red.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Red Crimson Complete Pack}",
-          "icon": "modernity/red_crimson.png",
-          "preview":["modernity/preview_red_crimson1.png"],
-          "file": "modernity/1.7/tweaks/Red_Crimson.zip",
-          "tags": ["vanillacompatible"]
-        },
-        {
           "name": "Shifting Prismarine Bricks",
           "description": "Changes the texture of the Prismarine Bricks to slowly shift color to match Prismarine.<br><br>requiresefr",
           "icon": "modernity/shifting_prismarine_bricks.png",
           "preview":["modernity/preview_shifting_prismarine_bricks1.png", "modernity/preview_shifting_prismarine_bricks2.png", "modernity/preview_shifting_prismarine_bricks3.png", "modernity/preview_shifting_prismarine_bricks4.png"],
           "file": "modernity/1.7/tweaks/Shifting_Prismarine_Bricks.zip",
           "tags": ["vanillacompatible", "interpolated1710"]
-        },
-        {
-          "name": "Consistent Bamboo",
-          "description": "Changes Bamboo Planks, Bamboo Mosaic and Bamboo Signs to be consistent with other wood types.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Consistent Bamboo Complete Pack}",
-          "icon": "modernity/consistent_bamboo.png",
-          "preview":["modernity/preview_consistent_bamboo1.png"],
-          "file": "modernity/1.7/tweaks/Consistent_Bamboo.zip",
-          "tags": ["vanillacompatible"]
         },
         {
           "name": "Blooming Moss",
@@ -359,14 +367,6 @@
           "preview":["modernity/preview_magical_mushrooms1.png"],
           "file": "modernity/1.7/tweaks/Magical_Mushrooms.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
-        },
-        {
-          "name": "Muted Warped Wood",
-          "description": "Changes all Warped related textures to be more smooth and less contrast-y.<br><br>requiresefr<br><br>inspirationvt<br><br>overrideslave{Muted Warped Wood Complete Pack}",
-          "icon": "modernity/muted_warped_wood.png",
-          "preview":["modernity/preview_muted_warped_wood1.png"],
-          "file": "modernity/1.7/tweaks/Muted_Warped_Wood.zip",
-          "tags": ["vanillacompatible"]
         },
         {
           "name": "Lower Sides",

@@ -15,6 +15,38 @@
           "preview":["pprogrammerart/preview_randomized_bricks1.png"],
           "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Bricks.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+       {
+          "name": "Randomized Planks",
+          "description": "Randomizes the texture for Planks in whole Blocks and Stairs, Slabs, Fences and Fence Gates. Also includes tweaks for Fences, Buttons and Pressure Plates. Also randomizes the textures of Crimson, Warped, Cherry and Mangrove Planks.<br><br>requiresefr<br><br>overrideslave{Desaturated Dark Oak Complete Pack}<br>overrideslave{Curracabah Acacia Complete Pack}<br>overrideslave{Vintage Cherry Complete Pack}<br>overrideslave{Darker Mangrove Complete Pack}<br>overrideslave{Red Crimson Complete Pack}<br>overrideslave{Muted Warped Wood Complete Pack}",
+          "icon": "pprogrammerart/randomized_planks.png",
+          "preview":["pprogrammerart/preview_randomized_planks1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Planks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Grass and Fern [old]",
+          "description": "Randomizes the textures for Tall Grass and Ferns so that they appear to be of random height. Also applies a mirrored texture to Dead Bushes.<br><br>incompat{Randomized Grass and Fern}",
+          "icon": "pprogrammerart/randomized_grassold.png",
+          "preview":["pprogrammerart/preview_randomized_grassold1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Grass_and_Fern_[old].zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Bookshelves",
+          "description": "Randomizes the side texture for Bookshelves so that they appear to be more random.<br><br>incompat{Connected Bookshelves}",
+          "icon": "pprogrammerart/randomized_bookshelves.png",
+          "preview":["pprogrammerart/preview_randomized_bookshelves1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Bookshelves.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Pumpkins",
+          "description": "Randomizes the side texture for Pumpkins and Jack o'Lanterns.<br><br>overrideslave{Pumpkin Complete Pack}<br>incompat{Fixed Pumpkin}",
+          "icon": "pprogrammerart/randomized_pumpkins.png",
+          "preview":["pprogrammerart/preview_randomized_pumpkins1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Pumpkins.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
