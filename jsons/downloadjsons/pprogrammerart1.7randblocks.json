@@ -87,6 +87,14 @@
           "preview":["pprogrammerart/preview_randomized_stonebricks1.png"],
           "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Stone_Bricks.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Deepslate and Blackstone Bricks",
+          "description": "Randomizes the texture for Deepslate Bricks, Cracked Deepslate Bricks, Blackstone Bricks and Cracked Blackstone Bricks in whole Blocks and Stairs, Slabs and Walls.<br><br>requiresefr",
+          "icon": "pprogrammerart/randomized_deepslateblackstonebricks.png",
+          "preview":["pprogrammerart/preview_randomized_deepslateblackstonebricks1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Deepslate_and_Blackstone_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
