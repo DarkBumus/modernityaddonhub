@@ -47,6 +47,46 @@
           "preview":["pprogrammerart/preview_randomized_pumpkins1.png"],
           "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Pumpkins.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Mushrooms",
+          "description": "Randomizes the textures for Red and Brown Mushrooms.",
+          "icon": "pprogrammerart/randomized_mushrooms.png",
+          "preview":["pprogrammerart/preview_randomized_mushrooms1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Mushrooms.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Flowers",
+          "description": "Randomizes the textures for Dandelion, Poppy, Allium, Azure Bluet, Blue Orchid, Oxeye Daisy, Tulips, Cornflower, Lily of the Valley and Wither Rose.<br><br>requiresefr",
+          "icon": "pprogrammerart/randomized_flowers.png",
+          "preview":["pprogrammerart/preview_randomized_flowers1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Flowers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Lilypads",
+          "description": "Randomizes the textures for Lilypads to make them more random.",
+          "icon": "pprogrammerart/randomized_lilypads.png",
+          "preview":["pprogrammerart/preview_randomized_lilypads1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Lilypads.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Cobblestone",
+          "description": "Randomizes the texture of Cobblestone to appear more random. Also applies to Cobblestone Slabs, Stairs and Walls.",
+          "icon": "pprogrammerart/randomized_cobblestone.png",
+          "preview":["pprogrammerart/preview_randomized_cobblestone1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Cobblestone.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Stone Bricks",
+          "description": "Randomizes the texture for Stone Bricks, Mossy Stone Bricks, Cracked Stone Bricks and Chiseled Stone Bricks in whole Blocks and Stairs, Slabs and Walls. Also makes Mossy Stone Brick take on a more saturated look when in certain biomes associated with wetness.<br><br>requiresefr<br><br>overridemaster{Saturated Mossy Stone}",
+          "icon": "pprogrammerart/randomized_stonebricks.png",
+          "preview":["pprogrammerart/preview_randomized_stonebricks1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Stone_Bricks.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
