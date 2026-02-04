@@ -1,0 +1,78 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Rotated Blocks": [
+        {
+          "name": "Rotated Bedrock",
+          "description": "Rotates the Bedrock texture to appear more random.",
+          "icon": "pprogrammerart/rotated_bedrock.png",
+          "preview":["pprogrammerart/preview_rotated_bedrock1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Bedrock.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        },
+        {
+          "name": "Rotated Dirt",
+          "description": "Rotates the Dirt texture to appear more random.",
+          "icon": "pprogrammerart/rotated_dirt.png",
+          "preview":["pprogrammerart/preview_rotated_dirt1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Dirt.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Grass",
+          "description": "Rotates the Grass texture to appear more random. Also rotates the underside Dirt texture.",
+          "icon": "pprogrammerart/rotated_grass.png",
+          "preview":["pprogrammerart/preview_rotated_grass1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Grass.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Cactus",
+          "description": "Rotates the Cactus' top, side and bottom textures to appear more random.<br><br>overridemaster{Blooming Cactus}<br>incompat{Cactus Complete Pack}",
+          "icon": "pprogrammerart/rotated_cactus.png",
+          "preview":["pprogrammerart/preview_rotated_cactus1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Cactus.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
+        },
+        {
+          "name": "Rotated Stone",
+          "description": "Rotates the Stone texture to appear more random.",
+          "icon": "pprogrammerart/rotated_stone.png",
+          "preview":["pprogrammerart/preview_rotated_stone1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Stone.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        },
+        {
+          "name": "Rotated Sand",
+          "description": "Rotates the Sand texture to appear more random.",
+          "icon": "pprogrammerart/rotated_sand.png",
+          "preview":["pprogrammerart/preview_rotated_sand1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Sand.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Red Sand",
+          "description": "Rotates the Red Sand texture to appear more random.",
+          "icon": "pprogrammerart/rotated_red_sand.png",
+          "preview":["pprogrammerart/preview_rotated_red_sand1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Red_Sand.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Clay",
+          "description": "Rotates the Clay texture to appear more random.",
+          "icon": "pprogrammerart/rotated_clay.png",
+          "preview":["pprogrammerart/preview_rotated_clay1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Clay.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+        }
+      ]
+    }
+  }
+}
