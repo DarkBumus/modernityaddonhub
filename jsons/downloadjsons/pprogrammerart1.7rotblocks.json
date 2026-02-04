@@ -70,7 +70,63 @@
           "icon": "pprogrammerart/rotated_clay.png",
           "preview":["pprogrammerart/preview_rotated_clay1.png"],
           "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Clay.zip",
-          "tags": ["rpmcpatcher", "optifinecompatible", "2siderotation"]
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Cobweb",
+          "description": "Rotates the Cobweb texture to appear more random.",
+          "icon": "modernity/rotated_cobweb.png",
+          "preview":["modernity/preview_rotated_cobweb1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Cobweb.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Mycelium",
+          "description": "Rotates the Mycelium texture to appear more random. Also rotates the underside Dirt texture.",
+          "icon": "modernity/rotated_mycelium.png",
+          "preview":["modernity/preview_rotated_mycelium1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Mycelium.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Podzol",
+          "description": "Rotates the Podzol texture to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
+          "icon": "modernity/rotated_podzol.png",
+          "preview":["modernity/preview_rotated_podzol1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Podzol.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Brown Podzol",
+          "description": "Changes the Podzol texture to remove the greenish specs in it and rotates it to appear more random. Also rotates the underside Dirt texture.<br><br>incompat{Podzol Complete Pack}",
+          "icon": "modernity/rotated_brown_podzol.png",
+          "preview":["modernity/preview_rotated_brown_podzol1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Brown_Podzol.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Gravel",
+          "description": "Rotates the Gravel texture to appear more random.",
+          "icon": "modernity/rotated_gravel.png",
+          "preview":["modernity/preview_rotated_gravel1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Gravel.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+        {
+          "name": "Rotated Tweaked Gravel",
+          "description": "Changes the Gravel texture into a more grainy variant and rotates it to appear more random.",
+          "icon": "modernity/rotated_tweaked_gravel.png",
+          "preview":["modernity/preview_rotated_tweaked_gravel1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Tweaked_Gravel.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
+        },
+		        {
+          "name": "Rotated Classic Gravel",
+          "description": "Changes the Gravel texture into a the classic variant and rotates it to appear more random.",
+          "icon": "modernity/rotated_classic_gravel.png",
+          "preview":["modernity/preview_rotated_classic_gravel1.png"],
+          "file": "modernity/1.7/rotated_blocks/Rotated_Classic_Gravel.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
         }
       ]
     }

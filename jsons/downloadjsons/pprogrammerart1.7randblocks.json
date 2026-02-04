@@ -95,6 +95,14 @@
           "preview":["pprogrammerart/preview_randomized_deepslateblackstonebricks1.png"],
           "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Deepslate_and_Blackstone_Bricks.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Randomized Vines",
+          "description": "Randomizes the Vine textures utilizing the unused iterations from the Texture Update.<br><br>incompat{Rotated Vines}<br>incompat{Vines Complete Pack}",
+          "icon": "pprogrammerart/randomized_vines.png",
+          "preview":["pprogrammerart/preview_randomized_vines1.png"],
+          "file": "pprogrammerart/1.7/randomized_blocks/Randomized_Vines.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
         }
       ]
     }
