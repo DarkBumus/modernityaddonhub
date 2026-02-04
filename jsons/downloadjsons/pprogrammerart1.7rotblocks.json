@@ -193,11 +193,11 @@
           "tags": ["rpmcpatcher", "optifinecompatible", "mixedrotation"]
         },
         {
-          "name": "Rotated Sand Concrete Powders",
-          "description": "Rotates the Sand Concrete Powder textures to appear more random.<br><br>requiresefr",
-          "icon": "pprogrammerart/rotated_sand_concrete_powders.png",
-          "preview":["pprogrammerart/preview_rotated_sand_concrete_powders1.png"],
-          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Sand_Concrete_Powders.zip",
+          "name": "Rotated Concrete Powders",
+          "description": "Rotates the Concrete Powder textures to appear more random.<br><br>requiresefr",
+          "icon": "pprogrammerart/rotated_concrete_powders.png",
+          "preview":["pprogrammerart/preview_rotated_concrete_powders1.png"],
+          "file": "pprogrammerart/1.7/rotated_blocks/Rotated_Concrete_Powders.zip",
           "tags": ["rpmcpatcher", "optifinecompatible", "4siderotation"]
         },
         {
