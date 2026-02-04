@@ -317,8 +317,11 @@ footer {
 
 .footer-wrapper {
     display: flex;
-    gap: 600px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .footer-right {
