@@ -31,6 +31,70 @@
           "preview":["pprogrammerart/preview_brown_podzol1.png"],
           "file": "pprogrammerart/1.7/tweaks/Brown_Podzol.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Faceless Pumpkins",
+          "description": "Exchanges the Pumpkin's face texture with its side texture to rid the standard Pumpkins of their faces.",
+          "icon": "pprogrammerart/faceless_pumpkins.png",
+          "preview":["pprogrammerart/preview_faceless_pumpkins1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Faceless_Pumpkins.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Horse Armor",
+          "description": "Changes the Iron and Diamond Horse Armor to be consistent with their item versions. Iron Horse Armor will get a black saddle and Diamond Horse Armor will get a blue saddle.",
+          "icon": "pprogrammerart/consistent_horse_armor.png",
+          "preview":["pprogrammerart/preview_consistent_horse_armor1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Consistent_Horse_Armor.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Ender Eye",
+          "description": "Gives the Ender Eye an animation that has it blinking from time to time.",
+          "icon": "pprogrammerart/blinking_ender_eye.png",
+          "preview":["pprogrammerart/preview_blinking_ender_eye1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Blinking_Ender_Eye.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Mixed Hurt Sounds",
+          "description": "Mixes the Hurting sounds for the player with the old Beta sound so that they play at the same time when a player gets hurt. This also applies to the new specific Hurting sounds that play when the player is hurt by Sweet Berry Bushes, Drowning or Fire.<br><br>requiresefr<br><br>⚠️ Careful: Some mods assign the standard player Hurting sound to mobs. Using this Addon will give them the classic Hurting sound aswell, so keep that in mind.",
+          "icon": "pprogrammerart/mixed_hurt_sounds.png",
+          "preview":["pprogrammerart/preview_mixed_hurt_sounds1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Mixed_Hurt_Sounds.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Wheat",
+          "description": "Makes the Wheat texture consistent with the color palette of Hay Bales.",
+          "icon": "pprogrammerart/consistent_wheat.png",
+          "preview":["pprogrammerart/preview_consistent_wheat1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Consistent_Wheat.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Useful Chainmail",
+          "description": "Changes the texture of all Chainmail pieces so that they look a little more tangible.<br><br>requiresefr<br><br>attscript",
+          "icon": "pprogrammerart/useful_chainmail.png",
+          "preview":["pprogrammerart/preview_useful_chainmail1.png"],
+          "file": ["pprogrammerart/1.7/tweaks/Useful_Chainmail.zip", "pprogrammerart/1.7/tweaks/Optional_Chainmail_Recipe_Script.zip"],
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Helmets",
+          "description": "Provides a noseguard in the item textures of Iron Helmets, Gold Helmets and Diamond Helmets.<br><br>inspirationvt",
+          "icon": "pprogrammerart/consistent_helmets.png",
+          "preview":["pprogrammerart/preview_consistent_helmets1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Consistent_Helmets.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blinking Observers",
+          "description": "Gives the Observer face an animation that has it blinking and shifting eyes from time to time.<br><br>requiresefr",
+          "icon": "pprogrammerart/blinking_observers.png",
+          "preview":["pprogrammerart/preview_blinking_observers1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Blinking_Observers.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
