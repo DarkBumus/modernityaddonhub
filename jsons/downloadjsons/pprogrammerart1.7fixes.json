@@ -1,0 +1,62 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Fixes": [
+        {
+          "name": "Fixed Pistons",
+          "description": "Fixes the underside of the Piston Head to look more fitting. Also gives the side of the Sticky Piston a bit of slime to distinguish both types of Piston.<br><br>inspirationvt",
+          "icon": "pprogrammerart/fixed_pistons.png",
+          "preview":["pprogrammerart/preview_fixed_pistons1.png"],
+          "file": "pprogrammerart/1.7/fixes/Fixed_Pistons.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Furnace",
+          "description": "Fixes the underside of Furnaces and Lit Furnaces. Now displays a modified version of the Smooth Stone topside.",
+          "icon": "pprogrammerart/fixed_furnace.png",
+          "preview":["pprogrammerart/preview_fixed_furnace1.png"],
+          "file": "pprogrammerart/1.7/fixes/Fixed_Furnace.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Crafting Table",
+          "description": "Fixes the underside of the Crafting Table. Now displays a simply modified Oak Planks texture.",
+          "icon": "pprogrammerart/fixed_crafting_table.png",
+          "preview":["pprogrammerart/preview_fixed_crafting_table1.png"],
+          "file": "pprogrammerart/1.7/fixes/Fixed_Crafting_Table.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Fixed Pumpkins",
+          "description": "Fixes the underside of the Pumpkin. Also applies to Jack o'Lanterns.<br><br>overrideslave{Pumpkin Complete Pack}<br>incompat{Randomized Pumpkin}",
+          "icon": "pprogrammerart/fixed_pumpkins.png",
+          "preview":["pprogrammerart/preview_fixed_pumpkins1.png"],
+          "file": "pprogrammerart/1.7/fixes/Fixed_Pumpkins.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Golden Totem of Undying",
+          "description": "Changes the Totem of Undying's texture into actual Gold.<br><br>requiresefr",
+          "icon": "pprogrammerart/golden_totem_of_undying.png",
+          "preview":["pprogrammerart/preview_golden_totem_of_undying1.png"],
+          "file": "pprogrammerart/1.7/fixes/Golden_Totem_of_Undying.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Fixed Weighted Pressure Plates",
+          "description": "Changes the top texture of the Weighted Pressure Plates so that they have a rim around them.",
+          "icon": "pprogrammerart/fixed_weighted_pressure_plates.png",
+          "preview":["pprogrammerart/preview_fixed_weighted_pressure_plates1.png"],
+          "file": "pprogrammerart/1.7/fixes/Fixed_Weighted_Pressure_Plates.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        }
+      ]
+    }
+  }
+}

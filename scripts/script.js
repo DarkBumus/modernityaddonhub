@@ -62,6 +62,7 @@ async function loadAllDownloadJSONs() {
         "jsons/downloadjsons/pprogrammerart1.7complete.json",
         "jsons/downloadjsons/pprogrammerart1.7connected.json",
         "jsons/downloadjsons/pprogrammerart1.7crafting.json",
+        "jsons/downloadjsons/pprogrammerart1.7fixes.json",
         "jsons/downloadjsons/pprogrammerart1.7randblocks.json",
         "jsons/downloadjsons/pprogrammerart1.7rotblocks.json"
     ];
