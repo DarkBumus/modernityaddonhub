@@ -55,6 +55,14 @@
           "preview":["pprogrammerart/preview_fixed_weighted_pressure_plates1.png"],
           "file": "pprogrammerart/1.7/fixes/Fixed_Weighted_Pressure_Plates.zip",
           "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Colored Stems",
+          "description": "Applies coloration to the Pumpkin and Melon Stems in their normal and attached form.",
+          "icon": "pprogrammerart/colored_stems.png",
+          "preview":["pprogrammerart/preview_colored_stems1.png"],
+          "file": "pprogrammerart/1.7/fixes/Colored_Stems.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
