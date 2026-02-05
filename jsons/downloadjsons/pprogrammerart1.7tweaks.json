@@ -23,6 +23,14 @@
           "preview":["pprogrammerart/preview_classic_gravel1.png"],
           "file": "pprogrammerart/1.7/tweaks/Classic_Gravel.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Brown Podzol",
+          "description": "Changes the Podzol texture to remove the greenish specs in it.",
+          "icon": "pprogrammerart/brown_podzol.png",
+          "preview":["pprogrammerart/preview_brown_podzol1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Brown_Podzol.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
