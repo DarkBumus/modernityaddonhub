@@ -39,7 +39,64 @@
           "preview":["pprogrammerart/preview_invisible_underwater_overlay1.png"],
           "file": "pprogrammerart/1.7/utility/Invisible_Underwater_Overlay.zip",
           "tags": ["vanillacompatible"]
-        }
+        },
+        {
+          "name": "Directional Hoppers",
+          "description": "Gives Hoppers some markings on the side when their facing into a block. Also fixes the underside of Hoppers to not look so god-awful.<br>The directonal markings also apply to Grated Hoppers from [Hopper Ducts](https://www.curseforge.com/minecraft/mc-mods/hopper-ducts) and the underside fix also works for [Round Robin Hopper](https://www.curseforge.com/minecraft/mc-mods/round-robin-hopper).<br><br>inspirationvt",
+          "icon": "pprogrammerart/directional_hoppers.png",
+          "preview":["pprogrammerart/preview_directional_hoppers1.png"],
+          "file": "pprogrammerart/1.7/utility/Directional_Hoppers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Directional Dispensers/Droppers",
+          "description": "Gives Dispensers and Droppers some markings on the side when they're facing into a block. Also applies a fitting bottom texture to Dispensers and Droppers and lets them keep their side textures when facing up or down.<br><br>inspirationvt",
+          "icon": "pprogrammerart/directional_dispensers_droppers.png",
+          "preview":["pprogrammerart/preview_directional_dispensers_droppers1.png"],
+          "file": "pprogrammerart/1.7/utility/Directional_Dispensers_Droppers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Directional Observers",
+          "description": "Gives Observers some markings on the side when they're facing into a block. Also applies a little blob of Redstone to the top texture so that the player can see when the Observer is firing.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "pprogrammerart/directional_observers.png",
+          "preview":["pprogrammerart/preview_directional_observers1.png"],
+          "file": "pprogrammerart/1.7/utility/Directional_Observers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Visual Cauldron Fill Level",
+          "description": "Gives Cauldrons windows on the side that display the fill level. Also applies these windows to Et Futurum Requiem's Potion Cauldron.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "pprogrammerart/visual_cauldron_fill_level.png",
+          "preview":["pprogrammerart/preview_visual_cauldron_fill_level1.png"],
+          "file": "pprogrammerart/1.7/utility/Visual_Cauldron_Fill_Level.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Breaking Cross",
+          "description": "Changes the Breaking Overlay to display a slowly closing cross to better signify breaking progress.<br><br>inspirationvt",
+          "icon": "pprogrammerart/breaking_cross.png",
+          "preview":["pprogrammerart/preview_breaking_cross1.png"],
+          "file": "pprogrammerart/1.7/utility/Breaking_Cross.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Beacon Beam",
+          "description": "Changes the Beacon Beam texture to be invisible.<br><br>inspirationvt",
+          "icon": "pprogrammerart/invisible_beacon_beam.png",
+          "preview":["pprogrammerart/preview_invisible_beacon_beam1.png"],
+          "file": "pprogrammerart/1.7/utility/Invisible_Beacon_Beam.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Visible Tripwire",
+          "description": "Changes the Tripwire's texture to be more visible.<br><br>inspirationvt",
+          "icon": "pprogrammerart/visible_tripwire.png",
+          "preview":["pprogrammerart/preview_visible_tripwire1.png"],
+          "file": "pprogrammerart/1.7/utility/Visible_Tripwire.zip",
+          "tags": ["vanillacompatible"]
+        },
+
       ]
     }
   }
