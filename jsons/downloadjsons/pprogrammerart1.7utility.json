@@ -1,0 +1,46 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Utility": [
+        {
+          "name": "Utility Silverfish Stones",
+          "description": "Gives Silverfish Stones a Black and Yellow outline to make them stand out.<br><br>inspirationvt<br><br>incompat{Suspicious Silverfish Stones}",
+          "icon": "pprogrammerart/utility_silverfish_stones.png",
+          "preview":["pprogrammerart/preview_utility_silverfish_stones1.png"],
+          "file": "pprogrammerart/1.7/utility/Utility_Silverfish_Stones.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Translucent Pumpkin Overlay",
+          "description": "Changes visibility of the Pumpkin Overlay to be slightly translucent.<br><br>inspirationvt",
+          "icon": "pprogrammerart/pumpkin_overlay.png",
+          "preview":["pprogrammerart/preview_translucent_pumpkin_overlay1.png"],
+          "file": "pprogrammerart/1.7/utility/Translucent_Pumpkin_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Pumpkin Overlay",
+          "description": "Changes visibility of the Pumpkin Overlay to be completely invisible.<br><br>inspirationvt",
+          "icon": "pprogrammerart/pumpkin_overlay.png",
+          "preview":["pprogrammerart/preview_invisible_pumpkin_overlay1.png"],
+          "file": "pprogrammerart/1.7/utility/Invisible_Pumpkin_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Invisible Underwater Overlay",
+          "description": "Changes visibility of the Underwater Overlay to be completely invisible. Makes for a way clearer diving experience.",
+          "icon": "pprogrammerart/invisible_underwater_overlay.png",
+          "preview":["pprogrammerart/preview_invisible_underwater_overlay1.png"],
+          "file": "pprogrammerart/1.7/utility/Invisible_Underwater_Overlay.zip",
+          "tags": ["vanillacompatible"]
+        }
+      ]
+    }
+  }
+}
