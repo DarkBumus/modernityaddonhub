@@ -199,6 +199,110 @@
           "preview":["pprogrammerart/preview_blank_name_tag1.png"],
           "file": "pprogrammerart/1.7/tweaks/Blank_Name_Tag.zip",
           "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Desaturated Purpur",
+          "description": "Changes all Purpur Block textures to be slightly desaturated. Also applies to the pink part of the End Rod.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "pprogrammerart/desaturated_purpur.png",
+          "preview":["pprogrammerart/preview_desaturated_purpur1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Desaturated_Purpur.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Darker Dark Oak Leaves",
+          "description": "Changes the texture of Dark Oak Leaves to be slightly darker than the normal Oak Leaves counterpart.<br><br>inspirationvt",
+          "icon": "pprogrammerart/darker_dark_oak_leaves.png",
+          "preview":["pprogrammerart/preview_darker_dark_oak_leaves1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Darker_Dark_Oak_Leaves.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Magical Mushrooms",
+          "description": "Changes the textures of the Mushrooms blocks, to take on a purple (in case of Brown Mushroom) and pink (in case of Red Mushroom) shade, when placed in Roofed Forests. or Thaumcraft's Magical Forest. Also includes the rotational properties of the Rotated Mushrooms Addon.<br><br>inspiration{[Os' Mystical Mushrooms](https://modrinth.com/resourcepack/os-mystical-mushrooms)}<br><br>overridemaster{Rotated Mushrooms}",
+          "icon": "pprogrammerart/magical_mushrooms.png",
+          "preview":["pprogrammerart/preview_magical_mushrooms1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Magical_Mushrooms.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Clean Redstone",
+          "description": "Changes the textures of placed-down Redstone Dust to be cleaner and less frizzy.<br><br>inspirationvt",
+          "icon": "pprogrammerart/clean_redstone.png",
+          "preview":["pprogrammerart/preview_clean_redstone1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Clean_Redstone.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Full-colored Leather Armor",
+          "description": "Changes the texture of all Leather armor pieces so that they lose the brown overlay and instead get colored all the way.<br><br>inspirationvt<br><br>incompat{Comprehensive Armor Upgrade}",
+          "icon": "pprogrammerart/full-colored_leather_armor.png",
+          "preview":["pprogrammerart/preview_full-colored_leather_armor1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Full-colored_Leather_Armor.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Stacking Paper",
+          "description": "Changes Paper, Maps and Filled Maps so that they display different textures when they are stacked.",
+          "icon": "pprogrammerart/stacking_paper.png",
+          "preview":["pprogrammerart/preview_stacking_paper1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Stacking_Paper.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Splash Bottle o'Enchanting",
+          "description": "Changes the Bottle o'Enchanting's texture to be more fitting to its purpose and the __Unique Potions Addon__.",
+          "icon": "pprogrammerart/splash_bottle_oenchanting.png",
+          "preview":["pprogrammerart/preview_splash_bottle_oenchanting1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Splash_Bottle_oEnchanting.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Pooling Dusts",
+          "description": "Changes Gunpowder, Redstone Dust, Glowstone Dust and Sugar so that they display different textures when they are stacked.",
+          "icon": "pprogrammerart/pooling_dusts.png",
+          "preview":["pprogrammerart/preview_pooling_dusts1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Pooling_Dusts.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Spinning Jukebox",
+          "description": "Changes the Jukebox's western side texture to show a record, that starts spinning when a disc is placed into it.",
+          "icon": "pprogrammerart/spinning_jukebox.png",
+          "preview":["pprogrammerart/preview_spinning_jukebox1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Spinning_Jukebox.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Suspicious Silverfish Stones",
+          "description": "Gives Silverfish Stones an overlay that looks like Suspicious Gravel in relation to normal Gravel.<br><br>incompat{Utility Silverfish Stones}",
+          "icon": "pprogrammerart/suspicious_silverfish_stones.png",
+          "preview":["pprogrammerart/preview_suspicious_silverfish_stones1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Suspicious_Silverfish_Stones.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Bottled Ghast Tear",
+          "description": "Changes the Ghast Tear texture to make it appear bottled rather than just on its own.<br><br>inspiration{[Sukuro](https://www.planetminecraft.com/texture-pack/mob-drop-tweaks/)}",
+          "icon": "pprogrammerart/bottled_ghast_tear.png",
+          "preview":["pprogrammerart/preview_bottled_ghast_tear1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Bottled_Ghast_Tear.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Ball o'Yarn",
+          "description": "Changes Strings so that they display different textures when they are stacked.",
+          "icon": "pprogrammerart/ball_oyarn.png",
+          "preview":["pprogrammerart/preview_ball_oyarn1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Ball_oYarn.zip",
+          "tags": ["rpmcpatcher", "optifineincompatible"]
+        },
+        {
+          "name": "Opaque Slime Blocks",
+          "description": "Changes the Slime Block texture to be completely opaque.<br><br>requiresefr<br><br>inspirationvt<br><br>⚠️ Careful: This does not change the properties of the block. It will still be transparent and will not block light.",
+          "icon": "pprogrammerart/opaque_slime_blocks.png",
+          "preview":["pprogrammerart/preview_opaque_slime_blocks1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Opaque_Slime_Blocks.zip",
+          "tags": ["vanillacompatible"]
         }
       ]
     }
