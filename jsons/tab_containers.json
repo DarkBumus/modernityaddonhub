@@ -35,8 +35,7 @@
           "panels": {
             "Fixes": true
           }
-        },
-		"1.12": false
+        }
       }
     },
     "Palettized Programmer Art": {
