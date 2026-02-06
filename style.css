@@ -225,8 +225,9 @@ header {
    PREVIEW
 =========================== */
 #preview {
-   flex: 1.7;
-   min-width: 0;
+   flex: 0 0 420px;
+   min-width: 420px;
+   max-width: 420px;
    background: #262626; /* vorher white */
    border: 1px solid #444; /* vorher ddd */
    border-radius: 8px;

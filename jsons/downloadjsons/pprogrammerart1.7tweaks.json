@@ -95,6 +95,78 @@
           "preview":["pprogrammerart/preview_blinking_observers1.png"],
           "file": "pprogrammerart/1.7/tweaks/Blinking_Observers.zip",
           "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Blooming Cactus",
+          "description": "Adds blooming blossoms to the side and top of the Cactus texture.<br><br>incompat{Cactus Complete Pack}",
+          "icon": "pprogrammerart/blooming_cactus.png",
+          "preview":["pprogrammerart/preview_blooming_cactus1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Blooming_Cactus.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Beta Cow Sounds",
+          "description": "Changes all sounds Cows make into those of Minecraft Beta.<br><br>⚠️ Careful: Should a mod add another type of cow that utilizes vanilla cows as a basis, they will also emit the sounds from this Addon.",
+          "icon": "pprogrammerart/beta_cow_sounds.png",
+          "preview":["pprogrammerart/preview_beta_cow_sounds1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Beta_Cow_Sounds.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Iron Nugget",
+          "description": "Changes the texture of the Iron Nugget, to fit the lineart of the Gold Nugget and the color palette of the Iron Ingot.<br><br>requiresefr",
+          "icon": "pprogrammerart/consistent_iron_nugget.png",
+          "preview":["pprogrammerart/preview_consistent_iron_nugget1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Consistent_Iron_Nugget.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Black Granite",
+          "description": "Changes the Granite texture to turn it into deep black with white specs.<br><br>requiresefr<br><br>inspiration{[Redrooey](https://www.planetminecraft.com/texture-pack/black-granite/)}",
+          "icon": "pprogrammerart/black_granite.png",
+          "preview":["pprogrammerart/preview_black_granite1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Black_Granite.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Pebble-free Dirt",
+          "description": "Changes the textures of all dirt variations so that they have no pebbles in them.<br><br>requiresefr<br><br>inspirationvt",
+          "icon": "pprogrammerart/pebble-free_dirt.png",
+          "preview":["pprogrammerart/preview_pebble-free_dirt1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Pebble-free_Dirt.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Illager Witch",
+          "description": "Changes the color scheme of the Witch to be more in line with how the Illagers from the Village & Pillage Update look.",
+          "icon": "pprogrammerart/illager_witch.png",
+          "preview":["pprogrammerart/preview_illager_witch1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Illager_Witch.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Consistent Leather",
+          "description": "Changes the textures of Leather, Saddles, Item Frames (both in item and entity/block form) and Books to have the color palette of Leather Armor.<br><br>inspirationvt",
+          "icon": "pprogrammerart/consistent_leather.png",
+          "preview":["pprogrammerart/preview_consistent_leather1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Consistent_Leather.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Desert Shulkers",
+          "description": "Changes the textures for Shulkers when placed in Desert or Mesa biomes. The texture is a palette swap of the __Fixed Shulkers Addon__, that uses the color palette of Red Sandstone.<br><br>requiresefr<br><br>inspiration{[Whimzee](https://www.youtube.com/watch?v=8qKTXf_-obk)}",
+          "icon": "pprogrammerart/desert_shulkers.png",
+          "preview":["pprogrammerart/preview_desert_shulkers1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Desert_Shulkers.zip",
+          "tags": ["rpmcpatcher", "optifinecompatible"]
+        },
+        {
+          "name": "Faded Classic Command Block",
+          "description": "Changes the texture of the old Command Block to be faded with lowly blinking lights. It is recommended to only use this Addon in conjunction with [Future Commands](https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2888753-moved-to-a-new-website-future-commands-v1-3). Also renames the Command Block to 'Classic Command Block'.",
+          "icon": "pprogrammerart/faded_classic_command_block.png",
+          "preview":["pprogrammerart/preview_faded_classic_command_block1.png"],
+          "file": "pprogrammerart/1.7/tweaks/Faded_Classic_Command_Block.zip",
+          "tags": ["vanillacompatible", "interpolated1710"]
         }
       ]
     }
