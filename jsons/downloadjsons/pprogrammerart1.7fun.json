@@ -1,0 +1,46 @@
+{
+  "defaults": {
+    "icon_path": "assets/icons/",
+    "preview_path":"assets/previews/",
+    "download_path": "downloads/",
+    "external_downloads": null
+  },
+  "Palettized Programmer Art": {
+    "1.7": {
+      "Fun Features": [
+        {
+          "name": "Michael's Second Life",
+          "description": "Plays [Michael Scott's iconic line](https://www.youtube.com/watch?v=2UMpTktizX4) over the sound effect of the Totem of Undying shattering.<br><br>requiresefr",
+          "icon": "pprogrammerart/michaels_second_life.png",
+          "preview":["pprogrammerart/preview_michaels_second_life1.png"],
+          "file": "pprogrammerart/1.7/fun_features/Michaels_Second_Life.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Monocle Observer",
+          "description": "Gives the Observer a monocle.<br><br>requiresefr<br><br>inspiration{[More Observers](https://www.curseforge.com/minecraft/mc-mods/more-observers)}",
+          "icon": "pprogrammerart/monocle_observer.png",
+          "preview":["pprogrammerart/preview_monocle_observer1.png"],
+          "file": "pprogrammerart/1.7/fun_features/Monocle_Observer.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Calm4.ogg for Record 11",
+          "description": "Changes broken 'Record 11' into a normal looking one that plays the infamous 'calm4.ogg' when inserted into a Jukebox. The disc uses the colors of the old Mojang logo.<br><br>***M O J A N G   S P E C I F I C A T I O N S !***",
+          "icon": "pprogrammerart/calm4.ogg_for_record_11.png",
+          "preview":["pprogrammerart/preview_calm4.ogg_for_record_111.png"],
+          "file": "pprogrammerart/1.7/fun_features/Calm4.ogg_for_Record_11.zip",
+          "tags": ["vanillacompatible"]
+        },
+        {
+          "name": "Angelica Elytra",
+          "description": "Changes the model texture of the Elytra to look like the Angelica mod's logo.<br><br>requiresefr<br><br>#78B159{Attached is an additional file that allows you to use this texture when you're wearing a cape. For this to function, you need to go the `.minecraft/assets/skins/23` directory. In there you will find a file whose name consists of a large string of numbers and letters and that has no file name extension. To manipulate this file, you'll need to rename it to add `.png` on the end, after which it becomes an editable image file. Add (NOT replace with) the downloaded texture to the file you just opened in an image editing software and save it. Afterwards, remove the `.png` extension from the file again and it should work in game.}",
+          "icon": "pprogrammerart/angelica_elytra.png",
+          "preview":["pprogrammerart/preview_angelica_elytra1.png"],
+          "file": ["pprogrammerart/1.7/fun_features/Angelica_Elytra.zip", "pprogrammerart/1.7/fun_features/Angelica_Elytra_Loose.zip"],
+          "tags": ["vanillacompatible"]
+        }
+      ]
+    }
+  }
+}
