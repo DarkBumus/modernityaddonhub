@@ -102,11 +102,6 @@ header {
 /* ===========================
    TABS
 =========================== */
-.page-width {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 #tabs {
     display: flex;
     background: #0f0f0f; /* vorher 222 */
@@ -160,9 +155,10 @@ header {
 =========================== */
 #main-container {
     display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
     gap: 20px;
     align-items: flex-start;
-	margin: 20px 0;
 }
 
 /* Content Panel */
