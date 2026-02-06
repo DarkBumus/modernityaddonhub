@@ -112,6 +112,8 @@ header {
     overflow: visible;
     flex-wrap: wrap;
     white-space: normal;
+	
+	width: 100%
 }
 
 #tabs::-webkit-scrollbar {
@@ -145,9 +147,11 @@ header {
     padding: 8px;
     justify-content: center;
     gap: 8px;
+	
+	width: 100%
 }
 
-#subtabs .tab { background: #444; padding: 6px 12px; } /* vorher 555 */
+#subtabs .tab {background: #444; padding: 6px 12px; } /* vorher 555 */
 #subtabs .tab.active { background: #0088ff; }
 
 /* ===========================
@@ -159,6 +163,8 @@ header {
     margin: 20px auto;
     gap: 20px;
     align-items: flex-start;
+	
+	width: 100%
 }
 
 /* Content Panel */
